@@ -1,40 +1,42 @@
-@import "settings";
-@import "foundation";
 
-// Or selectively include components
-// @import
-//   "foundation/components/accordion",
-//   "foundation/components/alert-boxes",
-//   "foundation/components/block-grid",
-//   "foundation/components/breadcrumbs",
-//   "foundation/components/button-groups",
-//   "foundation/components/buttons",
-//   "foundation/components/clearing",
-//   "foundation/components/dropdown",
-//   "foundation/components/dropdown-buttons",
-//   "foundation/components/flex-video",
-//   "foundation/components/forms",
-//   "foundation/components/grid",
-//   "foundation/components/inline-lists",
-//   "foundation/components/joyride",
-//   "foundation/components/keystrokes",
-//   "foundation/components/labels",
-//   "foundation/components/magellan",
-//   "foundation/components/orbit",
-//   "foundation/components/pagination",
-//   "foundation/components/panels",
-//   "foundation/components/pricing-tables",
-//   "foundation/components/progress-bars",
-//   "foundation/components/reveal",
-//   "foundation/components/side-nav",
-//   "foundation/components/split-buttons",
-//   "foundation/components/sub-nav",
-//   "foundation/components/switches",
-//   "foundation/components/tables",
-//   "foundation/components/tabs",
-//   "foundation/components/thumbs",
-//   "foundation/components/tooltips",
-//   "foundation/components/top-bar",
-//   "foundation/components/type",
-//   "foundation/components/offcanvas",
-//   "foundation/components/visibility";
+
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+
+
+html, body {
+  font-size: 100%; }
+
+
+.services2 {
+    .text {
+        padding: 2px;
+    }
+}
+
+.services {
+    max-width:940px;
+     @include container-fixed(20px);
+    .inside {
+      background-color:red;
+     
+        @include make-xs-column(6);
+        @include make-sm-column(3);
+        @include make-md-column(2); 
+        @include make-lg-column(1);
+
+
+    }
+    .inside-right {
+     background-color:black;
+      @include make-xs-column(6);
+      @include make-sm-column(9);
+      @include make-md-column(10);
+      @include make-lg-column(11);
+          
+    } 
+}
+
+
+
+@import "custom/home"; 
+  
