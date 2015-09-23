@@ -1,0 +1,237 @@
+/*!
+ * Bootstrap v3.3.5 (http://getbootstrap.com)
+ * Copyright 2011-2015 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+html, body {
+  font-size: 100%; }
+
+body header {
+  background-color: transparent; }
+
+.services {
+  max-width: 940px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 10px;
+  padding-right: 10px; }
+  .services:before, .services:after {
+    content: " ";
+    display: table; }
+  .services:after {
+    clear: both; }
+  .services .inside {
+    background-color: red;
+    position: relative;
+    float: left;
+    width: 50%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px; }
+  .services .inside-right {
+    background-color: black;
+    position: relative;
+    float: left;
+    width: 50%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px; }
+
+body {
+  background-color: purple; }
+
+.wrapper-header {
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 100%;
+  z-index: 10;
+  position: relative; }
+
+.header {
+  max-width: 940px;
+  height: 75px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px; }
+  .header:before, .header:after {
+    content: " ";
+    display: table; }
+  .header:after {
+    clear: both; }
+  .header__logo {
+    width: 70px;
+    height: 80px;
+    margin-left: -50px;
+    background-color: black;
+    position: absolute;
+    display: none; }
+
+.bne {
+  list-style: none;
+  list-style-type: none; }
+  .bne > ul {
+    position: relative;
+    margin-left: 0px; }
+    .bne > ul > li {
+      display: inline-block;
+      padding: 20px;
+      float: left;
+      position: relative; }
+      .bne > ul > li a {
+        font-weight: bold;
+        color: #272d43; }
+        .bne > ul > li a:focus + ul {
+          display: block;
+          opacity: 1; }
+        .bne > ul > li a:hover {
+          color: #272d43; }
+      .bne > ul > li:focus background-color:purple ul.sub-menu, .bne > ul > li:focus background-color:purple ul.sub-menu--what-is-k2, .bne > ul > li:focus background-color:purple ul.sub-menu--how-people-use-k2 {
+        display: block; }
+      .bne > ul > li:hover > span {
+        border-bottom: 1px solid #00b5c8; }
+      .bne > ul > li:hover > a {
+        padding-bottom: 5px;
+        border-bottom: 3px solid #00b5c8; }
+      .bne > ul > li:hover > ul.sub-menu, .bne > ul > li:hover > ul.sub-menu--what-is-k2, .bne > ul > li:hover > ul.sub-menu--how-people-use-k2 {
+        opacity: 1;
+        transition: all 0.1s ease;
+        visibility: visible; }
+        .bne > ul > li:hover > ul.sub-menu li:nth-child(1) a:not([href]):after, .bne > ul > li:hover > ul.sub-menu--what-is-k2 li:nth-child(1) a:not([href]):after, .bne > ul > li:hover > ul.sub-menu--how-people-use-k2 li:nth-child(1) a:not([href]):after {
+          opacity: 1;
+          right: 10px; }
+        .bne > ul > li:hover > ul.sub-menu li:nth-child(2) a:not([href]):after, .bne > ul > li:hover > ul.sub-menu--what-is-k2 li:nth-child(2) a:not([href]):after, .bne > ul > li:hover > ul.sub-menu--how-people-use-k2 li:nth-child(2) a:not([href]):after {
+          right: 10px;
+          transition-delay: 0.05s;
+          opacity: 1; }
+        .bne > ul > li:hover > ul.sub-menu li:nth-child(3) a:not([href]):after, .bne > ul > li:hover > ul.sub-menu--what-is-k2 li:nth-child(3) a:not([href]):after, .bne > ul > li:hover > ul.sub-menu--how-people-use-k2 li:nth-child(3) a:not([href]):after {
+          right: 10px;
+          transition-delay: 0.1s;
+          opacity: 1; }
+        .bne > ul > li:hover > ul.sub-menu li:nth-child(4) a:not([href]):after, .bne > ul > li:hover > ul.sub-menu--what-is-k2 li:nth-child(4) a:not([href]):after, .bne > ul > li:hover > ul.sub-menu--how-people-use-k2 li:nth-child(4) a:not([href]):after {
+          right: 10px;
+          transition-delay: 0.15s;
+          opacity: 1; }
+      .bne > ul > li ul.sub-menu, .bne > ul > li ul.sub-menu--what-is-k2, .bne > ul > li ul.sub-menu--how-people-use-k2 {
+        position: absolute;
+        width: 250px;
+        background-color: rgba(255, 255, 255, 0.7);
+        list-style: none;
+        list-style-type: none;
+        top: 58px;
+        left: 0px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.1s ease;
+        padding-bottom: 20px;
+        margin-left: 0px; }
+        .bne > ul > li ul.sub-menu li, .bne > ul > li ul.sub-menu--what-is-k2 li, .bne > ul > li ul.sub-menu--how-people-use-k2 li {
+          width: 100%;
+          padding: 5px; }
+          .bne > ul > li ul.sub-menu li a:not([href]):after, .bne > ul > li ul.sub-menu--what-is-k2 li a:not([href]):after, .bne > ul > li ul.sub-menu--how-people-use-k2 li a:not([href]):after {
+            content: '';
+            position: absolute;
+            right: 20px;
+            transition: all 0.4s ease;
+            width: 0;
+            height: 0;
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+            border-left: 6px solid #00b5c8;
+            margin-top: 5px;
+            opacity: 0; }
+          .bne > ul > li ul.sub-menu li a, .bne > ul > li ul.sub-menu--what-is-k2 li a, .bne > ul > li ul.sub-menu--how-people-use-k2 li a {
+            font-size: 14px;
+            padding: 4px 20px;
+            display: inline-block;
+            color: #14b6c9;
+            font-weight: normal; }
+          .bne > ul > li ul.sub-menu li:hover, .bne > ul > li ul.sub-menu--what-is-k2 li:hover, .bne > ul > li ul.sub-menu--how-people-use-k2 li:hover {
+            background-color: white; }
+            .bne > ul > li ul.sub-menu li:hover ul.sub-sub-menu, .bne > ul > li ul.sub-menu--what-is-k2 li:hover ul.sub-sub-menu, .bne > ul > li ul.sub-menu--how-people-use-k2 li:hover ul.sub-sub-menu {
+              opacity: 1;
+              transition: all 0.1s ease;
+              visibility: visible; }
+          .bne > ul > li ul.sub-menu li ul.sub-sub-menu, .bne > ul > li ul.sub-menu--what-is-k2 li ul.sub-sub-menu, .bne > ul > li ul.sub-menu--how-people-use-k2 li ul.sub-sub-menu {
+            position: absolute;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.1s ease;
+            width: 200px;
+            left: 250px;
+            top: 0px;
+            bottom: 0px;
+            list-style: none;
+            list-style-type: none;
+            background-color: white;
+            margin-left: 0px; }
+            .bne > ul > li ul.sub-menu li ul.sub-sub-menu li, .bne > ul > li ul.sub-menu--what-is-k2 li ul.sub-sub-menu li, .bne > ul > li ul.sub-menu--how-people-use-k2 li ul.sub-sub-menu li {
+              background-color: white;
+              cursor: pointer;
+              display: block; }
+              .bne > ul > li ul.sub-menu li ul.sub-sub-menu li a, .bne > ul > li ul.sub-menu--what-is-k2 li ul.sub-sub-menu li a, .bne > ul > li ul.sub-menu--how-people-use-k2 li ul.sub-sub-menu li a {
+                cursor: pointer;
+                cursor: hand;
+                padding-left: 0px;
+                padding-right: 0px;
+                margin-left: 15px;
+                padding-bottom: 2px;
+                color: #272d43;
+                border-bottom: 2px solid white;
+                transition: border-bottom 0.1s ease; }
+                .bne > ul > li ul.sub-menu li ul.sub-sub-menu li a:hover, .bne > ul > li ul.sub-menu--what-is-k2 li ul.sub-sub-menu li a:hover, .bne > ul > li ul.sub-menu--how-people-use-k2 li ul.sub-sub-menu li a:hover {
+                  border-bottom: 2px solid #00b5c8;
+                  cursor: pointer;
+                  cursor: hand; }
+            .bne > ul > li ul.sub-menu li ul.sub-sub-menu:hover li, .bne > ul > li ul.sub-menu--what-is-k2 li ul.sub-sub-menu:hover li, .bne > ul > li ul.sub-menu--how-people-use-k2 li ul.sub-sub-menu:hover li {
+              display: block; }
+      .bne > ul > li ul.sub-menu--what-is-k2 {
+        width: 250px; }
+        .bne > ul > li ul.sub-menu--what-is-k2 ul.sub-sub-menu, .bne > ul > li ul.sub-menu--what-is-k2 ul.sub-menu--how-people-use-k2 li ul.sub-sub-menu, .bne > ul > li ul.sub-menu--how-people-use-k2 li ul.sub-menu--what-is-k2 ul.sub-sub-menu {
+          left: 250px; }
+      .bne > ul > li ul.sub-menu--how-people-use-k2 {
+        width: 200px; }
+        .bne > ul > li ul.sub-menu--how-people-use-k2 li ul.sub-sub-menu {
+          left: 200px; }
+  .bne__sub-menu {
+    position: absolute;
+    width: 200px;
+    background-color: white;
+    display: block;
+    list-style: none;
+    list-style-type: none;
+    top: 100px;
+    margin-left: 0px; }
+    .bne__sub-menu--last {
+      position: absolute;
+      width: 200px;
+      left: 200px;
+      top: 0px; }
+
+.main-stage {
+  background-image: url('/img/1/bg-home-placeholder.jpg');
+  background-size: cover;
+  height: 523px;
+  margin-top: -86px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: top center; }
+
+.learn-more {
+  background-image: url('/img/1/bg-learn-more-placeholder.jpg');
+  height: 523px;
+  background-repeat: no-repeat;
+  background-position: top center; }
+
+.departments {
+  background-image: url('/img/1/bg-departments-placeholder.jpg');
+  height: 570px;
+  background-repeat: no-repeat;
+  background-position: top center; }
+
+.customers {
+  background-image: url('/img/1/bg-learn-more-placeholder.jpg');
+  height: 523px;
+  background-repeat: no-repeat;
+  background-position: top center; }
+
+/*# sourceMappingURL=app.css.map */
