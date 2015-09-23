@@ -1,42 +1,16 @@
 
 
-@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "vendor/bootstrap-custom";
 
 
 html, body {
   font-size: 100%; }
 
 
-.services2 {
-    .text {
-        padding: 2px;
-    }
-}
-
-.services {
-    max-width:940px;
-     @include container-fixed(20px);
-    .inside {
-      background-color:red;
-     
-        @include make-xs-column(6);
-        @include make-sm-column(3);
-        @include make-md-column(2); 
-        @include make-lg-column(1);
-
-
-    }
-    .inside-right {
-     background-color:black;
-      @include make-xs-column(6);
-      @include make-sm-column(9);
-      @include make-md-column(10);
-      @include make-lg-column(11);
-          
-    } 
-}
 
 
 
+@import "custom/custom-mixins"; 
 @import "custom/home"; 
+
   

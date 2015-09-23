@@ -1,6 +1,22 @@
 {
-  "name": "foundation-libsass-template",
+  "name": "bower init",
   "dependencies": {
-    "foundation": "zurb/bower-foundation"
-  }
+    "bootstrap-sass": "~3.3.5"
+  },
+  "version": "k2final",
+  "description": "idk testing",
+  "keywords": [
+    "hola"
+  ],
+  "authors": [
+    "hoal"
+  ],
+  "license": "ahola",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
 }
