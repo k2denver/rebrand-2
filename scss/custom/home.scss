@@ -124,6 +124,20 @@ body {
                         opacity:1;
                     }
                 }
+                li:nth-child(5) a:not([href]) {
+                    &:after {
+                        right: 10px;
+                        transition-delay: 0.15s;
+                        opacity:1;
+                    }
+                }
+                li:nth-child(6) a:not([href]) {
+                    &:after {
+                        right: 10px;
+                        transition-delay: 0.15s;
+                        opacity:1;
+                    }
+                }
             }
             span {}
             // Subm Menu
@@ -138,7 +152,7 @@ body {
                 left: 0px;
                 opacity: 0;
                 visibility: hidden;
-                transition: all 0.1s ease;
+                transition: all 0.2s ease;
                 padding-bottom:20px;
                 @if $needs-overwriting {
                     margin-left: 0px;
@@ -235,6 +249,15 @@ body {
                 li ul.sub-sub-menu {
                     @extend .sub-sub-menu;
                     left: 200px;
+                }
+            }
+            ul.sub-menu--resources {
+                @extend .sub-menu;
+                width: 250px;
+                li ul.sub-sub-menu {
+                    @extend .sub-sub-menu;
+                    width:210px;
+                    left: 250px;
                 }
             }
             a {}
