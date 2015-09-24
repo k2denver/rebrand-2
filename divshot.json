@@ -1,3 +1,9 @@
 {
-  "name": "k2final"
+  "name": "k2interactive",
+  "root": "./app",
+  "clean_urls": true,
+  "cache_control": {},
+  "routes": {
+    "**": "index.html"
+  }
 }

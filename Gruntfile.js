@@ -1,10 +1,29 @@
+'use strict';
+
+
+
 module.exports = function(grunt) {
+
+
+
+var config = {
+    app: 'app',
+    dist: 'dist'
+  };
+
   grunt.initConfig({
+
+
+    config: config,
+
+
     pkg: grunt.file.readJSON('package.json'),
+
+    
 
     sass: {
       options: {
-        includePaths: ['bower_components/foundation/scss', 'bower_components/bootstrap-sass/assets/stylesheets/bootstrap']
+        includePaths: ['bower_components/bootstrap-sass/assets/stylesheets/bootstrap']
       },
       dist: {
         options: {
@@ -12,15 +31,15 @@ module.exports = function(grunt) {
           sourceMap: true,
         },
         files: {
-          'css/app.css': 'scss/app.scss'
+          'app/css/app.css': 'scss/app.scss'
         }
       }
     },
-
+    
     watch: {
       livereload: {
         options: { livereload: true },
-        files: ['**/*.html'],
+        files: ['<%= config.app %>/**/*.html'],
       },
       grunt: {
         options: {
@@ -36,14 +55,23 @@ module.exports = function(grunt) {
         
       },
       css: {
-        files: 'css/*.css',
+        files: '<%= config.app %>/css/*.css',
         options: {
           livereload:true,
 
         }
       }
-      
+    },
+    serve: {
+        options: {
+            serve: {
+                path: 'app/'
+            }
+        }
     }
+
+    
+    
   });
 
   grunt.loadNpmTasks('grunt-sass');
@@ -51,5 +79,5 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-serve');
 
   grunt.registerTask('build', ['sass']);
-  grunt.registerTask('default', ['build','watch']);
+  grunt.registerTask('default', ['build', 'serve' , 'watch']);
 }
