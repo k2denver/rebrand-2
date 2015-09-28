@@ -77,7 +77,8 @@ body {
                 }
             }
             &:focus {
-                background-color:purple ul.sub-menu {
+                background-color:$k2-purple; 
+                ul.sub-menu {
                     display: block;
                 }
             }
@@ -281,7 +282,9 @@ body {
             top: 0px;
         }
     }
-    &__sub-menu-item {}
+    &__sub-menu-item {
+        background-color:red; 
+    }
 }
 
 .main-stage {

@@ -85,8 +85,10 @@ body {
           opacity: 1; }
         .bne > ul > li a:hover {
           color: #272d43; }
-      .bne > ul > li:focus background-color:purple ul.sub-menu, .bne > ul > li:focus background-color:purple ul.sub-menu--what-is-k2, .bne > ul > li:focus background-color:purple ul.sub-menu--how-people-use-k2, .bne > ul > li:focus background-color:purple ul.sub-menu--resources {
-        display: block; }
+      .bne > ul > li:focus {
+        background-color: #272d43; }
+        .bne > ul > li:focus ul.sub-menu, .bne > ul > li:focus ul.sub-menu--what-is-k2, .bne > ul > li:focus ul.sub-menu--how-people-use-k2, .bne > ul > li:focus ul.sub-menu--resources {
+          display: block; }
       .bne > ul > li:hover > span {
         border-bottom: 1px solid #00b5c8; }
       .bne > ul > li:hover > a {
@@ -219,6 +221,8 @@ body {
       width: 200px;
       left: 200px;
       top: 0px; }
+  .bne__sub-menu-item {
+    background-color: red; }
 
 .main-stage {
   background-image: url('/img/1/bg-home-placeholder.jpg');

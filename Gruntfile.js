@@ -32,6 +32,7 @@ var config = {
         },
         files: {
           'app/css/app.css': 'scss/app.scss'
+          
         }
       }
     },
@@ -70,8 +71,6 @@ var config = {
         }
     }
 
-    
-    
   });
 
   grunt.loadNpmTasks('grunt-sass');
