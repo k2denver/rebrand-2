@@ -47,13 +47,13 @@ $desktop-width: $screen-lg;
 
 
 @mixin tablet {
-  @media (min-width: #{$screen-md}) {
+  @media (min-width: #{$screen-sm-min}) {
     @content;
   }
 }
 
 @mixin desktop {
-  @media (min-width: #{$screen-lg}) {
+  @media (min-width: #{$screen-md-min}) {
     @content;
   }
 }

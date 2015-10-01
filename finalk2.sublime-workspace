@@ -1,0 +1,1359 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"k2",
+				"k2-purple"
+			],
+			[
+				"IN",
+				"inherit"
+			],
+			[
+				"__",
+				"__button--primary"
+			],
+			[
+				"backg",
+				"background-color"
+			],
+			[
+				"make",
+				"make-md-column"
+			],
+			[
+				"animaiton",
+				"animation-delay"
+			],
+			[
+				"tars",
+				"transform"
+			],
+			[
+				"in",
+				"inline"
+			],
+			[
+				"feature",
+				"feature-one"
+			],
+			[
+				"blue",
+				"blue-fade-inside"
+			],
+			[
+				"blue-",
+				"blue-fade-1"
+			],
+			[
+				"blue-f",
+				"blue-fade-outside"
+			],
+			[
+				"i",
+				"ifelse	<?php if (…) ?> … <?php else ?> … <?php endif ?>"
+			],
+			[
+				"sa",
+				"stateParams"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"text-",
+				"text-align"
+			],
+			[
+				"repeat",
+				"repeat-x"
+			],
+			[
+				"10px",
+				"10px"
+			],
+			[
+				"toB",
+				"toBeTruthy"
+			],
+			[
+				"toBe",
+				"toBeFalsy"
+			],
+			[
+				"zI",
+				"zIndex-7"
+			],
+			[
+				"z-",
+				"zIndex-7"
+			],
+			[
+				"z",
+				"zIndex-5"
+			],
+			[
+				"zInd",
+				"zIndex-9"
+			],
+			[
+				"or",
+				"k2-orange"
+			],
+			[
+				"trans",
+				"transition"
+			],
+			[
+				"stroke-dash",
+				"stroke-dashoffset"
+			],
+			[
+				"border",
+				"border-color"
+			],
+			[
+				"fan",
+				"fancybox-image	 jquery.fancybox.css"
+			],
+			[
+				"av",
+				"avenir-bold"
+			],
+			[
+				"ave",
+				"Avenir"
+			],
+			[
+				"avenir-l",
+				"AvenirNextLTW01-UltraLi"
+			],
+			[
+				"tr",
+				"transition"
+			],
+			[
+				"br",
+				"border-radius"
+			],
+			[
+				"bo",
+				"border"
+			],
+			[
+				"marg",
+				"margin-right"
+			],
+			[
+				"am",
+				"anim	animation"
+			],
+			[
+				"an",
+				"animation"
+			],
+			[
+				"media",
+				"mediaq7	media7"
+			],
+			[
+				"m",
+				"mediaq7	media7"
+			],
+			[
+				"fon",
+				"font-style"
+			],
+			[
+				"main",
+				"main-orange"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"aven",
+				"avenir-bold"
+			],
+			[
+				"background",
+				"background-image"
+			],
+			[
+				"back",
+				"background-position"
+			],
+			[
+				"background-",
+				"background-position"
+			],
+			[
+				"background-c",
+				"background-color"
+			],
+			[
+				"list-st",
+				"list-style-type"
+			],
+			[
+				"rb",
+				"rgba()"
+			],
+			[
+				"r",
+				"rgba()"
+			],
+			[
+				"inli",
+				"inline-block"
+			],
+			[
+				"bak",
+				"background-attachment"
+			],
+			[
+				"backgrou",
+				"background-position"
+			],
+			[
+				"list-l",
+				"list-style-position"
+			],
+			[
+				"ine",
+				"inline-block"
+			],
+			[
+				"of",
+				"offset"
+			],
+			[
+				"backgroun",
+				"background-size"
+			],
+			[
+				"bac",
+				"background-repeat"
+			],
+			[
+				"bacgkround",
+				"background-position"
+			],
+			[
+				"wi",
+				"max-width"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"list",
+				"list-d	list-style-type: disc;"
+			],
+			[
+				"tex",
+				"text-transform"
+			],
+			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"bacg",
+				"background-size"
+			],
+			[
+				"j",
+				"javascript"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"lits",
+				"list-style"
+			],
+			[
+				"font",
+				"font-style"
+			],
+			[
+				"padding",
+				"padding-bottom"
+			],
+			[
+				"min-",
+				"min-height"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/index.html",
+			"settings":
+			{
+				"buffer_size": 10881,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/css/app.css",
+			"settings":
+			{
+				"buffer_size": 19759,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "scss/custom/home.scss",
+			"settings":
+			{
+				"buffer_size": 4826,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/products.html",
+			"settings":
+			{
+				"buffer_size": 8330,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "scss/custom/_essentials.scss",
+			"settings":
+			{
+				"buffer_size": 8044,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_grid.scss",
+			"settings":
+			{
+				"buffer_size": 3345,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "scss/app.scss",
+			"settings":
+			{
+				"buffer_size": 157,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "\n\n\n// Debug Hide\n$debug_hide: block;\n\n// Overwrite CMS changes\n$overwrite-cms: true !default;\n\n\n// K2 Colors\n$k2-purple:#272d43;\n$k2-blue:#00b5c8;\n$k2-green:#81af41;\n\n\n\n//Typography\n\n$p-size-normal: 14px;\n$p-line-height-normal:18px;\n\n\n\n$avenir-ultra: \"AvenirNextLTW01-UltraLi\";\n$avenir-regular: \"AvenirNextLTW01-Regular\";\n$avenir-bold: \"Avenir Next LT W01 Bold\";\n\n$bulmer-smallcaps: \"Bulmer MT W01 SC\";\n$bulmer-italic: \"Bulmer MT W01 Italic\";\n\n\n\n\n\n%t-paragraph {\n	font-size:$p-size-normal;\n	line-height: $p-line-height-normal;\n}\n\n\n\n%button {\n    display: inline-block;\n    padding: 10px 15px;\n    background-color: black;\n    color: white;\n    text-transform: uppercase;\n    font-size: 14px;\n    margin-top:20px;\n    text-align: center;\n    white-space: nowrap;\n    touch-action: manipulation;\n    cursor: pointer;\n        -webkit-user-select: none;\n    &--green {\n        background-color: $k2-green;\n    }\n    &--blue {\n        background-color: $k2-blue;\n    }\n    &--bold {\n        font-weight: bold;\n    }\n    &:hover {\n       \n       // CMS over\n        @if $overwrite-cms {\n           color:white !important;\n        } @else {\n            color:white;\n        }\n    }\n}\n\n\n\n%g-main-stage {\n    position: relative;\n    background-repeat: no-repeat;\n    background-position: top center;\n    background-size: cover;\n}",
+			"file": "scss/custom/_custom-variables.scss",
+			"file_size": 1319,
+			"file_write_time": 130881258610000000,
+			"settings":
+			{
+				"buffer_size": 1320,
+				"line_ending": "Unix",
+				"name": "_custom-variables.scss"
+			}
+		},
+		{
+			"file": "scss/custom/_custom-mixins.scss",
+			"settings":
+			{
+				"buffer_size": 1007,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/k2blas/Desktop/priorities.txt",
+			"settings":
+			{
+				"buffer_size": 461,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "pack",
+		"selected_items":
+		[
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Remove Package"
+			],
+			[
+				"",
+				"About"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"package control en",
+				"Package Control: Enable Package"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 458.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/k2blas/Desktop/K2/K2.com/FINALK2",
+		"/Users/k2blas/Desktop/K2/K2.com/FINALK2/app",
+		"/Users/k2blas/Desktop/K2/K2.com/FINALK2/app/css",
+		"/Users/k2blas/Desktop/K2/K2.com/FINALK2/bower_components/bootstrap-sass",
+		"/Users/k2blas/Desktop/K2/K2.com/FINALK2/bower_components/bootstrap-sass/assets",
+		"/Users/k2blas/Desktop/K2/K2.com/FINALK2/bower_components/bootstrap-sass/assets/stylesheets",
+		"/Users/k2blas/Desktop/K2/K2.com/FINALK2/bower_components/bootstrap-sass/assets/stylesheets/bootstrap",
+		"/Users/k2blas/Desktop/K2/K2.com/FINALK2/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins",
+		"/Users/k2blas/Desktop/K2/K2.com/FINALK2/scss/custom",
+		"/Users/k2blas/Desktop/K2/K2.com/FINALK2/scss/vendor"
+	],
+	"file_history":
+	[
+		"/Users/k2blas/Desktop/K2/K2.com/FINALK2/app/department_detail.html",
+		"/Users/k2blas/Desktop/K2/K2.com/FINALK2/app/industry-overview.html",
+		"/Users/k2blas/Desktop/K2/Playground/generator-assemble/app/index.js",
+		"/Users/k2blas/Desktop/K2/Playground/generator-assemble/package.json",
+		"/Users/k2blas/Desktop/FRONTENDDEV/workshop-demo/br-frontend-tooling-demo/Gruntfile.coffee",
+		"/Users/k2blas/Desktop/FRONTENDDEV/workshop-demo/br-frontend-tooling-demo/data/index.yml",
+		"/Users/k2blas/Desktop/FRONTENDDEV/workshop-demo/br-frontend-tooling-demo/data/profile_info.yml",
+		"/Users/k2blas/Desktop/FRONTENDDEV/workshop-demo/br-frontend-tooling-demo/data/profile.yml",
+		"/Users/k2blas/Desktop/K2/Playground/generator-assemble/app/templates/Gruntfile.js",
+		"/Users/k2blas/Desktop/K2/K2.com/FINALK2/app/Products.html",
+		"/Users/k2blas/Desktop/K2/K2.com/FINALK2/app/Intro-to-business.html",
+		"/Users/k2blas/Desktop/K2/K2.com/FINALK2/scss/vendor/_bootstrap-custom.scss",
+		"/Users/k2blas/Desktop/K2/K2.com/FINALK2/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_grid.scss",
+		"/Users/k2blas/Desktop/K2/SAP/sap-landing-page/app/styles/_variables.scss",
+		"/Users/k2blas/Desktop/K2/SAP/sap-landing-page/app/styles/_typography.scss",
+		"/Users/k2blas/Desktop/K2/IGNITE INTERACTIVE WALL/.gitignore",
+		"/Users/k2blas/Desktop/K2/IGNITE INTERACTIVE WALL/scripts/app.js",
+		"/Users/k2blas/Desktop/K2/IGNITE INTERACTIVE WALL/index.html",
+		"/Users/k2blas/Desktop/index.html",
+		"/Users/k2blas/Desktop/K2/K2.com/FINALK2/scss/custom/_essential.scss",
+		"/Users/k2blas/Desktop/K2/K2.com/FINALK2/scss/custom/_essential.sccss",
+		"/Users/k2blas/Desktop/K2/K2.com/FINALK2/Gruntfile.js",
+		"/Users/k2blas/Desktop/K2/Backup/sept.28.newsection",
+		"/Users/k2blas/Desktop/K2/K2.com/FINALK2/divshot.json",
+		"/Users/k2blas/Desktop/K2/IGNITE INTERACTIVE WALL/divshot.json",
+		"/Users/k2blas/Desktop/K2/INTERNSHIP.K2.COM/Gemfile",
+		"/Users/k2blas/Downloads/zeroclipboard-2.2.0/test/index.html",
+		"/Users/k2blas/Desktop/K2/K2.com/Protype/finalk2/.git/config",
+		"/Users/k2blas/Desktop/K2/K2.com/Protype/finalk2/.gitignore",
+		"/Users/k2blas/Desktop/K2/K2.com/Protype/finalk2/divshot.json",
+		"/Users/k2blas/Desktop/K2/K2.com/K2FINAL/hello/bower.json",
+		"/Users/k2blas/Desktop/K2/K2.com/K2FINAL/hello/scss/vendor/_bootstrap-custom.scss",
+		"/Users/k2blas/Desktop/K2/K2.com/K2FINAL/hello/package.json",
+		"/Users/k2blas/Desktop/K2/K2.com/K2FINAL/hello/bower_components/bootstrap-sass/bower.json",
+		"/Users/k2blas/Desktop/K2/K2.com/K2FINAL/hello/bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss",
+		"/Users/k2blas/Desktop/K2/K2.com/K2FINAL/hello/Gruntfile.js",
+		"/Users/k2blas/Desktop/K2/finalk2/package.json",
+		"/Users/k2blas/Desktop/K2/K2.com/K2FINAL/hello/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_grid.scss",
+		"/Users/k2blas/Desktop/K2/K2.com/K2FINAL/hello/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss",
+		"/Users/k2blas/Desktop/K2/K2.com/K2FINAL/hello/css/live.css",
+		"/Users/k2blas/Desktop/K2/K2.com/K2FINAL/hello/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_grid.scss",
+		"/Users/k2blas/Desktop/K2/K2.com/K2FINAL/hello/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_grid-framework.scss",
+		"/Users/k2blas/Desktop/K2/K2.com/K2FINAL/hello/css/app.css",
+		"/Users/k2blas/Desktop/K2/K2.com/K2FINAL/hello/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_scaffolding.scss",
+		"/Users/k2blas/Downloads/bootstrap-sass-3.3.5 2/test/sass_test.rb",
+		"/Users/k2blas/Downloads/bootstrap-sass-3.3.5 2/templates/project/index.html",
+		"/Users/k2blas/Downloads/bootstrap-sass-3.3.5/composer.json",
+		"/Users/k2blas/Downloads/bootstrap-sass-3.3.5/templates/project/styles.sass",
+		"/Users/k2blas/Downloads/bootstrap-sass-3.3.5 2/assets/stylesheets/_bootstrap.scss",
+		"/Users/k2blas/Desktop/K2/K2.com/K2FINAL/hello/scss/custom/home.scss",
+		"/Users/k2blas/Desktop/K2/K2.com/HTML/index.html",
+		"/Users/k2blas/Desktop/K2/K2.com/K2FINAL/hello/scss/_settings.scss",
+		"/Users/k2blas/Desktop/K2/K2.com/K2FINAL/hello/js/app.js",
+		"/Users/k2blas/Downloads/bootstrap-sass-3.3.5 2/bootstrap-sass.gemspec",
+		"/Users/k2blas/Downloads/bootstrap-sass-3.3.5 2/templates/project/styles.sass",
+		"/Users/k2blas/Desktop/K2/K2.com/K2FINAL/hello/scss/custom/app.scss",
+		"/Volumes/dev/MasterPages/www.k2.comV5.2.Master",
+		"/Volumes/dev/Styles/K2ComV5Styles.css",
+		"/Users/k2blas/Desktop/K2/K2.com/K2FINAL/hello/bower_components/foundation/css/foundation.css",
+		"/Users/k2blas/Desktop/Folder/_export/baseerahmad23@gmail.com/20150529.html",
+		"/Users/k2blas/Desktop/Folder/style.css",
+		"/Users/k2blas/Desktop/Folder/_export/LIndsey/index.html",
+		"/Users/k2blas/Desktop/Folder/_export/LIndsey/20150901.html",
+		"/Users/k2blas/Desktop/Folder/_export/LIndsey/merged-file",
+		"/Users/k2blas/Desktop/TestSite/mike talk.txt",
+		"/Users/k2blas/Desktop/TestSite/css/style.css",
+		"/Users/k2blas/Desktop/foot.txt",
+		"/Users/k2blas/Downloads/foundation-5.5.2.custom/css/foundation.css",
+		"/Users/k2blas/Downloads/bootstrap-3.3.5-dist/css/bootstrap.css",
+		"/Users/k2blas/Desktop/K2/NEW K2.COM/Gruntfile.js",
+		"/Users/k2blas/Desktop/K2/NEW K2.COM/develop/scss/style.scss",
+		"/Users/k2blas/Desktop/K2/NEW K2.COM/package.json",
+		"/Users/k2blas/Downloads/tapestry-master/src/patterns/2.components/footer.md",
+		"/Users/k2blas/Downloads/tapestry-master/src/index.html",
+		"/Users/k2blas/Downloads/bootstrap-3.3.5-dist/index.html",
+		"/Users/k2blas/Downloads/tapestry-master/src/patterns/4. Blas/testing/text.md",
+		"/Users/k2blas/Downloads/tapestry-master/src/jade/layouts/_patterns.jade",
+		"/Users/k2blas/Downloads/tapestry-master/src/assets/js/templates/home.html",
+		"/Users/k2blas/Downloads/tapestry-master/src/assets/js/templates/jade/home.jade",
+		"/Users/k2blas/Desktop/K2/Playground/tapestry/src/jade/layouts/_patterns.jade",
+		"/Users/k2blas/Desktop/K2/Playground/tapestry/src/assets/js/templates/home.html",
+		"/Users/k2blas/Desktop/K2/Playground/tapestry/src/patterns/1.elements/3.Grids/grid-desktop.md",
+		"/Users/k2blas/Downloads/bootstrap-3.3.5-dist/css/bootstrap-theme.css",
+		"/Users/k2blas/Desktop/examle.xml",
+		"/Users/k2blas/Desktop/urlmapping.txt",
+		"/Users/k2blas/Desktop/all blog redirects.txt",
+		"/Users/k2blas/Desktop/K2/K2.com/Vertical/views/partials/_header.kit",
+		"/Users/k2blas/Desktop/K2/K2.com/Vertical/views/templates/single.html",
+		"/Users/k2blas/Dropbox (K2 Marketing Team)/.dropbox",
+		"/Volumes/healthcare.k2.com/index.html",
+		"/Volumes/healthcare.k2.com/patient-care-and-well-being/index.html",
+		"/Volumes/healthcare.k2.com/medical-practitioner/index.html",
+		"/Volumes/healthcare.k2.com/m/index.html",
+		"/Volumes/healthcare.k2.com/institutional-compliance-and-government/index.html",
+		"/Volumes/healthcare.k2.com/finance-and-treasury/index.html",
+		"/Volumes/healthcare.k2.com/.DS_Store",
+		"/Volumes/healthcare.k2.com/.apdisk",
+		"/Users/k2blas/Desktop/US/.DS_Store",
+		"/Users/k2blas/Desktop/US/test.woff",
+		"/Users/k2blas/Desktop/US/index.html",
+		"/Users/k2blas/Desktop/K2/K2.com/HTML/newswidget-backup.html",
+		"/Users/k2blas/Desktop/K2/K2.com/HTML/;",
+		"/Users/k2blas/Desktop/K2/K2.com/BPM/css/index.css",
+		"/Users/k2blas/Desktop/portalnav.html",
+		"/Users/k2blas/Desktop/newsig.html",
+		"/Users/k2blas/Desktop/K2/K2.com/HTML/news.html",
+		"/Users/k2blas/Desktop/K2/K2.com/HTML/litihum-featured-blog.html",
+		"/Users/k2blas/Desktop/urlMapping 2.zip.cpgz",
+		"/Users/k2blas/Desktop/K2 + Distributor Sigs/K2-Sig-Purple.html",
+		"/Users/k2blas/Desktop/K2 + Distributor Sigs/K2-Sig-Purple (distrubutor).html",
+		"/Users/k2blas/Desktop/K2 + Distributor Sigs/K2-Sig-Green (distributor).html",
+		"/Users/k2blas/Desktop/K2 + Distributor Sigs/K2-Sig-Green copy.html",
+		"/Users/k2blas/Desktop/K2 + Distributor Sigs/K2-Sig-blue.html",
+		"/Users/k2blas/Desktop/K2 + Distributor Sigs/K2-Sig-blue (Distributor).html",
+		"/Users/k2blas/Desktop/K2/K2.com/BPM/index.html",
+		"/Users/k2blas/Desktop/K2/K2.com/BPM/css/sass/index.scss",
+		"/Users/k2blas/Desktop/mustseeacts.jpg",
+		"/Users/k2blas/Desktop/K2/K2.com/BPM/.DS_Store",
+		"/Users/k2blas/Desktop/K2/K2.com/BPM/config.codekit",
+		"/Users/k2blas/Desktop/K2/K2.com/BPM/css/sass/_single-base.scss",
+		"/Users/k2blas/Desktop/naming see it live",
+		"/Users/k2blas/Desktop/K2-Sig-Purple copy.html",
+		"/Users/k2blas/Desktop/K2-Sig-blue copy.html",
+		"/Users/k2blas/Desktop/K2-Sig-Green copy 2.html",
+		"/Users/k2blas/Desktop/K2-Sig-Purple.html",
+		"/Users/k2blas/Desktop/K2-Sig-blue.html",
+		"/Users/k2blas/Desktop/K2-Sig-Green copy.html",
+		"/Users/k2blas/Desktop/new brand sigs/k2-sig-blue-vertical.htm"
+	],
+	"find":
+	{
+		"height": 46.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"<current file>",
+			"<current file>,<open folders>",
+			"<current file>",
+			"<open files>",
+			"<current file>",
+			"<open files>",
+			"<current file>",
+			"<open files>,/Users/k2blas/Desktop/K2/CoE",
+			"<current file>",
+			"index.html",
+			"easyvshard.com.html",
+			"<open files>",
+			"*",
+			"faq.html",
+			"index.html",
+			"",
+			"<current file>",
+			"<open files>",
+			"",
+			"index.html",
+			"*",
+			"index.html",
+			"styles.css",
+			"index.html",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			";\n",
+			"f2f3f2",
+			"italic",
+			"/styles/fonts/",
+			"mkv",
+			"stopall",
+			"video",
+			"energy",
+			"shell",
+			"shell.png",
+			"shell",
+			"video",
+			"blas",
+			"video",
+			".mkv",
+			"src=\"videos/",
+			"serve",
+			"time-grunt",
+			"time",
+			"config.app",
+			"app",
+			"blog",
+			"../bower_components/bootstrap-sass/assets/stylesheets/bootstrap",
+			"grid",
+			"class",
+			"grid",
+			"width",
+			"right-border",
+			"                                <li class=\"submenu-header\">Products </li>\n",
+			"grid",
+			"tabs",
+			"button",
+			"buttons",
+			".services {\n    @include grid-row;\n\n    .inside {\n        @include grid-column(6);\n\n        \n    }\n\n    .inside-right {\n    	@include grid-column(6);\n    }\n}\n",
+			"topbar",
+			".f3",
+			"row",
+			".f3 .smartling-de",
+			".f3 body",
+			".f3 .WhiteSite",
+			"body",
+			"$include-html-global-classes",
+			"$include-html-classes",
+			"transform-origin",
+			"0",
+			"9",
+			"8",
+			"7",
+			"6",
+			"5",
+			"4",
+			"3",
+			"2",
+			"1",
+			":",
+			"meta",
+			"<body>",
+			"</body>",
+			"<body>",
+			" <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css\"><link href=\"../style.css\" rel=\"stylesheet\" type=\"text/css\" /><script src=\"http://code.jquery.com/jquery-latest.min.js\" type=\"text/javascript\"></script>",
+			"<meta charset=\"utf-8\" />",
+			"</head>",
+			"</body>",
+			"</body></html><!DOCTYPE html><html lang=\"en\"><head>",
+			"head",
+			"include-html-classes",
+			"row",
+			"Technical Partner Webinar - ",
+			"JZ",
+			"window.document.getElementById(\"twitter-widget-0\")",
+			"file",
+			"hp-events-learn-more",
+			"hp-event-learn-more",
+			"View on Github",
+			"mascot",
+			"rem",
+			"px",
+			"em",
+			"rem",
+			"em",
+			"px",
+			"sort",
+			"menu",
+			"restadmin",
+			"admin",
+			"event",
+			"warm focus",
+			"lia-component-content-tag-widget",
+			"blog",
+			"tag-widget",
+			"tagName",
+			"tagCount",
+			"TexBoxReg",
+			"/us/",
+			"learn-more",
+			"replace",
+			"email",
+			"dom",
+			"email",
+			"dom",
+			"description",
+			"hover",
+			"with-submenus",
+			"with-submenus ",
+			"target=\"_blank\" ",
+			" class=\"\"",
+			"liclass",
+			"li ",
+			"class=\"\"",
+			"<img",
+			"width",
+			"img",
+			"<img",
+			"img",
+			"bottom",
+			"•	",
+			"routing",
+			"                \n",
+			"h2",
+			"item-heading",
+			"main",
+			"\\n",
+			"\\n^\\s*\\n",
+			" \\n^\\s*\\n",
+			"^/n",
+			"^//",
+			"^//n",
+			"^/n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"/fonts/",
+			".mp4",
+			"src=\"mp4/",
+			"../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap",
+			".f3.smartling-de",
+			"body.f3",
+			".f3.WhiteSite",
+			"",
+			"jQuery('[id*=\"twitter-widget-i\"]')",
+			"/",
+			"allow-subnav",
+			"",
+			"li class",
+			"li",
+			"",
+			"main.jpg",
+			".jpg //n",
+			".jpg /n",
+			"00aeca",
+			"69b241",
+			"http://www.appit.com/img/",
+			"",
+			"272d43",
+			"main-green",
+			"<span class=\"dj-name\">",
+			"?</strong>",
+			".mkv",
+			"images",
+			"video",
+			"images/",
+			"fonts/",
+			"styles/fonts/",
+			"images",
+			"rgba(0, 86, 150, 0.14)",
+			"rgb(0, 86, 150)",
+			"tyle=\"width: 95%\" type=\"text\"",
+			"style=\"width: 100%\" ",
+			"stroke-dasharray:1,10;",
+			".menu-icon",
+			"\"ultra-",
+			"ultra-",
+			"http://www.appit.com/img/81/",
+			"/img/87/",
+			"",
+			".addClass('under');",
+			"www.k2.com/displaycontent.aspx?id=90",
+			"tooltips",
+			"/img/46/",
+			"min-width",
+			"max-width",
+			"http://easyvshard.k2.com/img/",
+			"HELLOHELLO!",
+			"<h3>",
+			"",
+			"fonts",
+			"<h3><a class=\"btn-expander\" href=\"javascript:void(0)\"></a>",
+			"",
+			"/us",
+			"classLista",
+			".mp3\">",
+			" <li><a href=\"../T",
+			"..",
+			"global-contact-us",
+			"class=\"info-box\"",
+			"class=\"item\"",
+			"img/",
+			"img",
+			".",
+			"/img/",
+			"img/"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": false,
+		"whole_word": false,
+		"wrap": true
+	},
+	"folders":
+	[
+		{
+			"path": "/Users/k2blas/Desktop/K2/K2.com/FINALK2"
+		}
+	],
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10881,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								9314,
+								9314
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/css/app.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 19759,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								12609,
+								12609
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 7,
+			"sheets":
+			[
+				{
+					"buffer": 2,
+					"file": "scss/custom/home.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4826,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3033,
+								3033
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1827.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/products.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8330,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								680,
+								680
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "scss/custom/_essentials.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8044,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								501,
+								515
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_grid.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3345,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1404,
+								1390
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "scss/app.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 157,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								157,
+								157
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "scss/custom/_custom-variables.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1320,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								166,
+								166
+							]
+						],
+						"settings":
+						{
+							"auto_name": "_custom-variables.scss",
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "scss/custom/_custom-mixins.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1007,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								144,
+								144
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/Users/k2blas/Desktop/priorities.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 461,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								436,
+								436
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.457926829268,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.CSS Extended Completions":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 250.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 100.0
+	},
+	"pinned_build_system": "",
+	"project": "",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"hello hi"
+			],
+			[
+				"vertical.scss",
+				"css/sass/vertical.scss"
+			],
+			[
+				"tp",
+				"~/Desktop/K2/Appit.com/HTML/css/style.css"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 1,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 228.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

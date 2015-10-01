@@ -19,9 +19,8 @@ body {
 }
 
 .wrapper {
-    max-width:960px;
+    max-width: 960px;
     @include row(30px);
- 
 }
 
 .main-stage {
@@ -32,13 +31,11 @@ body {
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
-
     &__content {
         @include make-xs-column(11);
         @include make-xs-column-offset(0);
         @include make-sm-column-offset(1);
         @include make-sm-column(9);
-
     }
     &__title {
         // background-color:red;
@@ -46,48 +43,44 @@ body {
         text-transform: uppercase;
         color: $k2-green;
         font-size: 30px;
-
     }
     &__button--primary {
         @extend %button;
         @extend %button--blue;
-
         float: left;
-        font-weight:bold;
+        font-weight: bold;
     }
     &__button--secondary {}
 }
 
-
-.learn-more{
-    height:550px;
+.learn-more {
+    height: 550px;
     background-image: url('/img/1/learn-more--laptop.png');
-    background-color:#f2f3f2;
+    background-color: #f2f3f2;
     background-repeat: no-repeat;
-    background-position:50% 50%; 
-    background-size:100%;
+    background-position: 50% 50%;
+    background-size: 100%;
     @include tablet {
-        height:550px;
+        height: 550px;
         background-image: url('/img/1/learn-more--laptop.png');
-        background-color:#f2f3f2;
+        background-color: #f2f3f2;
         background-repeat: no-repeat;
-        background-position:50%;
+        background-position: 50%;
         background-size: initial;
     }
-    
-    &__content{
+    &__content {
         @include make-xs-column(12);
         @include make-xs-column-offset(0);
         @include make-sm-column-offset(8);
         @include make-sm-column(4);
-
-        height:20px;
+        height: 20px;
     }
     &__title {
-        margin-top:90px;
-        font-size:30px;
-        @include add-important(font-family, $bulmer-italic);
-        color:$k2-blue;
+        margin-top: 90px;
+        font-size: 30px; // make part of typography
+        @include add-important(font-family,
+        $bulmer-italic);
+        color: $k2-blue;
     }
     &__description {
         @extend %t-paragraph;
@@ -98,15 +91,103 @@ body {
     }
 }
 
+.departments {
+    text-align: center;
+    background-color: $k2-purple;
+    &__content {
+        @include make-xs-column(12);
+        padding: 50px 0px;
+    }
+    &__title {
+        font-size: 40px;
+        color: $k2-blue;
+        @include add-important(font-family, $bulmer-italic);
+    }
+    &__description {
+        @extend %t-paragraph;
+        max-width: 650px;
+        margin: 0 auto;
+        color: white;
+    }
+}
+
+.departments-list {
+    position: relative;
+    background-color: white;
+    height: 300px;
+    width: 100%;
+    &__triangle {
+        width: 30px;
+        height: 30px;
+        background-color: $k2-purple;
+        position: absolute;
+        left: 50%;
+        margin-left: -15px;
+    }
+    ul {
+        width: 100%;
+        li {
+            width: 50%;
+            background-color: yellow;
+            display: block;
+            float: left;
+            background-image: url('/img/1/departments-item-placeholder.jpg');
+            background-size: cover;
+            background-position: top center;
+            height: 350px;
+            position:relative;
+
+
+            @include tablet {
+                width: 33.3333333%;
+            }
+            @include desktop {
+                width: 16.666666666667%;
+            }
+            &:hover {
+                &:after {
+                    background-color:rgba(white, 0);
+                }
+            }
+            &:after {
+                content:'';
+                width:100%;
+                position:absolute;
+                background-color:rgba(white, .1);
+                position:absolute;
+                bottom:0px;
+                top:0px;
+                left:0px;
+                right:0px;
+                transition: background-color .3s ease;
+                z-index:1;
+            }
+            a {
+                background:rgba($k2-purple, .9);
+                color:white;
+                width:100%;
+                position:absolute;
+                bottom:0px;
+                left:0px;
+                font-weight:bold;
+                font-size:18px;
+                text-transform: uppercase;
+                padding:33px 0px;
+                z-index:2;
+                &:hover {
+                    @include add-important(color, $k2-purple);
+                     background:rgba($k2-blue , .9);
+                }
+            }
+        }
+    }
+}
+
 #template {
-    &__content{}
+    &__content {}
     &__title {}
     &__button--primary {}
 }
-
-
-
-
 
 // Main Stage Modifiers 
 .main-stage {
@@ -117,29 +198,11 @@ body {
     }
 }
 
-
-
-
 .clear {
     display: block;
 }
 
-
-.departments {
-    background-image: url('/img/1/bg-departments-placeholder.jpg');
-    height: 570px;
-    background-repeat: no-repeat;
-    background-position: top center;
-}
-
-.customers {
-    background-image: url('/img/1/bg-learn-more-placeholder.jpg');
-    height: 523px;
-    background-repeat: no-repeat;
-    background-position: top center;
-}
-
-
+.customers {}
 
 // SUPER BS OVERWRITES 
 .no-touch .learn-more:hover {
