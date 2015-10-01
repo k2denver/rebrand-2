@@ -1,0 +1,82 @@
+
+
+
+// Debug Hide
+$debug_hide: block;
+
+// Overwrite CMS changes
+$overwrite-cms: true !default;
+
+
+// K2 Colors
+$k2-purple:#272d43;
+$k2-blue:#00b5c8;
+$k2-green:#81af41;
+
+
+//Typography
+
+$p-size-normal: 14px;
+$p-line-height-normal:18px;
+
+
+
+$avenir-ultra: "AvenirNextLTW01-UltraLi";
+$avenir-regular: "AvenirNextLTW01-Regular";
+$avenir-bold: "Avenir Next LT W01 Bold";
+
+$bulmer-smallcaps: "Bulmer MT W01 SC";
+$bulmer-italic: "Bulmer MT W01 Italic";
+
+
+
+
+
+%t-paragraph {
+	font-size:$p-size-normal;
+	line-height: $p-line-height-normal;
+}
+
+
+
+%button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top:20px;
+    text-align: center;
+    white-space: nowrap;
+    touch-action: manipulation;
+    cursor: pointer;
+        -webkit-user-select: none;
+    &--green {
+        background-color: $k2-green;
+    }
+    &--blue {
+        background-color: $k2-blue;
+    }
+    &--bold {
+        font-weight: bold;
+    }
+    &:hover {
+       
+       // CMS over
+        @if $overwrite-cms {
+           color:white !important;
+        } @else {
+            color:white;
+        }
+    }
+}
+
+
+
+%g-main-stage {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}

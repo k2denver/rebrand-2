@@ -1,16 +1,6 @@
-
-
 @import "vendor/bootstrap-custom";
-
-
-html, body {
-  font-size: 100%; }
-
-
-
-
-
+@import "custom/custom-variables";
 @import "custom/custom-mixins"; 
+@import "custom/essentials";
 @import "custom/home"; 
 
-  
