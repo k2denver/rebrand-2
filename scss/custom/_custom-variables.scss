@@ -12,6 +12,8 @@ $overwrite-cms: true !default;
 $k2-purple:#272d43;
 $k2-blue:#00b5c8;
 $k2-green:#81af41;
+$k2-grey:#5d5d5d;
+
 
 
 //Typography
@@ -80,3 +82,39 @@ $bulmer-italic: "Bulmer MT W01 Italic";
     background-position: top center;
     background-size: cover;
 }
+
+
+%background-purple {
+	background-color: $k2-purple;
+}
+%background-blue {
+	background-color: $k2-blue;
+}
+%background-green {
+	background-color: $k2-green;
+}
+%background-white {
+	background-color: #ffffff;
+}
+
+
+
+%color-purple {
+	color: $k2-purple;
+}
+%color-blue {
+	color: $k2-blue;
+}
+%color-green {
+	color: $k2-green;
+}
+
+%color-grey {
+	color:$k2-grey;
+}
+
+%color-white {
+	color: #ffffff;
+}
+
+

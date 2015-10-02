@@ -41,7 +41,7 @@ body {
         // background-color:red;
         margin-top: 210px;
         text-transform: uppercase;
-        color: $k2-green;
+        @extend %color-green;
         font-size: 30px;
     }
     &__button--primary {
@@ -56,7 +56,7 @@ body {
 .learn-more {
     height: 550px;
     background-image: url('/img/1/learn-more--laptop.png');
-    background-color: #f2f3f2;
+    background-color: #ffffff;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 100%;
@@ -76,11 +76,11 @@ body {
         height: 20px;
     }
     &__title {
+        @include add-important(font-family, $bulmer-italic);
+        @extend %color-blue;
         margin-top: 90px;
         font-size: 30px; // make part of typography
-        @include add-important(font-family,
-        $bulmer-italic);
-        color: $k2-blue;
+       
     }
     &__description {
         @extend %t-paragraph;
@@ -92,37 +92,40 @@ body {
 }
 
 .departments {
+   background-color:#f2f3f2;
     text-align: center;
-    background-color: $k2-purple;
     &__content {
         @include make-xs-column(12);
         padding: 50px 0px;
     }
     &__title {
         font-size: 40px;
-        color: $k2-blue;
+        @extend %color-blue;
         @include add-important(font-family, $bulmer-italic);
     }
     &__description {
         @extend %t-paragraph;
+        @extend %color-grey;
         max-width: 650px;
         margin: 0 auto;
-        color: white;
+
     }
 }
 
 .departments-list {
     position: relative;
-    background-color: white;
+    
     height: 300px;
     width: 100%;
     &__triangle {
+
         width: 30px;
         height: 30px;
-        background-color: $k2-purple;
+        @extend %background-purple;
         position: absolute;
         left: 50%;
         margin-left: -15px;
+        z-index:2;
     }
     ul {
         width: 100%;
@@ -206,5 +209,5 @@ body {
 
 // SUPER BS OVERWRITES 
 .no-touch .learn-more:hover {
-    background-color: #f2f3f2;
+    background-color: #fff;
 }

@@ -186,6 +186,18 @@
   .main-stage__button--primary:hover, .learn-more__button--primary:hover {
     color: white !important; }
 
+.departments-list__triangle {
+  background-color: #272d43; }
+
+.learn-more__title, .departments__title {
+  color: #00b5c8; }
+
+.main-stage__title {
+  color: #81af41; }
+
+.departments__description {
+  color: #5d5d5d; }
+
 .header {
   max-width: 940px;
   height: 75px;
@@ -425,7 +437,6 @@ body {
   .main-stage__title {
     margin-top: 210px;
     text-transform: uppercase;
-    color: #81af41;
     font-size: 30px; }
   .main-stage__button--primary {
     float: left;
@@ -434,7 +445,7 @@ body {
 .learn-more {
   height: 550px;
   background-image: url('/img/1/learn-more--laptop.png');
-  background-color: #f2f3f2;
+  background-color: #ffffff;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: 100%; }
@@ -467,14 +478,13 @@ body {
         float: left;
         width: 33.3333333333%; } }
   .learn-more__title {
-    margin-top: 90px;
-    font-size: 30px;
     font-family: "Bulmer MT W01 Italic" !important;
-    color: #00b5c8; }
+    margin-top: 90px;
+    font-size: 30px; }
 
 .departments {
-  text-align: center;
-  background-color: #272d43; }
+  background-color: #f2f3f2;
+  text-align: center; }
   .departments__content {
     position: relative;
     float: left;
@@ -485,25 +495,22 @@ body {
     padding: 50px 0px; }
   .departments__title {
     font-size: 40px;
-    color: #00b5c8;
     font-family: "Bulmer MT W01 Italic" !important; }
   .departments__description {
     max-width: 650px;
-    margin: 0 auto;
-    color: white; }
+    margin: 0 auto; }
 
 .departments-list {
   position: relative;
-  background-color: white;
   height: 300px;
   width: 100%; }
   .departments-list__triangle {
     width: 30px;
     height: 30px;
-    background-color: #272d43;
     position: absolute;
     left: 50%;
-    margin-left: -15px; }
+    margin-left: -15px;
+    z-index: 2; }
   .departments-list ul {
     width: 100%; }
     .departments-list ul li {
@@ -560,6 +567,6 @@ body {
   display: block; }
 
 .no-touch .learn-more:hover {
-  background-color: #f2f3f2; }
+  background-color: #fff; }
 
 /*# sourceMappingURL=app.css.map */
