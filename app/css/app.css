@@ -446,6 +446,7 @@ body {
   height: 550px;
   background-image: url('/img/1/learn-more--laptop.png');
   background-color: #ffffff;
+  background-color: #ffffff !important;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: 100%; }
