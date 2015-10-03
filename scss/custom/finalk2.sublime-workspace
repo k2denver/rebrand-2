@@ -296,7 +296,7 @@
 	"buffers":
 	[
 		{
-			"file": "template/pages/index.hbs",
+			"file": "/Users/k2blas/Desktop/K2/K2.com/FINALK2/template/pages/index.hbs",
 			"settings":
 			{
 				"buffer_size": 2205,
@@ -305,7 +305,7 @@
 			}
 		},
 		{
-			"file": "template/data/homepage.yml",
+			"file": "/Users/k2blas/Desktop/K2/K2.com/FINALK2/template/data/homepage.yml",
 			"settings":
 			{
 				"buffer_size": 914,
@@ -313,7 +313,7 @@
 			}
 		},
 		{
-			"file": "template/default.hbs",
+			"file": "/Users/k2blas/Desktop/K2/K2.com/FINALK2/template/default.hbs",
 			"settings":
 			{
 				"buffer_size": 8212,
@@ -322,7 +322,7 @@
 			}
 		},
 		{
-			"file": "package.json",
+			"file": "/Users/k2blas/Desktop/K2/K2.com/FINALK2/package.json",
 			"settings":
 			{
 				"buffer_size": 620,
@@ -330,7 +330,7 @@
 			}
 		},
 		{
-			"file": "Gruntfile.js",
+			"file": "/Users/k2blas/Desktop/K2/K2.com/FINALK2/Gruntfile.js",
 			"settings":
 			{
 				"buffer_size": 2471,
@@ -338,7 +338,7 @@
 			}
 		},
 		{
-			"file": "app/css/app.css",
+			"file": "/Users/k2blas/Desktop/K2/K2.com/FINALK2/app/css/app.css",
 			"settings":
 			{
 				"buffer_size": 19892,
@@ -346,7 +346,7 @@
 			}
 		},
 		{
-			"file": "scss/custom/home.scss",
+			"file": "home.scss",
 			"settings":
 			{
 				"buffer_size": 4889,
@@ -354,7 +354,7 @@
 			}
 		},
 		{
-			"file": "scss/custom/_essentials.scss",
+			"file": "_essentials.scss",
 			"settings":
 			{
 				"buffer_size": 8044,
@@ -362,7 +362,7 @@
 			}
 		},
 		{
-			"file": "scss/custom/_custom-variables.scss",
+			"file": "_custom-variables.scss",
 			"settings":
 			{
 				"buffer_size": 1729,
@@ -371,7 +371,7 @@
 			}
 		},
 		{
-			"file": "scss/custom/_custom-mixins.scss",
+			"file": "_custom-mixins.scss",
 			"settings":
 			{
 				"buffer_size": 1007,
@@ -847,12 +847,6 @@
 		"whole_word": false,
 		"wrap": true
 	},
-	"folders":
-	[
-		{
-			"path": "/Users/k2blas/Desktop/K2/K2.com/FINALK2"
-		}
-	],
 	"groups":
 	[
 		{
@@ -861,7 +855,7 @@
 			[
 				{
 					"buffer": 0,
-					"file": "template/pages/index.hbs",
+					"file": "/Users/k2blas/Desktop/K2/K2.com/FINALK2/template/pages/index.hbs",
 					"semi_transient": false,
 					"settings":
 					{
@@ -903,7 +897,7 @@
 				},
 				{
 					"buffer": 1,
-					"file": "template/data/homepage.yml",
+					"file": "/Users/k2blas/Desktop/K2/K2.com/FINALK2/template/data/homepage.yml",
 					"semi_transient": false,
 					"settings":
 					{
@@ -943,7 +937,7 @@
 				},
 				{
 					"buffer": 2,
-					"file": "template/default.hbs",
+					"file": "/Users/k2blas/Desktop/K2/K2.com/FINALK2/template/default.hbs",
 					"semi_transient": false,
 					"settings":
 					{
@@ -985,7 +979,7 @@
 				},
 				{
 					"buffer": 3,
-					"file": "package.json",
+					"file": "/Users/k2blas/Desktop/K2/K2.com/FINALK2/package.json",
 					"semi_transient": false,
 					"settings":
 					{
@@ -1026,7 +1020,7 @@
 				},
 				{
 					"buffer": 4,
-					"file": "Gruntfile.js",
+					"file": "/Users/k2blas/Desktop/K2/K2.com/FINALK2/Gruntfile.js",
 					"semi_transient": false,
 					"settings":
 					{
@@ -1067,7 +1061,7 @@
 				},
 				{
 					"buffer": 5,
-					"file": "app/css/app.css",
+					"file": "/Users/k2blas/Desktop/K2/K2.com/FINALK2/app/css/app.css",
 					"semi_transient": false,
 					"settings":
 					{
@@ -1114,7 +1108,7 @@
 			[
 				{
 					"buffer": 6,
-					"file": "scss/custom/home.scss",
+					"file": "home.scss",
 					"semi_transient": false,
 					"settings":
 					{
@@ -1155,7 +1149,7 @@
 				},
 				{
 					"buffer": 7,
-					"file": "scss/custom/_essentials.scss",
+					"file": "_essentials.scss",
 					"semi_transient": false,
 					"settings":
 					{
@@ -1196,7 +1190,7 @@
 				},
 				{
 					"buffer": 8,
-					"file": "scss/custom/_custom-variables.scss",
+					"file": "_custom-variables.scss",
 					"semi_transient": false,
 					"settings":
 					{
@@ -1225,7 +1219,7 @@
 				},
 				{
 					"buffer": 9,
-					"file": "scss/custom/_custom-mixins.scss",
+					"file": "_custom-mixins.scss",
 					"semi_transient": false,
 					"settings":
 					{
@@ -1345,7 +1339,7 @@
 		"height": 100.0
 	},
 	"pinned_build_system": "",
-	"project": "",
+	"project": "finalk2.sublime-project",
 	"replace":
 	{
 		"height": 42.0
