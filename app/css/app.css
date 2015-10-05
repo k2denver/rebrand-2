@@ -904,4 +904,80 @@ body header {
   background-color: #fff; }
 
 /*# sourceMappingURL=app.css.map */
+.wrapper {
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto; }
+  .wrapper:before, .wrapper:after {
+    content: " ";
+    display: table; }
+  .wrapper:after {
+    clear: both; }
+
+.product-main-stage {
+  background-image: url('/img/1/product-main-stage.jpg');
+  background-position: bottom center;
+  background-size: cover;
+  height: 883px;
+  text-align: center; }
+  .product-main-stage__content {
+    position: relative;
+    float: left;
+    width: 83.3333333333%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 8.3333333333%; }
+  .product-main-stage__title {
+    font-size: 35px;
+    margin-top: 50px;
+    margin-bottom: 20px; }
+  .product-main-stage__appit {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px; }
+    @media (min-width: 992px) {
+      .product-main-stage__appit {
+        float: left;
+        width: 50%; } }
+    @media (min-width: 768px) {
+      .product-main-stage__appit img {
+        width: 329px; } }
+  .product-main-stage__blackpearl {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px; }
+    @media (min-width: 992px) {
+      .product-main-stage__blackpearl {
+        float: left;
+        width: 50%; } }
+    @media (min-width: 768px) {
+      .product-main-stage__blackpearl img {
+        width: 235px; } }
+  .product-main-stage__section {
+    background: rgba(255, 255, 255, 0.32);
+    overflow: hidden;
+    padding: 20px; }
+  .product-main-stage__bottom-cta {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px; }
+
 /*# sourceMappingURL=app.css.map */

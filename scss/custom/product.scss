@@ -1,0 +1,58 @@
+.wrapper {
+    max-width: 960px;
+    @include row(30px);
+}
+
+.product-main-stage {
+  background-image:url('/img/1/product-main-stage.jpg');
+  background-position:bottom center;
+  background-size:cover;
+  height:883px;
+  text-align: center;
+  &__content{
+   @include make-xs-column(10);
+   @include make-xs-column-offset(1);
+  }
+  &__title {
+    
+    font-size:35px;
+    margin-top:50px;
+    margin-bottom:20px;
+    
+  }
+  &__products-container {}
+  &__appit {
+    @include make-xs-column(12);
+    @include make-md-column(6);
+    @include tablet {
+        img {
+          width:329px;
+        }
+      }
+  }
+  &__blackpearl {
+    @include make-xs-column(12);
+    @include make-md-column(6);
+     @include tablet {
+      img {
+        width:235px;
+      }
+    }
+  }
+  &__section {
+    background:white(0.32);
+    overflow:hidden;
+    padding:20px;
+  }
+  &__section-title {}
+  &__section-description {}
+
+  &__bottom-cta {
+      @include make-xs-column(12);
+  }
+}
+
+// product-appit.png
+// product-main-stage.jpg
+// product-vidoe-placeholder.jpg
+// prorduct-blackpearl.png
