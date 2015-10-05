@@ -9,3 +9,7 @@ learn-more__description: " K2 brings together the best of traditional BPM, packa
 #DEPARTMENTS SLICE
 departments__title: "Find the solution that’s right for you"
 departments__description: "More than ever, people are empowered to create or influence applications that will improve process in their department. K2 gives you complete control, so these solutions match your needs precisely."
+
+#CUSTOMERS SLICE
+customers__title: "Learn how companies like these use K2"
+customers__title--cta: "see all case studies"

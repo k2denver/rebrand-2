@@ -166,6 +166,10 @@
   font-size: 14px;
   line-height: 18px; }
 
+.customers__title {
+  font-size: 40px;
+  font-family: "Bulmer MT W01 Italic" !important; }
+
 .main-stage__button--primary, .learn-more__button--primary {
   display: inline-block;
   padding: 10px 15px;
@@ -186,7 +190,25 @@
   .main-stage__button--primary:hover, .learn-more__button--primary:hover {
     color: white !important; }
 
-.departments-list__triangle {
+.customers__cta {
+  font-weight: bold;
+  display: inline-block;
+  position: relative; }
+  .customers__cta:after {
+    content: '';
+    height: 1px;
+    width: 60%;
+    background-color: white;
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    margin-left: -30%;
+    transition: all .3s ease; }
+  .customers__cta:hover:after {
+    width: 100%;
+    margin-left: -50%; }
+
+.departments-list__triangle, .customers {
   background-color: #272d43; }
 
 .learn-more__title, .departments__title {
@@ -503,7 +525,7 @@ body {
 
 .departments-list {
   position: relative;
-  height: 300px;
+  overflow: hidden;
   width: 100%; }
   .departments-list__triangle {
     width: 30px;
@@ -519,11 +541,11 @@ body {
       background-color: yellow;
       display: block;
       float: left;
-      background-image: url('/img/1/departments-item-placeholder.jpg');
       background-size: cover;
-      background-position: top center;
+      background-position: center center;
       height: 350px;
-      position: relative; }
+      position: relative;
+      cursor: pointer; }
       @media (min-width: 768px) {
         .departments-list ul li {
           width: 33.3333333%; } }
@@ -532,6 +554,9 @@ body {
           width: 16.6666666667%; } }
       .departments-list ul li:hover:after {
         background-color: rgba(255, 255, 255, 0); }
+      .departments-list ul li:hover a {
+        color: white !important;
+        background: rgba(0, 181, 200, 0.9); }
       .departments-list ul li:after {
         content: '';
         width: 100%;
@@ -545,8 +570,8 @@ body {
         transition: background-color .3s ease;
         z-index: 1; }
       .departments-list ul li a {
-        background: rgba(39, 45, 67, 0.9);
-        color: white;
+        background: rgba(255, 255, 255, 0.9);
+        color: #5d5d5d;
         width: 100%;
         position: absolute;
         bottom: 0px;
@@ -555,17 +580,95 @@ body {
         font-size: 18px;
         text-transform: uppercase;
         padding: 33px 0px;
-        z-index: 2; }
-        .departments-list ul li a:hover {
-          color: #272d43 !important;
-          background: rgba(0, 181, 200, 0.9); }
+        z-index: 2;
+        transition: background-color 0.2s ease; }
+
+.departments-list__human-resources {
+  background-image: url('/img/1/customer-resources.jpg'); }
+.departments-list__financing {
+  background-image: url('/img/1/customer-finance.jpg'); }
+.departments-list__operations {
+  background-image: url('/img/1/customer-opeartions.jpg'); }
+.departments-list__purchasing {
+  background-image: url('/img/1/customer-purchasing.jpg'); }
+.departments-list__sales-marketing {
+  background-image: url('/img/1/customer-sales-and-marketing.jpg'); }
+.departments-list__it {
+  background-image: url('/img/1/customer-it.jpg'); }
+
+.customers {
+  text-align: center;
+  padding-bottom: 50px; }
+  .customers__title {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #00b5c8;
+    margin: 40px 0px 10px; }
+  .customers__logos {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px; }
+    .customers__logos * {
+      vertical-align: middle;
+      text-align: center; }
+    .customers__logos ul {
+      width: 100%;
+      text-align: center; }
+    .customers__logos li {
+      width: 100%;
+      text-align: center;
+      padding: 10px; }
+      @media (min-width: 768px) {
+        .customers__logos li {
+          width: auto;
+          float: left;
+          padding: 10px 30px; } }
+    .customers__logos a {
+      height: 50px; }
+      @media (min-width: 768px) {
+        .customers__logos a {
+          display: table-cell;
+          vertical-align: middle; } }
+  .customers__cta {
+    padding-top: 20px;
+    font-size: 17px;
+    color: white !important; }
+
+.customers__cta {
+  font-weight: bold;
+  display: inline-block;
+  position: relative; }
+  .customers__cta:after {
+    content: '';
+    height: 1px;
+    width: 60%;
+    background-color: white;
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    margin-left: -30%;
+    transition: all .3s ease; }
+  .customers__cta:hover:after {
+    width: 100%;
+    margin-left: -50%; }
+
+#template {
+  background-color: #f2f3f2; }
 
 .main-stage.-homepage {
   background-image: url('/img/1/bg-home-placeholder.jpg');
   height: 523px; }
 
 .clear {
-  display: block; }
+  clear: both; }
 
 .no-touch .learn-more:hover {
   background-color: #fff; }

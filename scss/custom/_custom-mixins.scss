@@ -20,14 +20,6 @@
 }
 
 
-@mixin add-important($property, $value)  {
-    @if $overwrite-cms {
-           #{$property}:$value !important;
-        } @else {
-            #{$property}:$value;
-        }
-
-}
 
 
 $tablet-width: $screen-md;
