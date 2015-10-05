@@ -1,0 +1,215 @@
+// OVERWRITES
+body header {
+    background-color: transparent;
+}
+
+body {
+    background-color: purple;
+}
+
+.wrapper-header {
+    background-color: white(0.7);
+    width: 100%;
+    z-index: 10;
+    position: relative;
+}
+
+.row {
+    width: 960px;
+}
+
+.wrapper {
+    max-width: 960px;
+    @include row(30px);
+}
+
+.main-stage {
+    //Include Bootstrap Properties
+    @include container-fixed(0px);
+    //self
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    &__content {
+        @include make-xs-column(11);
+        @include make-xs-column-offset(0);
+        @include make-sm-column-offset(1);
+        @include make-sm-column(9);
+    }
+    &__title {
+        // background-color:red;
+        margin-top: 210px;
+        text-transform: uppercase;
+        @extend %color-green;
+        font-size: 30px;
+    }
+    &__button--primary {
+        @extend %button;
+        @extend %button--blue;
+        float: left;
+        font-weight: bold;
+    }
+    &__button--secondary {}
+}
+
+.learn-more {
+    height: 550px;
+    background-image: url('/img/1/learn-more--laptop.png');
+    background-color: #ffffff;
+     @include add-important(background-color, #ffffff);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100%;
+    @include tablet {
+        height: 550px;
+        background-image: url('/img/1/learn-more--laptop.png');
+        background-color: #f2f3f2;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-size: initial;
+    }
+    &__content {
+        @include make-xs-column(12);
+        @include make-xs-column-offset(0);
+        @include make-sm-column-offset(8);
+        @include make-sm-column(4);
+        height: 20px;
+    }
+    &__title {
+        @include add-important(font-family, $bulmer-italic);
+        @extend %color-blue;
+        margin-top: 90px;
+        font-size: 30px; // make part of typography
+       
+    }
+    &__description {
+        @extend %t-paragraph;
+    }
+    &__button--primary {
+        @extend %button;
+        @extend %button--green;
+    }
+}
+
+.departments {
+   background-color:#f2f3f2;
+
+    text-align: center;
+    &__content {
+        @include make-xs-column(12);
+        padding: 50px 0px;
+    }
+    &__title {
+        font-size: 40px;
+        @extend %color-blue;
+        @include add-important(font-family, $bulmer-italic);
+    }
+    &__description {
+        @extend %t-paragraph;
+        @extend %color-grey;
+        max-width: 650px;
+        margin: 0 auto;
+
+    }
+}
+
+.departments-list {
+    position: relative;
+    
+    height: 300px;
+    width: 100%;
+    &__triangle {
+
+        width: 30px;
+        height: 30px;
+        @extend %background-purple;
+        position: absolute;
+        left: 50%;
+        margin-left: -15px;
+        z-index:2;
+    }
+    ul {
+        width: 100%;
+        li {
+            width: 50%;
+            background-color: yellow;
+            display: block;
+            float: left;
+            background-image: url('/img/1/departments-item-placeholder.jpg');
+            background-size: cover;
+            background-position: top center;
+            height: 350px;
+            position:relative;
+
+
+            @include tablet {
+                width: 33.3333333%;
+            }
+            @include desktop {
+                width: 16.666666666667%;
+            }
+            &:hover {
+                &:after {
+                    background-color:rgba(white, 0);
+                }
+            }
+            &:after {
+                content:'';
+                width:100%;
+                position:absolute;
+                background-color:rgba(white, .1);
+                position:absolute;
+                bottom:0px;
+                top:0px;
+                left:0px;
+                right:0px;
+                transition: background-color .3s ease;
+                z-index:1;
+            }
+            a {
+                background:rgba($k2-purple, .9);
+                color:white;
+                width:100%;
+                position:absolute;
+                bottom:0px;
+                left:0px;
+                font-weight:bold;
+                font-size:18px;
+                text-transform: uppercase;
+                padding:33px 0px;
+                z-index:2;
+                &:hover {
+                    @include add-important(color, $k2-purple);
+                     background:rgba($k2-blue , .9);
+                }
+            }
+        }
+    }
+}
+
+#template {
+    &__content {}
+    &__title {}
+    &__button--primary {}
+}
+
+// Main Stage Modifiers 
+.main-stage {
+    &.-homepage {
+        //extend from global main stage
+        background-image: url('/img/1/bg-home-placeholder.jpg');
+        height: 523px;
+    }
+}
+
+.clear {
+    display: block;
+}
+
+.customers {}
+
+// SUPER BS OVERWRITES 
+.no-touch .learn-more:hover {
+    background-color: #fff;
+}
