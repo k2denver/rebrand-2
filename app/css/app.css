@@ -162,7 +162,7 @@
   .hidden-print {
     display: none !important; } }
 
-.learn-more__description, .departments__description {
+.learn-more__description, .departments__description, .how-to-buy__description {
   font-size: 14px;
   line-height: 18px; }
 
@@ -170,10 +170,16 @@
   font-size: 40px;
   font-family: "Bulmer MT W01 Italic" !important; }
 
-.main-stage__button--primary, .learn-more__button--primary {
+.event-info__title, .how-to-buy__title {
+  font-family: "Avenir Next LT W01 Bold" !important;
+  font-size: 24px;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin: 40px 0px; }
+
+.main-stage__button--primary, .learn-more__button--primary, .how-to-buy__button--primary {
   display: inline-block;
   padding: 10px 15px;
-  background-color: black;
   color: white;
   text-transform: uppercase;
   font-size: 14px;
@@ -183,30 +189,72 @@
   touch-action: manipulation;
   cursor: pointer;
   -webkit-user-select: none; }
-  .learn-more__button--primary {
+  .learn-more__button--primary, .how-to-buy__button--primary {
     background-color: #81af41; }
+    .learn-more__button--primary:hover, .how-to-buy__button--primary:hover {
+      background-color: #00b5c8; }
   .main-stage__button--primary {
     background-color: #00b5c8; }
-  .main-stage__button--primary:hover, .learn-more__button--primary:hover {
+    .main-stage__button--primary:hover {
+      background-color: #81af41; }
+  .main-stage__button--primary:hover, .learn-more__button--primary:hover, .how-to-buy__button--primary:hover {
     color: white !important; }
 
-.customers__cta {
+.customers__cta, .event-info__button--primary {
   font-weight: bold;
   display: inline-block;
-  position: relative; }
-  .customers__cta:after {
+  position: relative;
+  margin: 20px 0px; }
+  .customers__cta:after, .event-info__button--primary:after {
     content: '';
     height: 1px;
     width: 60%;
-    background-color: white;
     position: absolute;
     bottom: -6px;
     left: 50%;
     margin-left: -30%;
     transition: all .3s ease; }
-  .customers__cta:hover:after {
+  .customers__cta:hover:after, .event-info__button--primary:hover:after {
     width: 100%;
     margin-left: -50%; }
+
+.event-info__single-event-cta {
+  position: relative;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-left: -13px; }
+  .event-info__single-event-cta:after {
+    content: '';
+    position: absolute;
+    right: -13px;
+    transition: all 0.2s ease;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 6px solid #00b5c8;
+    margin-top: 3px; }
+  .event-info__single-event-cta:hover:after {
+    right: -16px; }
+
+@media (min-width: 768px) {
+  .event-info__columns {
+    text-align: justify;
+    -ms-text-justify: distribute-all-lines;
+    text-justify: distribute-all-lines; } }
+@media (min-width: 768px) {
+  .event-info__single-event {
+    vertical-align: top;
+    display: inline-block;
+    *display: inline;
+    zoom: 1; } }
+@media (min-width: 768px) {
+  .event-info__columns:after {
+    content: '';
+    width: 100%;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0; } }
 
 .departments-list__triangle, .customers {
   background-color: #272d43; }
@@ -401,9 +449,6 @@
 body header {
   background-color: transparent; }
 
-body {
-  background-color: purple; }
-
 .wrapper-header {
   background-color: rgba(255, 255, 255, 0.7);
   width: 100%;
@@ -416,7 +461,8 @@ body {
 .wrapper {
   max-width: 960px;
   margin-right: auto;
-  margin-left: auto; }
+  margin-left: auto;
+  height: 100%; }
   .wrapper:before, .wrapper:after {
     content: " ";
     display: table; }
@@ -638,30 +684,88 @@ body {
           display: table-cell;
           vertical-align: middle; } }
   .customers__cta {
+    color: white !important;
     padding-top: 20px;
     font-size: 17px;
     color: white !important; }
+    .customers__cta:after {
+      background-color: white !important; }
+    .customers__cta:hover {
+      color: white !important; }
 
-.customers__cta {
-  font-weight: bold;
-  display: inline-block;
-  position: relative; }
-  .customers__cta:after {
-    content: '';
-    height: 1px;
-    width: 60%;
-    background-color: white;
-    position: absolute;
-    bottom: -6px;
-    left: 50%;
-    margin-left: -30%;
-    transition: all .3s ease; }
-  .customers__cta:hover:after {
-    width: 100%;
-    margin-left: -50%; }
-
-#template {
+.event-info {
   background-color: #f2f3f2; }
+  .event-info__content {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center; }
+    @media (min-width: 768px) {
+      .event-info__content {
+        position: relative;
+        float: left;
+        width: 83.3333333333%;
+        min-height: 1px;
+        padding-left: 15px;
+        padding-right: 15px; }
+        @media (min-width: 768px) {
+          .event-info__content {
+            margin-left: 8.3333333333%; } } }
+  .event-info__title {
+    color: #00b5c8;
+    text-align: center; }
+  .event-info__columns {
+    width: 100%; }
+  .event-info__single-event {
+    background-color: white;
+    width: 220px;
+    margin: auto; }
+  .event-info__single-event-description {
+    text-align: center;
+    padding: 30px 10px; }
+    .event-info__single-event-description p {
+      font-weight: bold !important;
+      color: #5d5d5d !important;
+      font-size: 18px; }
+  .event-info__single-event-cta {
+    font-weight: bold !important;
+    color: #00b5c8 !important; }
+  .event-info__button--primary {
+    color: #5d5d5d !important; }
+    .event-info__button--primary:after {
+      background-color: #5d5d5d !important; }
+    .event-info__button--primary:hover {
+      color: #5d5d5d !important; }
+
+.how-to-buy {
+  padding: 20px 0px 50px; }
+  .how-to-buy__content {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center; }
+    @media (min-width: 768px) {
+      .how-to-buy__content {
+        position: relative;
+        float: left;
+        width: 83.3333333333%;
+        min-height: 1px;
+        padding-left: 15px;
+        padding-right: 15px; }
+        @media (min-width: 768px) {
+          .how-to-buy__content {
+            margin-left: 8.3333333333%; } } }
+  .how-to-buy__title {
+    color: #00b5c8;
+    margin-bottom: 30px; }
+  .how-to-buy__description {
+    margin-bottom: 20px; }
 
 .main-stage.-homepage {
   background-image: url('/img/1/bg-home-placeholder.jpg');

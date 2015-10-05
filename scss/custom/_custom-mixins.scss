@@ -49,3 +49,18 @@ $desktop-width: $screen-lg;
     @content;
   }
 }
+
+@mixin cta-underline($color) {
+	@extend %cta-underline;
+	@include add-important(color, $color);
+	  &:after {
+	  	@include add-important(background-color, $color);
+	  }
+	  &:hover {
+	  	@include add-important(color, $color);
+	  }
+
+}
+
+
+

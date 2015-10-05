@@ -13,3 +13,7 @@ departments__description: "More than ever, people are empowered to create or inf
 #CUSTOMERS SLICE
 customers__title: "Learn how companies like these use K2"
 customers__title--cta: "see all case studies"
+
+
+how-to-buy__title: "How to buy"
+how-to-buy__description: "Want to see K2 in action? Click below to learn how easy it can be to build and run business process applications with forms, workflow, data and reports."
