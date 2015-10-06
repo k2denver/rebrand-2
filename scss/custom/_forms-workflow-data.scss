@@ -1,0 +1,82 @@
+// Forrester-Logo.jpg
+// learn-more-forrester-bg.jpg
+// learn-more-graph.jpg
+// learn-more-main-stage.jpg
+// mobile-graph5.png
+// mobile-graph4.png
+// mobile-graph3.png
+// mobile-graph2.png
+// mobile-graph1.png
+
+
+.fwd {
+    padding:40px 0px;
+    height:430px;
+    &__left {
+        @include make-xs-column(12);
+        @include make-sm-column(8, 0px);
+    position:relative;
+
+    
+    
+    }
+
+    &__right {
+         @include make-xs-column(12);
+         @include make-sm-column(4 , 0px);
+
+        &-title {
+            @extend %t-heading-bulmer;
+            line-height:24px;
+                line-height: 39px;
+                color:$k2-green;
+                margin-top:0px;
+        }
+        &-description {
+            @extend %t-paragraph; 
+        }
+
+    }
+
+    &__computer {
+        position:absolute;
+        top:0px;
+        right:0px;
+        z-index:5;
+    }
+    &__screen {
+         position:absolute;
+        top:0px;
+        right:0px;
+        z-index:2;
+        width:350px;
+        top: 12px;
+        right: 70px;
+        height:200px;
+        overflow:hidden;
+
+    }
+    &__slides {
+        position:absolute;
+         top:0px;
+         transition:top 0.7s ease;
+        &.-one {
+            top:0px;
+
+        }
+        &.-two {
+            top:-200px;
+
+        }
+        &.-three {
+            top:-400px;
+
+        }
+        &.-four {
+            top:-600px;
+
+        }
+        
+    }
+
+}

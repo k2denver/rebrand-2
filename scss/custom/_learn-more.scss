@@ -31,6 +31,11 @@
         @include make-sm-column(10);
         @include make-sm-column-offset(1);
 
+        &.extend {
+            @include make-xs-column(12);
+            @include make-xs-column-offset(0);
+        }
+
     }
     ul {
         float:left;
