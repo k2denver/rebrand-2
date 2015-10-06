@@ -219,6 +219,33 @@ $bulmer-italic: "Bulmer MT W01 Italic";
 }
 
 
+%simple-slice {
+    padding: 40px 0px;
+    border-top: 5px solid white;
+    text-align: center;
+    &__content {
+        @include make-xs-column(12);
+        @include make-xs-column-offset(0);
+        @include make-sm-column(8);
+        @include make-sm-column-offset(2);
+    }
+    &__title {
+        margin: 10px 0px;
+    }
+    &__description {
+        @extend %t-paragraph;
+        color: white;
+    }
+        br {
+        display:none;
+       @include tablet {
+        display:auto;
+       }
+    }
+}
+
+
+
 %background-purple {
 	background-color: $k2-purple;
 }

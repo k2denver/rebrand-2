@@ -114,8 +114,9 @@
             ul.sub-menu {
                 position: absolute;
                 width: 250px;
-                background-color: white(0.7);
+                
                 //display: none;
+                background-color: white(0.88);
                 list-style: none;
                 list-style-type: none;
                 top: 58px;
@@ -252,6 +253,6 @@
         }
     }
     &__sub-menu-item {
-        background-color:red; 
+        //background-color:red; 
     }
 }

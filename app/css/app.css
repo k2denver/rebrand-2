@@ -106,6 +106,37 @@
       font-size: 0;
       line-height: 0; } }
 
+.products-slice, .one-miniute-video-slice {
+  padding: 40px 0px;
+  border-top: 5px solid white;
+  text-align: center; }
+  .products-slice__content, .one-miniute-video-slice__content {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 0%;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px; }
+    @media (min-width: 768px) {
+      .products-slice__content, .one-miniute-video-slice__content {
+        float: left;
+        width: 66.6666666667%; } }
+    @media (min-width: 768px) {
+      .products-slice__content, .one-miniute-video-slice__content {
+        margin-left: 16.6666666667%; } }
+  .products-slice__title, .one-miniute-video-slice__title {
+    margin: 10px 0px; }
+  .products-slice br, .one-miniute-video-slice br {
+    display: none; }
+    @media (min-width: 768px) {
+      .products-slice br, .one-miniute-video-slice br {
+        display: auto; } }
+
 .header {
   max-width: 940px;
   height: 75px;
@@ -184,7 +215,7 @@
       .bne > ul > li ul.sub-menu, .bne > ul > li ul.sub-menu--what-is-k2, .bne > ul > li ul.sub-menu--how-people-use-k2, .bne > ul > li ul.sub-menu--resources {
         position: absolute;
         width: 250px;
-        background-color: rgba(255, 255, 255, 0.7);
+        background-color: rgba(255, 255, 255, 0.88);
         list-style: none;
         list-style-type: none;
         top: 58px;
@@ -281,8 +312,6 @@
       width: 200px;
       left: 200px;
       top: 0px; }
-  .bne__sub-menu-item {
-    background-color: red; }
 
 .learn-more__description, .departments__description, .how-to-buy__description {
   font-size: 14px;
@@ -401,223 +430,6 @@
 .departments__description {
   color: #5d5d5d; }
 
-.header {
-  max-width: 940px;
-  height: 75px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px; }
-
-.header:before, .header:after {
-  content: " ";
-  display: table; }
-
-.header:after {
-  clear: both; }
-
-.header__logo {
-  width: 70px;
-  height: 80px;
-  margin-left: -50px;
-  background-color: black;
-  position: absolute;
-  display: block; }
-
-.bne {
-  list-style: none;
-  list-style-type: none; }
-
-.bne > ul {
-  position: relative;
-  margin-left: 0px; }
-
-.bne > ul > li {
-  display: inline-block;
-  padding: 20px;
-  float: left;
-  position: relative; }
-
-.bne > ul > li a {
-  font-weight: bold;
-  color: #272d43; }
-
-.bne > ul > li a:focus + ul {
-  display: block;
-  opacity: 1; }
-
-.bne > ul > li a:hover {
-  color: #272d43; }
-
-.bne > ul > li:focus {
-  background-color: #272d43; }
-
-.bne > ul > li:focus ul.sub-menu, .bne > ul > li:focus ul.sub-menu--what-is-k2, .bne > ul > li:focus ul.sub-menu--how-people-use-k2, .bne > ul > li:focus ul.sub-menu--resources, .bne > ul > li:focus ul.sub-menu--what-is-k2, .bne > ul > li:focus ul.sub-menu--how-people-use-k2, .bne > ul > li:focus ul.sub-menu--resources {
-  display: block; }
-
-.bne > ul > li:hover > span {
-  border-bottom: 1px solid #00b5c8; }
-
-.bne > ul > li:hover > a {
-  padding-bottom: 5px;
-  border-bottom: 3px solid #00b5c8; }
-
-.bne > ul > li:hover > ul.sub-menu, .bne > ul > li:hover > ul.sub-menu--what-is-k2, .bne > ul > li:hover > ul.sub-menu--how-people-use-k2, .bne > ul > li:hover > ul.sub-menu--resources, .bne > ul > li:hover > ul.sub-menu--what-is-k2, .bne > ul > li:hover > ul.sub-menu--how-people-use-k2, .bne > ul > li:hover > ul.sub-menu--resources {
-  opacity: 1;
-  transition: all 0.1s ease;
-  visibility: visible; }
-
-.bne > ul > li:hover > ul.sub-menu li:nth-child(1) a:not([href]):after, .bne > ul > li:hover > ul.sub-menu--what-is-k2 li:nth-child(1) a:not([href]):after, .bne > ul > li:hover > ul.sub-menu--how-people-use-k2 li:nth-child(1) a:not([href]):after, .bne > ul > li:hover > ul.sub-menu--resources li:nth-child(1) a:not([href]):after, .bne > ul > li:hover > ul.sub-menu--what-is-k2 li:nth-child(1) a:not([href]):after, .bne > ul > li:hover > ul.sub-menu--how-people-use-k2 li:nth-child(1) a:not([href]):after, .bne > ul > li:hover > ul.sub-menu--resources li:nth-child(1) a:not([href]):after {
-  opacity: 1;
-  right: 10px; }
-
-.bne > ul > li:hover > ul.sub-menu li:nth-child(2) a:not([href]):after, .bne > ul > li:hover > ul.sub-menu--what-is-k2 li:nth-child(2) a:not([href]):after, .bne > ul > li:hover > ul.sub-menu--how-people-use-k2 li:nth-child(2) a:not([href]):after, .bne > ul > li:hover > ul.sub-menu--resources li:nth-child(2) a:not([href]):after, .bne > ul > li:hover > ul.sub-menu--what-is-k2 li:nth-child(2) a:not([href]):after, .bne > ul > li:hover > ul.sub-menu--how-people-use-k2 li:nth-child(2) a:not([href]):after, .bne > ul > li:hover > ul.sub-menu--resources li:nth-child(2) a:not([href]):after {
-  right: 10px;
-  transition-delay: 0.05s;
-  opacity: 1; }
-
-.bne > ul > li:hover > ul.sub-menu li:nth-child(3) a:not([href]):after, .bne > ul > li:hover > ul.sub-menu--what-is-k2 li:nth-child(3) a:not([href]):after, .bne > ul > li:hover > ul.sub-menu--how-people-use-k2 li:nth-child(3) a:not([href]):after, .bne > ul > li:hover > ul.sub-menu--resources li:nth-child(3) a:not([href]):after, .bne > ul > li:hover > ul.sub-menu--what-is-k2 li:nth-child(3) a:not([href]):after, .bne > ul > li:hover > ul.sub-menu--how-people-use-k2 li:nth-child(3) a:not([href]):after, .bne > ul > li:hover > ul.sub-menu--resources li:nth-child(3) a:not([href]):after {
-  right: 10px;
-  transition-delay: 0.1s;
-  opacity: 1; }
-
-.bne > ul > li:hover > ul.sub-menu li:nth-child(4) a:not([href]):after, .bne > ul > li:hover > ul.sub-menu--what-is-k2 li:nth-child(4) a:not([href]):after, .bne > ul > li:hover > ul.sub-menu--how-people-use-k2 li:nth-child(4) a:not([href]):after, .bne > ul > li:hover > ul.sub-menu--resources li:nth-child(4) a:not([href]):after, .bne > ul > li:hover > ul.sub-menu--what-is-k2 li:nth-child(4) a:not([href]):after, .bne > ul > li:hover > ul.sub-menu--how-people-use-k2 li:nth-child(4) a:not([href]):after, .bne > ul > li:hover > ul.sub-menu--resources li:nth-child(4) a:not([href]):after {
-  right: 10px;
-  transition-delay: 0.15s;
-  opacity: 1; }
-
-.bne > ul > li:hover > ul.sub-menu li:nth-child(5) a:not([href]):after, .bne > ul > li:hover > ul.sub-menu--what-is-k2 li:nth-child(5) a:not([href]):after, .bne > ul > li:hover > ul.sub-menu--how-people-use-k2 li:nth-child(5) a:not([href]):after, .bne > ul > li:hover > ul.sub-menu--resources li:nth-child(5) a:not([href]):after, .bne > ul > li:hover > ul.sub-menu--what-is-k2 li:nth-child(5) a:not([href]):after, .bne > ul > li:hover > ul.sub-menu--how-people-use-k2 li:nth-child(5) a:not([href]):after, .bne > ul > li:hover > ul.sub-menu--resources li:nth-child(5) a:not([href]):after {
-  right: 10px;
-  transition-delay: 0.15s;
-  opacity: 1; }
-
-.bne > ul > li:hover > ul.sub-menu li:nth-child(6) a:not([href]):after, .bne > ul > li:hover > ul.sub-menu--what-is-k2 li:nth-child(6) a:not([href]):after, .bne > ul > li:hover > ul.sub-menu--how-people-use-k2 li:nth-child(6) a:not([href]):after, .bne > ul > li:hover > ul.sub-menu--resources li:nth-child(6) a:not([href]):after, .bne > ul > li:hover > ul.sub-menu--what-is-k2 li:nth-child(6) a:not([href]):after, .bne > ul > li:hover > ul.sub-menu--how-people-use-k2 li:nth-child(6) a:not([href]):after, .bne > ul > li:hover > ul.sub-menu--resources li:nth-child(6) a:not([href]):after {
-  right: 10px;
-  transition-delay: 0.15s;
-  opacity: 1; }
-
-.bne > ul > li ul.sub-menu, .bne > ul > li ul.sub-menu--what-is-k2, .bne > ul > li ul.sub-menu--how-people-use-k2, .bne > ul > li ul.sub-menu--resources, .bne > ul > li ul.sub-menu--what-is-k2, .bne > ul > li ul.sub-menu--how-people-use-k2, .bne > ul > li ul.sub-menu--resources {
-  position: absolute;
-  width: 250px;
-  background-color: rgba(255, 255, 255, 0.7);
-  list-style: none;
-  list-style-type: none;
-  top: 58px;
-  left: 0px;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.2s ease;
-  padding-bottom: 20px;
-  margin-left: 0px; }
-
-.bne > ul > li ul.sub-menu li, .bne > ul > li ul.sub-menu--what-is-k2 li, .bne > ul > li ul.sub-menu--how-people-use-k2 li, .bne > ul > li ul.sub-menu--resources li, .bne > ul > li ul.sub-menu--what-is-k2 li, .bne > ul > li ul.sub-menu--how-people-use-k2 li, .bne > ul > li ul.sub-menu--resources li {
-  width: 100%;
-  padding: 5px; }
-
-.bne > ul > li ul.sub-menu li a:not([href]):after, .bne > ul > li ul.sub-menu--what-is-k2 li a:not([href]):after, .bne > ul > li ul.sub-menu--how-people-use-k2 li a:not([href]):after, .bne > ul > li ul.sub-menu--resources li a:not([href]):after, .bne > ul > li ul.sub-menu--what-is-k2 li a:not([href]):after, .bne > ul > li ul.sub-menu--how-people-use-k2 li a:not([href]):after, .bne > ul > li ul.sub-menu--resources li a:not([href]):after {
-  content: '';
-  position: absolute;
-  right: 20px;
-  transition: all 0.4s ease;
-  width: 0;
-  height: 0;
-  border-top: 5px solid transparent;
-  border-bottom: 5px solid transparent;
-  border-left: 6px solid #00b5c8;
-  margin-top: 5px;
-  opacity: 0; }
-
-.bne > ul > li ul.sub-menu li a, .bne > ul > li ul.sub-menu--what-is-k2 li a, .bne > ul > li ul.sub-menu--how-people-use-k2 li a, .bne > ul > li ul.sub-menu--resources li a, .bne > ul > li ul.sub-menu--what-is-k2 li a, .bne > ul > li ul.sub-menu--how-people-use-k2 li a, .bne > ul > li ul.sub-menu--resources li a {
-  font-size: 14px;
-  padding: 4px 20px;
-  display: inline-block;
-  color: #14b6c9;
-  font-weight: normal; }
-
-.bne > ul > li ul.sub-menu li:hover, .bne > ul > li ul.sub-menu--what-is-k2 li:hover, .bne > ul > li ul.sub-menu--how-people-use-k2 li:hover, .bne > ul > li ul.sub-menu--resources li:hover, .bne > ul > li ul.sub-menu--what-is-k2 li:hover, .bne > ul > li ul.sub-menu--how-people-use-k2 li:hover, .bne > ul > li ul.sub-menu--resources li:hover {
-  background-color: white; }
-
-.bne > ul > li ul.sub-menu li:hover ul.sub-sub-menu, .bne > ul > li ul.sub-menu--what-is-k2 li:hover ul.sub-sub-menu, .bne > ul > li ul.sub-menu--how-people-use-k2 li:hover ul.sub-sub-menu, .bne > ul > li ul.sub-menu--resources li:hover ul.sub-sub-menu, .bne > ul > li ul.sub-menu--what-is-k2 li:hover ul.sub-sub-menu, .bne > ul > li ul.sub-menu--how-people-use-k2 li:hover ul.sub-sub-menu, .bne > ul > li ul.sub-menu--resources li:hover ul.sub-sub-menu {
-  opacity: 1;
-  transition: all 0.1s ease;
-  visibility: visible; }
-
-.bne > ul > li ul.sub-menu li ul.sub-sub-menu, .bne > ul > li ul.sub-menu--what-is-k2 li ul.sub-sub-menu, .bne > ul > li ul.sub-menu--how-people-use-k2 li ul.sub-sub-menu, .bne > ul > li ul.sub-menu--resources li ul.sub-sub-menu, .bne > ul > li ul.sub-menu--what-is-k2 li ul.sub-sub-menu, .bne > ul > li ul.sub-menu--how-people-use-k2 li ul.sub-sub-menu, .bne > ul > li ul.sub-menu--resources li ul.sub-sub-menu {
-  position: absolute;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.1s ease;
-  width: 200px;
-  left: 250px;
-  top: 0px;
-  bottom: 0px;
-  list-style: none;
-  list-style-type: none;
-  background-color: white;
-  margin-left: 0px; }
-
-.bne > ul > li ul.sub-menu li ul.sub-sub-menu li, .bne > ul > li ul.sub-menu--what-is-k2 li ul.sub-sub-menu li, .bne > ul > li ul.sub-menu--how-people-use-k2 li ul.sub-sub-menu li, .bne > ul > li ul.sub-menu--resources li ul.sub-sub-menu li, .bne > ul > li ul.sub-menu--what-is-k2 li ul.sub-sub-menu li, .bne > ul > li ul.sub-menu--how-people-use-k2 li ul.sub-sub-menu li, .bne > ul > li ul.sub-menu--resources li ul.sub-sub-menu li {
-  background-color: white;
-  cursor: pointer;
-  display: block; }
-
-.bne > ul > li ul.sub-menu li ul.sub-sub-menu li a, .bne > ul > li ul.sub-menu--what-is-k2 li ul.sub-sub-menu li a, .bne > ul > li ul.sub-menu--how-people-use-k2 li ul.sub-sub-menu li a, .bne > ul > li ul.sub-menu--resources li ul.sub-sub-menu li a, .bne > ul > li ul.sub-menu--what-is-k2 li ul.sub-sub-menu li a, .bne > ul > li ul.sub-menu--how-people-use-k2 li ul.sub-sub-menu li a, .bne > ul > li ul.sub-menu--resources li ul.sub-sub-menu li a {
-  cursor: pointer;
-  cursor: hand;
-  padding-left: 0px;
-  padding-right: 0px;
-  margin-left: 15px;
-  padding-bottom: 2px;
-  color: #272d43;
-  border-bottom: 2px solid white;
-  transition: border-bottom 0.1s ease; }
-
-.bne > ul > li ul.sub-menu li ul.sub-sub-menu li a:hover, .bne > ul > li ul.sub-menu--what-is-k2 li ul.sub-sub-menu li a:hover, .bne > ul > li ul.sub-menu--how-people-use-k2 li ul.sub-sub-menu li a:hover, .bne > ul > li ul.sub-menu--resources li ul.sub-sub-menu li a:hover, .bne > ul > li ul.sub-menu--what-is-k2 li ul.sub-sub-menu li a:hover, .bne > ul > li ul.sub-menu--how-people-use-k2 li ul.sub-sub-menu li a:hover, .bne > ul > li ul.sub-menu--resources li ul.sub-sub-menu li a:hover {
-  border-bottom: 2px solid #00b5c8;
-  cursor: pointer;
-  cursor: hand; }
-
-.bne > ul > li ul.sub-menu li ul.sub-sub-menu:hover li, .bne > ul > li ul.sub-menu--what-is-k2 li ul.sub-sub-menu:hover li, .bne > ul > li ul.sub-menu--how-people-use-k2 li ul.sub-sub-menu:hover li, .bne > ul > li ul.sub-menu--resources li ul.sub-sub-menu:hover li, .bne > ul > li ul.sub-menu--what-is-k2 li ul.sub-sub-menu:hover li, .bne > ul > li ul.sub-menu--how-people-use-k2 li ul.sub-sub-menu:hover li, .bne > ul > li ul.sub-menu--resources li ul.sub-sub-menu:hover li {
-  display: block; }
-
-.bne > ul > li ul.sub-menu--what-is-k2 {
-  width: 250px; }
-
-.bne > ul > li ul.sub-menu--what-is-k2 ul.sub-sub-menu, .bne > ul > li ul.sub-menu--what-is-k2 ul.sub-menu--how-people-use-k2 li ul.sub-sub-menu, .bne > ul > li ul.sub-menu--how-people-use-k2 li ul.sub-menu--what-is-k2 ul.sub-sub-menu, .bne > ul > li ul.sub-menu--what-is-k2 ul.sub-menu--resources li ul.sub-sub-menu, .bne > ul > li ul.sub-menu--resources li ul.sub-menu--what-is-k2 ul.sub-sub-menu, .bne > ul > li ul.sub-menu--what-is-k2 ul.sub-menu--how-people-use-k2 li ul.sub-sub-menu, .bne > ul > li ul.sub-menu--how-people-use-k2 li ul.sub-menu--what-is-k2 ul.sub-sub-menu, .bne > ul > li ul.sub-menu--what-is-k2 ul.sub-menu--resources li ul.sub-sub-menu, .bne > ul > li ul.sub-menu--resources li ul.sub-menu--what-is-k2 ul.sub-sub-menu {
-  left: 250px; }
-
-.bne > ul > li ul.sub-menu--how-people-use-k2 {
-  width: 200px; }
-
-.bne > ul > li ul.sub-menu--how-people-use-k2 li ul.sub-sub-menu {
-  left: 200px; }
-
-.bne > ul > li ul.sub-menu--resources {
-  width: 250px; }
-
-.bne > ul > li ul.sub-menu--resources li ul.sub-sub-menu {
-  width: 210px;
-  left: 250px; }
-
-.bne__sub-menu {
-  position: absolute;
-  width: 200px;
-  background-color: white;
-  display: block;
-  list-style: none;
-  list-style-type: none;
-  top: 100px;
-  margin-left: 0px; }
-
-.bne__sub-menu--last {
-  position: absolute;
-  width: 200px;
-  left: 200px;
-  top: 0px; }
-
-.bne__sub-menu-item {
-  background-color: red; }
-
 body header {
   background-color: transparent; }
 
@@ -628,7 +440,7 @@ body header {
   position: relative; }
 
 .row {
-  width: 960px; }
+  max-width: 960px; }
 
 .wrapper {
   max-width: 960px;
@@ -1225,6 +1037,46 @@ body header {
       .easy-vs-hard br {
         display: auto; } }
 
+.tabs {
+  margin-top: -40px; }
+  .tabs__content {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 0%;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px; }
+    @media (min-width: 768px) {
+      .tabs__content {
+        float: left;
+        width: 83.3333333333%; } }
+    @media (min-width: 768px) {
+      .tabs__content {
+        margin-left: 8.3333333333%; } }
+  .tabs ul {
+    float: left;
+    width: 100%; }
+    .tabs ul li {
+      padding-right: 15px;
+      float: left;
+      display: block; }
+      .tabs ul li a {
+        padding: 13px 39px;
+        background-color: rgba(255, 255, 255, 0.8);
+        display: inline-block;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 12px;
+        color: #272d43; }
+      .tabs ul li.active a {
+        background-color: white;
+        color: #81af41; }
+
 .main-stage-learn-more {
   background-image: url('/img/1/learn-more-main-stage.jpg');
   background-position: top center;
@@ -1261,156 +1113,158 @@ body header {
   .main-stage-learn-more__button--primary {
     font-size: 16px; }
 
-.overview__graph {
-  position: relative;
-  float: left;
-  width: 100%;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  position: relative; }
-  @media (min-width: 768px) {
-    .overview__graph {
-      background-image: url('/img/1/learn-more-graph.jpg');
-      background-size: 1001px 1006px;
-      min-height: 1190px;
-      background-repeat: no-repeat;
-      background-position: top center; } }
-  .overview__graph--right-content {
-    max-width: 90%;
-    margin: 0 auto; }
-    @media (min-width: 768px) {
-      .overview__graph--right-content:nth-child(1) {
-        max-width: 400px;
-        position: absolute;
-        top: 65px;
-        left: 50%;
-        margin-left: -24px; } }
-    @media (min-width: 768px) {
-      .overview__graph--right-content:nth-child(3) {
-        max-width: 400px;
-        position: absolute;
-        top: 447px;
-        left: 50%;
-        margin-left: 18px; } }
-    @media (min-width: 768px) {
-      .overview__graph--right-content:nth-child(5) {
-        max-width: 400px;
-        position: absolute;
-        top: 547px;
-        left: 50%;
-        margin-left: 18px; } }
-    .overview__graph--right-content h3 {
-      font-size: 22px;
-      color: #00b5c8;
-      margin-bottom: 5px; }
-  .overview__graph--left-content {
-    max-width: 90%;
-    margin: 0 auto; }
-    @media (min-width: 768px) {
-      .overview__graph--left-content:nth-child(2) {
-        max-width: 400px;
-        position: absolute;
-        top: 247px;
-        left: 50%;
-        margin-left: -375px; } }
-    @media (min-width: 768px) {
-      .overview__graph--left-content:nth-child(4) {
-        max-width: 400px;
-        position: absolute;
-        top: 683px;
-        left: 50%;
-        margin-left: -324px; } }
-    @media (min-width: 768px) {
-      .overview__graph--left-content:nth-child(5) {
-        max-width: 400px;
-        position: absolute;
-        top: 1034px;
-        left: 50%;
-        margin-left: -200px;
-        text-align: center; } }
-    .overview__graph--left-content h3 {
-      font-size: 22px;
-      color: #81af41;
-      margin-bottom: 5px; }
-  .overview__graph--mobile-image {
-    text-align: center;
-    padding: 10px 0px;
+.overview {
+  padding-top: 30px; }
+  .overview__graph {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
     position: relative; }
     @media (min-width: 768px) {
-      .overview__graph--mobile-image {
-        display: none; } }
-    .overview__graph--mobile-image .down-arrow {
-      width: 2px;
-      margin: 0 auto;
-      padding-bottom: 30px; }
+      .overview__graph {
+        background-image: url('/img/1/learn-more-graph.jpg');
+        background-size: 1001px 1006px;
+        min-height: 1190px;
+        background-repeat: no-repeat;
+        background-position: top center; } }
+    .overview__graph--right-content {
+      max-width: 90%;
+      margin: 0 auto; }
       @media (min-width: 768px) {
-        .overview__graph--mobile-image .down-arrow {
+        .overview__graph--right-content:nth-child(1) {
+          max-width: 400px;
+          position: absolute;
+          top: 65px;
+          left: 50%;
+          margin-left: -24px; } }
+      @media (min-width: 768px) {
+        .overview__graph--right-content:nth-child(3) {
+          max-width: 400px;
+          position: absolute;
+          top: 447px;
+          left: 50%;
+          margin-left: 18px; } }
+      @media (min-width: 768px) {
+        .overview__graph--right-content:nth-child(5) {
+          max-width: 400px;
+          position: absolute;
+          top: 547px;
+          left: 50%;
+          margin-left: 18px; } }
+      .overview__graph--right-content h3 {
+        font-size: 22px;
+        color: #00b5c8;
+        margin-bottom: 5px; }
+    .overview__graph--left-content {
+      max-width: 90%;
+      margin: 0 auto; }
+      @media (min-width: 768px) {
+        .overview__graph--left-content:nth-child(2) {
+          max-width: 400px;
+          position: absolute;
+          top: 247px;
+          left: 50%;
+          margin-left: -375px; } }
+      @media (min-width: 768px) {
+        .overview__graph--left-content:nth-child(4) {
+          max-width: 400px;
+          position: absolute;
+          top: 683px;
+          left: 50%;
+          margin-left: -324px; } }
+      @media (min-width: 768px) {
+        .overview__graph--left-content:nth-child(5) {
+          max-width: 400px;
+          position: absolute;
+          top: 1034px;
+          left: 50%;
+          margin-left: -200px;
+          text-align: center; } }
+      .overview__graph--left-content h3 {
+        font-size: 22px;
+        color: #81af41;
+        margin-bottom: 5px; }
+    .overview__graph--mobile-image {
+      text-align: center;
+      padding: 10px 0px;
+      position: relative; }
+      @media (min-width: 768px) {
+        .overview__graph--mobile-image {
           display: none; } }
-      .overview__graph--mobile-image .down-arrow:before {
-        content: '';
-        height: 50px;
-        background-color: #00b5c8;
+      .overview__graph--mobile-image .down-arrow {
         width: 2px;
-        display: block; }
-      .overview__graph--mobile-image .down-arrow:after {
-        width: 0;
-        height: 0;
-        border-left: 7px solid transparent;
-        border-right: 7px solid transparent;
-        content: '';
-        border-top: 11px solid #00b5c8;
-        display: block;
-        margin-left: -6px; }
-      .overview__graph--mobile-image .down-arrow.-blue:before {
-        background-color: #00b5c8; }
-      .overview__graph--mobile-image .down-arrow.-blue:after {
-        border-top: 11px solid #00b5c8; }
-      .overview__graph--mobile-image .down-arrow.-green:before {
-        background-color: #81af41; }
-      .overview__graph--mobile-image .down-arrow.-green:after {
-        border-top: 11px solid #81af41; }
-.overview__title {
-  position: relative;
-  float: left;
-  width: 100%;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: 0%;
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  text-align: center;
-  color: #81af41;
-  margin-bottom: 20px; }
-  @media (min-width: 768px) {
-    .overview__title {
-      float: left;
-      width: 83.3333333333%; } }
-  @media (min-width: 768px) {
-    .overview__title {
-      margin-left: 8.3333333333%; } }
-.overview__description {
-  position: relative;
-  float: left;
-  width: 100%;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: 0%;
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px; }
-  @media (min-width: 768px) {
-    .overview__description {
-      float: left;
-      width: 83.3333333333%; } }
-  @media (min-width: 768px) {
-    .overview__description {
-      margin-left: 8.3333333333%; } }
+        margin: 0 auto;
+        padding-bottom: 30px; }
+        @media (min-width: 768px) {
+          .overview__graph--mobile-image .down-arrow {
+            display: none; } }
+        .overview__graph--mobile-image .down-arrow:before {
+          content: '';
+          height: 50px;
+          background-color: #00b5c8;
+          width: 2px;
+          display: block; }
+        .overview__graph--mobile-image .down-arrow:after {
+          width: 0;
+          height: 0;
+          border-left: 7px solid transparent;
+          border-right: 7px solid transparent;
+          content: '';
+          border-top: 11px solid #00b5c8;
+          display: block;
+          margin-left: -6px; }
+        .overview__graph--mobile-image .down-arrow.-blue:before {
+          background-color: #00b5c8; }
+        .overview__graph--mobile-image .down-arrow.-blue:after {
+          border-top: 11px solid #00b5c8; }
+        .overview__graph--mobile-image .down-arrow.-green:before {
+          background-color: #81af41; }
+        .overview__graph--mobile-image .down-arrow.-green:after {
+          border-top: 11px solid #81af41; }
+  .overview__title {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 0%;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    color: #81af41;
+    margin-bottom: 20px; }
+    @media (min-width: 768px) {
+      .overview__title {
+        float: left;
+        width: 83.3333333333%; } }
+    @media (min-width: 768px) {
+      .overview__title {
+        margin-left: 8.3333333333%; } }
+  .overview__description {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 0%;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px; }
+    @media (min-width: 768px) {
+      .overview__description {
+        float: left;
+        width: 83.3333333333%; } }
+    @media (min-width: 768px) {
+      .overview__description {
+        margin-left: 8.3333333333%; } }
 
 .products-slice {
   background-color: #272d43; }
@@ -1437,37 +1291,6 @@ body header {
     display: none; }
     @media (min-width: 768px) {
       .one-miniute-video-slice br {
-        display: auto; } }
-
-.products-slice, .one-miniute-video-slice {
-  padding: 40px 0px;
-  border-top: 5px solid white;
-  text-align: center; }
-  .products-slice__content, .one-miniute-video-slice__content {
-    position: relative;
-    float: left;
-    width: 100%;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: 0%;
-    position: relative;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px; }
-    @media (min-width: 768px) {
-      .products-slice__content, .one-miniute-video-slice__content {
-        float: left;
-        width: 66.6666666667%; } }
-    @media (min-width: 768px) {
-      .products-slice__content, .one-miniute-video-slice__content {
-        margin-left: 16.6666666667%; } }
-  .products-slice__title, .one-miniute-video-slice__title {
-    margin: 10px 0px; }
-  .products-slice br, .one-miniute-video-slice br {
-    display: none; }
-    @media (min-width: 768px) {
-      .products-slice br, .one-miniute-video-slice br {
         display: auto; } }
 
 /*# sourceMappingURL=app.css.map */

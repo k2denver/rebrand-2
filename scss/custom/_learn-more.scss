@@ -23,7 +23,43 @@
     }
 }
 
-.tabs {}
+.tabs {
+    margin-top:-40px;
+    &__content {
+     @include make-xs-column(12);
+        @include make-xs-column-offset(0);
+        @include make-sm-column(10);
+        @include make-sm-column-offset(1);
+
+    }
+    ul {
+        float:left;
+        width:100%;
+        li {
+                padding-right:15px;
+                float:left;
+                display:block;
+                a {
+                    padding:13px 39px;
+                    background-color:white(.8);
+                    display:inline-block;
+                    text-transform: uppercase;
+                    font-weight:bold;
+                    font-size:12px;
+                    color:$k2-purple;
+
+                }
+            &.active {
+                a {
+                    background-color:white;
+                    color:$k2-green;
+
+                }
+            }
+        }
+
+    }
+}
 
 %learn-more-title {
     background-image: url('/img/1/learn-more-main-stage.jpg');
@@ -31,7 +67,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 523px;
-    &__content {
+       &__content {
         @include make-xs-column(12);
         @include make-xs-column-offset(0);
         @include make-sm-column(10);
@@ -60,6 +96,8 @@
 }
 
 .overview {
+     padding-top:30px;
+
     &__graph {
         @include make-xs-column(12);
         @include tablet {
@@ -291,31 +329,6 @@
 }
 
 
-
-%simple-slice {
-    padding: 40px 0px;
-    border-top: 5px solid white;
-    text-align: center;
-    &__content {
-        @include make-xs-column(12);
-        @include make-xs-column-offset(0);
-        @include make-sm-column(8);
-        @include make-sm-column-offset(2);
-    }
-    &__title {
-        margin: 10px 0px;
-    }
-    &__description {
-        @extend %t-paragraph;
-        color: white;
-    }
-        br {
-        display:none;
-       @include tablet {
-        display:auto;
-       }
-    }
-}
 
 
 
