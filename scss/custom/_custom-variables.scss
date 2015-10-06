@@ -41,6 +41,10 @@ $bulmer-italic: "Bulmer MT W01 Italic";
 
 }
 
+.wrapper {
+    max-width: 960px;
+    @include row(30px);
+}
 
 
 %t-paragraph {
@@ -227,5 +231,8 @@ $bulmer-italic: "Bulmer MT W01 Italic";
 %color-white {
 	color: #ffffff;
 }
+
+
+
 
 

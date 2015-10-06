@@ -3,7 +3,17 @@
  * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-.product-main-stage__section-description ul li, .your-business__description, .easy-vs-hard__description {
+.wrapper {
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto; }
+  .wrapper:before, .wrapper:after {
+    content: " ";
+    display: table; }
+  .wrapper:after {
+    clear: both; }
+
+.product-main-stage__section-description ul li, .your-business__description, .easy-vs-hard__description, .main-stage-learn-more__description {
   font-size: 14px;
   line-height: 18px; }
 
@@ -18,7 +28,7 @@
   text-transform: uppercase;
   margin: 40px 0px; }
 
-.product-main-stage__button--primary, .easy-vs-hard__primary-cta {
+.product-main-stage__button--primary, .easy-vs-hard__primary-cta, .main-stage-learn-more__button--primary {
   display: inline-block;
   padding: 10px 15px;
   color: white;
@@ -31,6 +41,10 @@
   cursor: pointer;
   -webkit-user-select: none;
   transition: all 0.2s ease; }
+  .main-stage-learn-more__button--primary {
+    background-color: #81af41; }
+    .main-stage-learn-more__button--primary:hover {
+      background-color: #00b5c8; }
   .product-main-stage__button--primary {
     background-color: #00b5c8; }
     .product-main-stage__button--primary:hover {
@@ -39,7 +53,7 @@
     background-color: #272d43; }
     .easy-vs-hard__primary-cta:hover {
       background-color: #00b5c8; }
-  .product-main-stage__button--primary:hover, .easy-vs-hard__primary-cta:hover {
+  .product-main-stage__button--primary:hover, .easy-vs-hard__primary-cta:hover, .main-stage-learn-more__button--primary:hover {
     color: white !important; }
 
 .your-business__primary-cta {
@@ -1195,5 +1209,46 @@ body header {
     margin: 10px 0px; }
   .easy-vs-hard__description {
     color: white; }
+  .easy-vs-hard br {
+    display: none; }
+    @media (min-width: 768px) {
+      .easy-vs-hard br {
+        display: auto; } }
+
+.main-stage-learn-more {
+  background-image: url('/img/1/learn-more-main-stage.jpg');
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 523px; }
+  .main-stage-learn-more__content {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 0%;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px; }
+    @media (min-width: 768px) {
+      .main-stage-learn-more__content {
+        float: left;
+        width: 83.3333333333%; } }
+    @media (min-width: 768px) {
+      .main-stage-learn-more__content {
+        margin-left: 8.3333333333%; } }
+  .main-stage-learn-more__title {
+    text-transform: uppercase;
+    margin-top: 40px; }
+    @media (min-width: 768px) {
+      .main-stage-learn-more__title {
+        margin-top: 154px; } }
+  .main-stage-learn-more__description {
+    margin-top: 20px; }
+  .main-stage-learn-more__button--primary {
+    font-size: 16px; }
 
 /*# sourceMappingURL=app.css.map */

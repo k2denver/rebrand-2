@@ -174,4 +174,13 @@
       @extend %button;
       @extend %button--purple;
     }
+
+        br {
+        display:none;
+
+       @include tablet {
+        display:auto;
+       }
+    }
+
 }

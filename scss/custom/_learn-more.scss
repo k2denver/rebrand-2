@@ -1,16 +1,36 @@
-.wrapper {
-    max-width: 960px;
-    @include row(30px);
+// Forrester-Logo.jpg
+// learn-more-forrester-bg.jpg
+// learn-more-graph.jpg
+// learn-more-main-stage.jpg
+
+.main-stage-learn-more {
+    @extend %learn-more-title;
+    
+    
+    &__content {
+        @extend %learn-more-title__content;
+
+    }
+    &__title {
+        @extend %learn-more-title__title;
+    }
+    &__description {
+        @extend %learn-more-title__description;
+    }
+    &__button--primary {
+        @extend %learn-more-title__button--primary;
+    }
+
+
+
 }
 
-.product-main-stage {
-    background-image: url('/img/1/product-main-stage.jpg');
-    background-position: bottom center;
+%learn-more-title {
+    background-image: url('/img/1/learn-more-main-stage.jpg');
+    background-position: top center;
+    background-repeat:no-repeat;
     background-size: cover;
-    min-height: 883px;
-    text-align: center;
-    padding-bottom: 50px;
-
+    min-height: 523px;
     &__content {
         @include make-xs-column(12);
         @include make-xs-column-offset(0);
@@ -18,160 +38,30 @@
         @include make-sm-column-offset(1);
     }
     &__title {
-        color: $k2-blue;
-        font-size: 35px;
-        margin-top: 50px;
-        margin-bottom: 30px;
-        text-align: left;
-        margin-left: 5px;
         text-transform: uppercase;
-    }
-    &__products-container {}
-    &__appit {
-        @include make-xs-column(12);
-        @include make-sm-column(6,
-        15px);
-        margin-bottom: 10px;
+        margin-top:40px;
+        
         @include tablet {
-            margin-bottom: 0px;
-            img {
-                width: 329px;
-            }
+            margin-top: 154px;
         }
+
     }
-    &__blackpearl {
-        @include make-xs-column(12);
-        @include make-sm-column(6,
-        15px);
-        margin-bottom: 10px;
-        @include tablet {
-            margin-bottom: 0px;
-            img {
-                width: 235px;
-            }
-        }
-    }
-    &__section {
-        background: white(0.32);
-        overflow: hidden;
-        padding: 20px;
-        @include tablet {
-            min-height: 655px;
-        }
-    }
-    &__section-title {
-        @extend %t-heding-avenir-bold;
-        color: $k2-blue;
-        margin-bottom: 30px;
-    }
-    &__section-description {
-        ul {
-            list-style: none;
-            li {
-                @extend %t-paragraph;
-                padding: 4px;
-                span {
-                    content: '';
-                    width: 7px;
-                    height: 7px;
-                    border-radius: 7px;
-                    display: inline-block;
-                    background-color: $k2-blue;
-                }
-            }
-        }
-    }
-    &__bottom-cta {
-        @include make-xs-column(12,
-        15px);
-        margin-top: 10px;
-    }
-    &__bottom-cta-content {
-        background: white(0.32);
-        padding: 40px 0px;
-        width: 100%;
+    &__description {
+        @extend %t-paragraph;
+        margin-top:20px;
     }
     &__button--primary {
         @extend %button;
-        @extend %button--blue;
-        margin-top: 0px;
+        @extend %button--green;
+        font-size:16px;
     }
 }
 
-.your-business {
-    text-align: center;
-    background-color: $k2-purple;
-    padding: 30px;
-    &__primary-cta {
-        color: red !important;
-        @include cta-underline($k2-blue);
-    }
-    &__content {
-        @include make-xs-column(12);
-        @include make-xs-column-offset(0);
-        @include make-sm-column(10);
-        @include make-sm-column-offset(1);
-    }
-    &__title {
-        @extend %t-heding-avenir-bold;
-        margin: 20px 0px;
 
-        color: $k2-blue;
-        @include make-xs-column(10);
-        @include make-xs-column-offset(1);
-    }
-    &__description {
-        @extend %t-paragraph;
-        color: white;
-    }
-    &__columns {
-        @extend %three-column-layout;
-        padding: 40px 0px;
-        @include make-xs-column(12);
-        &:after {
-            @extend %three-column-layout:after;
-        }
-        @media only screen and (max-width: 950px)  {
-        text-align:center;
-      }
-    }
-    &__columns-single {
-        
-        @extend %three-column-layout__single;
-       
-        
-        width: 220px;
-        float: none !important;
-        margin:0 auto;
-    }
-    &__columns-single-title {
-      @include add-important(font-family,$bulmer-italic);
-      color:$k2-blue;
-    }
-}
 
-.easy-vs-hard {
-    background-color: $k2-blue;
-    padding: 40px 0px;
-    border-top: 5px solid white;
-    text-align: center;
-    &__content {
-        @include make-xs-column(12);
-        @include make-xs-column-offset(0);
-        @include make-sm-column(6);
-        @include make-sm-column-offset(3);
-    }
-    &__title {
-        @extend %t-heading-bulmer;
-        color: $k2-purple;
-        margin: 10px 0px;
-    }
-    &__description {
-        @extend %t-paragraph;
-        color: white;
-    }
-    &__primary-cta {
-      @extend %button;
-      @extend %button--purple;
-    }
-}
+
+    // &__content {}
+    // &__title{}
+    // &__description {}
+    // &__button--primary {}
+
