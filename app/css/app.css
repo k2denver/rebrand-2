@@ -3,6 +3,85 @@
  * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+.product-main-stage__section-description ul li, .your-business__description, .easy-vs-hard__description {
+  font-size: 14px;
+  line-height: 18px; }
+
+.easy-vs-hard__title {
+  font-size: 40px;
+  font-family: "Bulmer MT W01 Italic" !important; }
+
+.product-main-stage__section-title, .your-business__title {
+  font-family: "Avenir Next LT W01 Bold" !important;
+  font-size: 24px;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin: 40px 0px; }
+
+.product-main-stage__button--primary, .easy-vs-hard__primary-cta {
+  display: inline-block;
+  padding: 10px 15px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-top: 20px;
+  text-align: center;
+  white-space: nowrap;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  transition: all 0.2s ease; }
+  .product-main-stage__button--primary {
+    background-color: #00b5c8; }
+    .product-main-stage__button--primary:hover {
+      background-color: #81af41; }
+  .easy-vs-hard__primary-cta {
+    background-color: #272d43; }
+    .easy-vs-hard__primary-cta:hover {
+      background-color: #00b5c8; }
+  .product-main-stage__button--primary:hover, .easy-vs-hard__primary-cta:hover {
+    color: white !important; }
+
+.your-business__primary-cta {
+  font-weight: bold;
+  display: inline-block;
+  position: relative;
+  margin: 20px 0px; }
+  .your-business__primary-cta:after {
+    content: '';
+    height: 1px;
+    width: 60%;
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    margin-left: -30%;
+    transition: all .3s ease; }
+  .your-business__primary-cta:hover:after {
+    width: 100%;
+    margin-left: -50%; }
+
+.your-business__columns {
+  width: 100%; }
+  @media (min-width: 768px) {
+    .your-business__columns {
+      text-align: justify;
+      -ms-text-justify: distribute-all-lines;
+      text-justify: distribute-all-lines; } }
+  @media (min-width: 768px) {
+    .your-business__columns-single {
+      vertical-align: top;
+      display: inline-block;
+      *display: inline;
+      zoom: 1;
+      margin: auto; } }
+  @media (min-width: 768px) {
+    .your-business__columns:after {
+      content: '';
+      width: 100%;
+      display: inline-block;
+      font-size: 0;
+      line-height: 0; } }
+
 .header {
   max-width: 940px;
   height: 75px;
@@ -918,20 +997,36 @@ body header {
   background-image: url('/img/1/product-main-stage.jpg');
   background-position: bottom center;
   background-size: cover;
-  height: 883px;
-  text-align: center; }
+  min-height: 883px;
+  text-align: center;
+  padding-bottom: 50px; }
   .product-main-stage__content {
     position: relative;
     float: left;
-    width: 83.3333333333%;
+    width: 100%;
     min-height: 1px;
     padding-left: 15px;
     padding-right: 15px;
-    margin-left: 8.3333333333%; }
+    margin-left: 0%;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px; }
+    @media (min-width: 768px) {
+      .product-main-stage__content {
+        float: left;
+        width: 83.3333333333%; } }
+    @media (min-width: 768px) {
+      .product-main-stage__content {
+        margin-left: 8.3333333333%; } }
   .product-main-stage__title {
+    color: #00b5c8;
     font-size: 35px;
     margin-top: 50px;
-    margin-bottom: 20px; }
+    margin-bottom: 30px;
+    text-align: left;
+    margin-left: 5px;
+    text-transform: uppercase; }
   .product-main-stage__appit {
     position: relative;
     float: left;
@@ -941,15 +1036,18 @@ body header {
     padding-right: 15px;
     position: relative;
     min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px; }
-    @media (min-width: 992px) {
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+    margin-bottom: 10px; }
+    @media (min-width: 768px) {
       .product-main-stage__appit {
         float: left;
         width: 50%; } }
     @media (min-width: 768px) {
-      .product-main-stage__appit img {
-        width: 329px; } }
+      .product-main-stage__appit {
+        margin-bottom: 0px; }
+        .product-main-stage__appit img {
+          width: 329px; } }
   .product-main-stage__blackpearl {
     position: relative;
     float: left;
@@ -959,25 +1057,143 @@ body header {
     padding-right: 15px;
     position: relative;
     min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px; }
-    @media (min-width: 992px) {
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+    margin-bottom: 10px; }
+    @media (min-width: 768px) {
       .product-main-stage__blackpearl {
         float: left;
         width: 50%; } }
     @media (min-width: 768px) {
-      .product-main-stage__blackpearl img {
-        width: 235px; } }
+      .product-main-stage__blackpearl {
+        margin-bottom: 0px; }
+        .product-main-stage__blackpearl img {
+          width: 235px; } }
   .product-main-stage__section {
     background: rgba(255, 255, 255, 0.32);
     overflow: hidden;
     padding: 20px; }
+    @media (min-width: 768px) {
+      .product-main-stage__section {
+        min-height: 655px; } }
+  .product-main-stage__section-title {
+    color: #00b5c8;
+    margin-bottom: 30px; }
+  .product-main-stage__section-description ul {
+    list-style: none; }
+    .product-main-stage__section-description ul li {
+      padding: 4px; }
+      .product-main-stage__section-description ul li span {
+        content: '';
+        width: 7px;
+        height: 7px;
+        border-radius: 7px;
+        display: inline-block;
+        background-color: #00b5c8; }
   .product-main-stage__bottom-cta {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+    margin-top: 10px; }
+  .product-main-stage__bottom-cta-content {
+    background: rgba(255, 255, 255, 0.32);
+    padding: 40px 0px;
+    width: 100%; }
+  .product-main-stage__button--primary {
+    margin-top: 0px; }
+
+.your-business {
+  text-align: center;
+  background-color: #272d43;
+  padding: 30px; }
+  .your-business__primary-cta {
+    color: red !important;
+    color: #00b5c8 !important; }
+    .your-business__primary-cta:after {
+      background-color: #00b5c8 !important; }
+    .your-business__primary-cta:hover {
+      color: #00b5c8 !important; }
+  .your-business__content {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 0%;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px; }
+    @media (min-width: 768px) {
+      .your-business__content {
+        float: left;
+        width: 83.3333333333%; } }
+    @media (min-width: 768px) {
+      .your-business__content {
+        margin-left: 8.3333333333%; } }
+  .your-business__title {
+    margin: 20px 0px;
+    color: #00b5c8;
+    position: relative;
+    float: left;
+    width: 83.3333333333%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 8.3333333333%; }
+  .your-business__description {
+    color: white; }
+  .your-business__columns {
+    padding: 40px 0px;
     position: relative;
     float: left;
     width: 100%;
     min-height: 1px;
     padding-left: 15px;
     padding-right: 15px; }
+    @media only screen and (max-width: 950px) {
+      .your-business__columns {
+        text-align: center; } }
+  .your-business__columns-single {
+    width: 220px;
+    float: none !important;
+    margin: 0 auto; }
+  .your-business__columns-single-title {
+    font-family: "Bulmer MT W01 Italic" !important;
+    color: #00b5c8; }
+
+.easy-vs-hard {
+  background-color: #00b5c8;
+  padding: 40px 0px;
+  border-top: 5px solid white;
+  text-align: center; }
+  .easy-vs-hard__content {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 0%;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px; }
+    @media (min-width: 768px) {
+      .easy-vs-hard__content {
+        float: left;
+        width: 50%; } }
+    @media (min-width: 768px) {
+      .easy-vs-hard__content {
+        margin-left: 25%; } }
+  .easy-vs-hard__title {
+    color: #272d43;
+    margin: 10px 0px; }
+  .easy-vs-hard__description {
+    color: white; }
 
 /*# sourceMappingURL=app.css.map */

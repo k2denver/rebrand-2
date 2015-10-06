@@ -77,6 +77,7 @@ $bulmer-italic: "Bulmer MT W01 Italic";
     touch-action: manipulation;
     cursor: pointer;
         -webkit-user-select: none;
+        transition:all 0.2s ease;
     &--green {
         background-color: $k2-green;
         &:hover {
@@ -87,6 +88,12 @@ $bulmer-italic: "Bulmer MT W01 Italic";
         background-color: $k2-blue;
         &:hover {
         	background-color: $k2-green;
+        }
+    }
+    &--purple {
+        background-color: $k2-purple;
+        &:hover {
+        	background-color: $k2-blue;
         }
     }
     &--bold {
@@ -152,6 +159,7 @@ $bulmer-italic: "Bulmer MT W01 Italic";
 }
 
 %three-column-layout {
+	width:100%;
     @include tablet {
         text-align: justify;
         -ms-text-justify: distribute-all-lines;
@@ -162,7 +170,8 @@ $bulmer-italic: "Bulmer MT W01 Italic";
             vertical-align: top;
             display: inline-block;
             *display: inline;
-            zoom: 1
+            zoom: 1;
+            margin:auto;
         }
     }
     &:after {
@@ -171,9 +180,10 @@ $bulmer-italic: "Bulmer MT W01 Italic";
             width: 100%;
             display: inline-block;
             font-size: 0;
-            line-height: 0
+            line-height: 0;
         }
     }
+
 }
 
 
