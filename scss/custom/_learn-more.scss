@@ -2,14 +2,15 @@
 // learn-more-forrester-bg.jpg
 // learn-more-graph.jpg
 // learn-more-main-stage.jpg
-
+// mobile-graph5.png
+// mobile-graph4.png
+// mobile-graph3.png
+// mobile-graph2.png
+// mobile-graph1.png
 .main-stage-learn-more {
     @extend %learn-more-title;
-    
-    
     &__content {
         @extend %learn-more-title__content;
-
     }
     &__title {
         @extend %learn-more-title__title;
@@ -20,15 +21,14 @@
     &__button--primary {
         @extend %learn-more-title__button--primary;
     }
-
-
-
 }
+
+.tabs {}
 
 %learn-more-title {
     background-image: url('/img/1/learn-more-main-stage.jpg');
     background-position: top center;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-size: cover;
     min-height: 523px;
     &__content {
@@ -39,29 +39,190 @@
     }
     &__title {
         text-transform: uppercase;
-        margin-top:40px;
-        
+        margin-top: 40px;
         @include tablet {
             margin-top: 154px;
         }
-
     }
     &__description {
         @extend %t-paragraph;
-        margin-top:20px;
+        margin-top: 20px;
     }
     &__button--primary {
         @extend %button;
         @extend %button--green;
-        font-size:16px;
+        font-size: 16px;
     }
 }
 
+.tabs-content {
+    &__content {}
+}
 
+.overview {
+    &__graph {
+        @include make-xs-column(12);
+        @include tablet {
+            background-image: url('/img/1/learn-more-graph.jpg');
+            background-size: 1001px 1006px;
+            min-height: 1200px;
+            background-repeat: no-repeat;
+            background-position: top center;
+        }
+        position:relative;
+        &--right-content {
+            max-width:90%;
+            margin:0 auto;
+            &:nth-child(1) {
+                @include tablet {
+                    max-width: 400px;
+                    position: absolute;
+                    top: 65px;
+                    left: 50%;
+                    margin-left: -24px;
+                }
+            }
+            &:nth-child(3) {
+                @include tablet {
+                    max-width: 400px;
+                    position: absolute;
+                    top: 447px;
+                    left: 50%;
+                    margin-left: 18px;
+                }
+            }
+            &:nth-child(5) {
+                @include tablet {
+                    max-width: 400px;
+                    position: absolute;
+                    top: 547px;
+                    left: 50%;
+                    margin-left: 18px;
+                }
+            }
+            h3 {
+                @extend %t-heading-bulmer;
+                font-size: 22px;
+                color: $k2-blue;
+                margin-bottom:5px;
+            }
+            p {
+                @extend %t-paragraph;
+            }
+        }
+        &--left-content {
+            max-width:90%;
+            margin:0 auto;
+            &:nth-child(2) {
+                @include tablet {
+                    max-width: 400px;
+                    position: absolute;
+                    top: 247px;
+                    left: 50%;
+                    margin-left: -375px;
+                }
+            }
+            &:nth-child(4) {
+                @include tablet {
+                    max-width: 400px;
+                    position: absolute;
+                    top: 683px;
+                    left: 50%;
+                    margin-left: -324px;
+                }
+            }
+            &:nth-child(5) {
+                @include tablet {
+                    max-width: 400px;
+                    position: absolute;
+                    top: 1034px;
+                    left: 50%;
+                    margin-left: -200px;
+                    text-align: center;
+                }
+            }
+            h3 {
+                @extend %t-heading-bulmer;
+                font-size: 22px;
+                color: $k2-green;
+                margin-bottom:5px;
+            }
+            p {
+                @extend %t-paragraph;
+            }
+        }
+        &--mobile-image {
+            text-align: center;
+            padding:10px 0px;
+            position:relative;
 
+            @include tablet {
+                display: none;
+            }
+            .down-arrow {
+                    width: 2px;
+                margin:0 auto;
+                 padding-bottom:30px;
+                 
+                @include tablet {
+                display: none;
+                }
+                &:before {
+                    content:'';
+                    height:50px;
+                    background-color:$k2-blue;
+                    width:2px;
+                    display:block;
+                }
+                &:after {
+                    width: 0; 
+                    height: 0; 
+                    border-left: 7px solid transparent;
+                    border-right: 7px solid transparent;
+                    content:'';
+                    border-top: 11px solid $k2-blue;
+                    display:block;
+                    margin-left:-6px;
+                }
+                &.-blue{
+                     &:before {
+                        background-color:$k2-blue;
+                     }
+                     &:after {
+                        border-top: 11px solid $k2-blue;
+                     }
+                }
+                 &.-green{
+                    &:before {
+                        background-color:$k2-green;
+                    }
+                     &:after {
+                        border-top: 11px solid $k2-green;
+                     }
+                }
+            }
+        }
+    }
+    &__title {
+        @include make-xs-column(12);
+        @include make-xs-column-offset(0);
+        @include make-sm-column(10);
+        @include make-sm-column-offset(1);
+        text-align: center;
+        @extend %t-heading-bulmer;
+        color:$k2-green;
+        margin-bottom:20px;
+    }
+    &__description {
+        @include make-xs-column(12);
+        @include make-xs-column-offset(0);
+        @include make-sm-column(10);
+        @include make-sm-column-offset(1);
+        @extend %t-paragraph;
+    }
+}
 
-    // &__content {}
-    // &__title{}
-    // &__description {}
-    // &__button--primary {}
-
+// &__content {}
+// &__title{}
+// &__description {}
+// &__button--primary {}
