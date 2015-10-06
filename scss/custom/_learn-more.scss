@@ -65,7 +65,7 @@
         @include tablet {
             background-image: url('/img/1/learn-more-graph.jpg');
             background-size: 1001px 1006px;
-            min-height: 1200px;
+            min-height: 1190px;
             background-repeat: no-repeat;
             background-position: top center;
         }
@@ -163,7 +163,7 @@
                     width: 2px;
                 margin:0 auto;
                  padding-bottom:30px;
-                 
+
                 @include tablet {
                 display: none;
                 }
@@ -221,6 +221,103 @@
         @extend %t-paragraph;
     }
 }
+
+
+.products-slice {
+    background-color: $k2-purple;
+    @extend %simple-slice;
+    &__content {
+       @extend  %simple-slice__content;
+    }
+    &__title {
+        @extend  %simple-slice__title;
+        @extend  %t-heading-bulmer;
+        color: $k2-blue;
+       
+    }
+    &__description {
+        @extend %t-paragraph;
+        color: white;
+    }
+    &__primary-cta {
+      @extend %button;
+      @extend %button--purple-outline;
+    }
+
+    br {
+    display:none;
+
+       @include tablet {
+        display:auto;
+       }
+    }
+
+}
+
+.one-miniute-video-slice {
+    background-color: $k2-green;
+    @extend %simple-slice;
+    &__content {
+       @extend  %simple-slice__content;
+    }
+    &__title {
+        @extend  %t-heding-avenir-bold;
+        @extend  %simple-slice__title;
+        
+        color: $k2-purple;
+       
+    }
+    &__description {
+        @extend %t-paragraph;
+        color: white;
+    }
+    &__primary-cta {
+      @extend %button;
+      @extend %button--white-outline;
+      &:hover {
+                background-color: white;
+                color:$k2-purple !important;
+            }
+    }
+
+    br {
+    display:none;
+
+       @include tablet {
+        display:auto;
+       }
+    }
+
+}
+
+
+
+%simple-slice {
+    padding: 40px 0px;
+    border-top: 5px solid white;
+    text-align: center;
+    &__content {
+        @include make-xs-column(12);
+        @include make-xs-column-offset(0);
+        @include make-sm-column(8);
+        @include make-sm-column-offset(2);
+    }
+    &__title {
+        margin: 10px 0px;
+    }
+    &__description {
+        @extend %t-paragraph;
+        color: white;
+    }
+        br {
+        display:none;
+       @include tablet {
+        display:auto;
+       }
+    }
+}
+
+
 
 // &__content {}
 // &__title{}

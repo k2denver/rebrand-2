@@ -13,22 +13,22 @@
   .wrapper:after {
     clear: both; }
 
-.product-main-stage__section-description ul li, .your-business__description, .easy-vs-hard__description, .main-stage-learn-more__description, .overview__graph--right-content p, .overview__graph--left-content p, .overview__description {
+.product-main-stage__section-description ul li, .your-business__description, .easy-vs-hard__description, .main-stage-learn-more__description, .overview__graph--right-content p, .overview__graph--left-content p, .overview__description, .products-slice__description, .one-miniute-video-slice__description {
   font-size: 14px;
   line-height: 18px; }
 
-.easy-vs-hard__title, .overview__graph--right-content h3, .overview__graph--left-content h3, .overview__title {
+.easy-vs-hard__title, .overview__graph--right-content h3, .overview__graph--left-content h3, .overview__title, .products-slice__title {
   font-size: 40px;
   font-family: "Bulmer MT W01 Italic" !important; }
 
-.product-main-stage__section-title, .your-business__title {
+.product-main-stage__section-title, .your-business__title, .one-miniute-video-slice__title {
   font-family: "Avenir Next LT W01 Bold" !important;
   font-size: 24px;
   font-weight: normal;
   text-transform: uppercase;
   margin: 40px 0px; }
 
-.product-main-stage__button--primary, .easy-vs-hard__primary-cta, .main-stage-learn-more__button--primary {
+.product-main-stage__button--primary, .easy-vs-hard__primary-cta, .main-stage-learn-more__button--primary, .products-slice__primary-cta, .one-miniute-video-slice__primary-cta {
   display: inline-block;
   padding: 10px 15px;
   color: white;
@@ -53,7 +53,17 @@
     background-color: #272d43; }
     .easy-vs-hard__primary-cta:hover {
       background-color: #00b5c8; }
-  .product-main-stage__button--primary:hover, .easy-vs-hard__primary-cta:hover, .main-stage-learn-more__button--primary:hover {
+    .products-slice__primary-cta {
+      border: 1px solid #00b5c8; }
+      .products-slice__primary-cta:hover {
+        background-color: #00b5c8; }
+  .one-miniute-video-slice__primary-cta {
+    border: 1px solid white;
+    color: white; }
+    .one-miniute-video-slice__primary-cta:hover {
+      background-color: white;
+      color: #272d43 !important; }
+  .product-main-stage__button--primary:hover, .easy-vs-hard__primary-cta:hover, .main-stage-learn-more__button--primary:hover, .products-slice__primary-cta:hover, .one-miniute-video-slice__primary-cta:hover {
     color: white !important; }
 
 .your-business__primary-cta {
@@ -1263,7 +1273,7 @@ body header {
     .overview__graph {
       background-image: url('/img/1/learn-more-graph.jpg');
       background-size: 1001px 1006px;
-      min-height: 1200px;
+      min-height: 1190px;
       background-repeat: no-repeat;
       background-position: top center; } }
   .overview__graph--right-content {
@@ -1401,5 +1411,63 @@ body header {
   @media (min-width: 768px) {
     .overview__description {
       margin-left: 8.3333333333%; } }
+
+.products-slice {
+  background-color: #272d43; }
+  .products-slice__title {
+    color: #00b5c8; }
+  .products-slice__description {
+    color: white; }
+  .products-slice br {
+    display: none; }
+    @media (min-width: 768px) {
+      .products-slice br {
+        display: auto; } }
+
+.one-miniute-video-slice {
+  background-color: #81af41; }
+  .one-miniute-video-slice__title {
+    color: #272d43; }
+  .one-miniute-video-slice__description {
+    color: white; }
+  .one-miniute-video-slice__primary-cta:hover {
+    background-color: white;
+    color: #272d43 !important; }
+  .one-miniute-video-slice br {
+    display: none; }
+    @media (min-width: 768px) {
+      .one-miniute-video-slice br {
+        display: auto; } }
+
+.products-slice, .one-miniute-video-slice {
+  padding: 40px 0px;
+  border-top: 5px solid white;
+  text-align: center; }
+  .products-slice__content, .one-miniute-video-slice__content {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 0%;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px; }
+    @media (min-width: 768px) {
+      .products-slice__content, .one-miniute-video-slice__content {
+        float: left;
+        width: 66.6666666667%; } }
+    @media (min-width: 768px) {
+      .products-slice__content, .one-miniute-video-slice__content {
+        margin-left: 16.6666666667%; } }
+  .products-slice__title, .one-miniute-video-slice__title {
+    margin: 10px 0px; }
+  .products-slice br, .one-miniute-video-slice br {
+    display: none; }
+    @media (min-width: 768px) {
+      .products-slice br, .one-miniute-video-slice br {
+        display: auto; } }
 
 /*# sourceMappingURL=app.css.map */
