@@ -1561,4 +1561,12 @@ body header {
   100% {
     opacity: 1; } }
 
+.company {
+  background-size: 1680px 1584px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  height: 1584px;
+  width: 100%;
+  background-image: url('/img/1/company-page.jpg'); }
+
 /*# sourceMappingURL=app.css.map */
