@@ -1,0 +1,22 @@
+
+
+feature-1-title: "Line-of-business integration"
+feature-1-description-1: "Incorporate data from multiple line-of-business (LOB) systems and external sources into a single form that works across applications and devices, online and ofﬂine."
+feature-1-description-2: "Use as standalone a Web-based business application, or surface within applications such as Microsoft, SAP, Salesforce, Box and others supported by HTML5."
+feature-1-img: "forms-screenshot-1.jpg"
+
+feature-2-title: "Reusable forms"
+feature-2-description-1: "Create reusable forms that work the way you want, with little to no code, using powerful drag-and-drop tools."
+feature-2-description-2: "Add business logic and validation rules to forms without writing any code, even Javascript. Views and themes can be reused across any business application, workflow or when building a new form."
+feature-2-img: "forms-screenshot-2.jpg"
+
+feature-3-title: "Workflow integration"
+feature-3-description-1: "Integrate forms into workflows and business applications so that the right information gets to the right user."
+feature-3-description-2: "Initiate a workflow right from a form that's available from any device."
+feature-3-img: "forms-screenshot-1.jpg"
+
+feature-4-title: "Mobile-ready"
+feature-4-description-1: "Responsive form design allows you to build a single form that can be used on any device, making it easy for users to get work done from anywhere."
+feature-4-description-2: "Mobile-ready forms can work online or offline to capture data. Backend systems are updated automatically as soon as connectivity is restored. "
+feature-4-img: "forms-screenshot-2.jpg"
+

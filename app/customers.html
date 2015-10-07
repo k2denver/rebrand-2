@@ -1,0 +1,885 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Company</title>
+    <link rel="shortcut icon" href="http://k2.com/favicon.ico?v=2" />
+    <link href="http://www.k2.com/Styles/jqModal.css?z=07092014.1" rel="stylesheet" type="text/css" />
+    <link href="/css/live.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width,initial-scale = 1.0" />
+    <link rel="stylesheet" href="/css/app.css" />
+ 
+
+    <script src="http://www.k2.com/scripts/K2ComV5/modernizr.min.js?z=09172015.1"></script>
+       <script>
+    window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')
+    </script>
+    <script src="/js/smartajax/load.smartajax.js"></script>
+        <script>
+
+        SmartAjax_load('/js/smartajax/', function(){
+        SmartAjax.setOptions({
+            history:true,
+            cache:true,
+            analytics:true,
+             containers:
+                [
+                    {selector: '.tabs-content .wrapper:first'},
+                    {selector: '.tabs:first'},
+                    {selector: '.tabs-scripts'}
+                    
+                ],
+            before: function()
+            {
+
+               $( ".tabs-content:first .wrapper:first" ).fadeOut( 700 , SmartAjax.proceed);
+              
+            },
+            success: function()
+            {
+        
+             
+               SmartAjax.proceed();
+            },
+            done: function()
+            {
+               $( ".tabs-content:first .wrapper:first" ).fadeIn( 700);
+            
+            }
+        });
+         
+        SmartAjax.bind('a.ajax');         
+        
+    });
+        </script>
+        <script src="/js/typed.js"></script>
+
+</head>
+
+<body class="">
+    <div class="wrapper-header">
+        <header class="header">
+            <a href="/" class="header__logo">
+                <img src="/img/1/k2-logo.png" alt="">
+
+            </a>
+            <!-- The start of the Best Nav Ever (BNE). NO BEM here.  -->
+            <nav class="header__best-nav-ever bne" role="navigation">
+                <ul>
+                    <li role="menuitem">
+                        <a>WHAT IS K2?</a>
+                        <ul class="sub-menu--what-is-k2">
+                            <li><a>Intro to Business Applications</a>
+                                <ul class="sub-sub-menu">
+
+                                    <li><a href="/forms.html">Forms</a></li>
+                                    <li><a href="/workflow.html">Workflow</a></li>
+                                    <li><a href="/data.html">Data & Systems</a></li>
+                                    <li><a href="/experience-apps.html">Using an App</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/products.html">Products</a></li>
+
+                            <li><a href="#">One-Minute Demos</a></li>
+                            <li><a href="/company.html">About the Company</a></li>
+                        </ul>
+                    </li>
+                    <li role="menuitem">
+                        <a>HOW PEOPLE USE K2</a>
+                        <ul class="sub-menu--how-people-use-k2">
+                            <li><a href="/customers.html">Customer Stories</a></li>
+                            <li>
+                                <a>Industries</a>
+                                <ul class="sub-sub-menu">
+                                    <li><a href="#">Financial Services</a></li>
+                                    <li><a href="#">Legal</a></li>
+                                    <li><a href="#">Manufacturing</a></li>
+                                    <li><a href="#">Healthcare</a></li>
+                                    <li><a href="#">Public Sector</a></li>
+                                    <li><a href="#">Oil & Gas</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a>Departments</a>
+                                <ul class="sub-sub-menu">
+                                    <li><a href="#">Finance</a></li>
+                                    <li><a href="#">Human Resources</a></li>
+                                    <li><a href="#">Operations</a></li>
+                                    <li><a href="#">Purchasing</a></li>
+                                    <li><a href="#">Sales & Marketing</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a>Use Cases</a>
+                                <ul class="sub-sub-menu">
+                                    <li><a href="#">Use Case 1</a></li>
+                                    <li><a href="#">Use Case 2</a></li>
+                                    <li><a href="#">Use Case 3</a></li>
+                                    <li><a href="#">Use Case 4</a></li>
+                                    <li><a href="#">Case Management</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Business Process Management</a></li>
+                            <li><a href="#">SharePoint Workflow</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="last">RESOURCES</a>
+                        <ul class="sub-menu--resources">
+                          <li>
+                                <a>Event, Webinars and Training</a>
+                                <ul class="sub-sub-menu">
+                                    <li><a href="#">In-Person Events</a></li>
+                                    <li><a href="#">Live Webinars</a></li>
+                                    <li><a href="#">Recorded Webinars</a></li>
+                                    <li><a href="#">Training Courses</a></li>
+                                </ul>
+                            </li>
+                            <li><a>Support</a>
+                              <ul class="sub-sub-menu">
+                                    <li><a href="#">Consulting and Training</a></li>
+                                    <li><a href="#">Consulting Options</a></li>
+                                    <li><a href="#">Training Options</a></li>
+                                    <li><a href="#">Support Overview</a></li>
+                                    <li><a href="#">Appit</a></li>
+                                    <li><a href="#">K2 blackpearl</a></li>
+                                    <li><a href="#">Access Support</a></li>
+                                </ul>
+                            </li>
+                            <li><a>Partners</a>
+                              <ul class="sub-sub-menu">
+                                    <li><a href="#">Become a Partner</a></li>
+                                    <li><a href="#">Partner List</a></li>
+                                    <li><a href="#">Technology Partner</a></li>
+                                    <li><a href="#">Partner Login</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/">Blog</a></li>
+                            <li><a>Community</a>
+                                <ul class="sub-sub-menu">
+                                  <li><a href="">Forums</a></li>
+                                  <li><a href="">Market (Free code/plugins)</a></li>
+                                  <li><a href="#">Community Articles</a></li>
+                                </ul>
+                            </li>
+                            <li><a>Applircation Accelerators</a>
+                                
+                                <ul class="sub-sub-menu">
+                                  <li><a href="#">Leave Request</a></li>
+                                  <li><a href="#">New Idea Submission</a></li>
+                                  <li><a href="#">Expense Claim</a></li>
+                                  <li><a href="#">Task Management</a></li>
+                                  <li><a href="#">Travel Request</a></li>
+                                  <li><a href="#">Incident Management</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Downloads</a></li>
+                        </ul>
+                    </li>
+                    </ul>
+            </nav>
+            <a class="header__cta-contact">contact</a>
+            <a class="header__cta-see-it-live">see it live</a>
+            <div class="header__login"></div>
+            <div class="header__search"></div>
+        </header>
+    </div>
+
+    
+
+<section class="case-studies push-for-menu-3">
+	<div class="row">
+		<div class="main-message">
+			<div class="inner-wrapper">
+        <h1>Marketform</h1>
+        <p>UK insurance company Marketform used K2 to overhaul standard insurance industry practices.</p>
+  			<a href="http://www.k2.com/customers/marketform" class="btn-see-case-study u-fade-hover">
+  				See case study
+  			</a>
+		  </div>
+		</div>
+	</div>
+</section>
+<section class="case-grid">
+  <div class="row">
+    <div class="columns four">
+        <div class="case-wrapper blue-wrapper">
+          <a href="http://www.k2.com/customers/shell"><div class="logo-container"><div class="center"><img src="http://www.k2.com/img/5/shell-logo.png"></div></div></a>
+          <h3>Shell</h3>
+          <div class="industry energy"><div class="icon-energy"></div>Energy & Environment</div>
+          <p>Shell, a global group of energy and petrochemical companies, uses K2 to lower costs and build workflow and forms apps faster.</p>
+          <a class="permalink" href="http://www.k2.com/customers/shell">Go to Case Study</a>
+          <a class="download-industry" href="/files/5575">Download Industry PDF</a>
+        </div>
+    </div>
+    <div class="columns four blue-wrapper">
+        <div class="case-wrapper">
+          <a href="http://www.k2.com/customers/kimberly-clark"><div class="logo-container"><img src="http://www.k2.com/img/5/kimberly-clark-logo.png "></div></a>
+          <h3>Kimberly-Clark</h3>
+          <div class="industry energy"><div class="icon-manufactoring"></div>Manufacturing</div>
+          <p>Using K2 to eliminate costly delays, Kimberly-Clark has built over 250 applications, with more each month.</p>
+          <a class="permalink" href="http://www.k2.com/customers/kimberly-clark">Go to Case Study</a>
+          <a class="download-industry" href="/files/5571">Download Industry PDF</a>
+        </div>
+    </div>
+    <div class="columns four blue-wrapper">
+        <div class="case-wrapper">
+          <a href="http://www.k2.com/customers/dentons"><div class="logo-container"><img src="http://www.k2.com/img/5/dentons-logo.png"></div></a>
+          <h3>Denton’s</h3>
+          <div class="industry energy">
+            <div class="icon-legal"></div> Legal
+          </div>
+          <p>Using K2 and partner Clarity, SNR Denton developed a comprehensive solution for new business intake. </p>
+          <a class="permalink" href="http://www.k2.com/customers/dentons">Go to Case Study</a>
+          <a class="download-industry" href="/files/5570">Download Industry PDF</a>
+        </div>
+    </div>
+    <div class="columns four">
+        <div class="case-wrapper blue-wrapper">
+          <a href="http://www.k2.com/customers/island-savings"><div class="logo-container"><img src="http://www.k2.com/img/5/IslandSavings-logo.png"></div></a>
+          <h3>Island Savings</h3>
+          <div class="industry financial"><div class="icon-financial"></div>Financial Services</div>
+          <p>Island Savings streamlined every aspect of mortgage origination and eliminated time-consuming paper-based systems with K2.</p>
+          <a class="permalink" href="http://www.k2.com/customers/island-savings">Go to Case Study</a>
+          <a class="download-industry" href="/files/5566">Download Industry PDF</a>
+        </div>
+    </div>
+    <div class="columns four">
+        <div class="case-wrapper blue-wrapper">
+          <a href="http://www.k2.com/customers/sanofi"><div class="logo-container"><img src="http://www.k2.com/img/5/sanofi-logo.png"></div></a>
+          <h3>Sanofi</h3>
+          <div class="industry healthcare"><div class="icon-medical"></div>healthcare</div>
+          <p>Global healthcare company Sanofi used K2 to develop over 100 automated business apps, transforming business processes to become a more efficient and auditable organization.  </p>
+          <a class="permalink" href="http://www.k2.com/customers/sanofi">Go to Case Study</a>
+          <a class="download-industry" href="/files/5568">Download Industry PDF</a>
+        </div>
+    </div>
+    <div class="columns four">
+        <div class="case-wrapper blue-wrapper">
+          <a href="http://www.k2.com/customers/north-yorkshire-council"><div class="logo-container"><img src="http://www.k2.com/img/5/yorkshire-council.png"></div></a>
+          <h3>North Yorkshire Council</h3>
+          <div class="industry government"><div class="icon-government"></div>Government</div>
+          <p style="min-height:74px">Find out how North Yorkshire Council saves £200,000+ with K2-based processes.</p>
+          
+          <a class="permalink" href="http://www.k2.com/customers/north-yorkshire-council">Go to Case Study</a>
+          <a class="download-industry" href="/files/5577">Download Industry PDF</a>
+        </div>
+    </div>
+   
+
+
+  </div>
+  <div class="row">
+    <div class="columns twelve left-no-padding">
+      <div class="wrapper-contact-us">
+        <span class="title-heading">In dozens of industries in every part of the world</span>
+        <p>Looking for a case study that is specific to your industry or department? <br/>Contact us,  and we'll set you up.</p>
+        <a class="btn-contact-us contact-us-white-button u-fade-hover" href="/contact-us">Contact Us</a>
+      </div> 
+    </div>
+  </div>
+  <div class="row more-cases">
+    <div class="columns twelve title-heading">MORE CASE STUDIES</div>
+  </div>
+  <div class="row">
+    <div id='CaseStudyList' class='_ContentList' action="getcontentlistjson" target="/data/get.xml?xmldoc=file:/getcontentlist/CustomerList-CaseStudies.xml"></div>
+    
+  </div>
+</section>
+<style>
+
+/***************************/
+/*****   Case Studies ******/
+/***************************/
+
+@font-face {
+  font-family: 'icok2';
+  src: url('/fonts/ico/icok2.eot?-szgxpd');
+  src: url('/fonts/ico/icok2.eot?#iefix-szgxpd') format('embedded-opentype'), url('/fonts/ico/icok2.woff?-szgxpd') format('woff'), url('/fonts/ico/icok2.ttf?-szgxpd') format('truetype'), url('/fonts/ico/icok2.svg?-szgxpd#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  font-family: 'icok2';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  font-size: 33px;
+  /* Better Font Rendering =========== */
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #272D43;
+}
+
+.icon-energy:before {
+  content: "\65";
+}
+
+.icon-government:before {
+  content: "\67";
+}
+
+.icon-financial:before {
+  content: "\66";
+}
+
+.icon-medical:before {
+  content: "\4d";
+}
+
+.icon-legal:before {
+  content: "\6c";
+}
+
+.icon-manufactoring:before {
+  content: "\6d";
+}
+
+.main-message {
+  margin: 95px auto;
+  text-align: center;
+}
+
+.main-message h1 {
+  text-align: left;
+  font-size: 40px !important;
+  text-transform: uppercase;
+  font-family: "AvenirNextLTW01-Regular" !important;
+  font-weight: regular;
+  margin: 0 auto;
+  line-height: 1.45;
+  color: #272D43;
+}
+
+.case-studies {
+  background-color: white;
+  width: 100%;
+  background-image: url("http://www.k2.com/img/5/marketform_banner.jpg");
+  color: #272D43;
+  background-position: center center;
+  height: 387px;
+  background-size: cover;
+  text-align: center;
+}
+
+.inner-wrapper {
+  width: 770px;
+  margin: 0 auto;
+}
+
+.case-studies .main-message p {
+  color: #272D43;
+  text-align: left;
+  width: 100%;
+  margin: 0 auto;
+  padding-right: 55%;
+  font-size: 16px;
+}
+
+.btn-see-case-study {
+  padding: 8px 22px;
+  font-size: 18px;
+  border: 1px solid white;
+  font-weight: bold;
+  transition: background-color .3s;
+  background-color: #00B5C8;
+  display: inline-block;
+  float: left;
+  margin-top: 40px;
+  color: white!important;
+  text-transform: uppercase;
+}
+
+.btn-see-case-study:hover {
+  background-color: #81AF41;
+}
+
+.case-grid {
+  padding-top: 60px;
+  background-color: #F2F3F2;
+  border-top: 7px solid white;
+}
+
+.case-grid .four {
+  padding-bottom: 60px;
+}
+
+.case-grid .logo-container {
+  width: 272px;
+  height: 175px;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.case-grid .blue-wrapper .logo-container {
+  background-color: #00B5C8;
+}
+
+.case-grid .green-wrapper .logo-container {
+  background-color: #81AF41;
+}
+
+.case-grid .logo-container .center {
+
+}
+.case-grid .logo-container img {
+  max-width: 54%;
+  max-height: 54%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  transition: transform .3s;
+}
+
+/*.case-grid .logo-container:hover img {
+  transform: translate(-50%,-50%) scale(1.2);
+  transform-origin: center;
+}*/
+
+.case-grid .four h3 {
+  font-family: "Avenir Next LT W01 Bold" !important;
+  font-size: 20px;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin: 8px 0px 8px 0px;
+}
+
+.case-wrapper {
+  width: 272px;
+  border-bottom: 1px solid #5d5d5d;
+  height: 400px;
+}
+
+.blue-wrapper h3 {
+  color: #00B5C8;
+}
+
+.blue-wrapper .download-industry {
+  color: #00B5C8;
+}
+
+.blue-wrapper .download-industry:hover {
+  color: #81AF41;
+}
+
+.case-grid .blue-wrapper .download-industry:after {
+  border-left-color: #00B5C8;
+}
+
+.case-grid .blue-wrapper .download-industry:hover:after {
+  border-left-color: #81AF41;
+}
+
+.green-wrapper h3 {
+  color: #81AF41;
+}
+
+.green-wrapper .download-industry {
+  color: #81AF41;
+}
+
+.green-wrapper .download-industry:hover {
+  color: #00B5C8;
+}
+
+.case-grid .green-wrapper .download-industry:after {
+  border-left-color: #81AF41;
+}
+
+.case-grid .green-wrapper .download-industry:hover:after {
+  border-left-color: #00B5C8;
+}
+
+.case-grid .industry {
+  text-transform: uppercase;
+  color: #272D43;
+  font-size: 12px;
+  font-family: "AvenirNextLTW01-Regular";
+  font-weight: bold;
+  background-position: left center;
+  background-repeat: no-repeat;
+  margin-bottom: 5px;
+  line-height: 34px;
+}
+
+.case-grid .industry [class^="icon-"],
+.case-grid .industry[class*=" icon-"] {
+  float: left;
+  padding-right: 10px;
+}
+
+.case-grid .four p {
+  font-size: 14px;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 8px;
+  line-height: 1.4em;
+  min-height: 95px;
+}
+
+.case-grid .permalink {
+  font-family: "Avenir Next LT W01 Bold" !important;
+  font-size: 13px;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: right;
+  float: left;
+  color: #272D43;
+}
+
+.case-grid .permalink:after {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid #272D43;
+  margin: 0px 6px;
+}
+
+.case-grid .download-industry {
+  text-align: right;
+  width: 100%;
+  font-family: "Avenir Next LT W01 Bold" !important;
+  font-size: 13px;
+  text-transform: uppercase;
+  float: left;
+  padding: 4px 0px;
+}
+
+.case-grid .download-industry:after {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid #b7b97b;
+  margin: 0px 6px;
+}
+
+.case-grid a:hover {
+  cursor: pointer;
+}
+
+.case-grid {}
+
+.wrapper-contact-us {
+  width: 97%;
+  /*background-image: url('/img/bg_bottom_cta.png');*/
+    background-color: #272D43;
+  padding: 40px;
+  text-align: center;
+}
+
+.wrapper-contact-us .title-heading {
+  font-family: 'Bulmer MT W01 Italic';
+  font-size: 28px;
+  color: white;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  display: block;
+}
+
+.wrapper-contact-us p {
+  color: white;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  padding-top: 18px;
+  padding-bottom: 10px;
+}
+
+.btn-contact-us {
+  width: 168px;
+  padding-top: 10px;
+}
+
+.btn-contact-us img {
+  width: 168px;
+}
+
+.left-no-padding {
+  padding-left: 0px;
+}
+
+.more-cases .title-heading {
+  font-family: "AvenirNextLTW01-Regular";
+  font-size: 20px;
+  text-transform: uppercase;
+  padding-top: 50px;
+  border-bottom: 1px solid black;
+  text-align: center;
+  padding-bottom: 20px;
+  width: 97%;
+}
+
+.case-list {
+  padding-top: 30px;
+  margin-bottom: 40px;
+}
+
+.case-list li {
+  width: 33%;
+  float: left;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.case-list li a {
+  color: #4e5859;
+}
+
+.case-pagination {
+  width: 100%;
+  text-align: center;
+  clear: both;
+}
+
+.case-pagination ul {
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.case-pagination ul li {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 15px;
+  vertical-align: middle;
+}
+
+.case-pagination .previous {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-right: 12px solid #4e5859;
+  margin-right: 15px;
+}
+
+.case-pagination .next {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: 12px solid #4e5859;
+  margin-left: 15px;
+}
+
+.case-pagination .current {
+  font-family: "Avenir Next LT W01 Bold" !important;
+}
+
+body .permalink:hover {
+  color: #2d586f;
+}
+
+.WhiteSite .u-fade-hover {
+  opacity: 0.9;
+  -webkit-transition: opacity .25s ease;
+  -moz-transition: opacity .25s ease;
+  -ms-transition: opacity .25s ease;
+  -o-transition: opacity .25s ease;
+  transition: opacity .25s ease;
+  text-decoration: none;
+}
+
+.WhiteSite .u-fade-hover:hover {
+  opacity: 1;
+  text-decoration: none;
+}
+
+#CaseStudyList {
+  width: 100%;
+  overflow: hidden;
+  padding: 10px;
+}
+
+span.see-case-study {
+  display: block;
+  color: rgb(104, 105, 110);
+  font-family: 'Avenir Next LT W01 Bold';
+  background-color: white;
+  text-align: center;
+  padding: 19px;
+  font-size: 21px;
+  text-transform: uppercase;
+}
+
+.smartling-de .case-wrapper {
+  height: 475px;
+}
+
+.smartling-de .case-grid .four p {
+  min-height: 119px
+}
+
+.smartling-de .contact-us-white-button {
+  width: 319px;
+}
+
+.contact-us-white-button {
+  padding: 8px 22px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color .3s;
+  background-color: #00B5C8;
+  color: white!important;
+  text-transform: uppercase;
+}
+
+.contact-us-white-button:hover {
+  background-color: #81AF41;
+}
+
+@media only screen and (max-width: 780px) {
+  .case-list li {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .case-list li {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .wrapper-contact-us p {
+    color: white;
+    width: 100%;
+    text-align: left;
+    font-size: 17px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .case-wrapper {
+    width: 90%;
+    margin: 20px;
+    border-bottom: none;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .left-no-padding {
+    padding-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main-message {
+    margin: 43px auto;
+  }
+}
+
+@media only screen and (max-width: 940px) {
+  .wrapper-contact-us {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main-message h1 {
+    font-size: 20px;
+    width: 88%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .case-studies {
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .case-studies {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .inner-wrapper {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .case-studies .main-message h1 {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .case-studies .main-message h1 {
+    font-size: 20px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .case-studies .main-message p {
+    font-size: 12px;
+    width: 100%;
+    padding-right: 20%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .btn-see-case-study {
+    float: left;
+    margin-top: 15px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .btn-see-case-study img {
+    width: 150px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .case-grid .four img {
+    width: 100%;
+    padding-top: 0px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .case-grid .permalink {
+    padding-top: 20px
+  }
+}
+
+</style>
+   
+ 
+
+    
+    <script src="js/app.js"></script>
+    <script src="http://www.k2.com/scripts/K2ComV5/jquery.mobile.custom.min.js" type="text/javascript"></script>
+    <script src="http://www.k2.com/scripts/K2ComV5/foundation.min.js?z=07092014.1"></script>
+    <script src="http://www.k2.com/Scripts/tiny_mce/jquery.tinymce.js?z=07092014.1" type="text/javascript"></script>
+    <script>
+    var _userStatus = "_ValidatedUser";
+    </script>
+    <script src="http://www.k2.com/scripts/K2ComV5/K2ComV5_JS.js?z=09162014.3"></script>
+    <script src="//localhost:35729/livereload.js"></script>
+</body>
+</html>

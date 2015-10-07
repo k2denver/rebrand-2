@@ -3,8 +3,8 @@ main_stage_message: "Rapidly deliver business applications that are agile"
 main-stage__button--primary: "Watch intro video"
 
 #LEARN MORE SCLICE
-learn-more__title: "Uniting business and IT to drive bottom-line performance"
-learn-more__description: " K2 brings together the best of traditional BPM, packaged solutions and custom development in one platform, for applications that reach across departments and line-of-business systems. These apps use forms and workflow to deliver the right information to the right people, at the right time, so they can make smart, data-driven decisions."
+learn-more__title: "Merging business and IT to drive performance "
+learn-more__description: "K2 unites the best of traditional BPM with the future of business by way of packaged solutions and custom development in one platform – for applications that reach across departments and line-of-business systems. These apps use workflow and forms to deliver the right information to the right people, at the right time, so they can make smart, data-driven decisions. "
 
 #DEPARTMENTS SLICE
 departments__title: "Find the solution that’s right for you"
@@ -16,4 +16,5 @@ customers__title--cta: "see all case studies"
 
 
 how-to-buy__title: "How to buy"
-how-to-buy__description: "Want to see K2 in action? Click below to learn how easy it can be to build and run business process applications with forms, workflow, data and reports."
+how-to-buy__description: "K2 powers the people who build great companies. That means you."
+how-to-buy__button--primary: "Get started today"
