@@ -7,76 +7,186 @@
 // mobile-graph3.png
 // mobile-graph2.png
 // mobile-graph1.png
-
-
 .fwd {
-    padding:40px 0px;
-    height:430px;
+    padding: 40px 0px;
+    height: 430px;
+    position:relative;
+    &__menu {
+        position:absolute;
+        left:0px;
+        &:before {
+            height:170px;
+            width:3px;
+            content:'';
+            background-color:$k2-grey;
+            position:absolute;
+            left:12px;
+            top:0px;
+        }
+        &:after {
+            content:'';
+            width:14px;
+            border-radius:14px;
+            height:14px;
+            background-color:$k2-green;
+            position:absolute;
+            left:6px;
+            top:0px;
+            transition: all .4s ease;
+        }
+        &.-one {
+            &:after {
+                top:0px;
+            }
+        }
+        &.-two {
+            &:after {
+                top:50px;
+            }
+        }
+        &.-three {
+            &:after {
+                top:105px;
+            }
+        }
+        &.-four {
+            &:after {
+                top:160px;
+            }
+        }
+        ul {
+            li {
+                cursor:pointer;
+                font-size:12px;
+                list-style:none;
+                text-transform: uppercase;
+                line-height:14px;
+                font-weight:bold;
+                color:$k2-grey;
+                    width:200px;
+
+                &:nth-child(1){
+                     position:absolute;
+                        left:30px;
+                        top:-10px;
+                }
+                &:nth-child(2){
+                     position:absolute;
+                        left:30px;
+                        top:50px;
+                }
+
+                &:nth-child(3){
+                     position:absolute;
+                        left:30px;
+                        top:105px;
+                }
+
+                &:nth-child(4){
+                     position:absolute;
+                        left:30px;
+                        top:160px;
+                }
+            }
+            li.active {
+                color:$k2-green;
+            }
+        }
+    }
     &__left {
         @include make-xs-column(12);
         @include make-sm-column(8, 0px);
-    position:relative;
-
-    
-    
+        position: relative;
     }
-
     &__right {
-         @include make-xs-column(12);
-         @include make-sm-column(4 , 0px);
-
+        @include make-xs-column(12);
+        @include make-sm-column(4, 0px);
         &-title {
             @extend %t-heading-bulmer;
-            line-height:24px;
-                line-height: 39px;
-                color:$k2-green;
-                margin-top:0px;
+            line-height: 24px;
+            line-height: 39px;
+            color: $k2-green;
+            margin-top: 0px;
         }
         &-description {
-            @extend %t-paragraph; 
+            @extend %t-paragraph;
         }
-
     }
-
     &__computer {
-        position:absolute;
-        top:0px;
-        right:0px;
-        z-index:5;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        z-index: 5;
     }
     &__screen {
-         position:absolute;
-        top:0px;
-        right:0px;
-        z-index:2;
-        width:350px;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        z-index: 2;
+        width: 350px;
         top: 12px;
         right: 70px;
-        height:200px;
-        overflow:hidden;
-
+        height: 200px;
+        overflow: hidden;
     }
     &__slides {
-        position:absolute;
-         top:0px;
-         transition:top 0.7s ease;
+        position: absolute;
+        top: 0px;
+        transition: top 0.7s ease;
         &.-one {
-            top:0px;
-
+            top: 0px;
         }
         &.-two {
-            top:-200px;
-
+            top: -200px;
         }
         &.-three {
-            top:-400px;
-
+            top: -400px;
         }
         &.-four {
-            top:-600px;
+            top: -600px;
+        }
+    }
+}
+
+.fwd__right-content{
+   
+        &--one {
+            display:none;
 
         }
+        &--two {
+             display:none;
+        }
+        &--three {
+             display:none;
+        }
+        &--four {
+            display:none;
+        }
+    
         
+}
+
+.fwd__right.-one {
+        .fwd__right-content--one{
+            display:block;
+        }
+    }
+    .fwd__right.-two {
+        .fwd__right-content--two{
+            display:block;
+        }
     }
 
-}
+.fwd__right.-three {
+        .fwd__right-content--three{
+            display:block;
+        }
+    }
+
+.fwd__right.-four {
+        .fwd__right-content--four{
+            display:block;
+        }
+    }
+

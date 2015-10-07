@@ -12,6 +12,46 @@
  
 
     <script src="http://www.k2.com/scripts/K2ComV5/modernizr.min.js?z=09172015.1"></script>
+       <script>
+    window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')
+    </script>
+    <script src="/js/smartajax/load.smartajax.js"></script>
+        <script>
+
+        SmartAjax_load('/js/smartajax/', function(){
+        SmartAjax.setOptions({
+            history:true,
+            cache:true,
+            analytics:true,
+             containers:
+                [
+                    {selector: '.tabs-content:first'},
+                    {selector: '.tabs:first'}
+                    
+                ],
+            before: function()
+            {
+
+               $( ".tabs-content:first" ).fadeOut( 200 , SmartAjax.proceed);
+              
+            },
+            success: function()
+            {
+        
+               SmartAjax.proceed();
+               
+            },
+            done: function()
+            {
+             $( ".tabs-content:first" ).fadeIn( 200 , SmartAjax.proceed);
+            
+            }
+        });
+         
+        SmartAjax.bind('a.ajax');         
+        
+    });
+        </script>
 
 </head>
 
@@ -156,8 +196,8 @@
     <div class="wrapper">
         <div class="tabs__content">
             <ul>
-                <li><a href="/learn-more.html">Overview</a></li>
-                <li class="active"><a href="/forms.html">Forms</a></li>
+                <li><a class="ajax" href="/learn-more.html">Overview</a></li>
+                <li class="active"><a class="ajax" href="/forms.html">Forms</a></li>
                 <li><a href="">Workflow</a></li>
                 <li><a href="">Data</a></li>
                 <li><a href="">App Experience</a></li>
@@ -167,40 +207,64 @@
 </section>
 <section class="tabs-content">
     <div class="wrapper">
-      
-            <div class="fwd">
-                <div class="fwd__left">
-                    <div id="test">aafsdf</div>
-                    <div class="fwd__menu">
-                        
-                       
-                    </div>    
-
-                    <div class="fwd__computer">
-                        <img src="/img/1/laptop-device.png" width="493" alt="">
-                    </div>
-                    <div class="fwd__screen">
-                        <div class="fwd__slides js-screen -two">
-                            <img src="/img/1/forms-screenshot-1.jpg" width="350" alt="">
-                            <img src="/img/1/forms-screenshot-2.jpg" width="350" alt="">
-                            <img src="/img/1/forms-screenshot-1.jpg" width="350" alt="">
-                            <img src="/img/1/forms-screenshot-2.jpg" width="350" alt="">
-
-                        </div>
+        <div class="fwd">
+            <div class="fwd__left">
+                <div class="fwd__menu -one">
+                    <ul>
+                        <li class="item-one active">Line-of-business
+                            <br> integration</li>
+                        <li class="item-two">Reusable Forms</li>
+                        <li class="item-three">Tie to Workflow</li>
+                        <li class="item-four">Mobile-ready</li>
+                    </ul>
+                </div>
+                <div class="fwd__computer">
+                    <img src="/img/1/laptop-device.png" width="493" alt="">
+                </div>
+                <div class="fwd__screen">
+                    <div class="fwd__slides js-screen -one">
+                        <img src="/img/1/forms-screenshot-1.jpg" width="350" alt="">
+                        <img src="/img/1/forms-screenshot-2.jpg" width="350" alt="">
+                        <img src="/img/1/forms-screenshot-1.jpg" width="350" alt="">
+                        <img src="/img/1/forms-screenshot-2.jpg" width="350" alt="">
                     </div>
                 </div>
-                <div class="fwd__right">
+            </div>
+            <div class="fwd__right -one">
+                <div class="fwd__right-content--one">
                     <h2 class="fwd__right-title">Line-of-business integration
-</h2>
+    </h2>
                     <p class="fwd__right-description">
                         Incorporate data from multiple line-of-business (LOB) systems and external sources into a single form that works across multiple applications and devices, online and ofﬂine.
-
                     </p>
-                    <p class="fwd__right-description">Use as standalone Web-based business applications, or surface within applications such as Microsoft, SAP, Salesforce, Box andothers supported by HTML5.  </p>
+                    <p class="fwd__right-description">Use as standalone Web-based business applications, or surface within applications such as Microsoft, SAP, Salesforce, Box andothers supported by HTML5. </p>
                 </div>
-                
+                <div class="fwd__right-content--two">
+                    <h2 class="fwd__right-title">Line-of-business integration
+    </h2>
+                    <p class="fwd__right-description">
+                        Incorporate data from multiple line-of-business (LOB) systems and external sources into a single form that works across multiple applications and devices, online and ofﬂine.
+                    </p>
+                    <p class="fwd__right-description">Use as standalone Web-based business applications, or surface within applications such as Microsoft, SAP, Salesforce, Box andothers supported by HTML5. </p>
+                </div>
+                <div class="fwd__right-content--three">
+                    <h2 class="fwd__right-title">Line-of-business integration
+    </h2>
+                    <p class="fwd__right-description">
+                        Incorporate data from multiple line-of-business (LOB) systems and external sources into a single form that works across multiple applications and devices, online and ofﬂine.
+                    </p>
+                    <p class="fwd__right-description">Use as standalone Web-based business applications, or surface within applications such as Microsoft, SAP, Salesforce, Box andothers supported by HTML5. </p>
+                </div>
+                <div class="fwd__right-content--four">
+                    <h2 class="fwd__right-title">Line-of-business integration
+    </h2>
+                    <p class="fwd__right-description">
+                        Incorporate data from multiple line-of-business (LOB) systems and external sources into a single form that works across multiple applications and devices, online and ofﬂine.
+                    </p>
+                    <p class="fwd__right-description">Use as standalone Web-based business applications, or surface within applications such as Microsoft, SAP, Salesforce, Box andothers supported by HTML5. </p>
+                </div>
             </div>
-
+        </div>
     </div>
 </section>
 <section class="products-slice">
@@ -221,11 +285,44 @@
         </div>
     </div>
 </section>
+<script>
+$('.fwd__menu .item-one').click(function() {
+    removeAllClasses();
+    $('.fwd__menu li').removeClass('active');
+    $('.js-screen, .fwd__menu, .fwd__right').addClass('-one');
+    $(this).addClass('active');
+});
+$('.fwd__menu .item-two').click(function() {
+    removeAllClasses();
+    $('.fwd__menu li').removeClass('active');
+    $('.js-screen, .fwd__menu, .fwd__right').addClass('-two');
+    $(this).addClass('active');
+});
+
+$('.fwd__menu .item-three').click(function() {
+    removeAllClasses();
+    $('.fwd__menu li').removeClass('active');
+    $('.js-screen, .fwd__menu, .fwd__right').addClass('-three');
+    $(this).addClass('active');
+});
+
+$('.fwd__menu .item-four').click(function() {
+    removeAllClasses();
+    $('.fwd__menu li').removeClass('active');
+    $('.js-screen, .fwd__menu, .fwd__right').addClass('-four');
+    $(this).addClass('active');
+});
 
 
-    <script>
-    window.jQuery || document.write('<script src="http://www.k2.com/scripts/K2ComV5/jquery-1.8.3.min.js"><\/script>')
-    </script>
+function removeAllClasses() {
+    $('.js-screen, .fwd__menu, .fwd__right').removeClass('-one');
+    $('.js-screen, .fwd__menu, .fwd__right').removeClass('-two');
+    $('.js-screen, .fwd__menu, .fwd__right').removeClass('-three');
+    $('.js-screen, .fwd__menu, .fwd__right').removeClass('-four');
+}
+</script>
+
+ 
 
     
     <script src="js/app.js"></script>

@@ -1303,7 +1303,64 @@ body header {
 
 .fwd {
   padding: 40px 0px;
-  height: 430px; }
+  height: 430px;
+  position: relative; }
+  .fwd__menu {
+    position: absolute;
+    left: 0px; }
+    .fwd__menu:before {
+      height: 170px;
+      width: 3px;
+      content: '';
+      background-color: #5d5d5d;
+      position: absolute;
+      left: 12px;
+      top: 0px; }
+    .fwd__menu:after {
+      content: '';
+      width: 14px;
+      border-radius: 14px;
+      height: 14px;
+      background-color: #81af41;
+      position: absolute;
+      left: 6px;
+      top: 0px;
+      transition: all .4s ease; }
+    .fwd__menu.-one:after {
+      top: 0px; }
+    .fwd__menu.-two:after {
+      top: 50px; }
+    .fwd__menu.-three:after {
+      top: 105px; }
+    .fwd__menu.-four:after {
+      top: 160px; }
+    .fwd__menu ul li {
+      cursor: pointer;
+      font-size: 12px;
+      list-style: none;
+      text-transform: uppercase;
+      line-height: 14px;
+      font-weight: bold;
+      color: #5d5d5d;
+      width: 200px; }
+      .fwd__menu ul li:nth-child(1) {
+        position: absolute;
+        left: 30px;
+        top: -10px; }
+      .fwd__menu ul li:nth-child(2) {
+        position: absolute;
+        left: 30px;
+        top: 50px; }
+      .fwd__menu ul li:nth-child(3) {
+        position: absolute;
+        left: 30px;
+        top: 105px; }
+      .fwd__menu ul li:nth-child(4) {
+        position: absolute;
+        left: 30px;
+        top: 160px; }
+    .fwd__menu ul li.active {
+      color: #81af41; }
   .fwd__left {
     position: relative;
     float: left;
@@ -1367,5 +1424,26 @@ body header {
       top: -400px; }
     .fwd__slides.-four {
       top: -600px; }
+
+.fwd__right-content--one {
+  display: none; }
+.fwd__right-content--two {
+  display: none; }
+.fwd__right-content--three {
+  display: none; }
+.fwd__right-content--four {
+  display: none; }
+
+.fwd__right.-one .fwd__right-content--one {
+  display: block; }
+
+.fwd__right.-two .fwd__right-content--two {
+  display: block; }
+
+.fwd__right.-three .fwd__right-content--three {
+  display: block; }
+
+.fwd__right.-four .fwd__right-content--four {
+  display: block; }
 
 /*# sourceMappingURL=app.css.map */
