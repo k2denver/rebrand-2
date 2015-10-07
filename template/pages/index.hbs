@@ -7,8 +7,10 @@ title: "home"
         <div class="wrapper">
             <div class="main-stage__content">
                 <h1 class="main-stage__title">
-                    Rapidly deliver business applications <br>
-                    <span>that are agile</span>
+                    
+                    
+                    <span
+     class="txt-rotate"></span>
                 </h1>
                 <div class="clear"></div>
                 <a href="#" class="main-stage__button--primary">
@@ -136,3 +138,38 @@ title: "home"
         
 
     </section>
+<script>
+  $(function(){
+
+      $(".txt-rotate").typed({
+        strings: ["RAPIDLY DELIVER <br> <span>BUSINESS APPLICATIONS</span> <br>that are agile", "RAPIDLY DELIVER <br> <span>BUSINESS APPLICATIONS</span> <br>that are scalable", " RAPIDLY DELIVER <br> <span>BUSINESS APPLICATIONS </span> <br>that are mobile-ready", "RAPIDLY DELIVER <br> <span>BUSINESS APPLICATIONS</span> <br>that span people and systems" ],
+        typeSpeed: 0,
+         startDelay: 0,
+         backDelay: 1000,
+      });
+
+  });
+</script>
+<style>
+    .typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+</style>
