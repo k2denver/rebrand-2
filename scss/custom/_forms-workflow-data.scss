@@ -9,8 +9,8 @@
 // mobile-graph1.png
 
 .fwd {
-    padding: 40px 0px;
-    height: 430px;
+    padding: 60px 0px 80px;
+    min-height: 430px;
     position:relative;
     &__menu {
         position:absolute;
@@ -205,29 +205,42 @@
     background-image:url('/img/1/learn-more-forrester-bg.jpg');
     background-repeat:no-repeat;
     background-size:cover;
-    min-height:390px;
+    min-height:350px;
     background-position:top center;
     .wrapper {
             
         }
     &__content {
          @include make-xs-column(12);
-        @include make-sm-column(8, 0px);
-        @include make-sm-column-push(2);
+        @include make-sm-column(10, 0px);
+        @include make-sm-column-push(1);
         background-color: white(.8);
         text-align: center;
-        padding-top:40px;
+        padding-top:80px;
         padding-bottom:40px;
 
     }
     &__title {
-
+        margin-top:40px;
+        margin-bottom:20px;
         font-size:17px;
         font-weight:bold;
         text-transform: uppercase;
+        line-height: 22px;
     }
-    &__description{}
-    &__button--primary{}
+    &__description{
+    @extend %t-paragraph;
+        @include tablet {
+            padding:0px 45px;
+        }
+    }
+    &__button--primary{
+
+        @extend %button;
+        @extend %button--blue;
+        margin-top:30px;
+        margin-bottom:30px;
+    }
 }
 
 

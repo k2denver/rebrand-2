@@ -23,53 +23,8 @@
     }
 }
 
-.tabs {
-    margin-top:-40px;
-    &__content {
 
-     @include make-xs-column(12);
-        @include make-xs-column-offset(0);
-        @include make-sm-column(10);
-        @include make-sm-column-offset(1);
 
-        &.extend {
-            @include make-xs-column(12);
-            @include make-xs-column-offset(0);
-        }
-
-    }
-    ul {
-        float:left;
-        width:100%;
-        li {
-                padding-right:15px;
-                float:left;
-                display:block;
-                a {
-                    padding:13px 39px;
-                    background-color:white(.8);
-                    display:inline-block;
-                    text-transform: uppercase;
-                    font-weight:bold;
-                    font-size:12px;
-                    color:$k2-purple;
-
-                }
-            &.active {
-                a {
-                    background-color:white;
-                    color:$k2-green;
-
-                }
-            }
-        }
-
-    }
-}
-
-.tabs-content {
-    min-height:430px;
-}
 
 %learn-more-title {
     background-image: url('/img/1/learn-more-main-stage.jpg');
@@ -87,7 +42,7 @@
         text-transform: uppercase;
         margin-top: 40px;
         @include tablet {
-            margin-top: 154px;
+            margin-top: 125px;
         }
     }
     &__description {
@@ -102,6 +57,7 @@
 }
 
 .tabs-content {
+    min-height: 452px;
     &__content {}
 }
 
@@ -150,7 +106,7 @@
             }
             h3 {
                 @extend %t-heading-bulmer;
-                font-size: 22px;
+                font-size: 23px;
                 color: $k2-blue;
                 margin-bottom:5px;
             }
@@ -191,7 +147,7 @@
             }
             h3 {
                 @extend %t-heading-bulmer;
-                font-size: 22px;
+                font-size: 23px;
                 color: $k2-green;
                 margin-bottom:5px;
             }
@@ -274,6 +230,7 @@
 .products-slice {
     background-color: $k2-purple;
     @extend %simple-slice;
+    padding:60px 0px;
     &__content {
        @extend  %simple-slice__content;
     }
@@ -304,6 +261,7 @@
 
 .one-miniute-video-slice {
     background-color: $k2-green;
+    padding:60px 0px;
     @extend %simple-slice;
     &__content {
        @extend  %simple-slice__content;
@@ -311,7 +269,7 @@
     &__title {
         @extend  %t-heding-avenir-bold;
         @extend  %simple-slice__title;
-        
+        margin-bottom:20px;
         color: $k2-purple;
        
     }

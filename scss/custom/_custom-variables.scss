@@ -82,6 +82,10 @@ $bulmer-italic: "Bulmer MT W01 Italic";
     cursor: pointer;
         -webkit-user-select: none;
         transition:all 0.2s ease;
+    &--rounded{
+    	border-radius:2px;
+
+    }
     &--green {
         background-color: $k2-green;
         &:hover {
@@ -92,6 +96,14 @@ $bulmer-italic: "Bulmer MT W01 Italic";
         background-color: $k2-blue;
         &:hover {
         	background-color: $k2-green;
+        }
+        &-outline{
+        	border:1px solid $k2-blue;
+        	color:$k2-blue;
+        	&:hover {
+        		background-color: $k2-blue;
+        		color:white !important;
+        	}
         }
     }
     &--purple {

@@ -107,28 +107,9 @@
   color: #5d5d5d; }
 
 
-body header {
-  background-color: transparent; }
 
-.wrapper-header {
-  background-color: rgba(255, 255, 255, 0.7);
-  width: 100%;
-  z-index: 10;
-  position: relative; }
 
-.row {
-  max-width: 960px; }
 
-.wrapper {
-  max-width: 960px;
-  margin-right: auto;
-  margin-left: auto;
-  height: 100%; }
-  .wrapper:before, .wrapper:after {
-    content: " ";
-    display: table; }
-  .wrapper:after {
-    clear: both; }
 
 .main-stage {
   margin-right: auto;
