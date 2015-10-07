@@ -137,6 +137,9 @@
       .products-slice br, .one-miniute-video-slice br {
         display: auto; } }
 
+.pinned-header {
+  padding-top: 0px !important; }
+
 .header {
   max-width: 940px;
   height: 75px;
@@ -1085,6 +1088,9 @@ body header {
         background-color: white;
         color: #81af41; }
 
+.tabs-content {
+  min-height: 430px; }
+
 .main-stage-learn-more {
   background-image: url('/img/1/learn-more-main-stage.jpg');
   background-position: top center;
@@ -1435,15 +1441,72 @@ body header {
   display: none; }
 
 .fwd__right.-one .fwd__right-content--one {
-  display: block; }
+  display: block;
+  animation: fade-in 1;
+  -webkit-animation: fade-in 1s; }
 
 .fwd__right.-two .fwd__right-content--two {
-  display: block; }
+  display: block;
+  animation: fade-in 1s;
+  -webkit-animation: fade-in 1s; }
 
 .fwd__right.-three .fwd__right-content--three {
-  display: block; }
+  display: block;
+  animation: fade-in 1s;
+  -webkit-animation: fade-in 1s; }
 
 .fwd__right.-four .fwd__right-content--four {
-  display: block; }
+  display: block;
+  animation: fade-in 1s;
+  -webkit-animation: fade-in 1s; }
+
+.featured-asset {
+  background-image: url('/img/1/learn-more-forrester-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 390px;
+  background-position: top center; }
+  .featured-asset__content {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    min-height: 1px;
+    padding-left: 0px;
+    padding-right: 0px;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px; }
+    @media (min-width: 768px) {
+      .featured-asset__content {
+        float: left;
+        width: 66.6666666667%; } }
+    @media (min-width: 768px) {
+      .featured-asset__content {
+        left: 16.6666666667%; } }
+  .featured-asset__title {
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: uppercase; }
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes fade-in {
+  0% {
+    background-image: trans; }
+
+  100% {
+    opacity: 1; } }
+
+/* Standard syntax */
+@keyframes fade-in {
+  0% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }
 
 /*# sourceMappingURL=app.css.map */

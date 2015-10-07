@@ -7,6 +7,7 @@
 // mobile-graph3.png
 // mobile-graph2.png
 // mobile-graph1.png
+
 .fwd {
     padding: 40px 0px;
     height: 430px;
@@ -101,6 +102,7 @@
     &__right {
         @include make-xs-column(12);
         @include make-sm-column(4, 0px);
+       
         &-title {
             @extend %t-heading-bulmer;
             line-height: 24px;
@@ -170,23 +172,86 @@
 .fwd__right.-one {
         .fwd__right-content--one{
             display:block;
+             animation: fade-in 1;
+        -webkit-animation: fade-in 1s;
         }
     }
     .fwd__right.-two {
         .fwd__right-content--two{
             display:block;
+             animation: fade-in 1s;
+        -webkit-animation: fade-in 1s;
         }
     }
 
 .fwd__right.-three {
         .fwd__right-content--three{
             display:block;
+             animation: fade-in 1s;
+        -webkit-animation: fade-in 1s;
         }
     }
 
 .fwd__right.-four {
         .fwd__right-content--four{
-            display:block;
+            display:block; animation: fade-in 1s;
+        -webkit-animation: fade-in 1s;
         }
     }
+
+
+
+.featured-asset {
+    background-image:url('/img/1/learn-more-forrester-bg.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    min-height:390px;
+    background-position:top center;
+    .wrapper {
+            
+        }
+    &__content {
+         @include make-xs-column(12);
+        @include make-sm-column(8, 0px);
+        @include make-sm-column-push(2);
+        background-color: white(.8);
+        text-align: center;
+        padding-top:40px;
+        padding-bottom:40px;
+
+    }
+    &__title {
+
+        font-size:17px;
+        font-weight:bold;
+        text-transform: uppercase;
+    }
+    &__description{}
+    &__button--primary{}
+}
+
+
+
+/* Chrome, Safari, Opera */
+
+@-webkit-keyframes fade-in {
+    0% {
+        background-image:trans
+    }
+   
+    100% {
+        opacity: 1;
+    }
+}
+/* Standard syntax */
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+ 
+    100% {
+        opacity: 1;
+    }
+}
 

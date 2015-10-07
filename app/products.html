@@ -25,25 +25,26 @@
             analytics:true,
              containers:
                 [
-                    {selector: '.tabs-content:first'},
-                    {selector: '.tabs:first'}
+                    {selector: '.tabs-content .wrapper:first'},
+                    {selector: '.tabs:first'},
+                    {selector: '.tabs-scripts'}
                     
                 ],
             before: function()
             {
 
-               $( ".tabs-content:first" ).fadeOut( 200 , SmartAjax.proceed);
+               $( ".tabs-content:first .wrapper:first" ).fadeOut( 700 , SmartAjax.proceed);
               
             },
             success: function()
             {
         
+             
                SmartAjax.proceed();
-               
             },
             done: function()
             {
-             $( ".tabs-content:first" ).fadeIn( 200 , SmartAjax.proceed);
+               $( ".tabs-content:first .wrapper:first" ).fadeIn( 700);
             
             }
         });
