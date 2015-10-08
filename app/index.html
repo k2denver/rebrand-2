@@ -92,7 +92,7 @@
                             <li>
                                 <a>Industries</a>
                                 <ul class="sub-sub-menu">
-                                    <li><a href="#">Financial Services</a></li>
+                                    <li><a href="/">Financial Services</a></li>
                                     <li><a href="#">Legal</a></li>
                                     <li><a href="#">Manufacturing</a></li>
                                     <li><a href="#">Healthcare</a></li>
@@ -103,11 +103,11 @@
                             <li>
                                 <a>Departments</a>
                                 <ul class="sub-sub-menu">
-                                    <li><a href="#">Finance</a></li>
-                                    <li><a href="#">Human Resources</a></li>
-                                    <li><a href="#">Operations</a></li>
-                                    <li><a href="#">Purchasing</a></li>
-                                    <li><a href="#">Sales & Marketing</a></li>
+                                    <li><a href="/department-detail.html">Finance</a></li>
+                                    <li><a href="/department-detail.html">Human Resources</a></li>
+                                    <li><a href="/department-detail.html">Operations</a></li>
+                                    <li><a href="/department-detail.html">Purchasing</a></li>
+                                    <li><a href="/department-detail.html">Sales & Marketing</a></li>
                                 </ul>
                             </li>
                             <li>
@@ -163,7 +163,7 @@
                                   <li><a href="#">Community Articles</a></li>
                                 </ul>
                             </li>
-                            <li><a>Applircation Accelerators</a>
+                            <li><a>Application Accelerators</a>
                                 
                                 <ul class="sub-sub-menu">
                                   <li><a href="#">Leave Request</a></li>
@@ -208,12 +208,12 @@
         <div class="wrapper">
             <div class="learn-more__content">
                 <h2 class="learn-more__title">
-                    Merging business and IT to drive performance 
+                    Merging business and IT <br>to drive performance
                 </h2>
                 <div class="learn-more__description">
                     K2 unites the best of traditional BPM with the future of business by way of packaged solutions and custom development in one platform – for applications that reach across departments and line-of-business systems. These apps use workflow and forms to deliver the right information to the right people, at the right time, so they can make smart, data-driven decisions. 
                 </div>
-                <div class="learn-more__button--primary">Visit Platform Overview</div>
+                <a href="/learn-more.html" class="learn-more__button--primary">Visit Platform Overview</a>
             </div>
         </div>
     </section>
@@ -231,12 +231,12 @@
         <div class="departments-list">
             <ul>
                 <li class="departments-list__human-resources">
-                    <a href="">Human Resources</a>
+                    <a href="/department-detail.html">Human Resources</a>
                 </li>
-                <li class="departments-list__financing "><a href="">Financing</a></li>
-                <li class="departments-list__operations"><a href="">Operations</a></li>
-                <li class="departments-list__purchasing"><a href="">Purchasing</a></li>
-                <li class="departments-list__sales-marketing"><a href="">Sales Marketing</a></li>
+                <li class="departments-list__financing"><a href="/department-detail.html">Financing</a></li>
+                <li class="departments-list__operations"><a href="/department-detail.html">Operations</a></li>
+                <li class="departments-list__purchasing"><a href="/department-detail.html">Purchasing</a></li>
+                <li class="departments-list__sales-marketing"><a href="/department-detail.html">Sales Marketing</a></li>
                 <li class="departments-list__it"><a href="">IT</a></li>
             </ul>
         </div>
@@ -255,7 +255,7 @@
                 </ul>
             </div>
             <div class="clear"></div>
-            <a href="" class="customers__cta">see all case studies</a>
+            <a href="/customers" class="customers__cta">see all case studies</a>
         </div>
                
     </section>
@@ -315,7 +315,7 @@
                 <p class="how-to-buy__description">
                   K2 powers the people who build great companies. That means you.
                 </p>
-                <a href="" class="how-to-buy__button--primary">Get started today</a>
+                <a href="/how-to-buy.html" class="how-to-buy__button--primary">Get started today</a>
             </div>
            
 
@@ -324,12 +324,15 @@
 
     </section>
 <script>
+$('.departments-list li').click(function(){
+    window.location.href = "/department-detail.html";
+});
   $(function(){
 
       $(".txt-rotate").typed({
-        strings: ["RAPIDLY DELIVER <br> <span>BUSINESS APPLICATIONS</span> <br>that are agile", "RAPIDLY DELIVER <br> <span>BUSINESS APPLICATIONS</span> <br>that are scalable", " RAPIDLY DELIVER <br> <span>BUSINESS APPLICATIONS </span> <br>that are mobile-ready", "RAPIDLY DELIVER <br> <span>BUSINESS APPLICATIONS</span> <br>that span people and systems" ],
+        strings: [ "" ,"RAPIDLY DELIVER <br> <span>BUSINESS APPLICATIONS</span> <br>that are agile", "RAPIDLY DELIVER <br> <span>BUSINESS APPLICATIONS</span> <br>that are scalable", " RAPIDLY DELIVER <br> <span>BUSINESS APPLICATIONS </span> <br>that are mobile-ready", "RAPIDLY DELIVER <br> <span>BUSINESS APPLICATIONS</span> <br>that span people and systems" ],
         typeSpeed: 0,
-         startDelay: 1,
+         startDelay: 2,
          backDelay: 1000
       });
 

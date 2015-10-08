@@ -17,11 +17,11 @@
   font-size: 14px;
   line-height: 18px; }
 
-.easy-vs-hard__title, .overview__graph--right-content h3, .overview__graph--left-content h3, .overview__title, .products-slice__title, .fwd__right-title {
+.your-business__title, .overview__graph--right-content h3, .overview__graph--left-content h3, .overview__title, .products-slice__title, .fwd__right-title {
   font-size: 40px;
   font-family: "Bulmer MT W01 Italic" !important; }
 
-.product-main-stage__section-title, .your-business__title, .one-miniute-video-slice__title {
+.product-main-stage__section-title, .easy-vs-hard__title, .one-miniute-video-slice__title {
   font-family: "Avenir Next LT W01 Bold" !important;
   font-size: 24px;
   font-weight: normal;
@@ -155,7 +155,7 @@ body header {
   background-color: transparent; }
 
 .wrapper-header {
-  background-color: rgba(255, 255, 255, 0.88);
+  background-color: rgba(255, 255, 255, 0.96);
   width: 100%;
   z-index: 10;
   position: fixed;
@@ -283,7 +283,7 @@ body header {
       .bne > ul > li ul.sub-menu, .bne > ul > li ul.sub-menu--what-is-k2, .bne > ul > li ul.sub-menu--how-people-use-k2, .bne > ul > li ul.sub-menu--resources {
         position: absolute;
         width: 250px;
-        background-color: rgba(255, 255, 255, 0.88);
+        background-color: rgba(255, 255, 255, 0.96);
         list-style: none;
         list-style-type: none;
         top: 58px;
@@ -707,7 +707,7 @@ body header {
   content: '';
   width: 100%;
   position: absolute;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.2);
   position: absolute;
   bottom: 0px;
   top: 0px;
@@ -977,7 +977,8 @@ body header {
       .product-main-stage__appit {
         margin-bottom: 0px; }
         .product-main-stage__appit img {
-          width: 329px; } }
+          width: 285px;
+          margin-top: 20px; } }
   .product-main-stage__blackpearl {
     position: relative;
     float: left;
@@ -998,7 +999,8 @@ body header {
       .product-main-stage__blackpearl {
         margin-bottom: 0px; }
         .product-main-stage__blackpearl img {
-          width: 235px; } }
+          width: 228px;
+          margin-top: 20px; } }
   .product-main-stage__section {
     background: rgba(255, 255, 255, 0.32);
     overflow: hidden;
@@ -1574,5 +1576,29 @@ body header {
 
 .push-for-menu-3 {
   padding-top: 30px; }
+
+.department-detail {
+  background-size: 1680px 2252px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  height: 2252px;
+  width: 100%;
+  background-image: url('/img/1/d-detail-page2.jpg'); }
+
+.department-overview {
+  background-size: 1680px 1982.5px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  height: 1982.5px;
+  width: 100%;
+  background-image: url('/img/1/d-detail-page.jpg'); }
+
+.how-to-buy-main-stage {
+  background-size: 1680px 1631px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  height: 1631px;
+  width: 100%;
+  background-image: url('/img/1/how-to-buy-page.jpg'); }
 
 /*# sourceMappingURL=app.css.map */

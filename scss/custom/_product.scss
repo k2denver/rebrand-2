@@ -34,8 +34,10 @@
         margin-bottom: 10px;
         @include tablet {
             margin-bottom: 0px;
+
             img {
-                width: 329px;
+                width: 285px;
+                margin-top:20px;
             }
         }
     }
@@ -46,8 +48,10 @@
         margin-bottom: 10px;
         @include tablet {
             margin-bottom: 0px;
+            
             img {
-                width: 235px;
+                width: 228px;
+                margin-top:20px;
             }
         }
     }
@@ -113,7 +117,7 @@
         @include make-sm-column-offset(1);
     }
     &__title {
-        @extend %t-heding-avenir-bold;
+        @extend %t-heading-bulmer;;
         margin: 20px 0px;
 
         color: $k2-blue;
@@ -162,7 +166,8 @@
         @include make-sm-column-offset(3);
     }
     &__title {
-        @extend %t-heading-bulmer;
+        @extend %t-heding-avenir-bold;
+        
         color: $k2-purple;
         margin: 10px 0px;
     }

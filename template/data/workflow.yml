@@ -1,22 +1,21 @@
 
 
-feature-1-title: "Line-of-business integration"
-feature-1-description-1: "Incorporate data from multiple line-of-business (LOB) systems and external sources into a single form that works across applications and devices, online and ofﬂine."
-feature-1-description-2: "Use as standalone a Web-based business application, or surface within applications such as Microsoft, SAP, Salesforce, Box and others supported by HTML5."
+feature-1-title: "Scalable and agile"
+feature-1-description-1: "Create workflows that reach across siloed systems — with little or no coding — for anything from small, departmental processes that handle employee onboarding to complex applications for quote-to-cash scenarios."
+feature-1-description-2: "K2 helps eliminate bottlenecks by providing real-time process insights and the ability to reroute or escalate tasks from any device, even when offline."
 feature-1-img: "forms-screenshot-1.jpg"
 
 feature-2-title: "Reusable forms"
-feature-2-description-1: "Create reusable forms that work the way you want, with little to no code, using powerful drag-and-drop tools."
-feature-2-description-2: "Add business logic and validation rules to forms without writing any code, even Javascript. Views and themes can be reused across any business application, workflow or when building a new form."
+feature-2-description-1: "Design the way you want, with tools suited to your work style. Drag-and-drop environments within a browser, Visual Studio and desktop-based tools make it easy to quickly assemble apps with out-of-the-box events and tasks."
+feature-2-description-2: "Save workﬂow steps and common functions as a template that can be shared and reused across applications and departments."
 feature-2-img: "forms-screenshot-2.jpg"
 
-feature-3-title: "Workflow integration"
-feature-3-description-1: "Integrate forms into workflows and business applications so that the right information gets to the right user."
-feature-3-description-2: "Initiate a workflow right from a form that's available from any device."
+feature-3-title: "LOB integration"
+feature-3-description-1: "Use built-in K2 tools and technologies to easily create secure workﬂows across your line-of-business (LOB) systems, with little or no coding."
+feature-3-description-2: "Integrate with SAP, Oracle, Salesforce, Box, Dynamics CRM, SharePoint, SQL, Dropbox and more, through easy-to-use data connectors and workflow wizards."
 feature-3-img: "forms-screenshot-1.jpg"
 
-feature-4-title: "Mobile-ready"
-feature-4-description-1: "Responsive form design allows you to build a single form that can be used on any device, making it easy for users to get work done from anywhere."
-feature-4-description-2: "Mobile-ready forms can work online or offline to capture data. Backend systems are updated automatically as soon as connectivity is restored. "
-feature-4-img: "forms-screenshot-2.jpg"
-
+feature-4-title: "Flexible and secure"
+feature-4-description-1: "Easily manage, track and secure workflows using administration tools that allow you to deploy applications across multiple environments, track bottlenecks, audit usage, and set security at the workflow, event or action level."
+feature-4-description-2: ""
+feature-3-img: "forms-screenshot-1.jpg"
