@@ -300,7 +300,7 @@ body header {
             content: '';
             position: absolute;
             right: 20px;
-            transition: all 0.4s ease;
+            transition: right 0.4s ease;
             width: 0;
             height: 0;
             border-top: 5px solid transparent;
@@ -313,15 +313,17 @@ body header {
             padding: 4px 20px;
             display: inline-block;
             color: #14b6c9;
-            font-weight: bold; }
+            font-weight: normal; }
           .bne > ul > li ul.sub-menu li:hover, .bne > ul > li ul.sub-menu--what-is-k2 li:hover, .bne > ul > li ul.sub-menu--how-people-use-k2 li:hover, .bne > ul > li ul.sub-menu--resources li:hover {
-            background-color: #00b5c8; }
+            background-color: #81af41; }
             .bne > ul > li ul.sub-menu li:hover > a, .bne > ul > li ul.sub-menu--what-is-k2 li:hover > a, .bne > ul > li ul.sub-menu--how-people-use-k2 li:hover > a, .bne > ul > li ul.sub-menu--resources li:hover > a {
               color: white !important; }
             .bne > ul > li ul.sub-menu li:hover ul.sub-sub-menu, .bne > ul > li ul.sub-menu--what-is-k2 li:hover ul.sub-sub-menu, .bne > ul > li ul.sub-menu--how-people-use-k2 li:hover ul.sub-sub-menu, .bne > ul > li ul.sub-menu--resources li:hover ul.sub-sub-menu {
               opacity: 1;
               transition: all 0.1s ease;
               visibility: visible; }
+            .bne > ul > li ul.sub-menu li:hover a:not([href]):after, .bne > ul > li ul.sub-menu--what-is-k2 li:hover a:not([href]):after, .bne > ul > li ul.sub-menu--how-people-use-k2 li:hover a:not([href]):after, .bne > ul > li ul.sub-menu--resources li:hover a:not([href]):after {
+              border-left: 6px solid white; }
           .bne > ul > li ul.sub-menu li ul.sub-sub-menu, .bne > ul > li ul.sub-menu--what-is-k2 li ul.sub-sub-menu, .bne > ul > li ul.sub-menu--how-people-use-k2 li ul.sub-sub-menu, .bne > ul > li ul.sub-menu--resources li ul.sub-sub-menu {
             position: absolute;
             opacity: 0;
@@ -333,10 +335,10 @@ body header {
             bottom: 0px;
             list-style: none;
             list-style-type: none;
-            background-color: #00b5c8;
+            background-color: #81af41;
             margin-left: 0px; }
             .bne > ul > li ul.sub-menu li ul.sub-sub-menu li, .bne > ul > li ul.sub-menu--what-is-k2 li ul.sub-sub-menu li, .bne > ul > li ul.sub-menu--how-people-use-k2 li ul.sub-sub-menu li, .bne > ul > li ul.sub-menu--resources li ul.sub-sub-menu li {
-              background-color: #00b5c8;
+              background-color: #81af41;
               cursor: pointer;
               display: block; }
               .bne > ul > li ul.sub-menu li ul.sub-sub-menu li a, .bne > ul > li ul.sub-menu--what-is-k2 li ul.sub-sub-menu li a, .bne > ul > li ul.sub-menu--how-people-use-k2 li ul.sub-sub-menu li a, .bne > ul > li ul.sub-menu--resources li ul.sub-sub-menu li a {
@@ -347,8 +349,8 @@ body header {
                 margin-left: 15px;
                 padding-bottom: 2px;
                 color: white;
-                font-weight: bold;
-                border-bottom: 2px solid #00b5c8;
+                font-weight: normal;
+                border-bottom: 2px solid #81af41;
                 transition: border-bottom 0.1s ease; }
                 .bne > ul > li ul.sub-menu li ul.sub-sub-menu li a:hover, .bne > ul > li ul.sub-menu--what-is-k2 li ul.sub-sub-menu li a:hover, .bne > ul > li ul.sub-menu--how-people-use-k2 li ul.sub-sub-menu li a:hover, .bne > ul > li ul.sub-menu--resources li ul.sub-sub-menu li a:hover {
                   border-bottom: 2px solid white;
@@ -919,6 +921,10 @@ body header {
 
 .txt-rotate span {
   color: #272d43; }
+
+.svg-icon:hover path {
+  fill: red;
+  background-color: red; }
 
 .wrapper {
   max-width: 960px;

@@ -415,3 +415,8 @@
 .txt-rotate span {
   color:$k2-purple;
 }
+
+.svg-icon:hover  path {
+  fill: red;
+   background-color: red;
+}

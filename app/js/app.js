@@ -4,6 +4,9 @@ $(document).ready(function() {
 		closeEffect : 'none',
 		helpers : {
 			media : {}
-		}
+		},
+		 width       : 960,
+    	height      : 540,
+    	aspectRatio : true,
 	});
 });

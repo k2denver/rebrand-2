@@ -207,7 +207,7 @@ body header {
                             content: '';
                             position: absolute;
                             right: 20px;
-                            transition: all 0.4s ease;
+                            transition: right 0.4s ease;
                             width: 0;
                             height: 0;
                             border-top: 5px solid transparent;
@@ -222,11 +222,11 @@ body header {
                         padding: 4px 20px;
                         display: inline-block;
                         color: #14b6c9;
-                        font-weight: bold;
+                        font-weight: normal;
                     }
                     //Last Level
                     &:hover {
-                        background-color: $k2-blue;
+                        background-color: $k2-green;
                          > a {
                             color:white !important;
                         }
@@ -235,6 +235,8 @@ body header {
                             transition: all 0.1s ease;
                             visibility: visible;
                         }
+                         a:not([href]) {
+                        &:after {border-left: 6px solid white; }}
                     }
                     ul.sub-sub-menu {
                         position: absolute;
@@ -247,12 +249,12 @@ body header {
                         bottom: 0px;
                         list-style: none;
                         list-style-type: none;
-                        background-color: $k2-blue;
+                        background-color: $k2-green;
                         @if $overwrite-cms {
                             margin-left: 0px;
                         }
                         li {
-                            background-color: $k2-blue;
+                            background-color: $k2-green;
                             cursor: pointer;
                             display:block;
                             a {
@@ -263,8 +265,8 @@ body header {
                                 margin-left: 15px;
                                 padding-bottom: 2px;
                                 color:white;
-                                font-weight:bold;
-                                border-bottom: 2px solid $k2-blue;
+                                font-weight:normal;
+                                border-bottom: 2px solid $k2-green;
                                 transition:border-bottom 0.1s ease;
                                 &:hover {
                                     border-bottom: 2px solid white;
