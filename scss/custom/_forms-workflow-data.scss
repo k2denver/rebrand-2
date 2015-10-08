@@ -17,7 +17,7 @@
         left:0px;
         &:before {
             height:170px;
-            width:3px;
+            width:2px;
             content:'';
             background-color:$k2-grey;
             position:absolute;
@@ -34,6 +34,11 @@
             left:6px;
             top:0px;
             transition: all .4s ease;
+        }
+        &.-data {
+            &:before {
+                height:118px;
+            }
         }
         &.-one {
             &:after {
@@ -65,6 +70,7 @@
                 font-weight:bold;
                 color:$k2-grey;
                     width:200px;
+                    transition: color .2s ease;
 
                 &:nth-child(1){
                      position:absolute;
@@ -90,6 +96,9 @@
                 }
             }
             li.active {
+                color:$k2-green;
+            }
+             li:hover {
                 color:$k2-green;
             }
         }
@@ -142,10 +151,10 @@
             top: -200px;
         }
         &.-three {
-            top: -400px;
+            top: -403px;
         }
         &.-four {
-            top: -600px;
+            top: -606px;
         }
     }
 }
@@ -267,4 +276,6 @@
         opacity: 1;
     }
 }
+
+
 

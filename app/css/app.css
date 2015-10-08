@@ -74,12 +74,12 @@
   .header__cta-contact:hover, .header__cta-see-it-live:hover, .product-main-stage__button--primary:hover, .easy-vs-hard__primary-cta:hover, .main-stage-learn-more__button--primary:hover, .products-slice__primary-cta:hover, .one-miniute-video-slice__primary-cta:hover, .featured-asset__button--primary:hover {
     color: white !important; }
 
-.your-business__primary-cta {
+.product-main-stage__underline-cta, .your-business__primary-cta {
   font-weight: bold;
   display: inline-block;
   position: relative;
   margin: 20px 0px; }
-  .your-business__primary-cta:after {
+  .product-main-stage__underline-cta:after, .your-business__primary-cta:after {
     content: '';
     height: 1px;
     width: 60%;
@@ -88,7 +88,7 @@
     left: 50%;
     margin-left: -30%;
     transition: all .3s ease; }
-  .your-business__primary-cta:hover:after {
+  .product-main-stage__underline-cta:hover:after, .your-business__primary-cta:hover:after {
     width: 100%;
     margin-left: -50%; }
 
@@ -313,9 +313,11 @@ body header {
             padding: 4px 20px;
             display: inline-block;
             color: #14b6c9;
-            font-weight: normal; }
+            font-weight: bold; }
           .bne > ul > li ul.sub-menu li:hover, .bne > ul > li ul.sub-menu--what-is-k2 li:hover, .bne > ul > li ul.sub-menu--how-people-use-k2 li:hover, .bne > ul > li ul.sub-menu--resources li:hover {
-            background-color: white; }
+            background-color: #00b5c8; }
+            .bne > ul > li ul.sub-menu li:hover > a, .bne > ul > li ul.sub-menu--what-is-k2 li:hover > a, .bne > ul > li ul.sub-menu--how-people-use-k2 li:hover > a, .bne > ul > li ul.sub-menu--resources li:hover > a {
+              color: white !important; }
             .bne > ul > li ul.sub-menu li:hover ul.sub-sub-menu, .bne > ul > li ul.sub-menu--what-is-k2 li:hover ul.sub-sub-menu, .bne > ul > li ul.sub-menu--how-people-use-k2 li:hover ul.sub-sub-menu, .bne > ul > li ul.sub-menu--resources li:hover ul.sub-sub-menu {
               opacity: 1;
               transition: all 0.1s ease;
@@ -331,10 +333,10 @@ body header {
             bottom: 0px;
             list-style: none;
             list-style-type: none;
-            background-color: white;
+            background-color: #00b5c8;
             margin-left: 0px; }
             .bne > ul > li ul.sub-menu li ul.sub-sub-menu li, .bne > ul > li ul.sub-menu--what-is-k2 li ul.sub-sub-menu li, .bne > ul > li ul.sub-menu--how-people-use-k2 li ul.sub-sub-menu li, .bne > ul > li ul.sub-menu--resources li ul.sub-sub-menu li {
-              background-color: white;
+              background-color: #00b5c8;
               cursor: pointer;
               display: block; }
               .bne > ul > li ul.sub-menu li ul.sub-sub-menu li a, .bne > ul > li ul.sub-menu--what-is-k2 li ul.sub-sub-menu li a, .bne > ul > li ul.sub-menu--how-people-use-k2 li ul.sub-sub-menu li a, .bne > ul > li ul.sub-menu--resources li ul.sub-sub-menu li a {
@@ -344,11 +346,12 @@ body header {
                 padding-right: 0px;
                 margin-left: 15px;
                 padding-bottom: 2px;
-                color: #272d43;
-                border-bottom: 2px solid white;
+                color: white;
+                font-weight: bold;
+                border-bottom: 2px solid #00b5c8;
                 transition: border-bottom 0.1s ease; }
                 .bne > ul > li ul.sub-menu li ul.sub-sub-menu li a:hover, .bne > ul > li ul.sub-menu--what-is-k2 li ul.sub-sub-menu li a:hover, .bne > ul > li ul.sub-menu--how-people-use-k2 li ul.sub-sub-menu li a:hover, .bne > ul > li ul.sub-menu--resources li ul.sub-sub-menu li a:hover {
-                  border-bottom: 2px solid #00b5c8;
+                  border-bottom: 2px solid white;
                   cursor: pointer;
                   cursor: hand; }
             .bne > ul > li ul.sub-menu li ul.sub-sub-menu:hover li, .bne > ul > li ul.sub-menu--what-is-k2 li ul.sub-sub-menu:hover li, .bne > ul > li ul.sub-menu--how-people-use-k2 li ul.sub-sub-menu:hover li, .bne > ul > li ul.sub-menu--resources li ul.sub-sub-menu:hover li {
@@ -424,7 +427,11 @@ body header {
         text-transform: uppercase;
         font-weight: bold;
         font-size: 12px;
-        color: #272d43; }
+        color: #272d43;
+        transition: all .5s ease; }
+        .tabs ul li a:hover {
+          color: #81af41;
+          background-color: rgba(255, 255, 255, 0.8); }
       .tabs ul li.active a {
         background-color: white;
         color: #81af41; }
@@ -977,8 +984,8 @@ body header {
       .product-main-stage__appit {
         margin-bottom: 0px; }
         .product-main-stage__appit img {
-          width: 285px;
-          margin-top: 20px; } }
+          width: 241px;
+          margin-top: 44px; } }
   .product-main-stage__blackpearl {
     position: relative;
     float: left;
@@ -1036,6 +1043,15 @@ body header {
     width: 100%; }
   .product-main-stage__button--primary {
     margin-top: 0px; }
+  .product-main-stage__underline-cta {
+    color: #81af41 !important; }
+    .product-main-stage__underline-cta:after {
+      background-color: #81af41 !important; }
+    .product-main-stage__underline-cta:hover {
+      color: #81af41 !important; }
+
+.product-main-stage__appit .product-main-stage__underline-cta {
+  margin-top: 38px; }
 
 .your-business {
   text-align: center;
@@ -1127,6 +1143,10 @@ body header {
     margin: 10px 0px; }
   .easy-vs-hard__description {
     color: white; }
+  .easy-vs-hard__primary-cta {
+    border: 1px solid #272d43; }
+    .easy-vs-hard__primary-cta:hover {
+      border: 1px solid white; }
   .easy-vs-hard br {
     display: none; }
     @media (min-width: 768px) {
@@ -1364,7 +1384,7 @@ body header {
     left: 0px; }
     .fwd__menu:before {
       height: 170px;
-      width: 3px;
+      width: 2px;
       content: '';
       background-color: #5d5d5d;
       position: absolute;
@@ -1380,6 +1400,8 @@ body header {
       left: 6px;
       top: 0px;
       transition: all .4s ease; }
+    .fwd__menu.-data:before {
+      height: 118px; }
     .fwd__menu.-one:after {
       top: 0px; }
     .fwd__menu.-two:after {
@@ -1396,7 +1418,8 @@ body header {
       line-height: 14px;
       font-weight: bold;
       color: #5d5d5d;
-      width: 200px; }
+      width: 200px;
+      transition: color .2s ease; }
       .fwd__menu ul li:nth-child(1) {
         position: absolute;
         left: 30px;
@@ -1414,6 +1437,8 @@ body header {
         left: 30px;
         top: 160px; }
     .fwd__menu ul li.active {
+      color: #81af41; }
+    .fwd__menu ul li:hover {
       color: #81af41; }
   .fwd__left {
     position: relative;
@@ -1475,9 +1500,9 @@ body header {
     .fwd__slides.-two {
       top: -200px; }
     .fwd__slides.-three {
-      top: -400px; }
+      top: -403px; }
     .fwd__slides.-four {
-      top: -600px; }
+      top: -606px; }
 
 .fwd__right-content--one {
   display: none; }

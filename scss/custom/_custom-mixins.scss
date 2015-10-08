@@ -7,6 +7,15 @@
 }
 
 
+@function light($opacity){
+    @return rgba(242,243,242,$opacity)
+}
+
+@mixin light($opacity){
+    background-color: rgba(242,243,242,$opacity)
+}
+
+
 @mixin retina {
   @media
     only screen and (-webkit-min-device-pixel-ratio: 2),

@@ -1,7 +1,7 @@
 feature-1-title: "Flexible and extensible"
 feature-1-description-1: "Out of the box, K2 provides integration with common LOB systems, including SAP, Oracle, Salesforce, Box, Dynamics CRM, SharePoint, SQL, Dropbox and more. "
 feature-1-description-2: "For homegrown applications and systems, or applications that make use of Web or third-party data, K2 is easily extended to work with them all."
-feature-1-img: "forms-screenshot-1.jpg"
+feature-1-img: "Flexible-and-extensible.jpg"
 
 feature-2-title: "On-premises and cloud"
 feature-2-description-1: "Use visual tools to create data connections that span any line-of-business systems, on premises or in the cloud. Build these connections once, then use them again and again. "
@@ -11,12 +11,8 @@ feature-2-img: "forms-screenshot-2.jpg"
 feature-3-title: "Reliable and secure"
 feature-3-description-1: "K2 provides a reliable and consistent way to access line-of-business data across the organization.  "
 feature-3-description-2: "LOB data is accessed and updated via a secure connection and is never stored or copied into a K2 application. Your data remains safe and secure in its system of record."
-feature-3-img: "forms-screenshot-1.jpg"
+feature-3-img: "Flexible-and-extensible.jpg"
 
-feature-4-title: "*Mobile-ready"
-feature-4-description-1: "*Responsive form design allows you to build a single form that can be used on any device, making it easy for users to get work done from anywhere."
-feature-4-description-2: "*Mobile-ready forms can work online or offline to capture data. Backend systems are updated automatically as soon as connectivity is restored. "
-feature-4-img: "forms-screenshot-2.jpg"
 
 
 

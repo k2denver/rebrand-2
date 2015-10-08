@@ -1,0 +1,983 @@
+--- layout: "default.hbs" title: "Schedule Demo" ---
+
+ <style>
+/* MAIN CTA EXPERIENCE *********/
+#form_formcontrol_DemoRequest_2_6_2015 {
+  background-image: url('http://www.k2.com/img/1/bg-main-top-office.jpg');
+  background-position: top center;
+  background-size: cover;
+  text-align: center;
+  background-repeat: no-repeat;
+ padding: 128px;
+}
+@media only screen and (max-width: 768px) {
+
+  #form_formcontrol_DemoRequest_2_6_2015 {
+    padding: 20px;
+  }
+}
+
+body .fading #btn-see-it-live {
+ background-color: rgb(123, 123, 123);
+  cursor:none;
+  text-align:left;
+  width: 138px;
+}
+ @media only screen and (max-width: 768px) {
+   body .fading #btn-see-it-live {
+width: 127px;
+   }}
+
+body .fading #btn-see-it-live:hover {
+   background-color: rgb(123, 123, 123);
+  cursor:none;
+}
+
+.fading #btn-see-it-live span{
+  animation:fade-in .5s ease;
+}
+
+
+.main-message-box {
+    margin: 75px auto;
+    text-align: center;
+    overflow: hidden;
+}
+    @media only screen and (max-width: 768px) {
+        .main-message-box {margin: 43px auto;}}
+
+.main-message-box-inside h1 {
+    text-align: center;
+    font-size: 37px;
+    text-transform: uppercase;
+    font-family: "Avenir Next LT W01 Bold" !important;
+    font-weight: normal;
+    width: 100%;
+    color: #ffffff;
+    margin: 0 auto;
+    line-height: 1.2em;
+    text-rendering: optimizeLegibility;
+    font-style: normal;
+    padding: 0;
+
+}
+    @media only screen and (max-width: 768px) {
+        .main-message-box h1 {font-size: 20px;width: 88%;}}
+
+.main-message-box-inside span.form-title {
+    display: block;
+    text-align: center;
+    font-size: 34px;
+    text-transform: uppercase;
+    font-family: "Avenir Next LT W01 Bold" !important;
+    font-weight: normal;
+    width: 100%;
+    color: #414042;
+    margin: 0 auto;
+    line-height: 1.2em;
+    text-rendering: optimizeLegibility;
+    font-style: normal;
+    padding: 0;
+
+}
+  @media only screen and (max-width: 768px) {
+        .main-message-box span.form-title  {
+            font-size:20px;width: 88%;
+        }
+    }
+
+.form-content p {
+    text-align: left;
+    font-size:14px;
+    line-height: 1.3em;
+}
+
+.form-content .row {
+    padding: 40px;
+}
+  @media only screen and (max-width: 768px) {
+    .form-content .row {
+    padding: 20px;
+    }
+}
+.form-content .row .row{
+    padding: 0px;
+}
+
+.expand-height .main-message-box-inside {
+    height: 900px;
+}
+
+.white-border {
+  border: 7px solid rgba(255, 255, 255, 0.9);
+  max-width: 980px;
+  margin: 0 auto;
+}
+.white-border .main-message-box-inside {
+    background-color:rgba(255, 255, 255, 0.9);
+    border: 1px solid #4c4f52;
+}
+.white-border .upper-title {
+    color:#4c4f52;
+}
+
+
+.upper-title {
+    display: block;
+    text-transform: uppercase;
+    font-size:20px;
+    margin-top:58px;
+    margin-bottom:20px;
+     color:white;
+   
+}
+  @media only screen and (max-width: 768px) {
+        .upper-title  {
+            font-size:14px;
+        }
+    }
+
+
+.cta-home-green {
+    background-color: #aaaf37;
+    font-family: "Avenir Next LT W01 Bold";
+    text-decoration: none !important;
+    margin: 41px 10px 55px 10px;
+    text-transform: uppercase;
+    color: white !important;
+    transition: background 0.2s ease;
+    padding: 10px 9px;
+    border: 1px solid #4c4f52;
+    font-size: 17px;
+    display: inline-block;
+    width: 163px;
+}
+.cta-home-green:hover {
+    background-color:#37657f;
+
+
+}
+
+  @media only screen and (max-width: 768px) {
+        .cta-home-green {
+             margin: 20px 10px 0px 10px;
+        }
+    }
+
+
+.btn-request-demo {
+    margin: 42px auto 50px auto;
+    width: 240px;
+    display: block;
+}
+
+
+    @media only screen and (max-width: 768px) {
+        .btn-request-demo {margin: 22px auto 21px auto;width: 150px;}}
+
+
+
+
+.btn-watch-video-wrapper {
+    margin:10px 0px;
+}
+
+.btn-watch-video {
+    margin-left: -20px;
+
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white !important;
+    transition: background 0.2s ease;
+
+}
+.btn-watch-video img {
+margin-bottom: -4px;
+margin-right: -29px;
+
+}
+
+.btn-watch-video:hover {
+  border-bottom:2px solid white;
+}
+
+
+
+.global-contact-info.global-contact-info  {
+  background-color: #F0F0F0;
+  padding: 20px 40px 40px 40px;
+  margin-top:50px;
+}
+
+.global-contact-us select{
+
+    -webkit-border-radius: 0px;
+    -moz-border-radius: none;
+    -ms-border-radius: none;
+    -o-border-radius: none;
+    border-radius: 0px;
+    -webkit-appearance: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border-color: #231f20 ;
+    background-position:top right;
+    background-position: 98% 53%;
+    background-repeat:no-repeat;
+    background-color:white !important;
+    background-image: url('http://www.k2.com/img/dropdown_arrow.png');
+}
+
+
+.global-contact-us input {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  background-color:white;
+  border-color: #231f20 ;
+}
+
+.global-contact-us input[type="text"]:focus,.global-contact-us input[type="password"]:focus,.global-contact-us input[type="date"]:focus.global-contact-us input[type="datetime"]:focus,  .global-contact-us input[type="email"]:focus,.global-contact-us input[type="number"]:focus,.global-contact-us input[type="search"]:focus,.global-contact-us input[type="tel"]:focus,.global-contact-us input[type="time"]:focus, .global-contact-us input[type="url"]:focus, .global-contact-us textarea:focus, .global-contact-us select:focus {
+      background: #F8F8F8 !important;
+      outline: none!important;
+      border-color: #231f20 !important;
+    }
+
+.global-contact-us textarea {
+      border-color: #231f20 ;
+}
+
+.industry-title {
+    color: #a8aa2f;
+    font-size:17px;
+    padding-bottom:20px;
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.industry-list {
+margin-bottom: 0px;
+}
+
+p.indsutry-list-footer {
+text-transform: uppercase;
+text-align: center;
+}
+
+.industry-list li {
+    font-size:15px;
+    font-family: 'Bulmer MT W01 Italic';
+    line-height: 1.3em;
+}
+
+.form-content .row.skinny-form {
+    padding:0px 150px;
+}
+  @media only screen and (max-width: 768px) {
+    .form-content .row.skinny-form {
+            padding:0px 20px;
+        }
+
+    }
+
+
+.page-two .global-contact-us input, .page-two .global-contact-us select {
+-webkit-box-shadow: none;
+-moz-box-shadow: none;
+box-shadow: none;
+background-color: white;
+border-color: #231f20;
+font-size: 13px;
+height: 28px;
+
+}
+
+.form-content .button.primary {
+    text-transform: uppercase;
+    background-color: #abaf37;
+    float:right;
+
+    font-weight: bold;
+    border:1px solid #49494a;
+    font-size: 16px;
+   height: 37px;
+}
+
+.form-content .button.primary:hover {
+ background-color:#37657f;
+}
+
+
+.page-two .form-description {
+    padding:57px 0px 30px;
+}
+
+.form-content .row .row.second-q {
+    padding-top:26px ;
+}
+
+.page-one {
+    -webkit-animation: expand-height  1s alternate; /* Chrome, Safari, Opera */
+    animation: expand-height 1s alternate;
+    overflow: hidden;
+   height: auto;;
+
+}
+
+.page-two .global-contact-us input.back-btn {
+    cursor: pointer;
+text-transform: uppercase;
+background-color: #FFFFFF;
+float: right;
+font-weight: bold;
+border: 1px solid #49494a;
+font-size: 16px;
+height: 37px;
+color: rgb(144, 144, 144);
+  margin-right: 20px;
+}
+#btn-close-form {
+cursor: pointer;
+position: relative;
+margin-top: 20px;
+float: right;
+margin-right: 20px;
+display: block;
+margin-bottom: -40px;
+margin-left: -40px;
+}
+.page-two {
+    padding-bottom: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+    .main-message-box-inside span.form-title {
+        font-size:22px;
+    }
+    .main-message-box-inside span.form-title br {
+        display:none;
+    }
+    .page-two .form-description {
+        padding: 29px 0px 18px;
+    }
+
+    .divider-column {
+        display:none;
+    }
+
+    .industry-wrapper {
+    display:none;
+    }
+
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes expand-height {
+    from {  max-height:366px;
+            opacity:0;
+          }
+    to {    
+            opacity: 1; 
+            max-height:870px;
+        }
+}
+
+
+/* Standard syntax */
+@keyframes expand-height {
+    from {
+        max-height:366px;
+        opacity:0;
+        }
+    to {
+        opacity: 1; 
+        max-height:870px;
+        }
+}
+
+.page-two label {
+    font-size: 14px;
+    color: #4d4d4d;
+    cursor: pointer;
+    display: block;
+    font-weight: 500;
+    margin-bottom: 3px;
+    float: left;
+    width: 100%;
+    padding-bottom: 3px;
+    text-align: left;
+    padding-top: 5px;
+}
+
+.page-one .first-q {
+   
+
+}
+.page-one .first-q .label {
+    padding-top: 34px;
+    border-top: 1px solid black;
+    margin-top:10px;
+    margin-bottom: 10px;
+ }
+
+span.form-pagination {
+    float: right;
+    width: 100%;
+    text-align: right;
+    padding: 15px 6px;
+    font-size: 13px;
+    font-style: italic;
+    display: block;
+    color: #6d6e71;
+}
+
+.row .divider-column
+ {
+    height: 573px;
+    border-right: 1px solid black;
+    width: 6.33333% !important;
+}
+
+.menu-item-demo {
+  display:none !important;
+}
+
+@media only screen and (max-width: 768px) {
+.k2-cta-form .title {
+    display: block;
+    margin: 45px 0 15px;
+    font-size: 23px !important;
+}
+}
+
+.hide {
+  display:none !important;
+}
+
+@-moz-document url-prefix() { 
+  body p, body a{
+     font-weight:normal !important;
+  }
+}
+.btn-close-form {
+  display:none!important;
+}
+
+
+</style>
+
+<div id="form_formcontrol_DemoRequest_2_6_2015" class="_DynamicForm showinline" action="">
+    <select type="select-one" style="display:none;">
+        <option></option>
+    </select>
+    <input type="hidden" id="" name="" value="">
+    <input type="hidden" id="id" name="id" value="7630">
+    <input type="hidden" id="home" name="home" value="hp-see-it-live">
+    <input type="hidden" id="LogToProcess" name="LogToProcess" value="SourceCode.IT.CMS.Workflow\c_CMS_TryNowAZURE">
+    <input type="hidden" id="LogToEloqua" name="LogToEloqua" value="">
+    <input type="hidden" id="LogToPardot" name="LogToPardot" value="">
+    <input type="hidden" id="LogToPortal" name="LogToPortal" value="">
+    <root>
+        <style>
+        .k2-cta-form label {
+            text-align: left;
+            margin-bottom: 12px;
+            line-height: 1.2;
+        }
+        
+        .k2-cta-form input[type="text"] {
+            margin-bottom: 15px;
+        }
+        
+        .k2-cta-form .button.primary {
+            margin-right: 10px;
+            margin-top: 25px;
+        }
+        
+        .k2-cta-form .title {
+            display: block;
+            margin: 45px 0 15px;
+            font-size: 30px;
+        }
+        
+        .k2-cta-form .subtitle {
+            display: block;
+            width: 51%;
+            margin: 0 auto 25px;
+            font-family: 'Bulmer MT W01 Italic';
+            font-size: 18px;
+            color: rgb(0, 107, 161);
+            line-height: 1.3;
+        }
+        
+        @media (max-width: 768px) {
+            .k2-cta-form .subtitle {
+                width: 75%;
+            }
+        }
+        </style>
+        <input type="checkbox" checked="checked" id="adwords" adwordsurl="//www.googleadservices.com/pagead/conversion/967730735/?label=UztNCOiirFwQr8y5zQM&amp;guid=ON&amp;script=0" class="Off FormFieldRequired" addlabel="True" requirefield="false" min="" max="" match="" cols="1" emptyvalue="" title="" delimiter="," value="" name="adwords">
+        <input type="hidden" id="formSplitType" value="one-page" class="DefaultFormElement" addlabel="True" requirefield="false" min="" max="" match="" cols="1" emptyvalue="" title="" delimiter="," name="formSplitType">
+        <input type="hidden" id="HostServerAlt" class="DefaultFormElement FormFieldRequired" addlabel="True" requirefield="false" min="" max="" match="" cols="1" emptyvalue="" title="" delimiter="," value="" name="HostServerAlt">
+        <input type="hidden" id="RequestType" class="DefaultFormElement FormFieldRequired" addlabel="True" requirefield="false" min="" max="" match="" cols="1" emptyvalue="Demo Request" title="Demo Request" delimiter="," value="Demo Request" name="RequestType">
+        <input type="hidden" id="VMTypeID" class="DefaultFormElement FormFieldRequired" addlabel="True" requirefield="false" min="" max="" match="" cols="1" emptyvalue="2" title="2" delimiter="," value="2" name="VMTypeID">
+        <input type="hidden" id="RequestedBy" class="DefaultFormElement FormFieldRequired" addlabel="True" requirefield="false" min="" max="" match="" cols="1" emptyvalue="K2.com" title="K2.com" delimiter="," value="K2.com" name="RequestedBy">
+        <input type="hidden" id="ApproverRole" class="DefaultFormElement FormFieldRequired" addlabel="True" requirefield="false" min="" max="" match="" cols="1" emptyvalue="Download Approver" title="Download Approver" delimiter="," value="Download Approver" name="ApproverRole">
+        <input type="hidden" id="ContactRole" class="DefaultFormElement FormFieldRequired" addlabel="True" requirefield="false" min="" max="" match="" cols="1" emptyvalue="Download Approver" title="Download Approver" delimiter="," value="Download Approver" name="ContactRole">
+        <input type="hidden" id="elqFormName" value="TryNowAWS" class="DefaultFormElement" addlabel="True" requirefield="false" min="" max="" match="" cols="1" emptyvalue="" title="" delimiter="," name="elqFormName">
+        <input type="hidden" id="pardotHandlerURL" value="http://offers.k2.com/l/83782/2015-07-06/29ph" class="DefaultFormElement" addlabel="True" requirefield="false" min="" max="" match="" cols="1" emptyvalue="" title="" delimiter="," name="pardotHandlerURL">
+        <input type="hidden" id="TryNowURL" value="http://www.k2.com/trials/blackpearl" class="DefaultFormElement" addlabel="True" requirefield="false" min="" max="" match="" cols="1" emptyvalue="" title="" delimiter="," name="TryNowURL">
+        <input type="hidden" id="ControlPanelURL" value="http://www.k2.com/trials/blackpearl" class="DefaultFormElement" addlabel="True" requirefield="false" min="" max="" match="" cols="1" emptyvalue="" title="" delimiter="," name="ControlPanelURL">
+        <input id="redirectTo" value="http://www.k2.com/form-confirmation" type="hidden" class="DefaultFormElement" addlabel="True" requirefield="false" min="" max="" match="" cols="1" emptyvalue="" title="" delimiter="," name="redirectTo">
+        <input id="EventCategory" type="hidden" value="Forms" class="DefaultFormElement" addlabel="True" requirefield="false" min="" max="" match="" cols="1" emptyvalue="" title="" delimiter="," name="EventCategory">
+        <input id="EventAction" type="hidden" value="Form Submission" class="DefaultFormElement" addlabel="True" requirefield="false" min="" max="" match="" cols="1" emptyvalue="" title="" delimiter="," name="EventAction">
+        <input id="EventLabel" type="hidden" value="Full Trial Request" class="DefaultFormElement" addlabel="True" requirefield="false" min="" max="" match="" cols="1" emptyvalue="" title="" delimiter="," name="EventLabel">
+        <input id="FakePage" type="hidden" value="/forms/submit/Full-Trial-Request" class="DefaultFormElement" addlabel="True" requirefield="false" min="" max="" match="" cols="1" emptyvalue="" title="" delimiter="," name="FakePage">
+        <input id="OpenEventCategory" type="hidden" value="Forms" class="DefaultFormElement" addlabel="True" requirefield="false" min="" max="" match="" cols="1" emptyvalue="" title="" delimiter="," name="OpenEventCategory">
+        <input id="OpenEventAction" type="hidden" value="Form Open" class="DefaultFormElement" addlabel="True" requirefield="false" min="" max="" match="" cols="1" emptyvalue="" title="" delimiter="," name="OpenEventAction">
+        <input id="OpenEventLabel" type="hidden" value="Full Trial Request" class="DefaultFormElement" addlabel="True" requirefield="false" min="" max="" match="" cols="1" emptyvalue="" title="" delimiter="," name="OpenEventLabel">
+        <div class="white-border" addlabel="True" requirefield="false" min="" max="" match="" cols="1" emptyvalue="" title="" delimiter=",">
+            <div class="main-message-box-inside" addlabel="True" requirefield="false" min="" max="" match="" cols="1" emptyvalue="" title="" delimiter=","><span id="btn-close-form" class="btn-close-form" addlabel="True" requirefield="false" min="" max="" match="" cols="1" emptyvalue="" title="" delimiter="," name="btn-close-form"><img src="/img/1/btn-close-form.png" width="20"></span>
+                <section class="k2-cta-form form-content"><span class="title" addlabel="True" requirefield="false" min="" max="" match="" cols="1" emptyvalue="" title="" delimiter=",">THANK YOU FOR YOUR INTEREST IN K2.</span><span class="subtitle" addlabel="True" requirefield="false" min="" max="" match="" cols="1" emptyvalue="" title="" delimiter=",">Please fill out the form below, and we'll get back to you within 24 hours to schedule your custom business application demo.</span>
+                    <div class="row" addlabel="True" requirefield="false" min="" max="" match="" cols="1" emptyvalue="" title="" delimiter=",">
+                        <div class="five columns" addlabel="True" requirefield="false" min="" max="" match="" cols="1" emptyvalue="" title="" delimiter=",">
+                            <label>What business problems are you trying to solve?</label>
+                            <select id="BusinessProblemDropDown" emptyvalue="Business Problem" type="select-one" class="DefaultFormElement FormFieldRequired" addlabel="True" requirefield="false" min="" max="" match="" cols="1" title="" delimiter="," postnames="BusinessProblem,demoRequest~BusinessProblemText,demoRequestText" optionvalueorder="2" optiontextorder="3" defaultvalue="" style="" name="BusinessProblemDropDown">
+                                <option value="Custom Option">Select business problem</option>
+                                <option value="Case Management">Case Management</option>
+                                <option value="Claims Handling">Claims Handling</option>
+                                <option value="Customer/Vendor management">Customer/Vendor management</option>
+                                <option value="Employee Onboarding">Employee Onboarding</option>
+                                <option value="Expense management">Expense management</option>
+                                <option value="Leave Request">Leave Request</option>
+                                <option value="Order Management">Order Management</option>
+                                <option value="Purchase Order Approval">Purchase Order Approval</option>
+                                <option value="Sales process management">Sales process management</option>
+                                <option value="Travel Request">Travel Request</option>
+                                <option value="Custom Option">Other</option>
+                            </select>
+                            <br>
+                            <label>Didn't find your particular business challenge? Tell us about it below and we'll create a custom business application demo to address your specific needs. </label>
+                            <textarea id="TextBoxComments" class="DefaultFormElement FormFieldRequired" style="height: 134px;" placeholder="Type here.." addlabel="False" requirefield="false" min="" max="" match="" cols="1" emptyvalue="Comments" title="Comments" delimiter="," name="TextBoxComments" postnames="demoOther" data-gramm="" data-txt_gramm_id="6f237198-7de3-48ca-a56e-3d4abf4fdece"></textarea>
+                        </div>
+                        <div class="columns one" addlabel="True" requirefield="false" min="" max="" match="" cols="1" emptyvalue="" title="" delimiter=","></div>
+                        <div class="three columns" addlabel="True" requirefield="false" min="" max="" match="" cols="1" emptyvalue="" title="" delimiter=",">
+                            <label>Contact Information: </label>
+                            <input targetform="spstrynow" placeholder="First Name*" id="firstName" type="text" style="width: 100%;" class="DefaultFormElement" addlabel="False" requirefield="true" min="" max="" match="" cols="1" emptyvalue="First name" title="First name" delimiter="," value="Blas" name="firstName">
+                            <input targetform="spstrynow" placeholder="Business Email*" id="EmailAddress" type="text" style="width: 100%;" class="DefaultFormElement" addlabel="False" requirefield="country-email~#CountryDropDown~is not accepted. A business email address is required." min="" max="" match="" cols="1" emptyvalue="Email" title="Email" delimiter="," postnames="UserEmail,email" value="Blas@k2.com" name="EmailAddress">
+                            <input targetform="spstrynow" id="CompanyName" placeholder="Company Name*" type="text" style="width: 100%;" class="DefaultFormElement" addlabel="False" requirefield="true" min="" max="" match="" cols="1" emptyvalue="Company name" title="Company name" delimiter="," postnames="company" value="SourceCode North America" name="CompanyName">
+                            <select id="CountryDropDown" emptyvalue="Country" targetform="spstrynow" type="select-one" class="sl_sort_preserve_top _FormInputDropDownOnChange FormFieldRequired" addlabel="True" requirefield="true" min="" max="" match="" cols="1" title="" delimiter="," postnames="CountryID~CountryName,country" optionvalueorder="0~2~1" optiontextorder="1" defaultvalue="SourceCode North America" style="" showcontrols="StateLabel:224~38:conditional;State:0:opportunityregistration:getstates;Region:1:selecthide" name="CountryDropDown">
+                                <option value="">Select Country</option>
+                                <option value="1~20~Afghanistan">Afghanistan</option>
+                                <option value="2~63~Albania">Albania</option>
+                                <option value="3~15~Algeria">Algeria</option>
+                                <option value="62~11~America Central Dominican Republic">America Central Dominican Republic</option>
+                                <option value="4~15~American Samoa">American Samoa</option>
+                                <option value="5~15~Andorra">Andorra</option>
+                                <option value="6~15~Angola">Angola</option>
+                                <option value="7~15~Anguilla">Anguilla</option>
+                                <option value="8~15~Antarctica">Antarctica</option>
+                                <option value="9~11~Antigua and Barbuda">Antigua and Barbuda</option>
+                                <option value="10~11~Argentina">Argentina</option>
+                                <option value="11~34~Armenia">Armenia</option>
+                                <option value="12~11~Aruba">Aruba</option>
+                                <option value="244~18~Ashmore and Cartier Islands">Ashmore and Cartier Islands</option>
+                                <option value="13~32~Australia">Australia</option>
+                                <option value="14~64~Austria">Austria</option>
+                                <option value="15~20~Azerbaijan">Azerbaijan</option>
+                                <option value="16~11~Bahamas, The">Bahamas, The</option>
+                                <option value="17~20~Bahrain">Bahrain</option>
+                                <option value="18~22~Bangladesh">Bangladesh</option>
+                                <option value="19~11~Barbados">Barbados</option>
+                                <option value="245~15~Bassas da India">Bassas da India</option>
+                                <option value="20~34~Belarus">Belarus</option>
+                                <option value="21~19~Belgium">Belgium</option>
+                                <option value="22~15~Belize">Belize</option>
+                                <option value="23~15~Benin">Benin</option>
+                                <option value="24~10~Bermuda">Bermuda</option>
+                                <option value="25~20~Bhutan">Bhutan</option>
+                                <option value="26~11~Bolivia">Bolivia</option>
+                                <option value="27~63~Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                                <option value="28~15~Botswana">Botswana</option>
+                                <option value="29~15~Bouvet Island">Bouvet Island</option>
+                                <option value="30~11~Brazil">Brazil</option>
+                                <option value="246~16~British Indian Ocean Territory">British Indian Ocean Territory</option>
+                                <option value="31~15~British Virgin Islands">British Virgin Islands</option>
+                                <option value="32~15~Brunei">Brunei</option>
+                                <option value="33~63~Bulgaria">Bulgaria</option>
+                                <option value="34~15~Burkina Faso">Burkina Faso</option>
+                                <option value="247~4~Burma ">Burma </option>
+                                <option value="35~15~Burundi">Burundi</option>
+                                <option value="36~4~Cambodia">Cambodia</option>
+                                <option value="37~15~Cameroon">Cameroon</option>
+                                <option value="38~8~Canada">Canada</option>
+                                <option value="39~15~Cape Verde">Cape Verde</option>
+                                <option value="40~15~Cayman Islands">Cayman Islands</option>
+                                <option value="41~15~Central African Republic">Central African Republic</option>
+                                <option value="42~11~Chad">Chad</option>
+                                <option value="43~11~Chile">Chile</option>
+                                <option value="44~5~China">China</option>
+                                <option value="47~15~Christmas Island">Christmas Island</option>
+                                <option value="248~18~Clipperton Island">Clipperton Island</option>
+                                <option value="48~15~Cocos (Keeling) Islands">Cocos (Keeling) Islands</option>
+                                <option value="49~11~Colombia">Colombia</option>
+                                <option value="50~15~Comoros">Comoros</option>
+                                <option value="51~15~Congo">Congo</option>
+                                <option value="52~15~Congo, Democratic Republic">Congo, Democratic Republic</option>
+                                <option value="53~15~Cook Islands">Cook Islands</option>
+                                <option value="249~18~Coral Sea Islands">Coral Sea Islands</option>
+                                <option value="54~11~Costa Rica">Costa Rica</option>
+                                <option value="240~15~Cote d'Ivoire">Cote d'Ivoire</option>
+                                <option value="55~63~Croatia">Croatia</option>
+                                <option value="56~11~Cuba">Cuba</option>
+                                <option value="57~20~Cyprus">Cyprus</option>
+                                <option value="58~34~Czech Republic">Czech Republic</option>
+                                <option value="59~64~Denmark">Denmark</option>
+                                <option value="250~16~Dhekelia">Dhekelia</option>
+                                <option value="60~20~Djibouti">Djibouti</option>
+                                <option value="251~2~Dominica">Dominica</option>
+                                <option value="61~20~Dominican Republic">Dominican Republic</option>
+                                <option value="63~20~East Timor">East Timor</option>
+                                <option value="64~8~Ecuador">Ecuador</option>
+                                <option value="65~20~Egypt">Egypt</option>
+                                <option value="66~11~El Salvador">El Salvador</option>
+                                <option value="67~15~Equatorial Guinea">Equatorial Guinea</option>
+                                <option value="68~15~Eritrea">Eritrea</option>
+                                <option value="69~16~Estonia">Estonia</option>
+                                <option value="70~15~Ethiopia">Ethiopia</option>
+                                <option value="71~11~Falkland Islands (Islas Malvinas)">Falkland Islands (Islas Malvinas)</option>
+                                <option value="72~15~Faroe Islands">Faroe Islands</option>
+                                <option value="73~32~Fiji">Fiji</option>
+                                <option value="74~64~Finland">Finland</option>
+                                <option value="75~38~France">France</option>
+                                <option value="76~11~French Guiana">French Guiana</option>
+                                <option value="77~20~French Polynesia">French Polynesia</option>
+                                <option value="78~20~French Southern Territories">French Southern Territories</option>
+                                <option value="79~15~Gabon">Gabon</option>
+                                <option value="80~15~Gambia, The">Gambia, The</option>
+                                <option value="81~15~Georgia">Georgia</option>
+                                <option value="82~64~Germany">Germany</option>
+                                <option value="83~15~Ghana">Ghana</option>
+                                <option value="84~20~Gibraltar">Gibraltar</option>
+                                <option value="85~16~Greece">Greece</option>
+                                <option value="86~11~Greenland">Greenland</option>
+                                <option value="87~11~Grenada">Grenada</option>
+                                <option value="88~11~Guadeloupe">Guadeloupe</option>
+                                <option value="89~11~Guam">Guam</option>
+                                <option value="90~11~Guatemala">Guatemala</option>
+                                <option value="252~16~Guernsey">Guernsey</option>
+                                <option value="91~15~Guinea">Guinea</option>
+                                <option value="92~15~Guinea-Bissau">Guinea-Bissau</option>
+                                <option value="93~11~Guyana">Guyana</option>
+                                <option value="94~11~Haiti">Haiti</option>
+                                <option value="95~15~Heard and McDonald Islands">Heard and McDonald Islands</option>
+                                <option value="96~11~Honduras">Honduras</option>
+                                <option value="45~5~Hong Kong">Hong Kong</option>
+                                <option value="97~34~Hungary">Hungary</option>
+                                <option value="98~64~Iceland">Iceland</option>
+                                <option value="99~22~India">India</option>
+                                <option value="100~4~Indonesia">Indonesia</option>
+                                <option value="101~20~Iran">Iran</option>
+                                <option value="102~20~Iraq">Iraq</option>
+                                <option value="103~6~Ireland">Ireland</option>
+                                <option value="253~16~Isle of Man">Isle of Man</option>
+                                <option value="104~20~Israel">Israel</option>
+                                <option value="105~16~Italy">Italy</option>
+                                <option value="106~11~Jamaica">Jamaica</option>
+                                <option value="107~5~Japan">Japan</option>
+                                <option value="254~16~Jersey">Jersey</option>
+                                <option value="108~20~Jordan">Jordan</option>
+                                <option value="109~34~Kazakhstan">Kazakhstan</option>
+                                <option value="110~15~Kenya">Kenya</option>
+                                <option value="111~5~Kiribati">Kiribati</option>
+                                <option value="113~5~Korea, North">Korea, North</option>
+                                <option value="112~5~Korea, South">Korea, South</option>
+                                <option value="242~63~Kosovo">Kosovo</option>
+                                <option value="114~15~Kuwait">Kuwait</option>
+                                <option value="115~15~Kyrgyzstan">Kyrgyzstan</option>
+                                <option value="116~20~Laos">Laos</option>
+                                <option value="117~16~Latvia">Latvia</option>
+                                <option value="118~20~Lebanon">Lebanon</option>
+                                <option value="119~15~Lesotho">Lesotho</option>
+                                <option value="120~20~Liberia">Liberia</option>
+                                <option value="121~20~Libya">Libya</option>
+                                <option value="122~15~Liechtenstein">Liechtenstein</option>
+                                <option value="123~16~Lithuania">Lithuania</option>
+                                <option value="124~38~Luxembourg">Luxembourg</option>
+                                <option value="46~5~Macau">Macau</option>
+                                <option value="125~63~Macedonia">Macedonia</option>
+                                <option value="126~15~Madagascar">Madagascar</option>
+                                <option value="127~15~Malawi">Malawi</option>
+                                <option value="128~4~Malaysia">Malaysia</option>
+                                <option value="129~15~Maldives">Maldives</option>
+                                <option value="130~15~Mali">Mali</option>
+                                <option value="131~34~Malta">Malta</option>
+                                <option value="132~8~Marshall Islands">Marshall Islands</option>
+                                <option value="133~5~Martinique">Martinique</option>
+                                <option value="134~15~Mauritania">Mauritania</option>
+                                <option value="135~15~Mauritius">Mauritius</option>
+                                <option value="136~15~Mayotte">Mayotte</option>
+                                <option value="137~8~Mexico">Mexico</option>
+                                <option value="138~8~Micronesia">Micronesia</option>
+                                <option value="139~15~Moldova">Moldova</option>
+                                <option value="140~15~Monaco">Monaco</option>
+                                <option value="141~20~Mongolia">Mongolia</option>
+                                <option value="243~63~Montenegro">Montenegro</option>
+                                <option value="142~11~Montserrat">Montserrat</option>
+                                <option value="143~38~Morocco">Morocco</option>
+                                <option value="144~15~Mozambique">Mozambique</option>
+                                <option value="145~8~Myanmar">Myanmar</option>
+                                <option value="146~15~Namibia">Namibia</option>
+                                <option value="147~8~Nauru">Nauru</option>
+                                <option value="148~22~Nepal">Nepal</option>
+                                <option value="150~19~Netherlands">Netherlands</option>
+                                <option value="149~19~Netherlands, Antilles">Netherlands, Antilles</option>
+                                <option value="151~8~New Caledonia">New Caledonia</option>
+                                <option value="152~33~New Zealand">New Zealand</option>
+                                <option value="153~5~Nicaragua">Nicaragua</option>
+                                <option value="154~20~Niger">Niger</option>
+                                <option value="155~20~Nigeria">Nigeria</option>
+                                <option value="156~8~Niue">Niue</option>
+                                <option value="157~8~Norfolk Island">Norfolk Island</option>
+                                <option value="158~8~Northern Mariana Islands">Northern Mariana Islands</option>
+                                <option value="159~64~Norway">Norway</option>
+                                <option value="160~15~Oman">Oman</option>
+                                <option value="161~22~Pakistan">Pakistan</option>
+                                <option value="162~20~Palau">Palau</option>
+                                <option value="163~11~Panama">Panama</option>
+                                <option value="164~15~Papua New Guinea">Papua New Guinea</option>
+                                <option value="165~11~Paraguay">Paraguay</option>
+                                <option value="166~11~Peru">Peru</option>
+                                <option value="167~4~Philippines">Philippines</option>
+                                <option value="168~8~Pitcairn Island">Pitcairn Island</option>
+                                <option value="169~34~Poland">Poland</option>
+                                <option value="170~16~Portugal">Portugal</option>
+                                <option value="171~11~Puerto Rico">Puerto Rico</option>
+                                <option value="172~15~Qatar">Qatar</option>
+                                <option value="173~15~Reunion">Reunion</option>
+                                <option value="174~63~Romania">Romania</option>
+                                <option value="175~34~Russia">Russia</option>
+                                <option value="176~15~Rwanda">Rwanda</option>
+                                <option value="177~15~Saint Helena">Saint Helena</option>
+                                <option value="178~11~Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+                                <option value="179~11~Saint Lucia">Saint Lucia</option>
+                                <option value="180~11~Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
+                                <option value="181~11~Saint Vincent and The Grenadines">Saint Vincent and The Grenadines</option>
+                                <option value="182~20~Samoa">Samoa</option>
+                                <option value="183~15~San Marino">San Marino</option>
+                                <option value="184~15~Sao Tome and Principe">Sao Tome and Principe</option>
+                                <option value="185~20~Saudi Arabia">Saudi Arabia</option>
+                                <option value="186~20~Senegal">Senegal</option>
+                                <option value="239~63~Serbia">Serbia</option>
+                                <option value="187~15~Seychelles">Seychelles</option>
+                                <option value="188~15~Sierra Leone">Sierra Leone</option>
+                                <option value="189~4~Singapore">Singapore</option>
+                                <option value="190~63~Slovakia">Slovakia</option>
+                                <option value="191~63~Slovenia">Slovenia</option>
+                                <option value="192~20~Solomon Islands">Solomon Islands</option>
+                                <option value="193~20~Somalia">Somalia</option>
+                                <option value="194~15~South Africa">South Africa</option>
+                                <option value="195~11~South Georgia Islands">South Georgia Islands</option>
+                                <option value="196~11~South Sandwich Islands">South Sandwich Islands</option>
+                                <option value="197~16~Spain">Spain</option>
+                                <option value="198~22~Sri Lanka">Sri Lanka</option>
+                                <option value="241~20~St. Kitts and Nevis">St. Kitts and Nevis</option>
+                                <option value="199~15~Sudan">Sudan</option>
+                                <option value="200~11~Suriname">Suriname</option>
+                                <option value="201~15~Svalbard and Jan Mayen Islands">Svalbard and Jan Mayen Islands</option>
+                                <option value="202~15~Swaziland">Swaziland</option>
+                                <option value="203~64~Sweden">Sweden</option>
+                                <option value="204~64~Switzerland">Switzerland</option>
+                                <option value="205~20~Syria">Syria</option>
+                                <option value="206~5~Taiwan">Taiwan</option>
+                                <option value="207~20~Tajikistan">Tajikistan</option>
+                                <option value="208~15~Tanzania">Tanzania</option>
+                                <option value="209~21~Thailand">Thailand</option>
+                                <option value="210~15~Togo">Togo</option>
+                                <option value="211~20~Tokelau">Tokelau</option>
+                                <option value="212~20~Tonga">Tonga</option>
+                                <option value="213~11~Trinidad and Tobago">Trinidad and Tobago</option>
+                                <option value="214~38~Tunisia">Tunisia</option>
+                                <option value="215~34~Turkey">Turkey</option>
+                                <option value="216~20~Turkmenistan">Turkmenistan</option>
+                                <option value="217~5~Turks and Caicos Islands">Turks and Caicos Islands</option>
+                                <option value="218~20~Tuvalu">Tuvalu</option>
+                                <option value="219~15~Uganda">Uganda</option>
+                                <option value="220~34~Ukraine">Ukraine</option>
+                                <option value="221~20~United Arab Emirates">United Arab Emirates</option>
+                                <option value="222~6~United Kingdom">United Kingdom</option>
+                                <option value="223~8~United States Minor Outlying Islands">United States Minor Outlying Islands</option>
+                                <option value="224~2~United States of America">United States of America</option>
+                                <option value="225~11~Uruguay">Uruguay</option>
+                                <option value="226~20~Uzbekistan">Uzbekistan</option>
+                                <option value="227~20~Vanuatu">Vanuatu</option>
+                                <option value="228~16~Vatican City State (Holy See)">Vatican City State (Holy See)</option>
+                                <option value="229~11~Venezuela">Venezuela</option>
+                                <option value="230~4~Vietnam">Vietnam</option>
+                                <option value="231~6~Virgin Islands (British)">Virgin Islands (British)</option>
+                                <option value="232~11~Virgin Islands (US)">Virgin Islands (US)</option>
+                                <option value="233~20~Wallis and Futuna Islands">Wallis and Futuna Islands</option>
+                                <option value="234~15~Western Sahara">Western Sahara</option>
+                                <option value="235~15~Yemen">Yemen</option>
+                                <option value="236~16~Yugoslavia">Yugoslavia</option>
+                                <option value="237~15~Zambia">Zambia</option>
+                                <option value="238~15~Zimbabwe">Zimbabwe</option>
+                            </select>
+                            <select id="Region" type="select-one" style="width: auto; display: none;" class="DefaultFormElement FormFieldRequired Off" addlabel="True" requirefield="false" min="" max="" match="" cols="1" emptyvalue="" title="" delimiter="," postnames="regionID~regionName" optionvalueorder="0~1" optiontextorder="1" defaultvalue="" name="Region">
+                                <option value="" selected="selected">Select Option</option>
+                                <option value="63~Adriatic Coast">Adriatic Coast</option>
+                                <option value="45~Africa">Africa</option>
+                                <option value="39~ASEAN (including Japan)">ASEAN (including Japan)</option>
+                                <option value="4~Asia Pacific">Asia Pacific</option>
+                                <option value="32~Australia">Australia</option>
+                                <option value="18~Australia/New Zealand">Australia/New Zealand</option>
+                                <option value="19~Belgium, The Netherlands &amp; Luxembourg">Belgium, The Netherlands &amp; Luxembourg</option>
+                                <option value="69~Central America">Central America</option>
+                                <option value="56~China">China</option>
+                                <option value="66~Czech Republic">Czech Republic</option>
+                                <option value="35~DACH">DACH</option>
+                                <option value="17~Desert Mountain (Not Used Anymore - combined with SouthWest)">Desert Mountain (Not Used Anymore - combined with SouthWest)</option>
+                                <option value="41~Eastern Canada">Eastern Canada</option>
+                                <option value="34~Eastern Europe">Eastern Europe</option>
+                                <option value="3~EMEA">EMEA</option>
+                                <option value="38~France">France</option>
+                                <option value="31~Greater South East">Greater South East</option>
+                                <option value="25~Heartland">Heartland</option>
+                                <option value="57~Hong Kong">Hong Kong</option>
+                                <option value="49~Indonesia">Indonesia</option>
+                                <option value="43~IT">IT</option>
+                                <option value="44~IT Region">IT Region</option>
+                                <option value="50~Japan">Japan</option>
+                                <option value="62~K2 Answers">K2 Answers</option>
+                                <option value="51~Korea">Korea</option>
+                                <option value="67~Latin America">Latin America</option>
+                                <option value="52~Malaysia">Malaysia</option>
+                                <option value="30~Mid Atlantic">Mid Atlantic</option>
+                                <option value="20~Middle East (Gulf)">Middle East (Gulf)</option>
+                                <option value="46~Middle East (Israel)">Middle East (Israel)</option>
+                                <option value="47~Middle East (Other)">Middle East (Other)</option>
+                                <option value="26~Mid-West">Mid-West</option>
+                                <option value="33~New Zealand">New Zealand</option>
+                                <option value="36~Nordic region and Netherlands">Nordic region and Netherlands</option>
+                                <option value="23~North America Canada">North America Canada</option>
+                                <option value="11~North America Central">North America Central</option>
+                                <option value="10~North America East">North America East</option>
+                                <option value="40~North America Federal">North America Federal</option>
+                                <option value="8~North America West">North America West</option>
+                                <option value="24~North Central">North Central</option>
+                                <option value="28~North East">North East</option>
+                                <option value="14~North West">North West</option>
+                                <option value="64~Northern Europe">Northern Europe</option>
+                                <option value="29~NY Metro">NY Metro</option>
+                                <option value="7~Pacific North West (Not Used Anymore - combined with NorthWest)">Pacific North West (Not Used Anymore - combined with NorthWest)</option>
+                                <option value="53~Philippines">Philippines</option>
+                                <option value="65~SCNA Training Region">SCNA Training Region</option>
+                                <option value="60~SCNA-Global">SCNA-Global</option>
+                                <option value="59~Singapore">Singapore</option>
+                                <option value="16~SourceCode Europe">SourceCode Europe</option>
+                                <option value="5~SourceCode Greater China">SourceCode Greater China</option>
+                                <option value="2~SourceCode North America">SourceCode North America</option>
+                                <option value="15~SourceCode South Africa">SourceCode South Africa</option>
+                                <option value="6~SourceCode UK">SourceCode UK</option>
+                                <option value="48~South Africa">South Africa</option>
+                                <option value="68~South America">South America</option>
+                                <option value="22~South Asia">South Asia</option>
+                                <option value="27~South Central">South Central</option>
+                                <option value="13~South West">South West</option>
+                                <option value="37~Southern Europe">Southern Europe</option>
+                                <option value="58~Taiwan">Taiwan</option>
+                                <option value="21~Thailand">Thailand</option>
+                                <option value="70~The Caribbean">The Caribbean</option>
+                                <option value="61~UK and EU Global">UK and EU Global</option>
+                                <option value="54~Vietnam">Vietnam</option>
+                                <option value="42~Western Canada">Western Canada</option>
+                            </select>
+                        </div>
+                        <div class="three columns" addlabel="True" requirefield="false" min="" max="" match="" cols="1" emptyvalue="" title="" delimiter=",">
+                            <label>&nbsp;</label>
+                            <input targetform="spstrynow" placeholder="Last Name*" id="lastName" type="text" style="width: 100%;" class="DefaultFormElement" addlabel="False" requirefield="true" min="" max="" match="" cols="1" emptyvalue="Last name" title="Last name" delimiter="," value="Yaselli" name="lastName">
+                            <input targetform="spstrynow" placeholder="Phone Number*" id="PhoneNumber" type="text" style="width: 100%;" class="DefaultFormElement" addlabel="False" requirefield="true" min="" max="" match="" cols="1" emptyvalue="Phone Number" title="Phone Number" delimiter="," postnames="Phone,busPhone" value="N/A" name="PhoneNumber">
+                            <select targetform="spstrynow" id="Industry" emptyvalue="Industry" type="select-one" class="sl_sort_preserve_top FormFieldRequired" addlabel="True" requirefield="true" min="" max="" match="" cols="1" title="" delimiter="," postnames="industryPicklistID,industryPicklist" optionvalueorder="" optiontextorder="" defaultvalue="" style="" name="Industry">
+                                <option value="">(Select Industry)</option>
+                                <option value="Agriculture">Agriculture</option>
+                                <option value="Apparel">Apparel</option>
+                                <option value="Banking">Banking</option>
+                                <option value="Biotechnology">Biotechnology</option>
+                                <option value="Chemicals">Chemicals</option>
+                                <option value="Communications">Communications</option>
+                                <option value="Construction">Construction</option>
+                                <option value="Consulting">Consulting</option>
+                                <option value="Education">Education</option>
+                                <option value="Electronics">Electronics</option>
+                                <option value="Energy">Energy</option>
+                                <option value="Engineering">Engineering</option>
+                                <option value="Entertainment">Entertainment</option>
+                                <option value="Environmental">Environmental</option>
+                                <option value="Finance">Finance</option>
+                                <option value="Finance Accountancy">Finance Accountancy</option>
+                                <option value="Finance Corporate banking">Finance Corporate banking</option>
+                                <option value="Finance Insurance">Finance Insurance</option>
+                                <option value="Finance Retail Banking">Finance Retail Banking</option>
+                                <option value="Finance Trading">Finance Trading</option>
+                                <option value="Food and Beverage">Food and Beverage</option>
+                                <option value="Government">Government</option>
+                                <option value="Government - US Federal">Government - US Federal</option>
+                                <option value="Healthcare">Healthcare</option>
+                                <option value="Hospitality">Hospitality</option>
+                                <option value="Insurance">Insurance</option>
+                                <option value="Legal">Legal</option>
+                                <option value="Machinery">Machinery</option>
+                                <option value="Manufacturing">Manufacturing</option>
+                                <option value="Media">Media</option>
+                                <option value="Not for Profit">Not for Profit</option>
+                                <option value="Other">Other</option>
+                                <option value="Recreation">Recreation</option>
+                                <option value="Retail">Retail</option>
+                                <option value="Shipping">Shipping</option>
+                                <option value="Technology">Technology</option>
+                                <option value="Telecommunications">Telecommunications</option>
+                                <option value="Tourism ">Tourism </option>
+                                <option value="Transportation">Transportation</option>
+                                <option value="Utilities">Utilities</option>
+                            </select>
+                            <input targetform="spstrynow" placeholder="Postal Code*" id="PostalCode" type="text" style="width: 100%;" class="DefaultFormElement" addlabel="False" requirefield="true" min="" max="" match="" cols="1" emptyvalue="Postal Code" title="Postal Code" delimiter="," postnames="zip,zipOrPostalCode" value="" name="PostalCode">
+                        </div>
+                        <input targetform="spstrynow" type="button" class="FormButton primary button submit-btn" style="cursor: pointer;" value="Submit" adwordsurl="" addlabel="True" requirefield="false" min="" max="" match="" cols="1" emptyvalue="" title="" delimiter=",">
+                    </div>
+                </section>
+            </div>
+        </div>
+        <script>
+        var e = document.getElementById("BusinessProblemDropDown");
+        e.options[0].value = "Custom Option";
+        e.options[e.options.length - 1].value = "Custom Option";
+
+        if (typeof btnLinkHome !== 'undefined') {
+            if (typeof returnHomeInput == 'function') {
+                if (typeof isOnePage !== 'undefined') {
+                    if (isOnePage)
+                        var htmlcode = returnHomeInputOnepage(btnLinkHome);
+                    else
+                        var htmlcode = returnHomeInput(btnLinkHome);
+
+                    $("._DynamicForm").append(htmlcode);
+                }
+            }
+        }
+
+
+        $('#btn-close-form').click(function() {
+
+            $('#RequestDemoSection').show();
+            $('#RequestDemoForm').empty();
+            $('#RequestDemoSection').removeClass('fading');
+            clearInterval(dots);
+            $('#btn-see-it-live').html('SEE IT LIVE');
+        });
+        $("#BusinessProblemDropDown option:first").attr("value", "Custom Option");
+        $('.right-fixed-buttons').hide();
+        </script>
+    </root>
+    <div style="width:95%;text-align:right;"></div>
+</div>

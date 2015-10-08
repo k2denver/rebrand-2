@@ -222,12 +222,14 @@ body header {
                         padding: 4px 20px;
                         display: inline-block;
                         color: #14b6c9;
-                        font-weight: normal;
+                        font-weight: bold;
                     }
                     //Last Level
                     &:hover {
-                        background-color: white;
-
+                        background-color: $k2-blue;
+                         > a {
+                            color:white !important;
+                        }
                         ul.sub-sub-menu {
                             opacity: 1;
                             transition: all 0.1s ease;
@@ -245,12 +247,12 @@ body header {
                         bottom: 0px;
                         list-style: none;
                         list-style-type: none;
-                        background-color: white;
+                        background-color: $k2-blue;
                         @if $overwrite-cms {
                             margin-left: 0px;
                         }
                         li {
-                            background-color: white;
+                            background-color: $k2-blue;
                             cursor: pointer;
                             display:block;
                             a {
@@ -260,11 +262,12 @@ body header {
                                 padding-right: 0px;
                                 margin-left: 15px;
                                 padding-bottom: 2px;
-                                color:$k2-purple;
-                                border-bottom: 2px solid white;
+                                color:white;
+                                font-weight:bold;
+                                border-bottom: 2px solid $k2-blue;
                                 transition:border-bottom 0.1s ease;
                                 &:hover {
-                                    border-bottom: 2px solid $k2-blue;
+                                    border-bottom: 2px solid white;
                                     cursor: pointer; 
                                 cursor: hand;
                               
@@ -359,7 +362,11 @@ body header {
                     font-weight:bold;
                     font-size:12px;
                     color:$k2-purple;
-
+                    transition: all .5s ease;
+                    &:hover {
+                        color:$k2-green;
+                        background-color:white(.8);
+                    }
                 }
             &.active {
                 a {

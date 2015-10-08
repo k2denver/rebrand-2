@@ -36,8 +36,8 @@
             margin-bottom: 0px;
 
             img {
-                width: 285px;
-                margin-top:20px;
+                    width: 241px;
+                    margin-top: 44px;
             }
         }
     }
@@ -100,8 +100,16 @@
         @extend %button--blue;
         margin-top: 0px;
     }
-}
+    &__underline-cta {
+        @include cta-underline($k2-green);
 
+    }
+}
+.product-main-stage__appit {
+    .product-main-stage__underline-cta {
+            margin-top: 38px;
+    }
+}
 .your-business {
     text-align: center;
     background-color: $k2-purple;
@@ -178,6 +186,10 @@
     &__primary-cta {
       @extend %button;
       @extend %button--purple;
+      border:1px solid $k2-purple;;
+      &:hover {
+        border:1px solid white;
+      }
     }
 
         br {

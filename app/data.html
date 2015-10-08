@@ -54,6 +54,9 @@
     });
         </script>
         <script src="/js/typed.js"></script>
+         <link rel="stylesheet" href="/js/fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<script type="text/javascript" src="/js/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+<script type="text/javascript" src="/js/fancybox/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
 
 </head>
 
@@ -76,12 +79,12 @@
                                     <li><a href="/forms.html">Forms</a></li>
                                     <li><a href="/workflow.html">Workflow</a></li>
                                     <li><a href="/data.html">Data & Systems</a></li>
-                                    <li><a href="/experience-apps.html">Using an App</a></li>
+                                    <li><a href="/app-experience.html">Using an App</a></li>
                                 </ul>
                             </li>
                             <li><a href="/products.html">Products</a></li>
 
-                            <li><a href="#">One-Minute Demos</a></li>
+                            <li><a href="/one-minute-demo.html">One-Minute Demos</a></li>
                             <li><a href="/company.html">About the Company</a></li>
                         </ul>
                     </li>
@@ -110,16 +113,7 @@
                                     <li><a href="/department-detail.html">Sales & Marketing</a></li>
                                 </ul>
                             </li>
-                            <li>
-                                <a>Use Cases</a>
-                                <ul class="sub-sub-menu">
-                                    <li><a href="#">Use Case 1</a></li>
-                                    <li><a href="#">Use Case 2</a></li>
-                                    <li><a href="#">Use Case 3</a></li>
-                                    <li><a href="#">Use Case 4</a></li>
-                                    <li><a href="#">Case Management</a></li>
-                                </ul>
-                            </li>
+                            
                             <li><a href="#">Business Process Management</a></li>
                             <li><a href="#">SharePoint Workflow</a></li>
                         </ul>
@@ -128,13 +122,8 @@
                         <a class="last">RESOURCES</a>
                         <ul class="sub-menu--resources">
                           <li>
-                                <a>Event, Webinars and Training</a>
-                                <ul class="sub-sub-menu">
-                                    <li><a href="#">In-Person Events</a></li>
-                                    <li><a href="#">Live Webinars</a></li>
-                                    <li><a href="#">Recorded Webinars</a></li>
-                                    <li><a href="#">Training Courses</a></li>
-                                </ul>
+                                <a href="http://k2.com/events">Events</a>
+                                
                             </li>
                             <li><a>Support</a>
                               <ul class="sub-sub-menu">
@@ -180,7 +169,7 @@
                     </ul>
             </nav>
             <a class="header__cta-contact">contact</a>
-            <a class="header__cta-see-it-live">see it live</a>
+            <a href="/schedule-demo.html" class="header__cta-see-it-live">see it live</a>
             <div class="header__login"></div>
             <div class="header__search"></div>
         </header>
@@ -193,7 +182,7 @@
             <h1 class="main-stage-learn-more__title">K2 helps your people work smarter <br>and get business done faster.</h1>
             <p class="main-stage-learn-more__description">Create, modify and reuse business apps with little-to-no code — on premises or in the cloud.
                 <br>Leverage current systems and technologies, and interact with your apps from any device.</p>
-            <a href="#" class="main-stage-learn-more__button--primary">Schedule Demo</a>
+            <a href="/schedule-demo.html" class="main-stage-learn-more__button--primary">Schedule Demo</a>
         </div>
     </div>
 </section>
@@ -214,13 +203,13 @@
     <div class="wrapper">
         <div class="fwd">
             <div class="fwd__left">
-                <div class="fwd__menu -one">
+                <div class="fwd__menu -data -one">
                     <ul>
-                        <li class="item-one active">Flexible and e
+                        <li class="item-one active">Flexible and 
                             <br> extensible</li>
                         <li class="item-two"> On-premises and cloud</li>
                         <li class="item-three">Reliable and secure</li>
-                        <li class="item-four">*Mobile-ready</li>
+                        
                     </ul>
                 </div>
                 <div class="fwd__computer">
@@ -228,10 +217,10 @@
                 </div>
                 <div class="fwd__screen">
                     <div class="fwd__slides js-screen -one">
-                        <img src="/img/1/forms-screenshot-1.jpg" width="350" alt="">
-                        <img src="/img/1/forms-screenshot-2.jpg" width="350" alt="">
-                        <img src="/img/1/forms-screenshot-1.jpg" width="350" alt="">
-                        <img src="/img/1/forms-screenshot-2.jpg" width="350" alt="">
+                        <img src="/img/1/Flexible-and-extensible.jpg" width="350" height="200" alt="">
+                        <img src="/img/1/forms-screenshot-2.jpg" width="350" height="200" alt="">
+                        <img src="/img/1/Flexible-and-extensible.jpg" width="350" height="200" alt="">
+                    
                     </div>
                 </div>
             </div>
@@ -251,11 +240,6 @@
                     <p class="fwd__right-description">K2 provides a reliable and consistent way to access line-of-business data across the organization.  </p>
                     <p class="fwd__right-description">LOB data is accessed and updated via a secure connection and is never stored or copied into a K2 application. Your data remains safe and secure in its system of record.</p>
                 </div>
-                <div class="fwd__right-content--four">
-                   <h2 class="fwd__right-title">*Mobile-ready</h2>
-                    <p class="fwd__right-description">*Responsive form design allows you to build a single form that can be used on any device, making it easy for users to get work done from anywhere.</p>
-                    <p class="fwd__right-description">*Mobile-ready forms can work online or offline to capture data. Backend systems are updated automatically as soon as connectivity is restored. </p>
-                </div>
             </div>
         </div>
     </div>
@@ -266,7 +250,7 @@
         <div class="products-slice__content">
             <h4 class="products-slice__title">Products</h4>
             <p class="products-slice__description">K2 apps run on premises or in the cloud, they integrate with your current systems, and they allow for insightful reporting. Everything you build is reusable and easy to change with little-to-no code.</p>
-            <a class="products-slice__primary-cta">View K2 Products</a>
+            <a href="/products" class="products-slice__primary-cta">View K2 Products</a>
         </div>
     </div>
 </section>
@@ -291,7 +275,7 @@
         <div class="one-miniute-video-slice__content">
             <h4 class="one-miniute-video-slice__title">ONE-MINUTE DEMO VIDEOS</h4>
             <p class="one-miniute-video-slice__description">Want to see K2 in action? Click below to learn how easy it can be to build and run business process applications with forms, workflow, data and reports.</p>
-            <a class="one-miniute-video-slice__primary-cta">watch videos</a>
+            <a href="/one-minute-demo.html" class="one-miniute-video-slice__primary-cta">watch videos</a>
         </div>
     </div>
 </section>
