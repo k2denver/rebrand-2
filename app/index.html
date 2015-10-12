@@ -188,7 +188,7 @@
      class="txt-rotate"></span>
                 </h1>
                 <div class="clear"></div>
-                <a href="https://play.vidyard.com/3ygJac--IBsXMFOPpeT_uw.html?v=3.1.1&amp;preview=1&amp;type=lightbox&amp;eloqua_id=&amp;autoplay=1" class="main-stage__button--primary fancybox fancybox.iframe">
+                <a onclick='fn_vidyard_3ygJac$$IBsXMFOPpeT_uw();' class="main-stage__button--primary">
                     Watch intro video
                 </a>
             </div>
@@ -313,10 +313,27 @@
         
 
     </section>
+    <div class="iphone-widget">
+        <div class="iphone-widget__phone-icon">
+            <img src="/img/1/icon-phone.png" alt="">
+        </div>
+         <div class="iphone-widget__description">
+             questions? <span>844.452.apps</span>
+
+         </div>
+        <div class="iphone-widget__close" id="phone-close"><img src="/img/1/icon-close.png" alt=""></div>
+    </div>
 <script>
+
+
 $('.departments-list li').click(function(){
     window.location.href = "/department-detail.html";
 });
+$('#phone-close').click(function(){
+    $('.iphone-widget').hide();
+});
+
+
   $(function(){
 
       $(".txt-rotate").typed({
@@ -327,6 +344,7 @@ $('.departments-list li').click(function(){
       });
 
   });
+
 </script>
 <style>
     .typed-cursor{
@@ -351,6 +369,7 @@ $('.departments-list li').click(function(){
     100% { opacity:1; }
 }
 </style>
+<script type='text/javascript' id='vidyard_embed_code_3ygJac--IBsXMFOPpeT_uw' src='//play.vidyard.com/3ygJac--IBsXMFOPpeT_uw.js?v=3.1.1&type=lightbox'></script>
 
  
 

@@ -438,6 +438,44 @@ body header {
         background-color: white;
         color: #81af41; }
 
+.iphone-widget {
+  z-index: 22;
+  padding: 20px;
+  background-color: #00b5c8;
+  width: 270px;
+  text-transform: uppercase;
+  position: fixed;
+  bottom: -3px;
+  right: 100px; }
+  .iphone-widget__phone-icon {
+    float: left;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    margin-top: -11px;
+    width: 20px; }
+  .iphone-widget__description {
+    font-size: 14px;
+    float: left;
+    color: white;
+    font-family: "Avenir Next LT W01 Bold";
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    margin-top: -8px; }
+    .iphone-widget__description span {
+      color: #272d43; }
+  .iphone-widget__close {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    margin-top: -10px;
+    width: 10px;
+    cursor: pointer; }
+
+.iphone-widget.closed {
+  display: block; }
+
 .learn-more__description, .departments__description, .how-to-buy__description {
   font-size: 14px;
   line-height: 18px; }
@@ -1186,7 +1224,8 @@ body header {
         margin-left: 8.3333333333%; } }
   .main-stage-learn-more__title {
     text-transform: uppercase;
-    margin-top: 40px; }
+    margin-top: 40px;
+    color: #00b5c8; }
     @media (min-width: 768px) {
       .main-stage-learn-more__title {
         margin-top: 125px; } }
@@ -1603,7 +1642,7 @@ body header {
   background-position: top center;
   height: 1584px;
   width: 100%;
-  background-image: url('/img/1/company-page.jpg'); }
+  background-image: url('/img/1/CompanyPage_OurStory_R1.jpg'); }
 
 .push-for-menu-3 {
   padding-top: 30px; }
@@ -1614,7 +1653,7 @@ body header {
   background-position: top center;
   height: 2252px;
   width: 100%;
-  background-image: url('/img/1/d-detail-page2.jpg'); }
+  background-image: url('/img/1/department_detail_page_R3.jpg'); }
 
 .department-overview {
   background-size: 1680px 1982.5px;

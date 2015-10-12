@@ -6,13 +6,10 @@ feature-1-img: "Flexible-and-extensible.jpg"
 feature-2-title: "On-premises and cloud"
 feature-2-description-1: "Use visual tools to create data connections that span any line-of-business systems, on premises or in the cloud. Build these connections once, then use them again and again. "
 feature-2-description-2: ""
-feature-2-img: "mobile-access.jpg"
+feature-2-img: "On-premises-and-cloud.jpg"
 
 feature-3-title: "Reliable and secure"
 feature-3-description-1: "K2 provides a reliable and consistent way to access line-of-business data across the organization.  "
 feature-3-description-2: "LOB data is accessed and updated via a secure connection and is never stored or copied into a K2 application. Your data remains safe and secure in its system of record."
-feature-3-img: "Flexible-and-extensible.jpg"
-
-
-
+feature-3-img: "Reliable-and-secure.jpg"
 
