@@ -1,0 +1,29 @@
+In Progress
+- Department Detail - Half Dev'ed
+- Department Overview - Half Dev'ed
+- Responsive/Moble - Half Dev'ed
+
+
+Not Dev'ed
+- Company Page - Not started
+- Demo Page - Not started
+- App Experience/Data - Mobile Access Section - Not Dev'ed
+- Homepage Animation (with richard) - A lot of Testing and figuring out what works.
+
+
+QA/Feedback Changes
+- Changes Images on homepage and edits from Thursday. 
+- Product Page changes (adding a section of CTAs)
+
+
+AdHoc
+DemandBase 
+Appit.com Homepage edits. 
+
+
+Timeline
+OCT 20th Finish All pages with Responsive Mobile 
+OCT 21th Adding it to the k2.com CMS
+OCT 22th - OCT 23th - FINAL QA ON EVERYTHING/ POSSIBLE LAUNCH
+OCT 26th - Ready for anything/New content/SEO Changes.
+
