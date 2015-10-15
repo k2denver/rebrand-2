@@ -5,12 +5,14 @@ title: "home"
 <style>
 
     #walker {
-      background: url('/img/1/sfinal.png');
+      background: url('/img/1/finalshotshort.png');
       /* width and height of individual frame */
       width: 501px;
       height: 444px;
       overflow:hidden;
-      background-size:88177px 444px; 
+      background-size:38077px 444px; 
+      animation:fade-in 5s ease;
+
 
     }
 
@@ -20,7 +22,11 @@ title: "home"
         right: 0px;
         bottom: -4px;
     }
-
+@keyframes fade-in {
+    0% {opacity:0;}
+    90% {opacity:0;}
+    100% {opacity:1;}
+}
 </style>
 <section class="main-stage -homepage">
 <div id="walker"></div>  
@@ -235,9 +241,9 @@ s=f[n][2],this._initialRotations[n]=this._func[s]?this._func[s].call(this._targe
 </script>
 <script>/* Dependencies TweenMax */
 
-        var totalFrames = 145;
+        var totalFrames = 60;
         var frameHeight = 501;
-        var speed = 6;
+        var speed = 3;
           
         var walkEase = new SteppedEase(totalFrames)
         var finalPosition = '-' + (frameHeight * totalFrames) + 'px 0px';
@@ -246,7 +252,8 @@ s=f[n][2],this._initialRotations[n]=this._func[s]?this._func[s].call(this._targe
         walkTL.to('#walker', speed, {
             backgroundPosition: finalPosition,
             ease: walkEase,
-            repeat: 0
+            repeat: 0,
+            delay:5
         })
 
     </script>
