@@ -30,7 +30,6 @@
 
 
 
-
 $tablet-width: $screen-md;
 $desktop-width: $screen-lg;
 
@@ -78,4 +77,14 @@ $desktop-width: $screen-lg;
 	    -ms-transform: $transforms;
 	-webkit-transform: $transforms;
           	transform: $transforms;
+}
+
+
+@mixin add-important($property, $value)  {
+    @if $overwrite-cms {
+           #{$property}:$value !important;
+        } @else {
+            #{$property}:$value;
+        }
+
 }

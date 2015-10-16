@@ -1,12 +1,4 @@
-// Forrester-Logo.jpg
-// learn-more-forrester-bg.jpg
-// learn-more-graph.jpg
-// learn-more-main-stage.jpg
-// mobile-graph5.png
-// mobile-graph4.png
-// mobile-graph3.png
-// mobile-graph2.png
-// mobile-graph1.png
+
 .main-stage-learn-more {
     @extend %learn-more-title;
     &__content {
@@ -22,8 +14,6 @@
         @extend %learn-more-title__button--primary;
     }
 }
-
-
 
 
 %learn-more-title {

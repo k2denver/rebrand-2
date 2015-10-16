@@ -18,60 +18,45 @@ $k2-light-grey:#f2f3f2;
 
 //Typography
 
-$p-size-normal: 14px;
-$p-line-height-normal:18px;
-
-
-
-
+//Fonts
 $avenir-ultra: "AvenirNextLTW01-UltraLi";
 $avenir-regular: "AvenirNextLTW01-Regular";
 $avenir-bold: "Avenir Next LT W01 Bold";
-
 $bulmer-smallcaps: "Bulmer MT W01 SC";
 $bulmer-italic: "Bulmer MT W01 Italic";
 
+// Sizes
+$p-size-normal: 14px;
+$p-line-height-normal:18px;
 
-@mixin add-important($property, $value)  {
-    @if $overwrite-cms {
-           #{$property}:$value !important;
-        } @else {
-            #{$property}:$value;
-        }
-
-}
-
-.wrapper {
-    max-width: 960px;
-    @include row(30px);
-}
-
-
+// Typography Extend
 %t-paragraph {
-	font-size:$p-size-normal;
-	line-height: $p-line-height-normal;
+    font-size:$p-size-normal;
+    line-height: $p-line-height-normal;
 }
 
 %t-heading-bulmer {
-	font-size:40px;
-	@include add-important(font-family, $bulmer-italic);
+    font-size:40px;
+    @include add-important(font-family, $bulmer-italic);
 }
 
 
 %t-heding-avenir-bold {
-	@include add-important(font-family, $avenir-bold);
-	font-size:24px;
-	font-weight:normal;
-	text-transform:uppercase;
-	margin:40px 0px;
+    @include add-important(font-family, $avenir-bold);
+    font-size:24px;
+    font-weight:normal;
+    text-transform:uppercase;
+    margin:40px 0px;
 }
 
 
 
+
+
+// CTA's
 %button {
     display: inline-block;
     padding: 10px 15px;
-    
     color: white;
     text-transform: uppercase;
     font-size: 14px;
@@ -145,6 +130,7 @@ $bulmer-italic: "Bulmer MT W01 Italic";
         }
     }
 }
+
 %cta-underline {
 	font-weight:bold;
     display:inline-block;
