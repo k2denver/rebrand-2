@@ -177,32 +177,7 @@
     </div>
 
     
-<style>
 
-    #walker {
-      background: url('/img/1/finalshotshort.png');
-      /* width and height of individual frame */
-      width: 501px;
-      height: 444px;
-      overflow:hidden;
-      background-size:38077px 444px; 
-      animation:fade-in 5s ease;
-
-
-    }
-
-    #walker {
-        margin: 0px;
-        position: absolute;
-        right: 0px;
-        bottom: -4px;
-    }
-@keyframes fade-in {
-    0% {opacity:0;}
-    90% {opacity:0;}
-    100% {opacity:1;}
-}
-</style>
 <section class="main-stage -homepage">
 <div id="walker"></div>  
         <div class="wrapper">
@@ -318,10 +293,7 @@
                  <a href="" class="event-info__button--primary">see full list of events</a>
             </div>
         </div>
-        
-
     </section>
-
     <section class="how-to-buy">
         <div class="wrapper">
             <div class="how-to-buy__content">
@@ -333,11 +305,7 @@
                 </p>
                 <a href="/how-to-buy.html" class="how-to-buy__button--primary">Get started today</a>
             </div>
-           
-
         </div>
-        
-
     </section>
     <div class="iphone-widget">
         <div class="iphone-widget__phone-icon">
@@ -372,6 +340,32 @@ $('#phone-close').click(function(){
   });
 
 </script>
+<style>
+
+    #walker {
+    background: url('/img/1/90frames.png');
+    /* width and height of individual frame */
+    width: 501px;
+    height: 374px;
+    overflow:hidden;
+    background-size:45273px 374px; 
+    animation: fade-in 4s ease;
+
+    }
+
+    #walker {
+            margin: 0px;
+    position: absolute;
+    left: 50%;
+    bottom: -4px;
+    margin-left: 84px;
+    }
+    @keyframes fade-in {
+        0% {opacity:0;}
+        90% {opacity:0;}
+        100% {opacity:1;}
+    }
+</style>
 <style>
     .typed-cursor{
     opacity: 1;
@@ -416,22 +410,35 @@ s=f[n][2],this._initialRotations[n]=this._func[s]?this._func[s].call(this._targe
 </script>
 <script>/* Dependencies TweenMax */
 
-        var totalFrames = 60;
-        var frameHeight = 501;
-        var speed = 3;
+      
+    
+        var totalFrames = 89;
+      
+        var frameWidth = 503;
+     
+        var speed = 4.5;
           
         var walkEase = new SteppedEase(totalFrames)
-        var finalPosition = '-' + (frameHeight * totalFrames) + 'px 0px';
+        var finalPosition = '-' + (frameWidth * totalFrames) + 'px 0px';
 
         var walkTL = new TimelineMax()
         walkTL.to('#walker', speed, {
             backgroundPosition: finalPosition,
             ease: walkEase,
             repeat: 0,
-            delay:5
+            delay:4
         })
 
     </script>
+    <script>
+var parallax = document.getElementById("walker");
+var speed = 4;
+
+window.onscroll = function() {
+  var yOffset = window.pageYOffset;
+  parallax.style.bottom = - (yOffset / speed) - 7 + "px";
+}
+</script>
 
  
 
