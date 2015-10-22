@@ -13,7 +13,19 @@ body header {
 }
 
 .wrapper-header {
-  background-color: rgba(255, 255, 255, 0.96);
+  //background-color: rgba(26, 26, 255, 0.96);
+  background-color:grey;
+    @include phone {
+        background-color: black;
+  }
+
+
+  @include tablet {
+        background-color: green;
+  }
+  @include desktop {
+    background-color: rgba(255, 255, 255, 0.96);
+  }
     width: 100%;
     z-index: 10;
     position: fixed;
@@ -36,9 +48,11 @@ body header {
         display: $debug_hide;
     }
     &__best-nav-ever {
-        float:left;
-        margin-top:15px;
-        margin-left:20px;
+        @include tablet {
+            float:left;
+            margin-top:15px;
+            margin-left:20px;
+        }
     }
     &__cta-contact {
         @extend %button;
@@ -72,9 +86,35 @@ body header {
 }
 
 .bne {
+ 
+    @include mobilelast {
+        background-color:$k2-purple;
+         line-height:1.3em;
+        color:white;
+        position:fixed;
+        top:0px;
+        bottom:0px;
+        display:none;
+        right:0px;
+        z-index:100;
+        width:80%;
+        padding-left:30px;
+        a {
+            color:White;
 
-    list-style: none;
-    list-style-type: none;
+        }
+        li {
+              list-style: none;
+                list-style-type: none;
+        }
+        
+        ul.sub-menu {
+            display:none;
+        }
+
+    }
+    @include tablet {
+    
     > ul {
         position: relative;
         @if $overwrite-cms {
@@ -277,6 +317,9 @@ body header {
                 }
             }
             ul.sub-menu--what-is-k2 {
+                @include mobilelast {
+
+                }
                 @extend .sub-menu;
                 width: 250px;
                 ul.sub-sub-menu {
@@ -324,6 +367,7 @@ body header {
     }
     &__sub-menu-item {
         //background-color:red; 
+    }
     }
 }
 
@@ -394,9 +438,8 @@ body header {
         left:10px;
         margin-top:-11px;
         width:20px;
-
     }
-    &__description{
+    &__description {
         font-size:14px;
         float:left;
         color:white;
@@ -406,10 +449,9 @@ body header {
         left:40px;
         margin-top:-8px;
         span {
-        color:$k2-purple;
-        
-    }
-    }
+            color:$k2-purple; 
+            }
+        }
     &__close {
             position:absolute;
         top:50%;

@@ -9,7 +9,7 @@
     <link href="/css/live.css" rel="stylesheet" type="text/css" />
     <meta name="viewport" content="width=device-width,initial-scale = 1.0" />
     <link rel="stylesheet" href="/css/app.css" />
- 
+  
 
     <script src="http://www.k2.com/scripts/K2ComV5/modernizr.min.js?z=09172015.1"></script>
        <script>
@@ -54,9 +54,8 @@
     });
         </script>
         <script src="/js/typed.js"></script>
-         <link rel="stylesheet" href="/js/fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
-<script type="text/javascript" src="/js/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
-<script type="text/javascript" src="/js/fancybox/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+        <script type="text/javascript" src="/js/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+        <script type="text/javascript" src="/js/fancybox/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
 
 </head>
 
@@ -65,7 +64,6 @@
         <header class="header">
             <a href="/" class="header__logo">
                 <img src="/img/1/k2-logo.png" alt="">
-
             </a>
             <!-- The start of the Best Nav Ever (BNE). NO BEM here.  -->
             <nav class="header__best-nav-ever bne" role="navigation">
@@ -73,9 +71,9 @@
                     <li role="menuitem">
                         <a>WHAT IS K2?</a>
                         <ul class="sub-menu--what-is-k2">
-                            <li><a>Intro to Business Applications</a>
+                            <li>
+                            <a>Intro to Business Applications</a>
                                 <ul class="sub-sub-menu">
-
                                     <li><a href="/forms.html">Forms</a></li>
                                     <li><a href="/workflow.html">Workflow</a></li>
                                     <li><a href="/data.html">Data & Systems</a></li>
@@ -183,10 +181,7 @@
         <div class="wrapper">
             <div class="main-stage__content">
                 <h1 class="main-stage__title">
-                    
-                    
-                    <span
-     class="txt-rotate"></span>
+                    <span class="txt-rotate"></span>
                 </h1>
                 <div class="clear"></div>
                 <a onclick='fn_vidyard_3ygJac$$IBsXMFOPpeT_uw();' class="main-stage__button--primary">
@@ -197,6 +192,7 @@
     </section>
     <section class="learn-more">
         <div class="wrapper">
+            <img src="/img/1/learn-more--browser.jpg" width="560" alt="" class="browser">
             <div class="learn-more__content">
                 <h2 class="learn-more__title">
                     Merging business and IT <br>to drive performance
@@ -212,7 +208,7 @@
         <div class="wrapper">
             <div class="departments__content">
                 <h3 class="departments__title">
-                        Find the solution that’s right for you
+                    Find the solution that’s right for you
                 </h3>
                 <div class="departments__description">
                     More than ever, people are empowered to create or influence applications that will improve process in their department. K2 gives you complete control, so these solutions match your needs precisely.
@@ -340,32 +336,7 @@ $('#phone-close').click(function(){
   });
 
 </script>
-<style>
 
-    #walker {
-    background: url('/img/1/90frames.png');
-    /* width and height of individual frame */
-    width: 501px;
-    height: 374px;
-    overflow:hidden;
-    background-size:45273px 374px; 
-    animation: fade-in 4s ease;
-
-    }
-
-    #walker {
-            margin: 0px;
-    position: absolute;
-    left: 50%;
-    bottom: -4px;
-    margin-left: 84px;
-    }
-    @keyframes fade-in {
-        0% {opacity:0;}
-        90% {opacity:0;}
-        100% {opacity:1;}
-    }
-</style>
 <style>
     .typed-cursor{
     opacity: 1;
@@ -432,13 +403,36 @@ s=f[n][2],this._initialRotations[n]=this._func[s]?this._func[s].call(this._targe
     </script>
     <script>
 var parallax = document.getElementById("walker");
-var speed = 4;
+var speed = 6;
 
 window.onscroll = function() {
   var yOffset = window.pageYOffset;
   parallax.style.bottom = - (yOffset / speed) - 7 + "px";
 }
 </script>
+<style>
+@keyframes fade-in {
+        0% {opacity:0;}
+        90% {opacity:0.00000001;}
+        100% {opacity:.5;}
+    }
+    @-webkit-keyframes fade-in {
+        0% {opacity:0;}
+        90% {opacity:0.0000001;}
+        100% {opacity:.5;}
+    }
+
+    @keyframes fade-in-full {
+        0% {opacity:0;}
+        90% {opacity:0.00000001;}
+        100% {opacity:1;}
+    }
+    @-webkit-keyframes fade-in-full {
+        0% {opacity:0;}
+        90% {opacity:0.0000001;}
+        100% {opacity:1;}
+    }
+</style>
 
  
 

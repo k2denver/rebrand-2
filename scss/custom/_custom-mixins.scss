@@ -29,7 +29,7 @@
 }
 
 
-
+$phone-width: $screen-xs;
 $tablet-width: $screen-md;
 $desktop-width: $screen-lg;
 
@@ -43,8 +43,19 @@ $desktop-width: $screen-lg;
 //  }
 
 
+@mixin mobilelast {
+  @media ( min-width: 0px) and ( max-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
 
 
+
+@mixin phone {
+  @media (min-width: #{$screen-xs-min}) {
+    @content;
+  }
+}
 
 @mixin tablet {
   @media (min-width: #{$screen-sm-min}) {

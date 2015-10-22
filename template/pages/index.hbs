@@ -8,10 +8,7 @@ title: "home"
         <div class="wrapper">
             <div class="main-stage__content">
                 <h1 class="main-stage__title">
-                    
-                    
-                    <span
-     class="txt-rotate"></span>
+                    <span class="txt-rotate"></span>
                 </h1>
                 <div class="clear"></div>
                 <a onclick='fn_vidyard_3ygJac$$IBsXMFOPpeT_uw();' class="main-stage__button--primary">
@@ -22,6 +19,7 @@ title: "home"
     </section>
     <section class="learn-more">
         <div class="wrapper">
+            <img src="/img/1/learn-more--browser.jpg" width="560" alt="" class="browser">
             <div class="learn-more__content">
                 <h2 class="learn-more__title">
                     Merging business and IT <br>to drive performance
@@ -37,7 +35,7 @@ title: "home"
         <div class="wrapper">
             <div class="departments__content">
                 <h3 class="departments__title">
-                        {{homepage.departments__title}}
+                    {{homepage.departments__title}}
                 </h3>
                 <div class="departments__description">
                     {{homepage.departments__description}}
@@ -165,32 +163,7 @@ $('#phone-close').click(function(){
   });
 
 </script>
-<style>
 
-    #walker {
-    background: url('/img/1/90frames.png');
-    /* width and height of individual frame */
-    width: 501px;
-    height: 374px;
-    overflow:hidden;
-    background-size:45273px 374px; 
-    animation: fade-in 4s ease;
-
-    }
-
-    #walker {
-            margin: 0px;
-    position: absolute;
-    left: 50%;
-    bottom: -4px;
-    margin-left: 84px;
-    }
-    @keyframes fade-in {
-        0% {opacity:0;}
-        90% {opacity:0;}
-        100% {opacity:1;}
-    }
-</style>
 <style>
     .typed-cursor{
     opacity: 1;
@@ -257,10 +230,33 @@ s=f[n][2],this._initialRotations[n]=this._func[s]?this._func[s].call(this._targe
     </script>
     <script>
 var parallax = document.getElementById("walker");
-var speed = 4;
+var speed = 6;
 
 window.onscroll = function() {
   var yOffset = window.pageYOffset;
   parallax.style.bottom = - (yOffset / speed) - 7 + "px";
 }
 </script>
+<style>
+@keyframes fade-in {
+        0% {opacity:0;}
+        90% {opacity:0.00000001;}
+        100% {opacity:.5;}
+    }
+    @-webkit-keyframes fade-in {
+        0% {opacity:0;}
+        90% {opacity:0.0000001;}
+        100% {opacity:.5;}
+    }
+
+    @keyframes fade-in-full {
+        0% {opacity:0;}
+        90% {opacity:0.00000001;}
+        100% {opacity:1;}
+    }
+    @-webkit-keyframes fade-in-full {
+        0% {opacity:0;}
+        90% {opacity:0.0000001;}
+        100% {opacity:1;}
+    }
+</style>
