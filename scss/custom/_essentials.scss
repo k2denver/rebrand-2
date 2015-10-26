@@ -391,10 +391,20 @@ body header {
         float:left;
         width:100%;
         li {
-                padding-right:15px;
-                float:left;
                 display:block;
+                width:100%;
+                @include tablet {
+                    padding-right:15px;
+                    float:left;
+                   width:auto;
+                }
                 a {
+                    width:100%;
+                    @include tablet {
+
+                    width: auto;
+                    }
+                    
                     padding:13px 39px;
                     background-color:white(.6);
                     display:inline-block;

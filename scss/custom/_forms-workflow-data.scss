@@ -220,8 +220,8 @@
             
         }
     &__content {
-         @include make-xs-column(12);
-        @include make-sm-column(10, 0px);
+         @include make-xs-column(12, 30px);
+        @include make-sm-column(10);
         @include make-sm-column-push(1);
         background-color: white(.8);
         text-align: center;
@@ -254,6 +254,19 @@
 
 
 
+.mobile-tab-content {
+
+    @include tablet {
+        display:none;
+    }
+}
+
+.is-not-desktop {
+    display:block;
+    @include tablet {
+        display:none;
+    }
+}
 /* Chrome, Safari, Opera */
 
 @-webkit-keyframes fade-in {

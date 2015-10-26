@@ -88,7 +88,8 @@ module.exports = function(grunt) {
                 partials: ['template/partials/*.hbs'],
                 layoutdir: "template/",
                 layout: ['default.hbs'],
-                data: ['template/data/*.{json,yml}']
+                data: ['template/data/*.{json,yml}'],
+                
             },
             files : {
                 expand:true,

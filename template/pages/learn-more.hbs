@@ -1,4 +1,5 @@
 --- layout: "default.hbs" title: "learn-more" ---
+
 <section class="main-stage-learn-more push-for-menu">
     <div class="wrapper">
         <div class="main-stage-learn-more__content">
@@ -19,6 +20,10 @@
         <div class="tabs__content">
             <ul>
                  <li class="active"><a class="ajax" href="/learn-more.html">Overview</a></li>
+                 <li class="mobile-tab-content">
+
+
+                 </li>
                 <li><a class="ajax" href="/forms.html">Forms</a></li>
                 <li><a class="ajax" href="/workflow.html">Workflow</a></li>
                 <li><a class="ajax" href="/data.html">Data</a></li>
@@ -120,4 +125,13 @@
         </div>
     </div>
 </section>
+<div id="is-not-desktop"></div>
 <div class="tabs-scripts"></div>
+
+<script>
+    if( $("#is-not-desktop").css('display').toLowerCase() == 'block') {
+         $('.mobile-tab-content').html($('.tab-content__content').html());
+         $('.tab-content__content').empty();
+    }
+
+</script>
