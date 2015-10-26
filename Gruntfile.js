@@ -22,12 +22,14 @@ module.exports = function(grunt) {
 
 
         sass: {
-            options: {
-                includePaths: ['bower_components/bootstrap-sass/assets/stylesheets/bootstrap']
-            },
+            // options: {
+            //     // includePaths: ['bower_components/bootstrap-sass/assets/stylesheets/bootstrap']
+
+            // },
             dist: {
                 options: {
-                    outputStyle: 'uncompressed',
+                    style: 'expanded',
+                    // outputStyle: 'uncompressed',
                     sourceMap: false,
                 },
                 files: {
@@ -80,7 +82,6 @@ module.exports = function(grunt) {
                 serve: {
                     path: 'app/'
                 }
-
             }
         },
         assemble: {
@@ -101,7 +102,7 @@ module.exports = function(grunt) {
 
     });
 
-    grunt.loadNpmTasks('grunt-sass');
+    grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-serve');
     grunt.loadNpmTasks('grunt-assemble');

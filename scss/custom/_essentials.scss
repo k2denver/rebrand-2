@@ -57,8 +57,8 @@ body header {
     }
     &__cta-contact {
         @extend %button;
-        @extend %button-blue-outline;
-        @extend %button-rounded;
+        @extend %button--blue-outline;
+        @extend %button--rounded;
         font-weight: bold;
         padding: 8px 18px;
         font-size: 14px;
@@ -68,8 +68,8 @@ body header {
     }
     &__cta-see-it-live {
         @extend %button;
-        @extend %button-blue-outline;
-        @extend %button-rounded;
+        @extend %button--blue-outline;
+        @extend %button--rounded;
         font-weight: bold;
         padding: 8px 18px;
         font-size: 14px;
@@ -205,7 +205,7 @@ body header {
                             opacity: 1;
                         }
                     }
-                } 
+                }
                 span {}
                 // Subm Menu
                 ul.sub-menu {
@@ -309,32 +309,6 @@ body header {
                         }
                     }
                 }
-                ul.sub-menu--what-is-k2 {
-                    @include mobilelast {}
-                    @extend .sub-menu;
-                    width: 250px;
-                    ul.sub-sub-menu {
-                        @extend .sub-sub-menu;
-                        left: 250px;
-                    }
-                }
-                ul.sub-menu--how-people-use-k2 {
-                    @extend .sub-menu;
-                    width: 200px;
-                    li ul.sub-sub-menu {
-                        @extend .sub-sub-menu;
-                        left: 200px;
-                    }
-                }
-                ul.sub-menu--resources {
-                    @extend .sub-menu;
-                    width: 250px;
-                    li ul.sub-sub-menu {
-                        @extend .sub-sub-menu;
-                        width: 210px;
-                        left: 250px;
-                    }
-                }
                 a {}
             }
         }
@@ -359,6 +333,34 @@ body header {
         &__sub-menu-item {
             //background-color:red; 
         }
+    }
+}
+
+ul.sub-menu--what-is-k2 {
+    @extend .sub-menu;
+    width: 250px;
+    ul.sub-sub-menu {
+        @extend .sub-sub-menu;
+        left: 250px;
+    }
+}
+
+ul.sub-menu--how-people-use-k2 {
+    @extend .sub-menu;
+    width: 200px;
+    li ul.sub-sub-menu {
+        @extend .sub-sub-menu;
+        left: 200px;
+    }
+}
+
+ul.sub-menu--resources {
+    @extend .sub-menu;
+    width: 250px;
+    li ul.sub-sub-menu {
+        @extend .sub-sub-menu;
+        width: 210px;
+        left: 250px;
     }
 }
 

@@ -3,7 +3,7 @@
 
 
 .main-stage-department-detail {
-    @extend %learn-more-title;
+    @extend %department-details;
     &__content {
         @extend %department-details__content;
     }
