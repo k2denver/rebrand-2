@@ -115,7 +115,7 @@
     background-color: $k2-purple;
     padding: 30px;
     &__primary-cta {
-        color: red !important;
+        
         @include cta-underline($k2-blue);
     }
     &__content {
@@ -125,7 +125,7 @@
         @include make-sm-column-offset(1);
     }
     &__title {
-        @extend %t-heading-bulmer;;
+        @extend %t-heading-bulmer;
         margin: 20px 0px;
 
         color: $k2-blue;
@@ -137,11 +137,11 @@
         color: white;
     }
     &__columns {
-        @extend %three-column-layout;
+        @extend .three-column-layout;
         padding: 40px 0px;
         @include make-xs-column(12);
         &:after {
-            @extend %three-column-layout:after;
+            @extend .three-column-layout:after;
         }
         @media only screen and (max-width: 950px)  {
         text-align:center;
@@ -149,7 +149,7 @@
     }
     &__columns-single {
         
-        @extend %three-column-layout__single;
+        @extend .three-column-layout__single;
        
         
         width: 220px;
@@ -173,7 +173,7 @@
         @include make-sm-column(6);
         @include make-sm-column-offset(3);
     }
-    &__title {
+    &__title { 
         @extend %t-heding-avenir-bold;
         
         color: $k2-purple;

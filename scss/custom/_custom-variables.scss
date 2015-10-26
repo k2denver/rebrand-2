@@ -1,20 +1,20 @@
 
 
 
-// Debug Hide
-$debug_hide: block;
+// Debug Hide 
+$debug_hide: block; 
 
-// Overwrite CMS changes
-$overwrite-cms: true !default;
-
+// Overwrite CMS changes  
+$overwrite-cms: true !default; 
+ 
 
 // K2 Colors
 $k2-purple:#272d43;
 $k2-blue:#00b5c8;
-$k2-green:#81af41;
+$k2-green:#81af41;  
 $k2-grey:#5d5d5d;
 $k2-light-grey:#f2f3f2;
-
+ 
 
 //Typography
 
@@ -28,7 +28,7 @@ $bulmer-italic: "Bulmer MT W01 Italic";
 // Sizes
 $p-size-normal: 14px;
 $p-line-height-normal:18px;
-
+ 
 // Typography Extend
 %t-paragraph {
     font-size:$p-size-normal;
@@ -67,59 +67,7 @@ $p-line-height-normal:18px;
     cursor: pointer;
         -webkit-user-select: none;
         transition:all 0.2s ease;
-    &--rounded{
-    	border-radius:2px;
-
-    }
-    &--green {
-        background-color: $k2-green;
-        &:hover {
-        	background-color: $k2-blue;
-        }
-    }
-    &--blue {
-        background-color: $k2-blue;
-        &:hover {
-        	background-color: $k2-green;
-        }
-        &-outline{
-        	border:1px solid $k2-blue;
-        	color:$k2-blue;
-        	&:hover {
-        		background-color: $k2-blue;
-        		color:white !important;
-        	}
-        }
-    }
-    &--purple {
-        background-color: $k2-purple;
-        &:hover {
-        	background-color: $k2-blue;
-        }
-        &-outline{
-        	border:1px solid $k2-blue;
-        	&:hover {
-        		background-color: $k2-blue;
-        	}
-        }
-    }
-    &--white {
-        background-color: $k2-purple;
-        &:hover {
-        	background-color: $k2-blue;
-        }
-        &-outline{
-        	border:1px solid white;
-        	color:white;
-        	&:hover {
-        		background-color: white;
-        		color:$k2-purple !important;
-        	}
-        }
-    }
-    &--bold {
-        font-weight: bold;
-    }
+    
     &:hover {
        
        // CMS over
@@ -129,6 +77,67 @@ $p-line-height-normal:18px;
             color:white;
         }
     }
+}
+
+%button--rounded {
+        border-radius:2px;
+
+    }
+%button--green {
+    background-color: $k2-green;
+    &:hover {
+        background-color: $k2-blue;
+    }
+}
+%button--blue { 
+    background-color: $k2-blue;
+    &:hover {
+        background-color: $k2-green;
+    }
+    
+}
+%button--blue-outline{
+        border:1px solid $k2-blue;  
+        color:$k2-blue;
+        &:hover {
+            background-color: $k2-blue;
+            color:white !important;
+        }
+    }
+%button--purple {
+    background-color: $k2-purple;
+    &:hover {
+        background-color: $k2-blue;
+    }
+    
+}
+%button--purple-outline{
+        border:1px solid $k2-blue;
+        &:hover {
+            background-color: $k2-blue;
+        }
+    }
+%button--white {
+    background-color: $k2-purple;
+    &:hover {
+        background-color: $k2-blue;
+    }
+    
+}
+
+%button--white-outline{
+        border:1px solid white;
+        color:white;
+        &:hover {
+            background-color: white;
+            color:$k2-purple !important;
+        }
+    }
+
+
+
+%button--bold {
+    font-weight: bold;
 }
 
 %cta-underline {
@@ -180,7 +189,7 @@ $p-line-height-normal:18px;
     }
 }
 
-%three-column-layout {
+.three-column-layout {
 	width:100%;
     @include tablet {
         text-align: justify;
@@ -205,7 +214,6 @@ $p-line-height-normal:18px;
             line-height: 0;
         }
     }
-
 }
 
 
@@ -221,19 +229,7 @@ $p-line-height-normal:18px;
     padding: 40px 0px;
     border-top: 5px solid white;
     text-align: center;
-    &__content {
-        @include make-xs-column(12);
-        @include make-xs-column-offset(0);
-        @include make-sm-column(8);
-        @include make-sm-column-offset(2);
-    }
-    &__title {
-        margin: 10px 0px;
-    }
-    &__description {
-        @extend %t-paragraph;
-        color: white;
-    }
+ 
         br {
         display:none;
        @include tablet {
@@ -241,6 +237,19 @@ $p-line-height-normal:18px;
        }
     }
 }
+   %simple-slice__content {
+        @include make-xs-column(12);
+        @include make-xs-column-offset(0);
+        @include make-sm-column(8);
+        @include make-sm-column-offset(2);
+    }
+   %simple-slice__title {
+        margin: 10px 0px;
+    }
+    %simple-slice__description {
+        @extend %t-paragraph;
+        color: white;
+    }
 
 
 

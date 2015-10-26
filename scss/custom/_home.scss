@@ -595,7 +595,7 @@
     min-height: 390px;
     transition: min-height 0.3s ease;
     @include tablet {
-        background-position: right;
+        background-position: 35%;
         min-height: 523px;
         transition: min-height 0.6s ease;
     }

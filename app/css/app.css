@@ -1,4 +1,4 @@
-__description.products-slice, __description.one-miniute-video-slice, .product-main-stage__section-description ul li, .your-business__description, .easy-vs-hard__description, __description.main-stage-learn-more, __description.main-stage-department-detail, .overview__graph--right-content p, .overview__graph--left-content p, .overview__description, .products-slice__description, .one-miniute-video-slice__description, .fwd__right-description, .featured-asset__description {
+.product-main-stage__section-description ul li, .your-business__description, .easy-vs-hard__description, .main-stage-learn-more__description, .overview__graph--right-content p, .overview__graph--left-content p, .overview__description, .products-slice__description, .one-miniute-video-slice__description, .fwd__right-description, .featured-asset__description, .company-main-stage__description {
   font-size: 14px;
   line-height: 18px; }
 
@@ -13,7 +13,7 @@ __description.products-slice, __description.one-miniute-video-slice, .product-ma
   text-transform: uppercase;
   margin: 40px 0px; }
 
-.header__cta-contact, .header__cta-see-it-live, .product-main-stage__button--primary, .easy-vs-hard__primary-cta, __button--primary.main-stage-learn-more, __button--primary.main-stage-department-detail, .products-slice__primary-cta, .one-miniute-video-slice__primary-cta, .featured-asset__button--primary, .wtf, .wtf2 {
+.header__cta-contact, .header__cta-see-it-live, .product-main-stage__button--primary, .easy-vs-hard__primary-cta, .main-stage-learn-more__button--primary, .products-slice__primary-cta, .one-miniute-video-slice__primary-cta, .featured-asset__button--primary, .company-main-stage__button--primary, .wtf, .wtf2 {
   display: inline-block;
   padding: 10px 15px;
   color: white;
@@ -26,44 +26,35 @@ __description.products-slice, __description.one-miniute-video-slice, .product-ma
   cursor: pointer;
   -webkit-user-select: none;
   transition: all 0.2s ease; }
-  --rounded.header__cta-contact, --rounded.header__cta-see-it-live, --rounded.product-main-stage__button--primary, --rounded.easy-vs-hard__primary-cta, --rounded.products-slice__primary-cta, --rounded.one-miniute-video-slice__primary-cta, --rounded.featured-asset__button--primary, --rounded.wtf, --rounded.wtf2 {
-    border-radius: 2px; }
-  --green.header__cta-contact, --green.header__cta-see-it-live, --green.product-main-stage__button--primary, --green.easy-vs-hard__primary-cta, --green.products-slice__primary-cta, --green.one-miniute-video-slice__primary-cta, --green.featured-asset__button--primary, --green.wtf, --green.wtf2 {
-    background-color: #81af41; }
-    --green.header__cta-contact:hover, --green.header__cta-see-it-live:hover, --green.product-main-stage__button--primary:hover, --green.easy-vs-hard__primary-cta:hover, --green.products-slice__primary-cta:hover, --green.one-miniute-video-slice__primary-cta:hover, --green.featured-asset__button--primary:hover, --green.wtf:hover, --green.wtf2:hover {
-      background-color: #00b5c8; }
-  --blue.header__cta-contact, --blue.header__cta-see-it-live, --blue.product-main-stage__button--primary, --blue.easy-vs-hard__primary-cta, --blue.products-slice__primary-cta, --blue.one-miniute-video-slice__primary-cta, --blue.featured-asset__button--primary, --blue.wtf, --blue.wtf2 {
-    background-color: #00b5c8; }
-    --blue.header__cta-contact:hover, --blue.header__cta-see-it-live:hover, --blue.product-main-stage__button--primary:hover, --blue.easy-vs-hard__primary-cta:hover, --blue.products-slice__primary-cta:hover, --blue.one-miniute-video-slice__primary-cta:hover, --blue.featured-asset__button--primary:hover, --blue.wtf:hover, --blue.wtf2:hover {
-      background-color: #81af41; }
-    --blue-outline.header__cta-contact, --blue-outline.header__cta-see-it-live, --blue-outline.product-main-stage__button--primary, --blue-outline.easy-vs-hard__primary-cta, --blue-outline.products-slice__primary-cta, --blue-outline.one-miniute-video-slice__primary-cta, --blue-outline.featured-asset__button--primary, --blue-outline.wtf, --blue-outline.wtf2 {
-      border: 1px solid #00b5c8;
-      color: #00b5c8; }
-      --blue-outline.header__cta-contact:hover, --blue-outline.header__cta-see-it-live:hover, --blue-outline.product-main-stage__button--primary:hover, --blue-outline.easy-vs-hard__primary-cta:hover, --blue-outline.products-slice__primary-cta:hover, --blue-outline.one-miniute-video-slice__primary-cta:hover, --blue-outline.featured-asset__button--primary:hover, --blue-outline.wtf:hover, --blue-outline.wtf2:hover {
-        background-color: #00b5c8;
-        color: white !important; }
-  --purple.header__cta-contact, --purple.header__cta-see-it-live, --purple.product-main-stage__button--primary, --purple.easy-vs-hard__primary-cta, --purple.products-slice__primary-cta, --purple.one-miniute-video-slice__primary-cta, --purple.featured-asset__button--primary, --purple.wtf, --purple.wtf2 {
-    background-color: #272d43; }
-    --purple.header__cta-contact:hover, --purple.header__cta-see-it-live:hover, --purple.product-main-stage__button--primary:hover, --purple.easy-vs-hard__primary-cta:hover, --purple.products-slice__primary-cta:hover, --purple.one-miniute-video-slice__primary-cta:hover, --purple.featured-asset__button--primary:hover, --purple.wtf:hover, --purple.wtf2:hover {
-      background-color: #00b5c8; }
-    --purple-outline.header__cta-contact, --purple-outline.header__cta-see-it-live, --purple-outline.product-main-stage__button--primary, --purple-outline.easy-vs-hard__primary-cta, --purple-outline.products-slice__primary-cta, --purple-outline.one-miniute-video-slice__primary-cta, --purple-outline.featured-asset__button--primary, --purple-outline.wtf, --purple-outline.wtf2 {
-      border: 1px solid #00b5c8; }
-      --purple-outline.header__cta-contact:hover, --purple-outline.header__cta-see-it-live:hover, --purple-outline.product-main-stage__button--primary:hover, --purple-outline.easy-vs-hard__primary-cta:hover, --purple-outline.products-slice__primary-cta:hover, --purple-outline.one-miniute-video-slice__primary-cta:hover, --purple-outline.featured-asset__button--primary:hover, --purple-outline.wtf:hover, --purple-outline.wtf2:hover {
-        background-color: #00b5c8; }
-  --white.header__cta-contact, --white.header__cta-see-it-live, --white.product-main-stage__button--primary, --white.easy-vs-hard__primary-cta, --white.products-slice__primary-cta, --white.one-miniute-video-slice__primary-cta, --white.featured-asset__button--primary, --white.wtf, --white.wtf2 {
-    background-color: #272d43; }
-    --white.header__cta-contact:hover, --white.header__cta-see-it-live:hover, --white.product-main-stage__button--primary:hover, --white.easy-vs-hard__primary-cta:hover, --white.products-slice__primary-cta:hover, --white.one-miniute-video-slice__primary-cta:hover, --white.featured-asset__button--primary:hover, --white.wtf:hover, --white.wtf2:hover {
-      background-color: #00b5c8; }
-    --white-outline.header__cta-contact, --white-outline.header__cta-see-it-live, --white-outline.product-main-stage__button--primary, --white-outline.easy-vs-hard__primary-cta, --white-outline.products-slice__primary-cta, --white-outline.one-miniute-video-slice__primary-cta, --white-outline.featured-asset__button--primary, --white-outline.wtf, --white-outline.wtf2 {
-      border: 1px solid white;
-      color: white; }
-      --white-outline.header__cta-contact:hover, --white-outline.header__cta-see-it-live:hover, --white-outline.product-main-stage__button--primary:hover, --white-outline.easy-vs-hard__primary-cta:hover, --white-outline.products-slice__primary-cta:hover, --white-outline.one-miniute-video-slice__primary-cta:hover, --white-outline.featured-asset__button--primary:hover, --white-outline.wtf:hover, --white-outline.wtf2:hover {
-        background-color: white;
-        color: #272d43 !important; }
-  --bold.header__cta-contact, --bold.header__cta-see-it-live, --bold.product-main-stage__button--primary, --bold.easy-vs-hard__primary-cta, --bold.products-slice__primary-cta, --bold.one-miniute-video-slice__primary-cta, --bold.featured-asset__button--primary, --bold.wtf, --bold.wtf2 {
-    font-weight: bold; }
-  .header__cta-contact:hover, .header__cta-see-it-live:hover, .product-main-stage__button--primary:hover, .easy-vs-hard__primary-cta:hover, __button--primary.main-stage-learn-more:hover, __button--primary.main-stage-department-detail:hover, .products-slice__primary-cta:hover, .one-miniute-video-slice__primary-cta:hover, .featured-asset__button--primary:hover, .wtf:hover, .wtf2:hover {
+  .header__cta-contact:hover, .header__cta-see-it-live:hover, .product-main-stage__button--primary:hover, .easy-vs-hard__primary-cta:hover, .main-stage-learn-more__button--primary:hover, .products-slice__primary-cta:hover, .one-miniute-video-slice__primary-cta:hover, .featured-asset__button--primary:hover, .company-main-stage__button--primary:hover, .wtf:hover, .wtf2:hover {
     color: white !important; }
+
+.main-stage-learn-more__button--primary, .company-main-stage__button--primary {
+  background-color: #81af41; }
+  .main-stage-learn-more__button--primary:hover, .company-main-stage__button--primary:hover {
+    background-color: #00b5c8; }
+
+.product-main-stage__button--primary, .featured-asset__button--primary {
+  background-color: #00b5c8; }
+  .product-main-stage__button--primary:hover, .featured-asset__button--primary:hover {
+    background-color: #81af41; }
+
+.easy-vs-hard__primary-cta {
+  background-color: #272d43; }
+  .easy-vs-hard__primary-cta:hover {
+    background-color: #00b5c8; }
+
+.products-slice__primary-cta {
+  border: 1px solid #00b5c8; }
+  .products-slice__primary-cta:hover {
+    background-color: #00b5c8; }
+
+.one-miniute-video-slice__primary-cta {
+  border: 1px solid white;
+  color: white; }
+  .one-miniute-video-slice__primary-cta:hover {
+    background-color: white;
+    color: #272d43 !important; }
 
 .product-main-stage__underline-cta, .your-business__primary-cta {
   font-weight: bold;
@@ -83,22 +74,22 @@ __description.products-slice, __description.one-miniute-video-slice, .product-ma
     width: 100%;
     margin-left: -50%; }
 
-.your-business__columns {
+.three-column-layout, .your-business__columns {
   width: 100%; }
   @media (min-width: 768px) {
-    .your-business__columns {
+    .three-column-layout, .your-business__columns {
       text-align: justify;
       -ms-text-justify: distribute-all-lines;
       text-justify: distribute-all-lines; } }
   @media (min-width: 768px) {
-    __single.your-business__columns {
+    .three-column-layout__single, .your-business__columns-single {
       vertical-align: top;
       display: inline-block;
       *display: inline;
       zoom: 1;
       margin: auto; } }
   @media (min-width: 768px) {
-    .your-business__columns:after {
+    .three-column-layout:after, .your-business__columns:after {
       content: '';
       width: 100%;
       display: inline-block;
@@ -109,34 +100,34 @@ __description.products-slice, __description.one-miniute-video-slice, .product-ma
   padding: 40px 0px;
   border-top: 5px solid white;
   text-align: center; }
-  __content.products-slice, __content.one-miniute-video-slice {
-    position: relative;
-    float: left;
-    width: 100%;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: 0%;
-    position: relative;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px; }
-    @media (min-width: 768px) {
-      __content.products-slice, __content.one-miniute-video-slice {
-        float: left;
-        width: 66.6666666667%; } }
-    @media (min-width: 768px) {
-      __content.products-slice, __content.one-miniute-video-slice {
-        margin-left: 16.6666666667%; } }
-  __title.products-slice, __title.one-miniute-video-slice {
-    margin: 10px 0px; }
-  __description.products-slice, __description.one-miniute-video-slice {
-    color: white; }
   .products-slice br, .one-miniute-video-slice br {
     display: none; }
     @media (min-width: 768px) {
       .products-slice br, .one-miniute-video-slice br {
         display: auto; } }
+
+.products-slice__content, .one-miniute-video-slice__content {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 0%;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px; }
+  @media (min-width: 768px) {
+    .products-slice__content, .one-miniute-video-slice__content {
+      float: left;
+      width: 66.6666666667%; } }
+  @media (min-width: 768px) {
+    .products-slice__content, .one-miniute-video-slice__content {
+      margin-left: 16.6666666667%; } }
+
+.products-slice__title, .one-miniute-video-slice__title {
+  margin: 10px 0px; }
 
 .pinned-header {
   padding-top: 0px !important; }
@@ -989,7 +980,7 @@ body header {
   transition: min-height 0.3s ease; }
   @media (min-width: 768px) {
     .main-stage.-homepage {
-      background-position: right;
+      background-position: 35%;
       min-height: 523px;
       transition: min-height 0.6s ease; } }
 
@@ -1167,7 +1158,6 @@ body header {
   background-color: #272d43;
   padding: 30px; }
   .your-business__primary-cta {
-    color: red !important;
     color: #00b5c8 !important; }
     .your-business__primary-cta:after {
       background-color: #00b5c8 !important; }
@@ -1262,13 +1252,13 @@ body header {
       .easy-vs-hard br {
         display: auto; } }
 
-.main-stage-learn-more, .main-stage-department-detail {
+.main-stage-learn-more {
   background-image: url("/img/1/learn-more-main-stage.jpg");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 523px; }
-  __content.main-stage-learn-more, __content.main-stage-department-detail {
+  .main-stage-learn-more__content {
     position: relative;
     float: left;
     width: 100%;
@@ -1281,22 +1271,22 @@ body header {
     padding-left: 15px;
     padding-right: 15px; }
     @media (min-width: 768px) {
-      __content.main-stage-learn-more, __content.main-stage-department-detail {
+      .main-stage-learn-more__content {
         float: left;
         width: 83.3333333333%; } }
     @media (min-width: 768px) {
-      __content.main-stage-learn-more, __content.main-stage-department-detail {
+      .main-stage-learn-more__content {
         margin-left: 8.3333333333%; } }
-  __title.main-stage-learn-more, __title.main-stage-department-detail {
+  .main-stage-learn-more__title {
     text-transform: uppercase;
     margin-top: 40px;
     color: #00b5c8; }
     @media (min-width: 768px) {
-      __title.main-stage-learn-more, __title.main-stage-department-detail {
+      .main-stage-learn-more__title {
         margin-top: 125px; } }
-  __description.main-stage-learn-more, __description.main-stage-department-detail {
+  .main-stage-learn-more__description {
     margin-top: 20px; }
-  __button--primary.main-stage-learn-more, __button--primary.main-stage-department-detail {
+  .main-stage-learn-more__button--primary {
     font-size: 16px; }
 
 .tabs-content {
@@ -1717,11 +1707,47 @@ body header {
   background-repeat: no-repeat;
   background-position: top center;
   height: 1584px;
-  width: 100%;
-  background-image: url("/img/1/CompanyPage_OurStory_R1.jpg"); }
+  width: 100%; }
 
 .push-for-menu-3 {
   padding-top: 30px; }
+
+.company-main-stage {
+  background-image: url("/img/1/bg-company-main-stage.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 523px; }
+  .company-main-stage__content {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 0%;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px; }
+    @media (min-width: 768px) {
+      .company-main-stage__content {
+        float: left;
+        width: 50%; } }
+    @media (min-width: 768px) {
+      .company-main-stage__content {
+        margin-left: 8.3333333333%; } }
+  .company-main-stage__title {
+    text-transform: uppercase;
+    margin-top: 40px;
+    color: #00b5c8; }
+    @media (min-width: 768px) {
+      .company-main-stage__title {
+        margin-top: 125px; } }
+  .company-main-stage__description {
+    margin-top: 20px; }
+  .company-main-stage__button--primary {
+    font-size: 16px; }
 
 .department-overview {
   background-size: 1680px 1982.5px;
@@ -1796,5 +1822,3 @@ body header {
 
 .blob.active {
   transform: scale(2) translate(-65px, -65px) !important; }
-
-/*# sourceMappingURL=app.css.map */

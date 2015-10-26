@@ -1,22 +1,7 @@
 
+
+
 .main-stage-learn-more {
-    @extend %learn-more-title;
-    &__content {
-        @extend %learn-more-title__content;
-    }
-    &__title {
-        @extend %learn-more-title__title;
-    }
-    &__description {
-        @extend %learn-more-title__description;
-    }
-    &__button--primary {
-        @extend %learn-more-title__button--primary;
-    }
-}
-
-
-%learn-more-title {
     background-image: url('/img/1/learn-more-main-stage.jpg');
     background-position: top center;
     background-repeat: no-repeat;

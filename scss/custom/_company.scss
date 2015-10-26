@@ -7,11 +7,48 @@
     background-position:top center;
     height:1584px;
     width:100%;
-    background-image:url('/img/1/CompanyPage_OurStory_R1.jpg');
+    
 }
 .push-for-menu-3 {
 	padding-top:30px;
 }
+
+
+.company-main-stage {
+    background-image:url('/img/1/bg-company-main-stage.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 523px;
+       &__content {
+        @include make-xs-column(12);
+        @include make-xs-column-offset(0);
+        @include make-sm-column(6);
+        @include make-sm-column-offset(1);
+    }
+    &__title {
+        text-transform: uppercase;
+        margin-top: 40px;
+        color:$k2-blue;
+        @include tablet {
+            margin-top: 125px;
+        }
+    }
+    &__description {
+        @extend %t-paragraph;
+        margin-top: 20px;
+    }
+    &__button--primary {
+        @extend %button;
+        @extend %button--green;
+        font-size: 16px;
+    }
+}
+
+
+
+
+
 
 
 
