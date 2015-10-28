@@ -1,25 +1,20 @@
 // 1680
 // 1584
-
-.company {
-    background-size: 1680px 1584px;
-    background-repeat:no-repeat;
-    background-position:top center;
-    height:1584px;
-    width:100%;
-    
-}
 .push-for-menu-3 {
-	padding-top:30px;
-} 
+    padding-top: 30px;
+}
 
 .company-main-stage {
-    background-image:url('/img/1/bg-company-main-stage.jpg');
-    background-position: top center;
+    background-image: url('/img/1/bg-company-main-stage.jpg');
+    background-position: top left;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 523px;
-       &__content {
+    min-height: 390px;
+    @include tablet {
+        background-position: top center;
+        min-height: 490px;
+    }
+    &__content {
         @include make-xs-column(12);
         @include make-xs-column-offset(0);
         @include make-sm-column(6);
@@ -28,9 +23,10 @@
     &__title {
         text-transform: uppercase;
         margin-top: 40px;
-        color:$k2-blue;
+        color: $k2-blue;
         @include tablet {
-            margin-top: 125px;
+            margin-top: 60px;
+            font-size: 38px;
         }
     }
     &__description {
@@ -44,41 +40,210 @@
     }
 }
 
+.our-story {
+    text-align: center;
+    @include make-xs-column(12);
+    &__title {
+        @extend %t-heading-bulmer;
+        color: $k2-green;
+    }
+    &__description {
+        @extend %t-paragraph;
+        width: 100%;
+        @include tablet {
+            width: 78%;
+            margin: 0 auto;
+        }
+    }
+    &__timeline {
+        @include make-xs-column(12);
+        @include make-xs-column-offset(0);
+        @include make-sm-column(10);
+        @include make-sm-column-offset(1);
+    }
+}
 
+.timeliner {
+    position: relative;
+    width: 100%;
+    background-color: yellow;
+    height: 100px;
+    margin-top:100px;
+    &__start {
+        content: '';
+        width: 10px;
+        height: 10px;
+        border-radius: 10px;
+        background-color: $k2-blue;
+        top: 50%;
+        position: absolute;
+    }
+    &__end {
+        content: '';
+        width: 10px;
+        height: 10px;
+        border-radius: 10px;
+        background-color: $k2-blue;
+        top: 50%;
+        position: absolute;
+        right: 0px;
+    }
+    &__horizontal {
+        content: '';
+        width: 100%;
+        height: 1px;
+        border-radius: 10px;
+        background-color: $k2-blue;
+        top: calc(50% + 4px);
+        position: absolute;
+    }
+    &__no-date {
+        @include phone {
+            content: '';
+            height: 30px;
+            width: 1px;
+            background-color: $k2-blue;
+            top: calc(50% - 11px);
+            position: absolute;
+            left: 50%;
+            &.one {
+                margin-left: -47%;
+            }
+            &.two {
+                margin-left: -37%;
+            }
+            &.three {
+                margin-left: -29%;
+            }
+            &.four {
+                margin-left: -12%;
+            }
+            &.five {
+                margin-left: 4%;
+            }
+            &.six {
+                margin-left: 13%;
+            }
+            &.seven {
+                margin-left: 24%;
+            }
+            &.eight {
+                margin-left: 36%;
+            }
+            &.nine {
+                margin-left: 40%
+            }
+        }
+    }
+    &__up {
+        width: 100%;
+        @include phone {
+            content: '';
+            height: 50px;
+            width: 1px;
+            background-color: black;
+            position: absolute;
+            left: 50%;
+            top:4px;
+            &.d2001 {
+                margin-left: -40%;
+            }
+            &.d2006 {
+                margin-left: -8%;
+            }
+            &.d2014 {
+                margin-left: 28%;
+            }
+        }
+        .timeliner__date {
+            width: 100%;
+            @include phone {
+                position: absolute;
+                left: 50%;
+                margin-left: -50px;
+                width: 100px;
+                top: -58px;
+            }
+        }
+    }
+    &__down {
+        width: 100%;
+        @include phone {
+            content: '';
+            height: 50px;
+            width: 1px;
+            background-color: red;
+            top: calc(50% + 5px);
+            position: absolute;
+            left: 50%;
+            &.d2004 {
+                margin-left: -19%;
+            }
+            &.d2011 {
+                margin-left: -2%;
+            }
+            &.d2015 {
+                margin-left: 47%;
+            }
+        }
+        .timeliner__date {
+            width: 100%;
+            @include phone {
+                position: absolute;
+                left: 50%;
+                margin-left: -50px;
+                width: 100px;
+                top: 58px;
+            }
+        }
+    }
+    .timeliner__date {
+        &--title {
+            @include add-important(font-family, $bulmer-italic);
+            color:$k2-green;
+            font-size:20px;
+        }
+        &--description {
+            padding-top:4px;
+            @extend %t-paragraph;
+            font-size:12px;
+        }
+    }
+}
 
-
-
-
-
+.recent-recognition {
+    @extend %simple-slice;
+    background-color:$k2-green;
+    &__title {
+        @extend %t-heading-bulmer;
+        color:white;
+    }
+    &__columns {}
+    &__single {}
+}
 
 // .department-detail {
-
-// 	  background-size: 1680px 2252px;
+//    background-size: 1680px 2252px;
 //     background-repeat:no-repeat;
 //     background-position:top center;
 //     height:2252px;
 //     width:100%;
 //      background-image:url('/img/1/department_detail_page_R3.jpg');
 // }
-
 .department-overview {
-
-	  background-size: 1680px 1982.5px;
-    background-repeat:no-repeat;
-    background-position:top center;
-    height:1982.5px;
-    width:100%;
-    background-image:url('/img/1/d-detail-page.jpg');
-   
+    background-size: 1680px 1982.5px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 1982.5px;
+    width: 100%;
+    background-image: url('/img/1/d-detail-page.jpg');
 }
 
-
 .how-to-buy-main-stage {
-
-	 background-size: 1680px 1631px;
-    background-repeat:no-repeat;
-    background-position:top center;
-    height:1631px;
-    width:100%;
-    background-image:url('/img/1/how-to-buy-page.jpg');
+    background-size: 1680px 1631px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 1631px;
+    width: 100%;
+    background-image: url('/img/1/how-to-buy-page.jpg');
 }

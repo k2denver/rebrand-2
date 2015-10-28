@@ -1,9 +1,9 @@
-.product-main-stage__section-description ul li, .your-business__description, .easy-vs-hard__description, .main-stage-learn-more__description, .overview__graph--right-content p, .overview__graph--left-content p, .overview__description, .products-slice__description, .one-miniute-video-slice__description, .fwd__right-description, .featured-asset__description, .company-main-stage__description, .main-stage-department-detail__description {
+.product-main-stage__section-description ul li, .your-business__description, .easy-vs-hard__description, .main-stage-learn-more__description, .overview__graph--right-content p, .overview__graph--left-content p, .overview__description, .products-slice__description, .one-miniute-video-slice__description, .fwd__right-description, .featured-asset__description, .company-main-stage__description, .our-story__description, .timeliner .timeliner__date--description, .main-stage-department-detail__description {
   font-size: 14px;
   line-height: 18px;
 }
 
-.your-business__title, .overview__graph--right-content h3, .overview__graph--left-content h3, .overview__title, .products-slice__title, .fwd__right-title {
+.your-business__title, .overview__graph--right-content h3, .overview__graph--left-content h3, .overview__title, .products-slice__title, .fwd__right-title, .our-story__title, .recent-recognition__title {
   font-size: 40px;
   font-family: "Bulmer MT W01 Italic" !important;
 }
@@ -127,7 +127,7 @@
   }
 }
 
-.products-slice, .one-miniute-video-slice {
+.products-slice, .one-miniute-video-slice, .recent-recognition {
   padding: 40px 0px;
   border-top: 5px solid white;
   text-align: center;
@@ -159,11 +159,11 @@
 .products-slice__title, .one-miniute-video-slice__title {
   margin: 10px 0px;
 }
-.products-slice br, .one-miniute-video-slice br {
+.products-slice br, .one-miniute-video-slice br, .recent-recognition br {
   display: none;
 }
 @media (min-width: 768px) {
-  .products-slice br, .one-miniute-video-slice br {
+  .products-slice br, .one-miniute-video-slice br, .recent-recognition br {
     display: auto;
   }
 }
@@ -2173,24 +2173,22 @@ ul.sub-menu--resources li ul.sub-sub-menu {
     opacity: 1;
   }
 }
-.company {
-  background-size: 1680px 1584px;
-  background-repeat: no-repeat;
-  background-position: top center;
-  height: 1584px;
-  width: 100%;
-}
-
 .push-for-menu-3 {
   padding-top: 30px;
 }
 
 .company-main-stage {
   background-image: url("/img/1/bg-company-main-stage.jpg");
-  background-position: top center;
+  background-position: top left;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 523px;
+  min-height: 390px;
+}
+@media (min-width: 768px) {
+  .company-main-stage {
+    background-position: top center;
+    min-height: 490px;
+  }
 }
 .company-main-stage__content {
   position: relative;
@@ -2223,7 +2221,8 @@ ul.sub-menu--resources li ul.sub-sub-menu {
 }
 @media (min-width: 768px) {
   .company-main-stage__title {
-    margin-top: 125px;
+    margin-top: 60px;
+    font-size: 38px;
   }
 }
 .company-main-stage__description {
@@ -2231,6 +2230,212 @@ ul.sub-menu--resources li ul.sub-sub-menu {
 }
 .company-main-stage__button--primary {
   font-size: 16px;
+}
+
+.our-story {
+  text-align: center;
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.our-story__title {
+  color: #81af41;
+}
+.our-story__description {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .our-story__description {
+    width: 78%;
+    margin: 0 auto;
+  }
+}
+.our-story__timeline {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 0%;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .our-story__timeline {
+    float: left;
+    width: 83.33333%;
+  }
+}
+@media (min-width: 768px) {
+  .our-story__timeline {
+    margin-left: 8.33333%;
+  }
+}
+
+.timeliner {
+  position: relative;
+  width: 100%;
+  background-color: yellow;
+  height: 100px;
+  margin-top: 100px;
+}
+.timeliner__start {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: #00b5c8;
+  top: 50%;
+  position: absolute;
+}
+.timeliner__end {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: #00b5c8;
+  top: 50%;
+  position: absolute;
+  right: 0px;
+}
+.timeliner__horizontal {
+  content: '';
+  width: 100%;
+  height: 1px;
+  border-radius: 10px;
+  background-color: #00b5c8;
+  top: calc(50% + 4px);
+  position: absolute;
+}
+@media (min-width: 480px) {
+  .timeliner__no-date {
+    content: '';
+    height: 30px;
+    width: 1px;
+    background-color: #00b5c8;
+    top: calc(50% - 11px);
+    position: absolute;
+    left: 50%;
+  }
+  .timeliner__no-date.one {
+    margin-left: -47%;
+  }
+  .timeliner__no-date.two {
+    margin-left: -37%;
+  }
+  .timeliner__no-date.three {
+    margin-left: -29%;
+  }
+  .timeliner__no-date.four {
+    margin-left: -12%;
+  }
+  .timeliner__no-date.five {
+    margin-left: 4%;
+  }
+  .timeliner__no-date.six {
+    margin-left: 13%;
+  }
+  .timeliner__no-date.seven {
+    margin-left: 24%;
+  }
+  .timeliner__no-date.eight {
+    margin-left: 36%;
+  }
+  .timeliner__no-date.nine {
+    margin-left: 40%;
+  }
+}
+.timeliner__up {
+  width: 100%;
+}
+@media (min-width: 480px) {
+  .timeliner__up {
+    content: '';
+    height: 50px;
+    width: 1px;
+    background-color: black;
+    position: absolute;
+    left: 50%;
+    top: 4px;
+  }
+  .timeliner__up.d2001 {
+    margin-left: -40%;
+  }
+  .timeliner__up.d2006 {
+    margin-left: -8%;
+  }
+  .timeliner__up.d2014 {
+    margin-left: 28%;
+  }
+}
+.timeliner__up .timeliner__date {
+  width: 100%;
+}
+@media (min-width: 480px) {
+  .timeliner__up .timeliner__date {
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    width: 100px;
+    top: -58px;
+  }
+}
+.timeliner__down {
+  width: 100%;
+}
+@media (min-width: 480px) {
+  .timeliner__down {
+    content: '';
+    height: 50px;
+    width: 1px;
+    background-color: red;
+    top: calc(50% + 5px);
+    position: absolute;
+    left: 50%;
+  }
+  .timeliner__down.d2004 {
+    margin-left: -19%;
+  }
+  .timeliner__down.d2011 {
+    margin-left: -2%;
+  }
+  .timeliner__down.d2015 {
+    margin-left: 47%;
+  }
+}
+.timeliner__down .timeliner__date {
+  width: 100%;
+}
+@media (min-width: 480px) {
+  .timeliner__down .timeliner__date {
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    width: 100px;
+    top: 58px;
+  }
+}
+.timeliner .timeliner__date--title {
+  font-family: "Bulmer MT W01 Italic" !important;
+  color: #81af41;
+  font-size: 20px;
+}
+.timeliner .timeliner__date--description {
+  padding-top: 4px;
+  font-size: 12px;
+}
+
+.recent-recognition {
+  background-color: #81af41;
+}
+.recent-recognition__title {
+  color: white;
 }
 
 .department-overview {

@@ -30,7 +30,7 @@ module.exports = function(grunt) {
                 options: {
                     style: 'expanded',
                     // outputStyle: 'uncompressed',
-                    sourceMap: false,
+                    sourcemap: 'auto',
                 },
                 files: {
                     'app/css/app.css': 'scss/app.scss'
