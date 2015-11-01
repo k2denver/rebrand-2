@@ -3,7 +3,7 @@
   line-height: 18px;
 }
 
-.your-business__title, .overview__graph--right-content h3, .overview__graph--left-content h3, .overview__title, .products-slice__title, .fwd__right-title, .our-story__title, .recent-recognition__title {
+.your-business__title, .overview__graph--right-content h3, .overview__graph--left-content h3, .overview__title, .products-slice__title, .fwd__right-title, .our-story__title, .recent-recognition__title, .recent-recognition__single-year {
   font-size: 40px;
   font-family: "Bulmer MT W01 Italic" !important;
 }
@@ -2281,37 +2281,47 @@ ul.sub-menu--resources li ul.sub-sub-menu {
 .timeliner {
   position: relative;
   width: 100%;
-  background-color: yellow;
-  height: 100px;
-  margin-top: 100px;
+  min-height: 100px;
+  margin-bottom: 120px;
 }
-.timeliner__start {
-  content: '';
-  width: 10px;
-  height: 10px;
-  border-radius: 10px;
-  background-color: #00b5c8;
-  top: 50%;
-  position: absolute;
+@media (min-width: 480px) {
+  .timeliner {
+    margin-top: 135px;
+  }
 }
-.timeliner__end {
-  content: '';
-  width: 10px;
-  height: 10px;
-  border-radius: 10px;
-  background-color: #00b5c8;
-  top: 50%;
-  position: absolute;
-  right: 0px;
+@media (min-width: 480px) {
+  .timeliner__start {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #00b5c8;
+    top: 50%;
+    position: absolute;
+  }
 }
-.timeliner__horizontal {
-  content: '';
-  width: 100%;
-  height: 1px;
-  border-radius: 10px;
-  background-color: #00b5c8;
-  top: calc(50% + 4px);
-  position: absolute;
+@media (min-width: 480px) {
+  .timeliner__end {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #00b5c8;
+    top: 50%;
+    position: absolute;
+    right: 0px;
+  }
+}
+@media (min-width: 480px) {
+  .timeliner__horizontal-line {
+    content: '';
+    width: 100%;
+    height: 1px;
+    border-radius: 10px;
+    background-color: #00b5c8;
+    top: calc(50% + 4px);
+    position: absolute;
+  }
 }
 @media (min-width: 480px) {
   .timeliner__no-date {
@@ -2353,13 +2363,15 @@ ul.sub-menu--resources li ul.sub-sub-menu {
 }
 .timeliner__up {
   width: 100%;
+  margin-top: 20px;
 }
 @media (min-width: 480px) {
   .timeliner__up {
+    margin-top: 0px;
     content: '';
     height: 50px;
     width: 1px;
-    background-color: black;
+    background-color: #00b5c8;
     position: absolute;
     left: 50%;
     top: 4px;
@@ -2369,6 +2381,9 @@ ul.sub-menu--resources li ul.sub-sub-menu {
   }
   .timeliner__up.d2006 {
     margin-left: -8%;
+  }
+  .timeliner__up.d2006 .timeliner__date {
+    top: -65px;
   }
   .timeliner__up.d2014 {
     margin-left: 28%;
@@ -2381,32 +2396,39 @@ ul.sub-menu--resources li ul.sub-sub-menu {
   .timeliner__up .timeliner__date {
     position: absolute;
     left: 50%;
-    margin-left: -50px;
-    width: 100px;
-    top: -58px;
+    margin-left: -75px;
+    width: 150px;
+    top: -92px;
   }
 }
 .timeliner__down {
   width: 100%;
+  margin-top: 20px;
 }
 @media (min-width: 480px) {
   .timeliner__down {
+    margin-top: 0px;
     content: '';
     height: 50px;
     width: 1px;
-    background-color: red;
+    background-color: #00b5c8;
     top: calc(50% + 5px);
     position: absolute;
     left: 50%;
   }
   .timeliner__down.d2004 {
-    margin-left: -19%;
+    margin-left: -23%;
   }
   .timeliner__down.d2011 {
     margin-left: -2%;
   }
   .timeliner__down.d2015 {
-    margin-left: 47%;
+    margin-left: 40%;
+  }
+}
+@media (min-width: 768px) {
+  .timeliner__down.d2015 {
+    margin-left: 44%;
   }
 }
 .timeliner__down .timeliner__date {
@@ -2416,8 +2438,8 @@ ul.sub-menu--resources li ul.sub-sub-menu {
   .timeliner__down .timeliner__date {
     position: absolute;
     left: 50%;
-    margin-left: -50px;
-    width: 100px;
+    margin-left: -75px;
+    width: 150px;
     top: 58px;
   }
 }
@@ -2428,14 +2450,77 @@ ul.sub-menu--resources li ul.sub-sub-menu {
 }
 .timeliner .timeliner__date--description {
   padding-top: 4px;
-  font-size: 12px;
+}
+.timeliner .timeliner__date--description br {
+  display: none;
+}
+@media (min-width: 480px) {
+  .timeliner .timeliner__date--description {
+    font-size: 12px;
+    line-height: 1.2em;
+  }
+  .timeliner .timeliner__date--description br {
+    display: inline-block;
+  }
 }
 
 .recent-recognition {
+  overflow: hidden;
   background-color: #81af41;
+  padding-bottom: 50px;
 }
 .recent-recognition__title {
   color: white;
+}
+.recent-recognition__columns {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 0%;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .recent-recognition__columns {
+    float: left;
+    width: 66.66667%;
+  }
+}
+@media (min-width: 768px) {
+  .recent-recognition__columns {
+    margin-left: 16.66667%;
+  }
+}
+.recent-recognition__single {
+  width: 100%;
+}
+@media (min-width: 480px) {
+  .recent-recognition__single {
+    width: 50%;
+    float: left;
+  }
+}
+.recent-recognition__single-year {
+  padding-top: 30px;
+  font-size: 30px;
+  color: #272d43;
+}
+.recent-recognition__single-source {
+  font-size: 14px;
+  margin-top: 30px;
+  color: white;
+}
+.recent-recognition__single-title {
+  margin-top: 4px;
+  font-size: 14px;
+  color: #272d43;
+  font-family: "Bulmer MT W01 Italic";
+  font-weight: bold;
 }
 
 .department-overview {
