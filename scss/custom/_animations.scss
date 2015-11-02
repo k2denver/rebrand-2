@@ -1,0 +1,26 @@
+/* Chrome, Safari, Opera */
+
+@-webkit-keyframes fade-in {
+    0% {
+        background-image:trans
+    }
+   
+    100% {
+        opacity: 1;
+    }
+}
+/* Standard syntax */
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+ 
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fade-in 1s ease;
+}

@@ -36,17 +36,24 @@ $p-line-height-normal:18px;
 }
 
 %t-heading-bulmer {
-    font-size:40px;
+    font-size:30px;
     @include add-important(font-family, $bulmer-italic);
+
+    @include tablet {
+        font-size:40px;
+    }
 }
 
 
 %t-heding-avenir-bold {
     @include add-important(font-family, $avenir-bold);
-    font-size:24px;
+    font-size:20px;
     font-weight:normal;
     text-transform:uppercase;
     margin:40px 0px;
+     @include tablet {
+        font-size:24px;
+    }
 }
 
 

@@ -6,7 +6,13 @@
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 523px;
+    min-height: 423px;
+    padding-bottom:30px;
+    @include tablet {
+        min-height: 523px;
+
+    }
+
        &__content {
         @include make-xs-column(12);
         @include make-xs-column-offset(0);
@@ -17,13 +23,30 @@
         text-transform: uppercase;
         margin-top: 40px;
         color:$k2-blue;
+        font-size: 26px;
+        br {
+            display:none;
+        }
         @include tablet {
+            font-size: 30px;
             margin-top: 125px;
+            br {
+                display:block;
+            }
         }
     }
     &__description {
         @extend %t-paragraph;
         margin-top: 20px;
+        br {
+            display:none;
+        }
+         @include tablet {
+           
+            br {
+                display:block;
+            }
+        }
     }
     &__button--primary {
         @extend %button;

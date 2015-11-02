@@ -365,7 +365,11 @@ ul.sub-menu--resources {
 }
 
 .tabs {
-    margin-top: -40px;
+    background-color:$k2-green;
+    @include tablet {
+        margin-top: -40px;
+        background-color:transparent;
+    }
     &__content {
         @include make-xs-column(12);
         @include make-xs-column-offset(0);
@@ -376,39 +380,74 @@ ul.sub-menu--resources {
             @include make-xs-column-offset(0);
         }
     }
+    &:after {
+       content: '';
+        width: 0;
+        height: 0;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-top: 30px solid $k2-green;
+        position: absolute;
+        left: 50%;
+        margin-left: -50px;
+        @include tablet {
+            display:none;
+        }
+    }
     ul {
         float: left;
+         padding-top:20px;
         width: 100%;
+        @include tablet {
+            padding-top:0px;
+        }
         li {
             display: block;
             width: 100%;
+            text-align:center;
             @include tablet {
                 padding-right: 15px;
                 float: left;
                 width: auto;
+                text-align:left;
             }
             a {
                 width: 100%;
-                @include tablet {
-                    width: auto;
-                }
-                padding:13px 39px;
-                background-color:white(.6);
-                display:inline-block;
-                text-transform: uppercase;
-                font-weight:bold;
-                font-size:12px;
+                padding:8px 20px;
                 color:$k2-purple;
-                transition: all .5s ease;
+                   display:inline-block;
+                    text-transform: uppercase;
+                    font-weight:bold;
+                    font-size:14px;
+                @include tablet {
+                    padding:13px 20px;
+                    width: auto;
+                   font-size:12px;
+                    background-color:white(.6);
+                 
+                    
+                    transition: all .5s ease;
+                }
+                @include desktop {
+                    padding:13px 39px;
+
+                }
+                
                 &:hover {
-                    color: $k2-green;
-                    background-color: white(.8);
+                    color:white;
+                    @include tablet {
+                        color: $k2-green;
+                        background-color: white(.8);
+                    }
                 }
             }
             &.active {
                 a {
-                    background-color: white;
-                    color: $k2-green;
+                    color:white;
+                    @include tablet {
+                        background-color: white;
+                        color: $k2-green;
+                    }
                 }
             }
         }

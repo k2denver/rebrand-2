@@ -81,6 +81,17 @@ $desktop-width: $screen-lg;
 
 }
 
+@mixin zoomy ($zoom) {
+  zoom: $zoom; /* IE */
+-moz-transform: scale($zoom); /* Firefox */
+-moz-transform-origin: 0 0;
+-o-transform: scale($zoom); /* Opera */
+-o-transform-origin: 0 0;
+-webkit-transform: scale($zoom); /* Safari And Chrome */
+-webkit-transform-origin: 0 0;
+transform: scale($zoom); /* Standard Property */
+transform-origin: 0 0;  /* Standard Property */
+}
 
 @mixin transform($transforms) {
 	   -moz-transform: $transforms;

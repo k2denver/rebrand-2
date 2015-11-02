@@ -10,11 +10,22 @@
 
 .fwd {
     padding: 60px 0px 80px;
-    min-height: 430px;
     position:relative;
+    @include tablet {
+    min-height: 381px;
+    
+    }
+    @include desktop {
+    min-height: 430px;
+
+    }
     &__menu {
         position:absolute;
         left:0px;
+        display:none;
+        @include tablet {
+            display:block;
+        }
         &:before {
             height:170px;
             width:2px;
@@ -111,34 +122,59 @@
     &__right {
         @include make-xs-column(12);
         @include make-sm-column(4, 0px);
-       
+       @include mobilelast {
+        padding:0px 30px 30px;
+       }
         &-title {
             @extend %t-heading-bulmer;
             line-height: 24px;
             line-height: 39px;
             color: $k2-green;
+            margin-top: 20px;
+
+            @include tablet {
             margin-top: 0px;
+
+            }
         }
         &-description {
             @extend %t-paragraph;
         }
     }
     &__computer {
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        z-index: 5;
+        display:none;
+         @include tablet {
+          position: absolute;
+            top: 0px;
+            right: -47px;
+            z-index: 5;
+            display:block;
+            @include zoomy(0.87);
+        }
+        @include desktop {
+            @include zoomy(1);
+             right: 0px;
+        }
+        
     }
     &__screen {
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        z-index: 2;
-        width: 350px;
-        top: 12px;
-        right: 70px;
-        height: 200px;
-        overflow: hidden;
+        display:none;
+        @include tablet {
+            position: absolute;
+          
+            z-index: 2;
+            width: 350px;
+            top: 12px;
+            right: 33px;
+            height: 200px;
+            overflow: hidden;
+            display:block;
+            @include zoomy(0.87);
+        }
+        @include desktop {
+            @include zoomy(1);
+            right:70px;
+        }
     }
     &__slides {
         position: absolute;
@@ -160,7 +196,8 @@
 }
 
 .fwd__right-content{
-   
+
+   @include tablet {
         &--one {
             display:none;
 
@@ -175,7 +212,7 @@
             display:none;
         }
     
-        
+    }
 }
 
 .fwd__right.-one {
@@ -267,28 +304,5 @@
         display:none;
     }
 }
-/* Chrome, Safari, Opera */
-
-@-webkit-keyframes fade-in {
-    0% {
-        background-image:trans
-    }
-   
-    100% {
-        opacity: 1;
-    }
-}
-/* Standard syntax */
-
-@keyframes fade-in {
-    0% {
-        opacity: 0;
-    }
- 
-    100% {
-        opacity: 1;
-    }
-}
-
 
 
