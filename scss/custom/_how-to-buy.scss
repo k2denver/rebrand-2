@@ -109,12 +109,54 @@
 
 
 .how-to-buy-faq {
-  &__content {}
-  &__title {}
-  &__question{}
-  &__answer {}
+  background-color:$k2-purple;
+  padding:40px 0px;
+  text-align:center;
+  &__content {
+   @include make-sm-column(8);
+        @include make-sm-column-offset(2);
+      }
+  &__title {
+    @extend %t-heading-bulmer;
+    color:$k2-blue;
+    margin-bottom:20px;
+  }
+  &__question{
+    color:$k2-blue;
+    font-size:18px;
+    padding:25px 0px 5px;
+  }
+  &__answer {
+     @extend %t-paragraph;
+    color:white;
+    a {
+      display:inline-block;
+      padding-bottom:2px;
+      border-bottom:1px solid white;
+     @include add-important(color,white);
+     &:hover {
+     @include add-important(color,white);
+
+     }
+    }
+
+  }
 
 }
 
-
+.still-unsure {
+  padding-bottom:60px;
+   @extend .how-to-buy;
+   background-color:$k2-green;
+  &__content {
+    @extend .how-to-buy__content;
+  }
+  &__title{
+    @extend .how-to-buy__title;
+    color:white;
+  }
+  &__description{ @extend .how-to-buy__description;}
+  &__button--primary { @extend %button;
+    @extend %button--purple}
+}
 

@@ -361,7 +361,7 @@
     }
 
     .bio-box .wrapper {
-        color: white;
+        color: $k2-grey;
         font-family: "AvenirNextLTW01-Regular", sans-serif;
     }
 
@@ -397,7 +397,7 @@
     .bio-box .wrapper span {
         font-size: 18px;
         font-weight: bold;
-        color: white;
+        
         font-family: $bulmer-italic;
     }
 
@@ -409,9 +409,9 @@
 
     .bio-box {
       position: fixed;
-    background-color: $k2-purple;
+    background-color: $k2-light-grey;
     z-index: 49;
-    color: white;
+    color: $k2-grey;
     padding: 13px 12px;
     top: 17%;
     visibility: hidden;
@@ -429,13 +429,15 @@
     margin-left: -40%;
     left: 40%;
     margin-top: -9%;
+    border:20px solid white;
+    border-radius:3px;
 
                 
             @include tablet {
                 position: fixed;
-                 background-color: $k2-purple;
+                 background-color: $k2-light-grey;
                 z-index: 49;
-                color: white;
+                color: $k2-grey;
                 padding: 13px 12px;
                 top: 50%;
                 visibility: hidden;
@@ -470,12 +472,13 @@
         left:0px;
         height:100%;
         width:100%;
-        background-color:rgba(245, 245, 245, 0.65);
+        background-color:rgba(0, 0, 0, 0.65);
 
         
     }
     .bio-box .wrapper {
         margin-top: 10px;
+        line-height: 28px;
     }
 
     .bio-box .magnifying-glass {
@@ -491,7 +494,7 @@
         content:'x';
        
         font-size:30px;
-        color:white!important;
+        color:$k2-grey !important;
     }
     .bio-box.show {
         -khtml-opacity: 1;

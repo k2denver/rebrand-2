@@ -1,16 +1,16 @@
 .product-main-stage__section-description ul li, .your-business__description, .easy-vs-hard__description, .main-stage-learn-more__description, .overview__graph--right-content p, .overview__graph--left-content p, .overview__description, .products-slice__description, .one-miniute-video-slice__description, .fwd__right-description, .featured-asset__description, .company-main-stage__description, .our-story__description, .timeliner .timeliner__date--description, .leadership .leader p,
 .leadership .bio-box .wrapper p,
-.leadership .bio-box .k2-offices__content p, .corporate-hq__single .address-block, .k2-offices__singles .address-block, .how-to-buy-mainstage__description, .main-stage-department-detail__description, .solutions-slice__description, .solutions-slice__single p, .spider__description, .download-case-study__description {
-  font-size: 16px;
-  line-height: 22px;
+.leadership .bio-box .k2-offices__content p, .corporate-hq__single .address-block, .k2-offices__singles .address-block, .how-to-buy-mainstage__description, .how-to-buy-faq__answer, .main-stage-department-detail__description, .solutions-slice__description, .solutions-slice__single p, .spider__description, .download-case-study__description {
+  font-size: 14px;
+  line-height: 18px;
 }
 
-.your-business__title, .overview__graph--right-content h3, .overview__graph--left-content h3, .overview__title, .products-slice__title, .fwd__right-title, .our-story__title, .recent-recognition__title, .recent-recognition__single-year, .leadership__title, .world-map__title, .corporate-hq__title, .buy-it-now__title, .solutions-slice__title, .spider__title {
+.your-business__title, .overview__graph--right-content h3, .overview__graph--left-content h3, .overview__title, .products-slice__title, .fwd__right-title, .our-story__title, .recent-recognition__title, .recent-recognition__single-year, .leadership__title, .world-map__title, .corporate-hq__title, .buy-it-now__title, .how-to-buy-faq__title, .solutions-slice__title, .spider__title {
   font-size: 30px;
   font-family: "Bulmer MT W01 Italic" !important;
 }
 @media (min-width: 770px) {
-  .your-business__title, .overview__graph--right-content h3, .overview__graph--left-content h3, .overview__title, .products-slice__title, .fwd__right-title, .our-story__title, .recent-recognition__title, .recent-recognition__single-year, .leadership__title, .world-map__title, .corporate-hq__title, .buy-it-now__title, .solutions-slice__title, .spider__title {
+  .your-business__title, .overview__graph--right-content h3, .overview__graph--left-content h3, .overview__title, .products-slice__title, .fwd__right-title, .our-story__title, .recent-recognition__title, .recent-recognition__single-year, .leadership__title, .world-map__title, .corporate-hq__title, .buy-it-now__title, .how-to-buy-faq__title, .solutions-slice__title, .spider__title {
     font-size: 40px;
   }
 }
@@ -28,7 +28,7 @@
   }
 }
 
-.header__cta-contact, .header__cta-see-it-live, .bne .top-utility__button--contact, .product-main-stage__button--primary, .product-main-stage__button--secondary, .easy-vs-hard__primary-cta, .main-stage-learn-more__button--primary, .products-slice__primary-cta, .one-miniute-video-slice__primary-cta, .featured-asset__button--primary, .company-main-stage__button--primary, .how-to-buy-mainstage__button--primary, .main-stage-department-detail__button--primary, .solutions-slice__button--primary, .download-case-study__button--primary {
+.header__cta-contact, .header__cta-see-it-live, .bne .top-utility__button--contact, .product-main-stage__button--primary, .product-main-stage__button--secondary, .easy-vs-hard__primary-cta, .main-stage-learn-more__button--primary, .products-slice__primary-cta, .one-miniute-video-slice__primary-cta, .featured-asset__button--primary, .company-main-stage__button--primary, .how-to-buy-mainstage__button--primary, .still-unsure__button--primary, .main-stage-department-detail__button--primary, .solutions-slice__button--primary, .download-case-study__button--primary {
   display: inline-block;
   padding: 10px 15px;
   color: white;
@@ -65,10 +65,10 @@
   background-color: #00b5c8;
   color: white !important;
 }
-.easy-vs-hard__primary-cta {
+.easy-vs-hard__primary-cta, .still-unsure__button--primary {
   background-color: #272d43;
 }
-.easy-vs-hard__primary-cta:hover {
+.easy-vs-hard__primary-cta:hover, .still-unsure__button--primary:hover {
   background-color: #00b5c8;
 }
 .products-slice__primary-cta {
@@ -85,7 +85,7 @@
   background-color: white;
   color: #272d43 !important;
 }
-.header__cta-contact:hover, .header__cta-see-it-live:hover, .bne .top-utility__button--contact:hover, .product-main-stage__button--primary:hover, .product-main-stage__button--secondary:hover, .easy-vs-hard__primary-cta:hover, .main-stage-learn-more__button--primary:hover, .products-slice__primary-cta:hover, .one-miniute-video-slice__primary-cta:hover, .featured-asset__button--primary:hover, .company-main-stage__button--primary:hover, .how-to-buy-mainstage__button--primary:hover, .main-stage-department-detail__button--primary:hover, .solutions-slice__button--primary:hover, .download-case-study__button--primary:hover {
+.header__cta-contact:hover, .header__cta-see-it-live:hover, .bne .top-utility__button--contact:hover, .product-main-stage__button--primary:hover, .product-main-stage__button--secondary:hover, .easy-vs-hard__primary-cta:hover, .main-stage-learn-more__button--primary:hover, .products-slice__primary-cta:hover, .one-miniute-video-slice__primary-cta:hover, .featured-asset__button--primary:hover, .company-main-stage__button--primary:hover, .how-to-buy-mainstage__button--primary:hover, .still-unsure__button--primary:hover, .main-stage-department-detail__button--primary:hover, .solutions-slice__button--primary:hover, .download-case-study__button--primary:hover {
   color: white !important;
 }
 
@@ -844,7 +844,8 @@ ul.sub-menu--resources li ul.sub-sub-menu {
 
 .learn-more__description,
 .departments__description,
-.how-to-buy__description {
+.how-to-buy__description,
+.still-unsure__description {
   font-size: 14px;
   line-height: 18px;
 }
@@ -855,7 +856,8 @@ ul.sub-menu--resources li ul.sub-sub-menu {
 }
 
 .event-info__title,
-.how-to-buy__title {
+.how-to-buy__title,
+.still-unsure__title {
   font-family: "Avenir Next LT W01 Bold" !important;
   font-size: 24px;
   font-weight: normal;
@@ -1432,10 +1434,10 @@ ul.sub-menu--resources li ul.sub-sub-menu {
   color: #5d5d5d !important;
 }
 
-.how-to-buy {
+.how-to-buy, .still-unsure {
   padding: 20px 0px 50px;
 }
-.how-to-buy__content {
+.how-to-buy__content, .still-unsure__content {
   position: relative;
   float: left;
   width: 100%;
@@ -1445,7 +1447,7 @@ ul.sub-menu--resources li ul.sub-sub-menu {
   text-align: center;
 }
 @media (min-width: 768px) {
-  .how-to-buy__content {
+  .how-to-buy__content, .still-unsure__content {
     position: relative;
     float: left;
     width: 83.3333333333%;
@@ -1455,15 +1457,15 @@ ul.sub-menu--resources li ul.sub-sub-menu {
   }
 }
 @media (min-width: 768px) {
-  .how-to-buy__content {
+  .how-to-buy__content, .still-unsure__content {
     margin-left: 8.3333333333%;
   }
 }
-.how-to-buy__title {
+.how-to-buy__title, .still-unsure__title {
   color: #00b5c8;
   margin-bottom: 30px;
 }
-.how-to-buy__description {
+.how-to-buy__description, .still-unsure__description {
   margin-bottom: 20px;
 }
 
@@ -2984,7 +2986,7 @@ ul.sub-menu--resources li ul.sub-sub-menu {
   font-family: "AvenirNextLTW01-Regular", sans-serif;
 }
 .leadership .bio-box .wrapper, .leadership .bio-box .k2-offices__content {
-  color: white;
+  color: #5d5d5d;
   font-family: "AvenirNextLTW01-Regular", sans-serif;
 }
 .leadership .leader h4,
@@ -3018,7 +3020,6 @@ ul.sub-menu--resources li ul.sub-sub-menu {
 .leadership .bio-box .wrapper span, .leadership .bio-box .k2-offices__content span {
   font-size: 18px;
   font-weight: bold;
-  color: white;
   font-family: "Bulmer MT W01 Italic";
 }
 .leadership .leader p,
@@ -3028,9 +3029,9 @@ ul.sub-menu--resources li ul.sub-sub-menu {
 }
 .leadership .bio-box {
   position: fixed;
-  background-color: #272d43;
+  background-color: #f2f3f2;
   z-index: 49;
-  color: white;
+  color: #5d5d5d;
   padding: 13px 12px;
   top: 17%;
   visibility: hidden;
@@ -3048,13 +3049,15 @@ ul.sub-menu--resources li ul.sub-sub-menu {
   margin-left: -40%;
   left: 40%;
   margin-top: -9%;
+  border: 20px solid white;
+  border-radius: 3px;
 }
 @media (min-width: 770px) {
   .leadership .bio-box {
     position: fixed;
-    background-color: #272d43;
+    background-color: #f2f3f2;
     z-index: 49;
-    color: white;
+    color: #5d5d5d;
     padding: 13px 12px;
     top: 50%;
     visibility: hidden;
@@ -3083,10 +3086,11 @@ ul.sub-menu--resources li ul.sub-sub-menu {
   left: 0px;
   height: 100%;
   width: 100%;
-  background-color: rgba(245, 245, 245, 0.65);
+  background-color: rgba(0, 0, 0, 0.65);
 }
 .leadership .bio-box .wrapper, .leadership .bio-box .k2-offices__content {
   margin-top: 10px;
+  line-height: 28px;
 }
 .leadership .bio-box .magnifying-glass {
   display: none;
@@ -3099,7 +3103,7 @@ ul.sub-menu--resources li ul.sub-sub-menu {
 .leadership .sprite.close {
   content: 'x';
   font-size: 30px;
-  color: white !important;
+  color: #5d5d5d !important;
 }
 .leadership .bio-box.show {
   -khtml-opacity: 1;
@@ -3416,6 +3420,58 @@ ul.sub-menu--resources li ul.sub-sub-menu {
   font-size: 14px;
 }
 
+.how-to-buy-faq {
+  background-color: #272d43;
+  padding: 40px 0px;
+  text-align: center;
+}
+.how-to-buy-faq__content {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 770px) {
+  .how-to-buy-faq__content {
+    float: left;
+    width: 66.66667%;
+  }
+}
+@media (min-width: 770px) {
+  .how-to-buy-faq__content {
+    margin-left: 16.66667%;
+  }
+}
+.how-to-buy-faq__title {
+  color: #00b5c8;
+  margin-bottom: 20px;
+}
+.how-to-buy-faq__question {
+  color: #00b5c8;
+  font-size: 18px;
+  padding: 25px 0px 5px;
+}
+.how-to-buy-faq__answer {
+  color: white;
+}
+.how-to-buy-faq__answer a {
+  display: inline-block;
+  padding-bottom: 2px;
+  border-bottom: 1px solid white;
+  color: white !important;
+}
+.how-to-buy-faq__answer a:hover {
+  color: white !important;
+}
+
+.still-unsure {
+  padding-bottom: 60px;
+  background-color: #81af41;
+}
+.still-unsure__title {
+  color: white;
+}
+
 .main-stage-department-detail {
   background-image: url("/img/1/bg-it.jpg");
   background-position: top left;
@@ -3660,8 +3716,8 @@ ul.sub-menu--resources li ul.sub-sub-menu {
   }
   .actual-spider__item--description {
     color: white;
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 14px;
+    line-height: 18px;
   }
 }
 @media (min-width: 770px) {
