@@ -42,6 +42,11 @@
 
 .our-story {
     text-align: center;
+    padding-top:50px;
+    padding-bottom:20px;
+    @include tablet {
+        padding-top:20px;
+    }
     @include make-xs-column(12);
     &__title {
         @extend %t-heading-bulmer;
@@ -288,7 +293,12 @@
         @include make-xs-column-offset(0);
         @include make-sm-column(10);
         @include make-sm-column-offset(1);
-        padding-bottom:50px;
+        padding-top:50px;
+    padding-bottom:20px;
+    @include tablet {
+        padding-top:20px;
+    }
+
 
     &__title {
         @extend %t-heading-bulmer;
@@ -399,7 +409,7 @@
 
     .bio-box {
       position: fixed;
-    background-color: #00b5c8;
+    background-color: $k2-purple;
     z-index: 49;
     color: white;
     padding: 13px 12px;
@@ -423,7 +433,7 @@
                 
             @include tablet {
                 position: fixed;
-                background-color: $k2-blue;
+                 background-color: $k2-purple;
                 z-index: 49;
                 color: white;
                 padding: 13px 12px;

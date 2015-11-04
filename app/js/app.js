@@ -5,6 +5,13 @@
         //$(this).toggleClass('open-up');
     });
 
+    $('#menu-icon').click(function() {
+        $('body').toggleClass('mobile-menu-up');
+    });
+    $('#menu-close').click(function() {
+        $('body').toggleClass('mobile-menu-up');
+    });
+
 
 var loginServer = "http://login.k2.com";
 if (window.location.href.indexOf("01.") > -1) loginServer = "http://login01.k2.com";

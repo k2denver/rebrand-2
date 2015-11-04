@@ -50,6 +50,12 @@ $desktop-width: $screen-lg;
 }
 
 
+@mixin tabletonly {
+  @media ( $screen-xs-min) and ( max-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+
 
 @mixin phone {
   @media (min-width: #{$screen-xs-min}) {
