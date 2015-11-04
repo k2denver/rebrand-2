@@ -61,8 +61,11 @@
 }
 
 .overview {
+     padding-top:70px;
+    @include tablet {
      padding-top:30px;
 
+    }
     &__graph {
         @include make-xs-column(12);
         @include tablet {

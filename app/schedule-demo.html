@@ -2,6 +2,7 @@
 <html class="no-js" lang="en">
 
 <head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="UTF-8">
     <title>Schedule Demo</title>
     <link rel="shortcut icon" href="http://k2.com/favicon.ico?v=2" />
@@ -11,58 +12,49 @@
     <link rel="stylesheet" href="/css/app.css" />
   
 
+ <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="/js/respond.js"></script>
+    <![endif]--> 
     <script src="http://www.k2.com/scripts/K2ComV5/modernizr.min.js?z=09172015.1"></script>
        <script>
     window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')
     </script>
     <script src="/js/smartajax/load.smartajax.js"></script>
         <script>
-
-        SmartAjax_load('/js/smartajax/', function(){
-        SmartAjax.setOptions({
-            history:true,
-            cache:true,
-            analytics:true,
-             containers:
-                [
-                    {selector: '.tabs-content:first'},
-                    {selector: '.tabs:first'},
-                    {selector: '.tabs-scripts'}
-                    
-                ],
-            before: function()
-            {
-
-               $( ".tabs-content:first .wrapper:first" ).fadeOut( 700 , SmartAjax.proceed);
-              
-            },
-            success: function()
-            {
-        
-             
-               SmartAjax.proceed();
-            },
-            done: function()
-            {
-               $( ".tabs-content:first .wrapper:first" ).fadeIn( 700);
-            
-            }
+            SmartAjax_load('/js/smartajax/', function(){
+            SmartAjax.setOptions({
+                history:true,
+                cache:true,
+                analytics:true,
+                 containers:
+                    [
+                        {selector: '.tabs-content:first'},
+                        {selector: '.tabs:first'},
+                        {selector: '.tabs-scripts'}
+                    ],
+                before: function() {
+                   $( ".tabs-content:first .wrapper:first" ).fadeOut( 700 , SmartAjax.proceed);       
+                },
+                success: function() {
+                   SmartAjax.proceed();
+                },
+                done: function() {
+                   $( ".tabs-content:first .wrapper:first" ).fadeIn( 700);
+                }
+            });
+            SmartAjax.bind('a.ajax');
         });
-         
-        SmartAjax.bind('a.ajax');         
-        
-    });
         </script>
         <script src="/js/typed.js"></script>
         <script type="text/javascript" src="/js/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
-        <script type="text/javascript" src="/js/fancybox/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
-
 </head>
 
-<body class="">
+<body class="" >
     <div class="wrapper-header">
         <header class="header">
-            <a href="/" class="header__logo">
+            <a href="/index.html" class="header__logo">
                 <img src="/img/1/k2-logo.png" alt="">
             </a>
             <!-- The start of the Best Nav Ever (BNE). NO BEM here.  -->
@@ -74,6 +66,8 @@
                             <li>
                             <a>Intro to Business Applications</a>
                                 <ul class="sub-sub-menu">
+                                  <li><a href="/learn-more.html">Overview</a></li>
+                                  
                                     <li><a href="/forms.html">Forms</a></li>
                                     <li><a href="/workflow.html">Workflow</a></li>
                                     <li><a href="/data.html">Data & Systems</a></li>
@@ -81,7 +75,6 @@
                                 </ul>
                             </li>
                             <li><a href="/products.html">Products</a></li>
-
                             <li><a href="/one-minute-demo.html">One-Minute Demos</a></li>
                             <li><a href="/company.html">About the Company</a></li>
                         </ul>
@@ -119,9 +112,8 @@
                     <li>
                         <a class="last">RESOURCES</a>
                         <ul class="sub-menu--resources">
-                          <li>
+                            <li>
                                 <a href="http://k2.com/events">Events</a>
-                                
                             </li>
                             <li><a href="#">Downloads</a></li>
                             <li><a>Support</a>
@@ -167,8 +159,8 @@
                     </li>
                     </ul> 
             </nav>
-            <a class="header__cta-contact">contact</a>
-            <a href="/schedule-demo.html" class="header__cta-see-it-live">see it live</a>
+            <a class="header__cta-contact">Contact</a>
+            <a href="/schedule-demo.html" class="header__cta-see-it-live">Request Demo</a>
             <div class="header__login"></div>
             <div class="header__search"></div>
         </header>

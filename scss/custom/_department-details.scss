@@ -1,7 +1,5 @@
 // 1680
 // 1584
-
-
 .main-stage-department-detail {
     @extend %department-details;
     &__content {
@@ -19,23 +17,36 @@
 }
 
 %department-details {
-    background-image: url('/img/1/learn-more-main-stage.jpg');
-    background-position: top center;
+    background-image: url('/img/1/bg-it.jpg');
+    background-position: top left;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 523px;
-       &__content {
+    min-height: 423px;
+    @include tablet {
+        background-position: top center;
+        min-height: 523px;
+    }
+    &__content {
         @include make-xs-column(12);
         @include make-xs-column-offset(0);
-        @include make-sm-column(10);
+        @include make-sm-column(8);
         @include make-sm-column-offset(1);
+        @include make-md-column(6);
+        @include make-md-column-offset(1);
     }
     &__title {
         text-transform: uppercase;
-        margin-top: 40px;
-        color:$k2-blue;
+        color: $k2-blue;
+        margin-top: 130px;
+        font-size: 36px;
+        span {
+            color: $k2-green;
+        }
         @include tablet {
-            margin-top: 125px;
+            margin-top: 175px;
+            br {
+                display: block;
+            }
         }
     }
     &__description {
@@ -49,88 +60,80 @@
     }
 }
 
+.solutions-slice {
+    padding: 20px 0px 50px;
+    &__content {
+        @include make-xs-column(12);
+        @include make-xs-column-offset(0);
+        @include make-sm-column(10);
+        @include make-sm-column-offset(1);
+        text-align: center;
+    }
+    &__title {
+        @extend %t-heading-bulmer;
+        text-align: center;
+        font-weight: bold;
+    }
+    &__description {
+        @extend %t-paragraph;
+        text-align: center;
+    }
+    &__columns {
+      text-align:center;
+    }
+    &__single {
+      text-align: left;
+        @include make-xs-column(12);
+        @include make-xs-column-offset(0);
+        @include make-sm-column(6);
+        @include make-sm-column-offset(0);
+        h3 {
+            @include add-important(font-family,
+            $bulmer-italic);
+            font-size: 24px;
+            color: $k2-green;
+            margin-bottom: 7px;
+        }
+        p {
+            @extend %t-paragraph;
+            
+            @include tablet {
+              min-height: 91px;
+            }
+        }
+    }
+    &__button--primary {
+      margin:0 auto;
+      @extend %button;
+      @extend %button--green;
+      
+    }
+}
+
+
+
 
 .spider {
-    background-color:$k2-blue;
-    height:600px;
-}
-
-
-.blobs{
-
-    -webkit-filter: url("#goo");
-          filter: url("#goo");
-  position:absolute;
-  top:0;
-  left:0;
-  bottom:0;
-  right:0;
-}
-$dist-x:65px;
-$dist-y:65px;
-
-.wtf {
-    @extend %button;
-    color:black;
-    background-color:red;
-    position:absolute;
-    bottom:0px;
-    z-index:10;
-
-    &:hover {
-        background-color:white;
+  background-color:$k2-blue;
+    padding: 40px 0px;
+    border-top: 5px solid white;
+    text-align: center;
+    &__content {
+        @include make-xs-column(12);
+        @include make-xs-column-offset(0);
+        @include make-sm-column(10);
+        @include make-sm-column-offset(1);
     }
-}
-
-.wtf2 {
-    @extend %button;
-    color:black;
-    background-color:red;
-    position:absolute;
-    bottom:0px;
-    z-index:10;
-    left:300px;
-
-    &:hover {
-        background-color:white;
+    &__title {
+       @extend %t-heading-bulmer;
+       color:white;
     }
-}
-
-.blob{
+    &__description {
+        @extend %t-paragraph;
+        color: $k2-purple;
+        padding:30px 0px;
+    }
+      
     
-  position:absolute;
-  background:#e97b7a;
-  left:50%;
-  top:50%;
-  width:100px;
-  height:100px;
-  line-height:100px;
-  text-align:center;
-  color:white;
-  font-size:40px;
-  border-radius:100%;
-  margin-top:-50px;
-  margin-left:-50px;
-  transition:all 2s cubic-bezier(0.770, 0.000, 0.975, 1.000);
- // animation:blob-left-top-anim cubic-bezier(0.770, 0.000, 0.175, 1.000) 4s infinite;
-  transform:scale(1) translate(-$dist-x,-$dist-y);
-  &:nth-child(2){
-    //animation-name:blob-right-top-anim;
-    transform:scale(1) translate($dist-x,-$dist-y);
-  }
-  &:nth-child(3){
-    //animation-name:blob-left-bottom-anim;
-    transform:scale(1) translate(-$dist-x,$dist-y);
-  }
-  &:nth-child(4){
-    //animation-name:blob-right-bottom-anim;
-      transform:scale(1) translate($dist-x,$dist-y);
-  }
 }
 
-.blob.active {
-   
-    //animation-name:blob-right-bottom-anim;
-      transform:scale(2) translate(-$dist-x,-$dist-y) !important;
-
-}

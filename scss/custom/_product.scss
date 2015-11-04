@@ -88,20 +88,36 @@
     &__bottom-cta {
         @include make-xs-column(12,
         15px);
-        margin-top: 10px;
+        margin-top: 0px;
     }
     &__bottom-cta-content {
-        background: white(0.32);
-        padding: 40px 0px;
+        //background: white(0.32);
+        padding: 10px 0px;
         width: 100%;
     }
     &__button--primary {
         @extend %button;
         @extend %button--blue;
+        padding-left:30px;
+        padding-right:30px;
         margin-top: 0px;
+        margin:0px 20px;
+    }
+    &__bottom-cta-content-description {
+        padding:30px 0px 10px;
+        line-height:1.3em;
+    }
+     &__button--secondary {
+        @extend %button;
+        @extend %button--blue-outline;
+        color:$k2-purple;
+        padding-left:30px;
+        padding-right:30px;
+        margin-top: 0px;
+        margin:10px 20px;
     }
     &__underline-cta {
-        @include cta-underline($k2-green);
+        @include cta-underline($k2-blue);
 
     }
 }

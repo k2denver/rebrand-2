@@ -2,6 +2,7 @@
 <html class="no-js" lang="en">
 
 <head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="UTF-8">
     <title>department details</title>
     <link rel="shortcut icon" href="http://k2.com/favicon.ico?v=2" />
@@ -11,58 +12,49 @@
     <link rel="stylesheet" href="/css/app.css" />
   
 
+ <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="/js/respond.js"></script>
+    <![endif]--> 
     <script src="http://www.k2.com/scripts/K2ComV5/modernizr.min.js?z=09172015.1"></script>
        <script>
     window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')
     </script>
     <script src="/js/smartajax/load.smartajax.js"></script>
         <script>
-
-        SmartAjax_load('/js/smartajax/', function(){
-        SmartAjax.setOptions({
-            history:true,
-            cache:true,
-            analytics:true,
-             containers:
-                [
-                    {selector: '.tabs-content:first'},
-                    {selector: '.tabs:first'},
-                    {selector: '.tabs-scripts'}
-                    
-                ],
-            before: function()
-            {
-
-               $( ".tabs-content:first .wrapper:first" ).fadeOut( 700 , SmartAjax.proceed);
-              
-            },
-            success: function()
-            {
-        
-             
-               SmartAjax.proceed();
-            },
-            done: function()
-            {
-               $( ".tabs-content:first .wrapper:first" ).fadeIn( 700);
-            
-            }
+            SmartAjax_load('/js/smartajax/', function(){
+            SmartAjax.setOptions({
+                history:true,
+                cache:true,
+                analytics:true,
+                 containers:
+                    [
+                        {selector: '.tabs-content:first'},
+                        {selector: '.tabs:first'},
+                        {selector: '.tabs-scripts'}
+                    ],
+                before: function() {
+                   $( ".tabs-content:first .wrapper:first" ).fadeOut( 700 , SmartAjax.proceed);       
+                },
+                success: function() {
+                   SmartAjax.proceed();
+                },
+                done: function() {
+                   $( ".tabs-content:first .wrapper:first" ).fadeIn( 700);
+                }
+            });
+            SmartAjax.bind('a.ajax');
         });
-         
-        SmartAjax.bind('a.ajax');         
-        
-    });
         </script>
         <script src="/js/typed.js"></script>
         <script type="text/javascript" src="/js/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
-        <script type="text/javascript" src="/js/fancybox/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
-
 </head>
 
-<body class="">
+<body class="" >
     <div class="wrapper-header">
         <header class="header">
-            <a href="/" class="header__logo">
+            <a href="/index.html" class="header__logo">
                 <img src="/img/1/k2-logo.png" alt="">
             </a>
             <!-- The start of the Best Nav Ever (BNE). NO BEM here.  -->
@@ -74,6 +66,8 @@
                             <li>
                             <a>Intro to Business Applications</a>
                                 <ul class="sub-sub-menu">
+                                  <li><a href="/learn-more.html">Overview</a></li>
+                                  
                                     <li><a href="/forms.html">Forms</a></li>
                                     <li><a href="/workflow.html">Workflow</a></li>
                                     <li><a href="/data.html">Data & Systems</a></li>
@@ -81,7 +75,6 @@
                                 </ul>
                             </li>
                             <li><a href="/products.html">Products</a></li>
-
                             <li><a href="/one-minute-demo.html">One-Minute Demos</a></li>
                             <li><a href="/company.html">About the Company</a></li>
                         </ul>
@@ -119,9 +112,8 @@
                     <li>
                         <a class="last">RESOURCES</a>
                         <ul class="sub-menu--resources">
-                          <li>
+                            <li>
                                 <a href="http://k2.com/events">Events</a>
-                                
                             </li>
                             <li><a href="#">Downloads</a></li>
                             <li><a>Support</a>
@@ -167,63 +159,63 @@
                     </li>
                     </ul> 
             </nav>
-            <a class="header__cta-contact">contact</a>
-            <a href="/schedule-demo.html" class="header__cta-see-it-live">see it live</a>
+            <a class="header__cta-contact">Contact</a>
+            <a href="/schedule-demo.html" class="header__cta-see-it-live">Request Demo</a>
             <div class="header__login"></div>
             <div class="header__search"></div>
         </header>
     </div>
 
     
-
 <section class="main-stage-department-detail">
-
+    <div class="wrapper">
+        <div class="main-stage-department-detail__content">
+            <h1 class="main-stage-department-detail__title">
+               Build and run <br> <span>human resources</span><br> applications
+            </h1>
+            <p class="main-stage-department-detail__description">
+                We put our customers above everything, and our sole mission is to give them what they need to get the job done, to accelerate performance and to change perceptions about what is possible. Nothing less and nothing else.
+            </p>
+        </div>
+    </div>
 </section>
-    <section class="spider">
-    	
-    	<p id="test" class="wtf">test</p>
-    	<p id="test2" class="wtf2">open</p>
-    </section>
+<section class="solutions-slice">
+    <div class="wrapper">
+        <div class="solutions-slice__content">
+            <h2 class="solutions-slice__title">Solutions</h2>
+            <p class="solutions-slice__description">
+                HR is made up of a diverse range of processes that can be time consuming and redundant, with multiple levels of approvals and touchpoints. K2 applications increase process visibility, eliminate redundancy and reduce manual errors - so you have the time you need to focus on more important things. K2’s drag-and-drop design tools make it possible for business and technical users to rapidly deliver scalable applications with low to no code that streamline simple to complex human resources processes.
+            </p>
+            <div class="solutions-slice__columns">
+                <div class="solutions-slice__single">
+                    <h3>Performance reviews</h3>
+                    <p>Reduce subjectivity and inconsistency in performance reviews through automated processes that allow managers and employees to set and track performance objectives.</p>
+                    <h3>Performance reviews</h3>
+                    <p>Reduce subjectivity and inconsistency in performance reviews through automated processes that allow managers and employees to set and track performance objectives.</p>
+                </div>
+                <div class="solutions-slice__single">
+                    <h3>Employee Onboarding and Offboarding</h3>
+                    <p>Simplify your employee onboarding andoffboarding procedures with workflows that automatically activate and deactivate user accounts and devices.</p>
+                    <h3>Performance reviews</h3>
+                    <p>Reduce subjectivity and inconsistency in performance reviews through automated processes that allow managers and employees to set and track performance objectives.</p>
+                </div>
+            </div>
+            <a href="#" class="solutions-slice__button--primary">Schedule Demo</a>
+        </div>
+    </div>
+</section>
+<section class="spider">
+    <div class="wrapper">
+        <div class="spider__content">
+            <div class="spider__title">Transforming HR the K2 way</div>
+            <div class="spider__description">Use K2 to quickly build, modify and reuse business apps that leverage your current systems and technologies with little to no code — on premises or in the cloud -- from any device. Using forms, workflow and data, K2 provides a platform you can use to streamline any HR process you might need, through reliable apps that deliver the right information to the right people at the right time.</div>
+            <div class="spider__actual-spider">
+              <img src="/img/1/department_detail_spider.jpg" alt="">
 
-
-
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-  <defs>
-    <filter id="goo">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 30 -7" result="goo" />
-      <feBlend in="SourceGraphic" in2="goo" />
-    </filter>
-  </defs>
-</svg>
-
-
-<div class="blobs">
-
-	
-  <div class="blob">4</div>
-  <div class="blob">3</div>
-  <div class="blob">2</div>
-  <div class="blob">1</div>
-
-
-</div>
-<div class="clear"> </div>
-
-<script>
-
-	$("#test").click(function(){
-	
-		$('.blob').addClass('active');	
-
-	});
-	$("#test2").click(function(){
-	
-		$('.blob').removeClass('active');	
-
-	});
-
-</script>
+            </div>
+        </div>
+    </div>
+</section>
 
  
 

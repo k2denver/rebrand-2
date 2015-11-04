@@ -1,15 +1,10 @@
-$(document).ready(function() {
-	$('.fancybox').fancybox({
-		openEffect  : 'none',
-		closeEffect : 'none',
-		helpers : {
-			media : {}
-		},
-		 width       : 960,
-    	height      : 540,
-    	aspectRatio : true,
-	});
-});
+
+	$('a:not([href])').click(function(){
+        // = this;
+        $(this).next('ul').toggleClass('open-up');
+        //$(this).toggleClass('open-up');
+    });
+
 
 var loginServer = "http://login.k2.com";
 if (window.location.href.indexOf("01.") > -1) loginServer = "http://login01.k2.com";

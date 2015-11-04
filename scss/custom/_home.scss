@@ -90,12 +90,13 @@
     cursor: pointer;
     text-transform: uppercase;
     margin-left: -13px;
+    display:block;
 }
 
 .event-info__single-event-cta:after {
     content: '';
     position: absolute;
-    right: -13px;
+    right: 32px;
     transition: all 0.2s ease;
     width: 0;
     height: 0;
@@ -397,6 +398,8 @@
 
 .departments-list__human-resources {
     background-image: url('/img/1/customer-resources.jpg');
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='customer-resources.jpg', sizingMethod='scale');
+-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='customer-resources.jpg', sizingMethod='scale')";
 }
 
 .departments-list__financing {
