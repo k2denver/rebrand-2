@@ -1,0 +1,120 @@
+// 1680
+// 1584
+.how-to-buy-mainstage {
+    @extend %how-to-buy-mainstage;
+    &__content {
+        @extend %how-to-buy-mainstage__content;
+    }
+    &__title {
+        @extend %how-to-buy-mainstage__title;
+    }
+    &__description {
+        @extend %how-to-buy-mainstage__description;
+    }
+    &__button--primary {
+        @extend %how-to-buy-mainstage__button--primary;
+    }
+}
+
+%how-to-buy-mainstage {
+    background-image: url('/img/1/howtobuy-mainstage.jpg');
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 423px;
+
+    @include tablet {
+        background-position: top center;
+        min-height: 523px;
+    }
+    &__content {
+        @include make-xs-column(12);
+        @include make-xs-column-offset(0);
+        @include make-sm-column(8);
+        @include make-sm-column-offset(1);
+
+        text-align: left;
+    }
+    &__title {
+        text-transform: uppercase;
+        color: $k2-blue;
+        margin-top: 130px;
+        font-size: 26px;
+        text-align: left;
+
+        span {
+            color: $k2-green;
+        }
+        @include tablet {
+            font-size: 36px;
+            margin-top: 175px;
+            br {
+                display: block;
+            }
+        }
+    }
+    &__description {
+        @extend %t-paragraph;
+        margin-top: 20px;
+        padding-right:50px;
+         padding-bottom:30px;
+    }
+    &__button--primary {
+        @extend %button;
+        @extend %button--green;
+        font-size: 16px;
+    }
+}
+
+
+.buy-it-now {
+   padding:40px 0px;
+    &__content {
+       @include make-xs-column(12);
+        @include make-xs-column-offset(0);
+        @include make-sm-column(10);
+        @include make-sm-column-offset(1);
+        text-align: center;
+    }
+    &__title {
+      @extend %t-heading-bulmer;
+      color:$k2-blue;
+      padding-bottom:10px;
+    }
+   
+    &__columns {
+      
+    }
+
+    &__single {
+     text-align:center;
+     margin:30px 0px;
+      @include make-xs-column(12);
+      @include make-sm-column(6);
+      @include make-md-column(3);
+
+      &:hover{
+        span {
+          text-decoration: underline;
+        }
+      }
+      img { display:inline-block;}
+      span {display:block;
+        color:$k2-blue;
+        padding:15px;
+        font-size:14px;}
+    }
+
+}
+
+
+.how-to-buy-faq {
+  &__content {}
+  &__title {}
+  &__question{}
+  &__answer {}
+
+}
+
+
+

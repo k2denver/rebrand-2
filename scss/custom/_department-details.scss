@@ -127,17 +127,27 @@
     &__description {
         @extend %t-paragraph;
         color: $k2-purple;
+        padding:17px 0px;
+        @include tablet {
         padding: 30px 0px;
+      }
     }
 }
 
 .actual-spider {
+  @include make-xs-column(10);
+        @include make-xs-column-offset(1);
+  @include make-sm-column(8);
+        @include make-sm-column-offset(2);
+         @include make-md-column(12);
+        @include make-md-column-offset(0);
   @include mobilelast {
+    
     &__item {
       &--title {
         font-family: "Avenir Next LT W01 Bold" !important;
         color:white;
-        margin-top:20px;
+        margin-top:26px;
       }
       &--description {
         color:white;
@@ -325,6 +335,7 @@
   @include tablet {
     .actual-spider__item--title {
       background-color:$k2-purple;
+      cursor:pointer;
 
       span {
         color:white;

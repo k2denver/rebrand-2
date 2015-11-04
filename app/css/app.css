@@ -1,16 +1,16 @@
 .product-main-stage__section-description ul li, .your-business__description, .easy-vs-hard__description, .main-stage-learn-more__description, .overview__graph--right-content p, .overview__graph--left-content p, .overview__description, .products-slice__description, .one-miniute-video-slice__description, .fwd__right-description, .featured-asset__description, .company-main-stage__description, .our-story__description, .timeliner .timeliner__date--description, .leadership .leader p,
 .leadership .bio-box .wrapper p,
-.leadership .bio-box .k2-offices__content p, .corporate-hq__single .address-block, .k2-offices__singles .address-block, .main-stage-department-detail__description, .solutions-slice__description, .solutions-slice__single p, .spider__description, .download-case-study__description {
-  font-size: 14px;
-  line-height: 18px;
+.leadership .bio-box .k2-offices__content p, .corporate-hq__single .address-block, .k2-offices__singles .address-block, .how-to-buy-mainstage__description, .main-stage-department-detail__description, .solutions-slice__description, .solutions-slice__single p, .spider__description, .download-case-study__description {
+  font-size: 16px;
+  line-height: 22px;
 }
 
-.your-business__title, .overview__graph--right-content h3, .overview__graph--left-content h3, .overview__title, .products-slice__title, .fwd__right-title, .our-story__title, .recent-recognition__title, .recent-recognition__single-year, .leadership__title, .world-map__title, .corporate-hq__title, .solutions-slice__title, .spider__title {
+.your-business__title, .overview__graph--right-content h3, .overview__graph--left-content h3, .overview__title, .products-slice__title, .fwd__right-title, .our-story__title, .recent-recognition__title, .recent-recognition__single-year, .leadership__title, .world-map__title, .corporate-hq__title, .buy-it-now__title, .solutions-slice__title, .spider__title {
   font-size: 30px;
   font-family: "Bulmer MT W01 Italic" !important;
 }
 @media (min-width: 770px) {
-  .your-business__title, .overview__graph--right-content h3, .overview__graph--left-content h3, .overview__title, .products-slice__title, .fwd__right-title, .our-story__title, .recent-recognition__title, .recent-recognition__single-year, .leadership__title, .world-map__title, .corporate-hq__title, .solutions-slice__title, .spider__title {
+  .your-business__title, .overview__graph--right-content h3, .overview__graph--left-content h3, .overview__title, .products-slice__title, .fwd__right-title, .our-story__title, .recent-recognition__title, .recent-recognition__single-year, .leadership__title, .world-map__title, .corporate-hq__title, .buy-it-now__title, .solutions-slice__title, .spider__title {
     font-size: 40px;
   }
 }
@@ -28,7 +28,7 @@
   }
 }
 
-.header__cta-contact, .header__cta-see-it-live, .bne .top-utility__button--contact, .product-main-stage__button--primary, .product-main-stage__button--secondary, .easy-vs-hard__primary-cta, .main-stage-learn-more__button--primary, .products-slice__primary-cta, .one-miniute-video-slice__primary-cta, .featured-asset__button--primary, .company-main-stage__button--primary, .main-stage-department-detail__button--primary, .solutions-slice__button--primary, .download-case-study__button--primary {
+.header__cta-contact, .header__cta-see-it-live, .bne .top-utility__button--contact, .product-main-stage__button--primary, .product-main-stage__button--secondary, .easy-vs-hard__primary-cta, .main-stage-learn-more__button--primary, .products-slice__primary-cta, .one-miniute-video-slice__primary-cta, .featured-asset__button--primary, .company-main-stage__button--primary, .how-to-buy-mainstage__button--primary, .main-stage-department-detail__button--primary, .solutions-slice__button--primary, .download-case-study__button--primary {
   display: inline-block;
   padding: 10px 15px;
   color: white;
@@ -45,10 +45,10 @@
 .header__cta-contact, .header__cta-see-it-live {
   border-radius: 2px;
 }
-.main-stage-learn-more__button--primary, .company-main-stage__button--primary, .main-stage-department-detail__button--primary, .solutions-slice__button--primary, .download-case-study__button--primary {
+.main-stage-learn-more__button--primary, .company-main-stage__button--primary, .how-to-buy-mainstage__button--primary, .main-stage-department-detail__button--primary, .solutions-slice__button--primary, .download-case-study__button--primary {
   background-color: #81af41;
 }
-.main-stage-learn-more__button--primary:hover, .company-main-stage__button--primary:hover, .main-stage-department-detail__button--primary:hover, .solutions-slice__button--primary:hover, .download-case-study__button--primary:hover {
+.main-stage-learn-more__button--primary:hover, .company-main-stage__button--primary:hover, .how-to-buy-mainstage__button--primary:hover, .main-stage-department-detail__button--primary:hover, .solutions-slice__button--primary:hover, .download-case-study__button--primary:hover {
   background-color: #00b5c8;
 }
 .bne .top-utility__button--contact, .product-main-stage__button--primary, .featured-asset__button--primary {
@@ -85,7 +85,7 @@
   background-color: white;
   color: #272d43 !important;
 }
-.header__cta-contact:hover, .header__cta-see-it-live:hover, .bne .top-utility__button--contact:hover, .product-main-stage__button--primary:hover, .product-main-stage__button--secondary:hover, .easy-vs-hard__primary-cta:hover, .main-stage-learn-more__button--primary:hover, .products-slice__primary-cta:hover, .one-miniute-video-slice__primary-cta:hover, .featured-asset__button--primary:hover, .company-main-stage__button--primary:hover, .main-stage-department-detail__button--primary:hover, .solutions-slice__button--primary:hover, .download-case-study__button--primary:hover {
+.header__cta-contact:hover, .header__cta-see-it-live:hover, .bne .top-utility__button--contact:hover, .product-main-stage__button--primary:hover, .product-main-stage__button--secondary:hover, .easy-vs-hard__primary-cta:hover, .main-stage-learn-more__button--primary:hover, .products-slice__primary-cta:hover, .one-miniute-video-slice__primary-cta:hover, .featured-asset__button--primary:hover, .company-main-stage__button--primary:hover, .how-to-buy-mainstage__button--primary:hover, .main-stage-department-detail__button--primary:hover, .solutions-slice__button--primary:hover, .download-case-study__button--primary:hover {
   color: white !important;
 }
 
@@ -699,12 +699,12 @@ ul.sub-menu--resources li ul.sub-sub-menu {
   content: '';
   width: 0;
   height: 0;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-top: 30px solid #81af41;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 20px solid #81af41;
   position: absolute;
   left: 50%;
-  margin-left: -50px;
+  margin-left: -30px;
 }
 @media (min-width: 770px) {
   .tabs:after {
@@ -3275,6 +3275,147 @@ ul.sub-menu--resources li ul.sub-sub-menu {
   background-image: url("/img/1/how-to-buy-page.jpg");
 }
 
+.how-to-buy-mainstage {
+  background-image: url("/img/1/howtobuy-mainstage.jpg");
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 423px;
+}
+@media (min-width: 770px) {
+  .how-to-buy-mainstage {
+    background-position: top center;
+    min-height: 523px;
+  }
+}
+.how-to-buy-mainstage__content {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 0%;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: left;
+}
+@media (min-width: 770px) {
+  .how-to-buy-mainstage__content {
+    float: left;
+    width: 66.66667%;
+  }
+}
+@media (min-width: 770px) {
+  .how-to-buy-mainstage__content {
+    margin-left: 8.33333%;
+  }
+}
+.how-to-buy-mainstage__title {
+  text-transform: uppercase;
+  color: #00b5c8;
+  margin-top: 130px;
+  font-size: 26px;
+  text-align: left;
+}
+.how-to-buy-mainstage__title span {
+  color: #81af41;
+}
+@media (min-width: 770px) {
+  .how-to-buy-mainstage__title {
+    font-size: 36px;
+    margin-top: 175px;
+  }
+  .how-to-buy-mainstage__title br {
+    display: block;
+  }
+}
+.how-to-buy-mainstage__description {
+  margin-top: 20px;
+  padding-right: 50px;
+  padding-bottom: 30px;
+}
+.how-to-buy-mainstage__button--primary {
+  font-size: 16px;
+}
+
+.buy-it-now {
+  padding: 40px 0px;
+}
+.buy-it-now__content {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 0%;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+}
+@media (min-width: 770px) {
+  .buy-it-now__content {
+    float: left;
+    width: 83.33333%;
+  }
+}
+@media (min-width: 770px) {
+  .buy-it-now__content {
+    margin-left: 8.33333%;
+  }
+}
+.buy-it-now__title {
+  color: #00b5c8;
+  padding-bottom: 10px;
+}
+.buy-it-now__single {
+  text-align: center;
+  margin: 30px 0px;
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 770px) {
+  .buy-it-now__single {
+    float: left;
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .buy-it-now__single {
+    float: left;
+    width: 25%;
+  }
+}
+.buy-it-now__single:hover span {
+  text-decoration: underline;
+}
+.buy-it-now__single img {
+  display: inline-block;
+}
+.buy-it-now__single span {
+  display: block;
+  color: #00b5c8;
+  padding: 15px;
+  font-size: 14px;
+}
+
 .main-stage-department-detail {
   background-image: url("/img/1/bg-it.jpg");
   background-position: top left;
@@ -3464,19 +3605,63 @@ ul.sub-menu--resources li ul.sub-sub-menu {
 }
 .spider__description {
   color: #272d43;
-  padding: 30px 0px;
+  padding: 17px 0px;
+}
+@media (min-width: 770px) {
+  .spider__description {
+    padding: 30px 0px;
+  }
 }
 
+.actual-spider {
+  position: relative;
+  float: left;
+  width: 83.33333%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 8.33333%;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 770px) {
+  .actual-spider {
+    float: left;
+    width: 66.66667%;
+  }
+}
+@media (min-width: 770px) {
+  .actual-spider {
+    margin-left: 16.66667%;
+  }
+}
+@media (min-width: 992px) {
+  .actual-spider {
+    float: left;
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .actual-spider {
+    margin-left: 0%;
+  }
+}
 @media (min-width: 0px) and (max-width: 770px) {
   .actual-spider__item--title {
     font-family: "Avenir Next LT W01 Bold" !important;
     color: white;
-    margin-top: 20px;
+    margin-top: 26px;
   }
   .actual-spider__item--description {
     color: white;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 16px;
+    line-height: 22px;
   }
 }
 @media (min-width: 770px) {
@@ -3630,6 +3815,7 @@ ul.sub-menu--resources li ul.sub-sub-menu {
 @media (min-width: 770px) {
   .actual-spider__item:hover .actual-spider__item--title {
     background-color: #272d43;
+    cursor: pointer;
   }
   .actual-spider__item:hover .actual-spider__item--title span {
     color: white;

@@ -524,12 +524,12 @@ ul.sub-menu--resources {
         content: '';
         width: 0;
         height: 0;
-        border-left: 50px solid transparent;
-        border-right: 50px solid transparent;
-        border-top: 30px solid $k2-green;
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        border-top: 20px solid #81af41;
         position: absolute;
         left: 50%;
-        margin-left: -50px;
+        margin-left: -30px;
         @include tablet {
             display: none;
         }
