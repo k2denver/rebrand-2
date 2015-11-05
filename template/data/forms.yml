@@ -13,9 +13,10 @@ feature-2-img: "Reusable-forms.jpg"
 feature-3-title: "Workflow integration"
 feature-3-description-1: "Create integrated workflow forms and business applications so that the right information gets to the right user. Initiate a workflow directly from a SmartForm, from your phone, tablet or desktop PC."
 feature-3-description-2: ""
+feature-3-img: "workflow-integration.jpg"
 
 feature-4-title: "Mobile-ready"
 feature-4-description-1: "Responsive form design allows you to build electronic forms that can be used on any device, making it easy for users to get work done while on the go. Mobile-ready SmartForms work online or offline to capture data, with backend systems automatically updating as soon as connectivity is restored."
 feature-4-description-2: ""
-feature-4-img: "Reusable-forms.jpg"
+feature-4-img: "Mobile-ready.jpg"
 
