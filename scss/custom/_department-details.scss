@@ -31,7 +31,7 @@
         @include make-xs-column-offset(0);
         @include make-sm-column(8);
         @include make-sm-column-offset(1);
-        @include make-md-column(6);
+        @include make-md-column(7);
         @include make-md-column-offset(1);
     }
     &__title {
@@ -57,6 +57,11 @@
         @extend %button;
         @extend %button--green;
         font-size: 16px;
+    }
+    &.-operations {
+        .main-stage-department-detail__content {
+
+        }
     }
 }
 
@@ -171,8 +176,10 @@
             height: 120px;
             border-radius: 120px;
             &--palo {
-                  transform: rotate(-85deg);
-                  height: 267px;
+                  transform: rotate(-82deg);
+                  height: 196px;
+                  left: 117px;
+                  top: 69px;
 
                 }
 
@@ -183,7 +190,10 @@
           .actual-spider__item--title {
             margin-left: -202px;
             &--palo {
-                  transform: rotate(-47deg);
+                  transform: rotate(-46deg);
+                  height: 139px;
+                  right: 21px;
+                  margin-top: 24px;
 
                 }
           }
@@ -194,17 +204,21 @@
                 margin-top: -33px;
                 &--palo {
                   transform: rotate(38deg);
+                      left: 40px;
+                      margin-top: 4px;
                 }
           }
         }
         &:nth-child(4) {
           .actual-spider__item--title {
               margin-left: 219px;
-              margin-top: 200px;
+              margin-top: 175px;
               &--palo {
-                  transform: rotate(104deg);
-                      top: 52px;
-                      margin-right: 20px;
+                    transform: rotate(94deg);
+                    top: 52px;
+                    margin-right: 57px;
+                    height: 163px;
+                  
                 }
 
           }
@@ -214,9 +228,9 @@
               margin-left: 55px;
               margin-top: 293px;
               &--palo {
-                      transform: rotate(-229deg);
-                  height: 175px;
-                  top: 35px;
+                      transform: rotate(-222deg);
+                    height: 98px;
+                    top: 47px;
                 }
           }
         }
@@ -241,12 +255,13 @@
             z-index:1;
              transition: all 0.5s ease;
             > span {
-                font-size: 13px;
+                font-size: 12px;
                 font-family: "Avenir Next LT W01 Bold" !important;
-                margin-top: 40px;
+                margin-top: 45px;
                 display: block;
                 text-transform: uppercase;
                 color:$k2-blue;
+                line-height: 1.4em;
             }
             &--palo {
               content: '';
@@ -363,12 +378,16 @@
         &:before {
             background-color: $k2-purple;
              transition: all 0.5s ease;
+             //border-radius: 10px;
+            
           
 
         }
         &:after {
             background-color: $k2-purple;
              transition: all 0.5s ease;
+             //border-radius: 10px;
+             
        
         }
     }

@@ -297,6 +297,7 @@ body header {
                         width: 100%;
                         padding: 5px;
                         a:not([href]) {
+                            cursor:default;
                             &:after {
                                 content: '';
                                 position: absolute;
@@ -472,6 +473,7 @@ ul.sub-menu--what-is-k2 {
     @extend .sub-menu;
     @include tablet {
         width: 250px;
+        min-height:200px
     }
     ul.sub-sub-menu {
         @extend .sub-sub-menu;
@@ -484,6 +486,7 @@ ul.sub-menu--how-people-use-k2 {
     @extend .sub-menu;
     @include tablet {
         width: 200px;
+        min-height:230px
     }
     li ul.sub-sub-menu {
         @extend .sub-sub-menu;
@@ -594,7 +597,7 @@ ul.sub-menu--resources {
     z-index: 22;
     padding: 20px;
     background-color: $k2-blue;
-    width: 270px;
+    width: 300px;
     text-transform: uppercase;
     position: fixed;
     bottom: -3px;
@@ -632,5 +635,18 @@ ul.sub-menu--resources {
 
 .iphone-widget.closed {
     display: block;
+}
+.sprite {
+    background: transparent url("http://www.k2.com/img/k2comv5/sprite_022614.png") 0 0 no-repeat;
+    display: inline-block;
+    background-size: 343px,163px;
+}
+footer {
+    nav ul li, nav ul.nav-bar li {
+        margin:auto;
+    }
+    .right li{
+            margin: 0 15px 0 0;
+    }
 }
 

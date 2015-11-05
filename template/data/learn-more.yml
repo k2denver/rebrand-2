@@ -2,7 +2,7 @@
 main-stage-learn-more__title: "K2 helps your people work smarter \n and get business done faster."
 main-stage-learn-more__description-1: "Create, modify and reuse business apps with little-to-no code — on premises or in the cloud. "
 main-stage-learn-more__description-2: "Leverage current systems and technologies, and interact with your apps from any device."
-main-stage-learn-more__button--primary: "Schedule Demo"
+main-stage-learn-more__button--primary: "REQUEST A DEMO"
 
 
 overview__title: "Anatomy of a K2 business app"
@@ -12,7 +12,7 @@ overview__description: "K2 business apps help you streamline processes — expen
 step-1__title: "Start with information from your LOB systems"
 step-1__description: "Reusable data connections (we call them SmartObjects) allow you to leverage line-of-business and Web-based data in your applications, securely, regardless of where it lives."
 
-step-2__title: "Organize with forms"
+step-2__title: "Organize with electronic forms"
 step-2__description: "Mobile-ready forms provide an intuitive interface for gathering, distributing and interacting with information."
 
 step-3__title: "Process with a custom workflow"
@@ -22,12 +22,13 @@ step-4__title: "View comprehensive reports"
 step-4__description: "Track your applications with real-time insight into process status and business performance."
 
 step-5__title: "Work from any device"
-step-5__description: "K2 applications work across your devices, so you can get work done and make date-driven decisions from anywhere, at any time."
+step-5__description: "K2 business apps work across your devices, so you can get work done and make date-driven decisions from anywhere, at any time."
 
 
-products_description: "K2 apps run on premises or in the cloud, they integrate with your current systems, and they allow for insightful reporting. Everything you build is reusable and easy to change with little-to-no code."
+products_description: "K2 business apps run on premises or in the cloud, they integrate with your current systems, and they allow for insightful reporting. Everything you build is reusable and easy to change with little-to-no code."
 
 forresster-paper__description: "Low-code platforms are an important strategy to speed delivery of software to win, serve and retain customers. So the question of whether these platforms will scale to support large apps and high numbers
 of apps is crucial. Read this report for a guide to obtaining both fast app delivery and scalability from low-code platforms."
 
+one-minute__title: "One-minute Demos"
 one-minute__description: "Want to see K2 in action? Click below to learn how easy it can be to build and run business process applications with forms, workflow, data and reports."

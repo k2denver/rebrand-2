@@ -1,4 +1,4 @@
-.product-main-stage__section-description ul li, .your-business__description, .easy-vs-hard__description, .main-stage-learn-more__description, .overview__graph--right-content p, .overview__graph--left-content p, .overview__description, .products-slice__description, .one-miniute-video-slice__description, .fwd__right-description, .featured-asset__description, .company-main-stage__description, .our-story__description, .timeliner .timeliner__date--description, .leadership .leader p,
+.product-main-stage__section-description ul li, .your-business__description, .easy-vs-hard__description, .main-stage-learn-more__description, .overview__graph--right-content p, .overview__graph--left-content p, .overview__description, .products-slice__description, .one-miniute-video-slice__description, .fwd__right-description, .featured-asset__description, .one-minute__description, .company-main-stage__description, .our-story__description, .timeliner .timeliner__date--description, .leadership .leader p,
 .leadership .bio-box .wrapper p,
 .leadership .bio-box .k2-offices__content p, .corporate-hq__single .address-block, .k2-offices__singles .address-block, .how-to-buy-mainstage__description, .how-to-buy-faq__answer, .main-stage-department-detail__description, .solutions-slice__description, .solutions-slice__single p, .spider__description, .download-case-study__description {
   font-size: 14px;
@@ -28,7 +28,7 @@
   }
 }
 
-.header__cta-contact, .header__cta-see-it-live, .bne .top-utility__button--contact, .product-main-stage__button--primary, .product-main-stage__button--secondary, .easy-vs-hard__primary-cta, .main-stage-learn-more__button--primary, .products-slice__primary-cta, .one-miniute-video-slice__primary-cta, .featured-asset__button--primary, .company-main-stage__button--primary, .how-to-buy-mainstage__button--primary, .still-unsure__button--primary, .main-stage-department-detail__button--primary, .solutions-slice__button--primary, .download-case-study__button--primary {
+.header__cta-contact, .header__cta-see-it-live, .bne .top-utility__button--contact, .product-main-stage__button--primary, .product-main-stage__button--secondary, .easy-vs-hard__primary-cta, .main-stage-learn-more__button--primary, .main-stage-learn-more__button--secondary, .products-slice__primary-cta, .one-miniute-video-slice__primary-cta, .featured-asset__button--primary, .one-minute__button--primary, .company-main-stage__button--primary, .how-to-buy-mainstage__button--primary, .still-unsure__button--primary, .main-stage-department-detail__button--primary, .solutions-slice__button--primary, .download-case-study__button--primary {
   display: inline-block;
   padding: 10px 15px;
   color: white;
@@ -51,10 +51,10 @@
 .main-stage-learn-more__button--primary:hover, .company-main-stage__button--primary:hover, .how-to-buy-mainstage__button--primary:hover, .main-stage-department-detail__button--primary:hover, .solutions-slice__button--primary:hover, .download-case-study__button--primary:hover {
   background-color: #00b5c8;
 }
-.bne .top-utility__button--contact, .product-main-stage__button--primary, .featured-asset__button--primary {
+.bne .top-utility__button--contact, .product-main-stage__button--primary, .main-stage-learn-more__button--secondary, .featured-asset__button--primary, .one-minute__button--primary {
   background-color: #00b5c8;
 }
-.bne .top-utility__button--contact:hover, .product-main-stage__button--primary:hover, .featured-asset__button--primary:hover {
+.bne .top-utility__button--contact:hover, .product-main-stage__button--primary:hover, .main-stage-learn-more__button--secondary:hover, .featured-asset__button--primary:hover, .one-minute__button--primary:hover {
   background-color: #81af41;
 }
 .header__cta-contact, .header__cta-see-it-live, .product-main-stage__button--secondary {
@@ -85,7 +85,7 @@
   background-color: white;
   color: #272d43 !important;
 }
-.header__cta-contact:hover, .header__cta-see-it-live:hover, .bne .top-utility__button--contact:hover, .product-main-stage__button--primary:hover, .product-main-stage__button--secondary:hover, .easy-vs-hard__primary-cta:hover, .main-stage-learn-more__button--primary:hover, .products-slice__primary-cta:hover, .one-miniute-video-slice__primary-cta:hover, .featured-asset__button--primary:hover, .company-main-stage__button--primary:hover, .how-to-buy-mainstage__button--primary:hover, .still-unsure__button--primary:hover, .main-stage-department-detail__button--primary:hover, .solutions-slice__button--primary:hover, .download-case-study__button--primary:hover {
+.header__cta-contact:hover, .header__cta-see-it-live:hover, .bne .top-utility__button--contact:hover, .product-main-stage__button--primary:hover, .product-main-stage__button--secondary:hover, .easy-vs-hard__primary-cta:hover, .main-stage-learn-more__button--primary:hover, .main-stage-learn-more__button--secondary:hover, .products-slice__primary-cta:hover, .one-miniute-video-slice__primary-cta:hover, .featured-asset__button--primary:hover, .one-minute__button--primary:hover, .company-main-stage__button--primary:hover, .how-to-buy-mainstage__button--primary:hover, .still-unsure__button--primary:hover, .main-stage-department-detail__button--primary:hover, .solutions-slice__button--primary:hover, .download-case-study__button--primary:hover {
   color: white !important;
 }
 
@@ -462,6 +462,9 @@ body header {
     width: 100%;
     padding: 5px;
   }
+  .bne > ul > li ul.sub-menu li a:not([href]), .bne > ul > li ul.sub-menu--what-is-k2 li a:not([href]), .bne > ul > li ul.sub-menu--how-people-use-k2 li a:not([href]), .bne > ul > li ul.sub-menu--resources li a:not([href]) {
+    cursor: default;
+  }
   .bne > ul > li ul.sub-menu li a:not([href]):after, .bne > ul > li ul.sub-menu--what-is-k2 li a:not([href]):after, .bne > ul > li ul.sub-menu--how-people-use-k2 li a:not([href]):after, .bne > ul > li ul.sub-menu--resources li a:not([href]):after {
     content: '';
     position: absolute;
@@ -628,6 +631,7 @@ body header {
 @media (min-width: 770px) {
   ul.sub-menu--what-is-k2 {
     width: 250px;
+    min-height: 200px;
   }
 }
 ul.sub-menu--what-is-k2 ul.sub-sub-menu, ul.sub-menu--what-is-k2 ul.sub-menu--how-people-use-k2 li ul.sub-sub-menu, ul.sub-menu--how-people-use-k2 li ul.sub-menu--what-is-k2 ul.sub-sub-menu, ul.sub-menu--what-is-k2 ul.sub-menu--resources li ul.sub-sub-menu, ul.sub-menu--resources li ul.sub-menu--what-is-k2 ul.sub-sub-menu {
@@ -637,6 +641,7 @@ ul.sub-menu--what-is-k2 ul.sub-sub-menu, ul.sub-menu--what-is-k2 ul.sub-menu--ho
 @media (min-width: 770px) {
   ul.sub-menu--how-people-use-k2 {
     width: 200px;
+    min-height: 230px;
   }
 }
 ul.sub-menu--how-people-use-k2 li ul.sub-sub-menu {
@@ -780,7 +785,7 @@ ul.sub-menu--resources li ul.sub-sub-menu {
   z-index: 22;
   padding: 20px;
   background-color: #00b5c8;
-  width: 270px;
+  width: 300px;
   text-transform: uppercase;
   position: fixed;
   bottom: -3px;
@@ -818,6 +823,19 @@ ul.sub-menu--resources li ul.sub-sub-menu {
 
 .iphone-widget.closed {
   display: block;
+}
+
+.sprite {
+  background: transparent url("http://www.k2.com/img/k2comv5/sprite_022614.png") 0 0 no-repeat;
+  display: inline-block;
+  background-size: 343px,163px;
+}
+
+footer nav ul li, footer nav ul.nav-bar li {
+  margin: auto;
+}
+footer .right li {
+  margin: 0 15px 0 0;
 }
 
 /* Chrome, Safari, Opera */
@@ -953,7 +971,7 @@ ul.sub-menu--resources li ul.sub-sub-menu {
 }
 
 .event-info__single-event-cta:hover:after {
-  right: -16px;
+  right: 29px;
 }
 
 @media (min-width: 768px) {
@@ -1907,6 +1925,9 @@ ul.sub-menu--resources li ul.sub-sub-menu {
 .main-stage-learn-more__button--primary {
   font-size: 16px;
 }
+.main-stage-learn-more__button--secondary {
+  font-size: 16px;
+}
 
 .tabs-content {
   min-height: 452px;
@@ -2132,7 +2153,7 @@ ul.sub-menu--resources li ul.sub-sub-menu {
 }
 
 .one-miniute-video-slice {
-  background-color: #81af41;
+  background-color: #00b5c8;
   padding: 60px 0px;
 }
 .one-miniute-video-slice__title {
@@ -2525,6 +2546,151 @@ ul.sub-menu--resources li ul.sub-sub-menu {
   }
 }
 
+.one-minute {
+  background-image: url("/img/1/one-minute.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 315px;
+  padding-bottom: 50px;
+}
+@media (min-width: 770px) {
+  .one-minute {
+    min-height: 423px;
+  }
+}
+.one-minute__content {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 0%;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 770px) {
+  .one-minute__content {
+    float: left;
+    width: 50%;
+  }
+}
+@media (min-width: 770px) {
+  .one-minute__content {
+    margin-left: 8.33333%;
+  }
+}
+.one-minute__title {
+  text-transform: uppercase;
+  margin-top: 66px;
+  color: #00b5c8;
+  font-size: 26px;
+}
+.one-minute__title br {
+  display: none;
+}
+@media (min-width: 770px) {
+  .one-minute__title {
+    font-size: 30px;
+    margin-top: 67px;
+  }
+  .one-minute__title br {
+    display: block;
+  }
+}
+.one-minute__description {
+  margin-top: 20px;
+}
+.one-minute__description br {
+  display: none;
+}
+@media (min-width: 770px) {
+  .one-minute__description br {
+    display: block;
+  }
+}
+.one-minute__button--primary {
+  font-size: 16px;
+}
+
+.old-demo h3 {
+  font-size: 20px;
+}
+
+.hrborder {
+  border-style: solid;
+  border-width: 0 0 1px;
+  border-color: #ebebeb;
+}
+
+.title {
+  font-size: 20px !important;
+  line-height: 20px !important;
+  color: #00b5c8;
+}
+
+.video-container {
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+.videotitle {
+  font-size: 28px !important;
+  font-family: "AvenirNextLTW01-UltraLi" !important;
+}
+
+h3 {
+  line-height: 1.3 !important;
+}
+
+#form_formcontrol_ContactUs_demorequest .Generic-Modal {
+  padding: 12px;
+}
+
+span.contact-us-button {
+  display: block;
+  padding: 16px 12px;
+  /* font-family: Avenir Next LT W01 Bold; */
+  color: #FFFFFF;
+  background-color: #a8ab1e;
+  font-size: 17px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all .25s ease-in-out;
+  -moz-transition: all .25s ease-in-out;
+  -webkit-transition: all .25s ease-in-out;
+  width: 168px;
+  margin: 0px;
+  float: left;
+  font-weight: bold;
+  text-align: center;
+}
+
+.cta-wrapper ._InlineForm,
+.cta-wrapper a {
+  display: inline-block;
+}
+
+.cta-wrapper ._InlineForm {
+  padding-right: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+  .cta-wrapper ._InlineForm {
+    padding-right: 0px;
+  }
+}
+.video-container.row {
+  max-width: 793px !important;
+}
+
+.old-demo.row {
+  max-width: 793px !important;
+}
+
 .push-for-menu-3 {
   padding-top: 30px;
 }
@@ -2825,7 +2991,7 @@ ul.sub-menu--resources li ul.sub-sub-menu {
 
 .recent-recognition {
   overflow: hidden;
-  background-color: #81af41;
+  background-color: #00b5c8;
   padding-bottom: 50px;
 }
 .recent-recognition__title {
@@ -3174,12 +3340,12 @@ ul.sub-menu--resources li ul.sub-sub-menu {
   color: #81af41;
 }
 .world-map__actual-map {
-  margin: 40px 0px;
+  margin: 40px 0px 0px;
 }
 
 .corporate-hq {
   padding: 40px 0px;
-  background-color: #81af41;
+  background-color: #00b5c8;
 }
 .corporate-hq__title {
   color: white;
@@ -3516,7 +3682,7 @@ ul.sub-menu--resources li ul.sub-sub-menu {
 @media (min-width: 992px) {
   .main-stage-department-detail__content {
     float: left;
-    width: 50%;
+    width: 58.33333%;
   }
 }
 @media (min-width: 992px) {
@@ -3734,14 +3900,19 @@ ul.sub-menu--resources li ul.sub-sub-menu {
     border-radius: 120px;
   }
   .actual-spider__item:nth-child(1) .actual-spider__item--title--palo {
-    transform: rotate(-85deg);
-    height: 267px;
+    transform: rotate(-82deg);
+    height: 196px;
+    left: 117px;
+    top: 69px;
   }
   .actual-spider__item:nth-child(2) .actual-spider__item--title {
     margin-left: -202px;
   }
   .actual-spider__item:nth-child(2) .actual-spider__item--title--palo {
-    transform: rotate(-47deg);
+    transform: rotate(-46deg);
+    height: 139px;
+    right: 21px;
+    margin-top: 24px;
   }
   .actual-spider__item:nth-child(3) .actual-spider__item--title {
     margin-left: 92px;
@@ -3749,24 +3920,27 @@ ul.sub-menu--resources li ul.sub-sub-menu {
   }
   .actual-spider__item:nth-child(3) .actual-spider__item--title--palo {
     transform: rotate(38deg);
+    left: 40px;
+    margin-top: 4px;
   }
   .actual-spider__item:nth-child(4) .actual-spider__item--title {
     margin-left: 219px;
-    margin-top: 200px;
+    margin-top: 175px;
   }
   .actual-spider__item:nth-child(4) .actual-spider__item--title--palo {
-    transform: rotate(104deg);
+    transform: rotate(94deg);
     top: 52px;
-    margin-right: 20px;
+    margin-right: 57px;
+    height: 163px;
   }
   .actual-spider__item:nth-child(5) .actual-spider__item--title {
     margin-left: 55px;
     margin-top: 293px;
   }
   .actual-spider__item:nth-child(5) .actual-spider__item--title--palo {
-    transform: rotate(-229deg);
-    height: 175px;
-    top: 35px;
+    transform: rotate(-222deg);
+    height: 98px;
+    top: 47px;
   }
   .actual-spider__item:nth-child(6) .actual-spider__item--title {
     margin-left: -281px;
@@ -3788,12 +3962,13 @@ ul.sub-menu--resources li ul.sub-sub-menu {
     transition: all 0.5s ease;
   }
   .actual-spider__item--title > span {
-    font-size: 13px;
+    font-size: 12px;
     font-family: "Avenir Next LT W01 Bold" !important;
-    margin-top: 40px;
+    margin-top: 45px;
     display: block;
     text-transform: uppercase;
     color: #00b5c8;
+    line-height: 1.4em;
   }
   .actual-spider__item--title--palo {
     content: '';

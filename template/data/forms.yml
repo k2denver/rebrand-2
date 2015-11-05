@@ -1,22 +1,21 @@
 
 
 feature-1-title: "Line-of-business integration"
-feature-1-description-1: "Incorporate data from multiple line-of-business (LOB) systems and external sources into a single form that works across applications and devices, online and ofﬂine."
-feature-1-description-2: "Use a standalone a Web-based business application, or surface within applications such as Microsoft, SAP, Salesforce, Box and others supported by HTML5."
+feature-1-description-1: "K2's business forms software incorporates data from multiple line-of-business (LOB) systems and external sources into a single workflow form that works across applications and devices, online and ofﬂine."
+feature-1-description-2: "K2's electronic forms (we call them SmartForms) can also be easily surfaced within third-party applications, such as Microsoft, SAP, Salesforce, Box and any other system that supports HTML5."
 feature-1-img: "Line-of-business-integration.jpg"
 
-feature-2-title: "Reusable forms"
-feature-2-description-1: "Create reusable forms that work the way you want, with little to no code, using powerful drag-and-drop tools."
-feature-2-description-2: "Add business logic and validation rules to forms without writing any code, even Javascript. Views and themes can be reused across any business application, workflow or when building a new form."
+feature-2-title: "Reusable electronic forms"
+feature-2-description-1: "Create reusable SmartForms that work the way you want, with little to no code, using powerful drag-and-drop tools. Add business logic and validation rules to the forms without writing any code, including Javascript. Views and themes can be reused across any business application or workflow, or applied to a new form."
+feature-2-description-2: ""
 feature-2-img: "Reusable-forms.jpg"
 
 feature-3-title: "Workflow integration"
-feature-3-description-1: "Integrate forms into workflows and business applications so that the right information gets to the right user."
-feature-3-description-2: "Initiate a workflow right from a form that's available from any device."
-feature-3-img: "workflow-integration.jpg"
+feature-3-description-1: "Create integrated workflow forms and business applications so that the right information gets to the right user. Initiate a workflow directly from a SmartForm, from your phone, tablet or desktop PC."
+feature-3-description-2: ""
 
 feature-4-title: "Mobile-ready"
-feature-4-description-1: "Responsive form design allows you to build a single form that can be used on any device, making it easy for users to get work done from anywhere."
-feature-4-description-2: "Mobile-ready forms can work online or offline to capture data. Backend systems are updated automatically as soon as connectivity is restored. "
+feature-4-description-1: "Responsive form design allows you to build electronic forms that can be used on any device, making it easy for users to get work done while on the go. Mobile-ready SmartForms work online or offline to capture data, with backend systems automatically updating as soon as connectivity is restored."
+feature-4-description-2: ""
 feature-4-img: "Reusable-forms.jpg"
 

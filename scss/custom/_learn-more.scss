@@ -53,6 +53,11 @@
         @extend %button--green;
         font-size: 16px;
     }
+    &__button--secondary {
+        @extend %button;
+        @extend %button--blue;
+        font-size: 16px;
+    }
 }
 
 .tabs-content {
@@ -262,7 +267,7 @@
 }
 
 .one-miniute-video-slice {
-    background-color: $k2-green;
+    background-color: $k2-blue;
     padding:60px 0px;
     @extend %simple-slice;
     &__content {

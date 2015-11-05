@@ -1,0 +1,133 @@
+
+
+
+.one-minute {
+    background-image: url('/img/1/one-minute.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 315px;
+    padding-bottom:50px;
+    @include tablet {
+        min-height: 423px;
+
+    }
+
+       &__content {
+        @include make-xs-column(12);
+        @include make-xs-column-offset(0);
+        @include make-sm-column(6);
+        @include make-sm-column-offset(1);
+    }
+    &__title {
+        text-transform: uppercase;
+        margin-top: 66px;
+        color:$k2-blue;
+        font-size: 26px;
+        br {
+            display:none;
+        }
+        @include tablet {
+            font-size: 30px;
+               margin-top: 67px;
+            br {
+                display:block;
+            }
+        }
+    }
+    &__description {
+        @extend %t-paragraph;
+        margin-top: 20px;
+        br {
+            display:none;
+        }
+         @include tablet {
+           
+            br {
+                display:block;
+            }
+        }
+    }
+    &__button--primary {
+        @extend %button;
+        @extend %button--blue;
+        font-size: 16px;
+    }
+}
+
+.old-demo {
+    h3 {
+        font-size:20px;
+    }
+}
+
+.hrborder {
+    border-style: solid;
+    border-width: 0 0 1px;
+    border-color: #ebebeb;
+}
+
+.title {
+    font-size: 20px !important;
+    line-height: 20px !important;
+    color:$k2-blue;
+
+}
+
+.video-container {
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.videotitle {
+    font-size: 28px !important;
+    font-family: "AvenirNextLTW01-UltraLi" !important;
+}
+
+h3 {
+    line-height: 1.3 !important;
+}
+
+#form_formcontrol_ContactUs_demorequest .Generic-Modal {
+    padding: 12px
+}
+
+span.contact-us-button {
+    display: block;
+    padding: 16px 12px;
+    /* font-family: Avenir Next LT W01 Bold; */
+    color: #FFFFFF;
+    background-color: rgb(168, 171, 30);
+    font-size: 17px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -webkit-transition: all .25s ease-in-out;
+    width: 168px;
+    margin: 0px;
+    float: left;
+    font-weight: bold;
+    text-align: center;
+}
+
+.cta-wrapper ._InlineForm,
+.cta-wrapper a {
+    display: inline-block;
+}
+
+.cta-wrapper ._InlineForm {
+    padding-right: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+    .cta-wrapper ._InlineForm {
+        padding-right: 0px;
+    }
+}
+.video-container.row {
+    max-width: 793px !important;
+}
+.old-demo.row {
+    max-width: 793px !important;
+}
