@@ -38,12 +38,13 @@
         text-transform: uppercase;
         color: $k2-blue;
         margin-top: 130px;
-        font-size: 36px;
+        font-size: 28px;
         span {
             color: $k2-green;
         }
         @include tablet {
             margin-top: 175px;
+             font-size: 36px;
             br {
                 display: block;
             }
@@ -140,12 +141,8 @@
 }
 
 .actual-spider {
-  @include make-xs-column(10);
-        @include make-xs-column-offset(1);
-  @include make-sm-column(8);
-        @include make-sm-column-offset(2);
-         @include make-md-column(12);
-        @include make-md-column-offset(0);
+  @include make-xs-column(12);
+        
   @include mobilelast {
     
     &__item {
@@ -153,6 +150,9 @@
         font-family: "Avenir Next LT W01 Bold" !important;
         color:white;
         margin-top:26px;
+        br {
+          display:none;
+        }
       }
       &--description {
         color:white;
@@ -262,6 +262,8 @@
                 text-transform: uppercase;
                 color:$k2-blue;
                 line-height: 1.4em;
+                
+
             }
             &--palo {
               content: '';
@@ -395,6 +397,7 @@
 }
 .middle-title {
   display:none;
+  text-transform: uppercase;
   @include tablet {
     display:block;
   position: absolute;

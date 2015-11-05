@@ -47,13 +47,15 @@ title: "home"
         <div class="departments-list">
             <ul>
                 <li class="departments-list__human-resources">
-                    <a href="/department-detail.html">Human Resources</a>
+                    <a href="/department-detail-hr.html">Human Resources</a>
                 </li>
-                <li class="departments-list__financing"><a href="/department-detail.html">Finance</a></li>
-                <li class="departments-list__operations"><a href="/department-detail.html">Operations</a></li>
-                <li class="departments-list__purchasing"><a href="/department-detail.html">Purchasing</a></li>
-                <li class="departments-list__sales-marketing"><a href="/department-detail.html">Sales & Marketing</a></li>
-                <li class="departments-list__it"><a href="/department-detail.html">IT</a></li>
+                <li class="departments-list__financing"><a href="/department-detail-finance.html">Finance</a></li>
+                 <li class="departments-list__purchasing"><a href="/department-detail-purchasing.html">Purchasing</a></li>
+                 <li class="departments-list__sales-marketing"><a href="/department-detail-sales-marketing.html">Sales & Marketing</a></li>
+                <li class="departments-list__operations"><a href="/department-detail-operations.html">Operations</a></li>
+               
+                
+                <li class="departments-list__it"><a href="/department-detail-it.html">IT</a></li>
             </ul>
         </div>
     </section>
@@ -148,7 +150,8 @@ title: "home"
 
 
 $('.departments-list li').click(function(){
-    window.location.href = "/department-detail.html";
+    var link = $(this).find('a').attr('href');
+    window.location.href = link;
 
 
 });

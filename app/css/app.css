@@ -3694,7 +3694,7 @@ span.contact-us-button {
   text-transform: uppercase;
   color: #00b5c8;
   margin-top: 130px;
-  font-size: 36px;
+  font-size: 28px;
 }
 .main-stage-department-detail__title span {
   color: #81af41;
@@ -3702,6 +3702,7 @@ span.contact-us-button {
 @media (min-width: 770px) {
   .main-stage-department-detail__title {
     margin-top: 175px;
+    font-size: 36px;
   }
   .main-stage-department-detail__title br {
     display: block;
@@ -3838,47 +3839,19 @@ span.contact-us-button {
 .actual-spider {
   position: relative;
   float: left;
-  width: 83.33333%;
+  width: 100%;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: 8.33333%;
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@media (min-width: 770px) {
-  .actual-spider {
-    float: left;
-    width: 66.66667%;
-  }
-}
-@media (min-width: 770px) {
-  .actual-spider {
-    margin-left: 16.66667%;
-  }
-}
-@media (min-width: 992px) {
-  .actual-spider {
-    float: left;
-    width: 100%;
-  }
-}
-@media (min-width: 992px) {
-  .actual-spider {
-    margin-left: 0%;
-  }
 }
 @media (min-width: 0px) and (max-width: 770px) {
   .actual-spider__item--title {
     font-family: "Avenir Next LT W01 Bold" !important;
     color: white;
     margin-top: 26px;
+  }
+  .actual-spider__item--title br {
+    display: none;
   }
   .actual-spider__item--description {
     color: white;
@@ -4081,6 +4054,7 @@ span.contact-us-button {
 
 .middle-title {
   display: none;
+  text-transform: uppercase;
 }
 @media (min-width: 770px) {
   .middle-title {
