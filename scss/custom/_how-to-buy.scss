@@ -91,7 +91,7 @@
      margin:30px 0px;
       @include make-xs-column(12);
       @include make-sm-column(6);
-      @include make-md-column(3);
+      @include make-md-column(4);
 
       &:hover{
         span {

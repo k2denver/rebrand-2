@@ -268,10 +268,12 @@
         position: relative;
         float: left;
         width: 100%;
+
         @include make-xs-column(12);
         @include make-xs-column-offset(0);
         @include make-sm-column(6);
-        @include make-sm-column-offset(6);
+
+        @include make-sm-column-offset(6); padding-right: 0px !important;
     }
     &__title {
         font-family: "Bulmer MT W01 Italic" !important;
@@ -309,7 +311,7 @@
         font-family: "Bulmer MT W01 Italic" !important;
     }
     &__description {
-        max-width: 650px;
+        max-width: 657px;
         margin: 0 auto;
     }
 }
@@ -610,6 +612,10 @@
 
 .no-touch .learn-more:hover {
     background-color: #fff;
+}
+
+.no-touch .iphone-widget a:hover {
+    color:white;
 }
 
 .txt-rotate span {

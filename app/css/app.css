@@ -249,11 +249,11 @@ body header {
 }
 .header__cta-contact {
   font-weight: bold;
-  padding: 8px 18px;
+  padding: 8px 10px;
   font-size: 14px;
   margin-top: 28px;
   float: left;
-  margin-left: 20px;
+  margin-left: 0px !important;
 }
 .header__cta-see-it-live {
   font-weight: bold;
@@ -261,6 +261,35 @@ body header {
   font-size: 14px;
   margin-top: 28px;
   margin-left: 20px;
+}
+@media (min-width: 770px) {
+  .header__utility {
+    float: right;
+    margin-top: -23px;
+  }
+}
+@media (min-width: 992px) {
+  .header__utility {
+    float: none;
+    margin-top: 0px;
+    position: absolute;
+    right: -22px;
+    top: 37px;
+  }
+}
+.header__login {
+  font-size: 14px;
+  color: #00b5c8;
+  float: left;
+  font-weight: bold;
+  height: 50px;
+  display: block;
+}
+.header__search {
+  float: left;
+  margin-left: 20px;
+  height: 50px;
+  display: block;
 }
 
 .push-for-menu {
@@ -555,6 +584,38 @@ body header {
     top: 0px;
   }
 }
+.bne li span.top-title {
+  color: white;
+  font-size: 14px;
+  font-family: "Avenir Next LT W01 Bold" !important;
+  text-transform: uppercase;
+  padding: 10px 0px 0px 14px;
+  display: block;
+}
+
+.no-pointer {
+  cursor: default !important;
+}
+
+html body .access-support2 {
+  text-align: center;
+  background-color: white;
+  color: #81af41 !important;
+  padding: 5px !important;
+  display: block !important;
+  width: 90% !important;
+  font-family: "Avenir Next LT W01 Bold" !important;
+}
+
+html body .access-support2.access-support2.access-support2.access-support2.access-support2:hover {
+  color: #81af41 !important;
+  background-color: white;
+  border-bottom: 0px;
+}
+
+.wtf {
+  background-color: #81af41;
+}
 
 #menu-icon {
   display: none;
@@ -564,7 +625,7 @@ body header {
     float: right;
     position: absolute;
     right: 12px;
-    top: 29px;
+    top: 25px;
     cursor: pointer;
     display: block;
   }
@@ -651,10 +712,11 @@ ul.sub-menu--how-people-use-k2 li ul.sub-sub-menu {
 @media (min-width: 770px) {
   ul.sub-menu--resources {
     width: 250px;
+    min-height: 270px;
   }
 }
 ul.sub-menu--resources li ul.sub-sub-menu {
-  width: 210px;
+  width: 250px !important;
   left: 250px;
 }
 
@@ -782,43 +844,49 @@ ul.sub-menu--resources li ul.sub-sub-menu {
 }
 
 .iphone-widget {
-  z-index: 22;
-  padding: 20px;
-  background-color: #00b5c8;
-  width: 300px;
-  text-transform: uppercase;
-  position: fixed;
-  bottom: -3px;
-  right: 100px;
+  display: none;
 }
-.iphone-widget__phone-icon {
-  float: left;
-  position: absolute;
-  top: 50%;
-  left: 10px;
-  margin-top: -11px;
-  width: 20px;
-}
-.iphone-widget__description {
-  font-size: 14px;
-  float: left;
-  color: white;
-  font-family: "Avenir Next LT W01 Bold";
-  position: absolute;
-  top: 50%;
-  left: 40px;
-  margin-top: -8px;
-}
-.iphone-widget__description span {
-  color: #272d43;
-}
-.iphone-widget__close {
-  position: absolute;
-  top: 50%;
-  right: 15px;
-  margin-top: -10px;
-  width: 10px;
-  cursor: pointer;
+@media (min-width: 770px) {
+  .iphone-widget {
+    display: block;
+    z-index: 22;
+    padding: 20px;
+    background-color: #00b5c8;
+    width: 300px;
+    text-transform: uppercase;
+    position: fixed;
+    bottom: -3px;
+    right: 100px;
+  }
+  .iphone-widget__phone-icon {
+    float: left;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    margin-top: -11px;
+    width: 20px;
+  }
+  .iphone-widget__description {
+    font-size: 14px;
+    float: left;
+    color: white;
+    font-family: "Avenir Next LT W01 Bold";
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    margin-top: -8px;
+  }
+  .iphone-widget__description span {
+    color: #272d43;
+  }
+  .iphone-widget__close {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    margin-top: -10px;
+    width: 10px;
+    cursor: pointer;
+  }
 }
 
 .iphone-widget.closed {
@@ -836,6 +904,10 @@ footer nav ul li, footer nav ul.nav-bar li {
 }
 footer .right li {
   margin: 0 15px 0 0;
+}
+
+.no-touch footer a:hover {
+  color: #81af41;
 }
 
 /* Chrome, Safari, Opera */
@@ -1149,6 +1221,7 @@ footer .right li {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+  padding-right: 0px !important;
 }
 @media (min-width: 770px) {
   .learn-more__content {
@@ -1197,7 +1270,7 @@ footer .right li {
   font-family: "Bulmer MT W01 Italic" !important;
 }
 .departments__description {
-  max-width: 650px;
+  max-width: 657px;
   margin: 0 auto;
 }
 
@@ -1507,6 +1580,10 @@ footer .right li {
 
 .no-touch .learn-more:hover {
   background-color: #fff;
+}
+
+.no-touch .iphone-widget a:hover {
+  color: white;
 }
 
 .txt-rotate span {
@@ -2139,6 +2216,7 @@ footer .right li {
 }
 .products-slice__title {
   color: #00b5c8;
+  margin: 0px 0px 10px;
 }
 .products-slice__description {
   color: white;
@@ -2617,7 +2695,7 @@ footer .right li {
 }
 
 .old-demo h3 {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .hrborder {
@@ -3150,6 +3228,7 @@ span.contact-us-button {
 .leadership .leader {
   color: #272d43;
   font-family: "AvenirNextLTW01-Regular", sans-serif;
+  line-height: 1.3em;
 }
 .leadership .bio-box .wrapper, .leadership .bio-box .k2-offices__content {
   color: #5d5d5d;
@@ -3268,6 +3347,7 @@ span.contact-us-button {
 }
 .leadership .sprite.close {
   content: 'x';
+  background-image: none !important;
   font-size: 30px;
   color: #5d5d5d !important;
 }
@@ -3288,7 +3368,7 @@ span.contact-us-button {
   display: none;
 }
 .leadership .bio-box a {
-  color: #272d43 !important;
+  color: #00b5c8 !important;
 }
 .leadership .gradient-overlay {
   position: absolute;
@@ -3570,7 +3650,7 @@ span.contact-us-button {
 @media (min-width: 992px) {
   .buy-it-now__single {
     float: left;
-    width: 25%;
+    width: 33.33333%;
   }
 }
 .buy-it-now__single:hover span {
@@ -3746,6 +3826,7 @@ span.contact-us-button {
 .solutions-slice__title {
   text-align: center;
   font-weight: bold;
+  color: #272d43;
 }
 .solutions-slice__description {
   text-align: center;
@@ -3790,7 +3871,7 @@ span.contact-us-button {
   }
 }
 .solutions-slice__button--primary {
-  margin: 0 auto;
+  margin: 20px auto 0px;
 }
 
 .spider {
@@ -3933,15 +4014,16 @@ span.contact-us-button {
     left: 50%;
     z-index: 1;
     transition: all 0.5s ease;
+    display: table;
   }
   .actual-spider__item--title > span {
     font-size: 12px;
     font-family: "Avenir Next LT W01 Bold" !important;
-    margin-top: 45px;
-    display: block;
     text-transform: uppercase;
     color: #00b5c8;
     line-height: 1.4em;
+    display: table-cell;
+    vertical-align: middle;
   }
   .actual-spider__item--title--palo {
     content: '';
@@ -4016,58 +4098,27 @@ span.contact-us-button {
   }
 }
 
-@media (min-width: 770px) {
-  .actual-spider__item:hover .actual-spider__item--title {
-    background-color: #272d43;
-    cursor: pointer;
-  }
-  .actual-spider__item:hover .actual-spider__item--title span {
-    color: white;
-  }
-  .actual-spider__item:hover .actual-spider__item--title--palo {
-    transition: all 0.5s ease;
-    background-color: #272d43;
-  }
-  .actual-spider__item:hover .actual-spider__item--description {
-    background-color: #272d43;
-    transition: all 0.5s ease;
-    width: 160px;
-    left: 50%;
-    margin-left: -80px;
-    z-index: 4;
-    opacity: 1;
-  }
-  .actual-spider__item:hover .actual-spider__item--description span {
-    opacity: 1;
-    transition: all 0.5s ease;
-    color: white;
-  }
-  .actual-spider__item:hover .actual-spider__item--description:before {
-    background-color: #272d43;
-    transition: all 0.5s ease;
-  }
-  .actual-spider__item:hover .actual-spider__item--description:after {
-    background-color: #272d43;
-    transition: all 0.5s ease;
-  }
-}
-
 .middle-title {
   display: none;
   text-transform: uppercase;
 }
 @media (min-width: 770px) {
   .middle-title {
-    display: block;
+    display: table;
     position: absolute;
-    top: 217px;
+    top: 222px;
     left: 50%;
     z-index: 2;
-    margin-left: -100px;
+    margin-left: -99px;
     width: 200px;
     font-size: 20px;
     font-family: 'Avenir Next LT W01 Bold';
     color: #00b5c8;
+    text-align: center;
+  }
+  .middle-title span {
+    display: table-cell;
+    vertical-align: middle;
   }
 }
 
@@ -4124,7 +4175,7 @@ span.contact-us-button {
   text-transform: uppercase;
 }
 .download-case-study__button--primary {
-  margin: 20px 0px;
+  margin: 30px 0px 20px;
 }
 
 /*# sourceMappingURL=app.css.map */

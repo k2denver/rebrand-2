@@ -79,6 +79,7 @@
         @extend %t-heading-bulmer;
         text-align: center;
         font-weight: bold;
+        color:$k2-purple;
     }
     &__description {
         @extend %t-paragraph;
@@ -108,7 +109,7 @@
         }
     }
     &__button--primary {
-        margin: 0 auto;
+        margin: 20px auto 0px;
         @extend %button;
         @extend %button--green;
     }
@@ -254,14 +255,16 @@
             left: 50%;
             z-index:1;
              transition: all 0.5s ease;
+                 display: table;
             > span {
                 font-size: 12px;
                 font-family: "Avenir Next LT W01 Bold" !important;
-                margin-top: 45px;
-                display: block;
+                //margin-top: 45px;
+                //display: block;
                 text-transform: uppercase;
                 color:$k2-blue;
                 line-height: 1.4em;
+                display:table-cell; vertical-align:middle;
                 
 
             }
@@ -348,68 +351,72 @@
     }
 }
 
-.actual-spider__item:hover {
-  @include tablet {
-    .actual-spider__item--title {
-      background-color:$k2-purple;
-      cursor:pointer;
+// .actual-spider__item:hover {
+//   @include tablet {
+//     .actual-spider__item--title {
+//       background-color:$k2-purple;
+//       cursor:pointer;
 
-      span {
-        color:white;
-      }
-      &--palo {
-        transition: all 0.5s ease;
-        background-color:$k2-purple;
-      }
-    }
-    .actual-spider__item--description {
-        background-color: $k2-purple;
-        transition: all 0.5s ease;
-        width: 160px;
-        left: 50%;
+//       span {
+//         color:white;
+//       }
+//       &--palo {
+//         transition: all 0.5s ease;
+//         background-color:$k2-purple;
+//       }
+//     }
+//     .actual-spider__item--description {
+//         background-color: $k2-purple;
+//         transition: all 0.5s ease;
+//         width: 160px;
+//         left: 50%;
         
-        margin-left: -80px;
-        z-index:4;
-        opacity:1;
+//         margin-left: -80px;
+//         z-index:4;
+//         opacity:1;
         
-        span {
-            opacity: 1;
-             transition: all 0.5s ease;
-            color:white;
-        }
-        &:before {
-            background-color: $k2-purple;
-             transition: all 0.5s ease;
-             //border-radius: 10px;
+//         span {
+//             opacity: 1;
+//              transition: all 0.5s ease;
+//             color:white;
+//         }
+//         &:before {
+//             background-color: $k2-purple;
+//              transition: all 0.5s ease;
+//              //border-radius: 10px;
             
           
 
-        }
-        &:after {
-            background-color: $k2-purple;
-             transition: all 0.5s ease;
-             //border-radius: 10px;
+//         }
+//         &:after {
+//             background-color: $k2-purple;
+//              transition: all 0.5s ease;
+//              //border-radius: 10px;
              
        
-        }
-    }
-  }
-}
+//         }
+//     }
+//   }
+// }
 .middle-title {
   display:none;
   text-transform: uppercase;
   @include tablet {
-    display:block;
-  position: absolute;
-    top: 217px;
+   display: table;
+    position: absolute;
+    top: 222px;
     left: 50%;
     z-index: 2;
-    margin-left: -100px;
+    margin-left: -99px;
     width: 200px;
     font-size: 20px;
     font-family: 'Avenir Next LT W01 Bold';
-    color: $k2-blue;
-}
+    color: $k2-blue;;
+    text-align: center;
+    span {
+      display:table-cell; vertical-align:middle;
+    }
+  }
 }
 .download-case-study {
   padding:70px 0px;
@@ -450,7 +457,7 @@
   &__button--primary {
      @extend %button;
       @extend %button--green;
-      margin:20px 0px;
+      margin:30px 0px 20px;
   }
 
 

@@ -358,6 +358,8 @@
     .leader {
     color: $k2-purple;
     font-family: "AvenirNextLTW01-Regular", sans-serif;
+            line-height: 1.3em;
+
     }
 
     .bio-box .wrapper {
@@ -492,7 +494,7 @@
     }
     .sprite.close {
         content:'x';
-       
+        background-image:none !important;
         font-size:30px;
         color:$k2-grey !important;
     }
@@ -514,7 +516,7 @@
         display: none;
     }
       .bio-box a {
-        color:$k2-purple !important;
+        color:$k2-blue !important;
       }
 
      .gradient-overlay {

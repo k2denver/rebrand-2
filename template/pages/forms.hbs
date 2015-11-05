@@ -80,12 +80,13 @@
         $('.fwd__menu li').removeClass('active');
         $('.js-screen, .fwd__menu, .fwd__right').addClass('-one');
         $(this).addClass('active');
+        
     });
     $('.fwd__menu .item-two').click(function() {
         removeAllClasses();
         $('.fwd__menu li').removeClass('active');
         $('.js-screen, .fwd__menu, .fwd__right').addClass('-two');
-        $(this).addClass('active');
+        $(this).addClass('active');  $('.fwd__computer').show();
     });
 
     $('.fwd__menu .item-three').click(function() {
@@ -93,6 +94,7 @@
         $('.fwd__menu li').removeClass('active');
         $('.js-screen, .fwd__menu, .fwd__right').addClass('-three');
         $(this).addClass('active');
+     
     });
 
     $('.fwd__menu .item-four').click(function() {
@@ -100,6 +102,7 @@
         $('.fwd__menu li').removeClass('active');
         $('.js-screen, .fwd__menu, .fwd__right').addClass('-four');
         $(this).addClass('active');
+        
     });
 
 
