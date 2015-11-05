@@ -104,12 +104,14 @@ body header {
         margin-left: 20px;
     }
     &__utility {
-        
+        display:none;
         @include tablet {
                 float: right;
                  margin-top: -23px;
+                  display:block;
         }
         @include desktop {
+            display:block;
             float: none;
                  margin-top: 0px;
             position: absolute;
