@@ -218,6 +218,35 @@ body header {
   max-width: 960px;
 }
 
+.utility-open {
+  background-color: rgba(255, 255, 255, 0.96);
+  width: 100%;
+  z-index: 100;
+  position: fixed;
+  height: 87px;
+  top: 0px;
+  padding-top: 14px;
+}
+.utility-open .topnav {
+  display: none;
+}
+@media (min-width: 992px) {
+  .utility-open .topnav {
+    display: block;
+    position: fixed;
+    top: 0px;
+    left: 50%;
+    width: 400px;
+    margin-left: 48px;
+  }
+}
+.utility-open .header__utility {
+  right: 30px;
+}
+.utility-open .header__login {
+  display: none;
+}
+
 .header {
   max-width: 940px;
   height: 75px;

@@ -28,6 +28,41 @@ body header {
     max-width: 960px;
 }
 
+.utility-open {
+    background-color: rgba(255, 255, 255, 0.96);
+    width: 100%;
+    z-index: 100;
+    position: fixed;
+    height: 87px;
+    top: 0px;
+    padding-top: 14px;
+    .topnav {
+        display:none;
+        @include desktop {
+            display:block;
+                position: fixed;
+    top: 0px;
+    left: 50%;
+    width: 400px;
+    margin-left: 48px;
+        }
+    }
+       .header  {
+            &__utility {
+                right: 30px;
+               
+            }
+
+
+            &__login {
+              display:none
+            }
+            &__search {
+               
+            }
+       }  
+}
+
 .header {
     max-width: 940px;
     height: 75px;
@@ -45,6 +80,7 @@ body header {
             margin-top: 15px;
             margin-left: 20px;
         }
+
     }
     &__cta-contact {
         @extend %button;
