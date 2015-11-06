@@ -119,6 +119,9 @@
             }
             p {
                 @extend %t-paragraph;
+                a {
+                    color:$k2-blue !important;
+                }
             }
         }
         &--left-content {
@@ -160,6 +163,9 @@
             }
             p {
                 @extend %t-paragraph;
+                a {
+                    color:$k2-blue !important;
+                }
             }
         }
         &--mobile-image {

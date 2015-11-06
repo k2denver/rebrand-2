@@ -248,7 +248,7 @@
 
 
 .featured-asset {
-    background-image:url('/img/1/learn-more-forrester-bg.jpg');
+    background-image:url('/img/1/learn-more-forrester@2x.jpg');
     background-repeat:no-repeat;
     background-size:cover;
     min-height:350px;
@@ -275,7 +275,7 @@
         line-height: 22px;
     }
     &__description{
-    @extend %t-paragraph;
+        @extend %t-paragraph;
         @include tablet {
             padding:0px 45px;
         }
@@ -305,4 +305,10 @@
     }
 }
 
+.fwd__mobile-button {
+    @extend %button;
+        @extend %button--blue;
+            margin-top: 2px;
 
+}
+.mobile-screen {display:none;}

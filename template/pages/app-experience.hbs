@@ -36,7 +36,10 @@
                     </ul>
                 </div>
                 <div class="fwd__computer">
-                    <img src="/img/1/laptop-device.png" width="493" alt="">
+                    <img class="computer" src="/img/1/laptop-device.png" width="493" alt="">
+                    <img class="mobile-screen" src="/img/1/mobile-access.jpg" width="300" alt="" style="margin-right: 79px;
+    margin-top: -43px;">
+
                 </div>
                 <div class="fwd__screen">
                     <div class="fwd__slides js-screen -one">
@@ -57,6 +60,14 @@
                    <h2 class="fwd__right-title">{{apps.feature-2-title}}</h2>
                     <p class="fwd__right-description">{{apps.feature-2-description-1}}</p>
                     <p class="fwd__right-description">{{apps.feature-2-description-2}}</p>
+
+                    <p class="fwd__right-description"> Get access to K2's native mobile apps:
+                    <a class="" target="_blank" href="http://itunes.apple.com/us/app/k2-mobile/id842524553?ls=1&amp;amp;mt=8">Download IOS app</a>,
+                    <a class="" target="_blank" href="http://play.google.com/store/apps/details?id=com.k2.mobile">Download Android app</a>,
+                    <a class="" target="_blank" href="http://www.windowsphone.com/en-us/store/app/k2-mobile/7e35b2d1-cb6d-4fa4-960a-6620bd793f8f">Download Windows Phone app</a>,
+                    <a class="" target="_blank" href="http://appworld.blackberry.com/webstore/content/49454?lang=en">Download Blackberry App</a>.
+                    </p>
+
                 </div>
                 <div class="fwd__right-content--three">
                     <h2 class="fwd__right-title">{{apps.feature-3-title}}</h2>
@@ -80,12 +91,17 @@
         $('.fwd__menu li').removeClass('active');
         $('.js-screen, .fwd__menu, .fwd__right').addClass('-one');
         $(this).addClass('active');
+        $('.computer,.fwd__screen').show();
+        $('.mobile-screen').hide();
     });
     $('.fwd__menu .item-two').click(function() {
         removeAllClasses();
         $('.fwd__menu li').removeClass('active');
         $('.js-screen, .fwd__menu, .fwd__right').addClass('-two');
         $(this).addClass('active');
+        
+          $('.computer, .fwd__screen').hide();
+        $('.mobile-screen').show();
     });
 
     $('.fwd__menu .item-three').click(function() {
@@ -93,6 +109,9 @@
         $('.fwd__menu li').removeClass('active');
         $('.js-screen, .fwd__menu, .fwd__right').addClass('-three');
         $(this).addClass('active');
+        $('.computer,.fwd__screen').show();
+        $('.mobile-screen').hide();
+
     });
 
     $('.fwd__menu .item-four').click(function() {
@@ -100,6 +119,10 @@
         $('.fwd__menu li').removeClass('active');
         $('.js-screen, .fwd__menu, .fwd__right').addClass('-four');
         $(this).addClass('active');
+       $('.computer,.fwd__screen').show();
+        $('.mobile-screen').hide();
+
+
     });
 
 

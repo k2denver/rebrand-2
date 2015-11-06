@@ -1,0 +1,445 @@
+$color-blue:#13b7c9;
+$color-purple:#282d43;
+$color-black:#5d5d5e;
+$color-green:#80ae40;
+#bpm {
+    .u-btn-box {
+    padding: 8px 22px;
+    font-size: 18px;
+   
+    font-weight: bold;
+    transition: background-color .3s;
+}
+
+.u-btn-box:hover {
+    text-decoration: none;
+}
+
+.center-container {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.m-vspacer60 {
+    display: none;
+    margin-top: 0;
+}
+
+.m-vspacer30 {
+    display: none;
+    margin-top: 0;
+}
+.extended-main {
+    background-color: #ffffff;
+    width: 100%;
+    min-height: 385px;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    background-repeat: no-repeat;
+    padding: 60px;
+        margin-top: 71px;
+}
+
+.main-message {
+    float: right;
+    max-width: 469px;
+    padding-left: 10px;
+}
+
+.main-message h1 {
+    text-align: left;
+    line-height: 1em;
+    color: #282d43;
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.main-message h2 {
+    text-align: left;
+    line-height: 1.2em;
+    color: $color-blue; 
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.main-message p {
+    max-width: 700px;
+    text-align: left;
+    color: $color-purple;
+    // padding-right: 117px;
+    line-height: 1.3em;
+    font-size: 14px;
+
+}
+
+.main-message .cta-gree-home {
+    float: left;
+    cursor: pointer;
+}
+.three-column-content {
+    font-family: "AvenirNextLTW01-Regular" !important;
+    background-color: #ffffff;
+    padding: 50px 0;
+    text-align: center;
+    .top-image {
+        width: 172px;
+        margin: 10px 10px 13px 10px;
+        border-radius: 220px;
+        -webkit-border-radius: 220px;
+        -moz-border-radius: 220px;
+        transition: border .5;
+    }
+    .title {
+        width: 100%;
+        font-size: 24px;
+        padding-bottom: 15px;
+        margin-top: 10px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .subtitle {
+        color: black;
+        font-size: 16px;
+        line-height: 1.3em;
+        font-weight: 700;
+        max-width: 100%;
+        text-align: left;
+    }
+    .columns {
+        padding: 2px 32px;
+    }
+    .columns p {
+        margin-top: 12px;
+        max-width: 100%;
+        line-height: 1.4em;
+        font-size: 15px;
+        margin-bottom: 0px;
+        text-align: left;
+        @media only screen and (max-width: 768px) {
+            max-width:100%;
+        }
+    }
+    .bottom-link {
+        text-transform: uppercase;
+        font-size: 17px;
+        color: black;
+        padding-top: 20px;
+        display: inline-block;
+        font-family: "Avenir Next LT W01 Bold";
+        text-align: left;
+        float: left;
+        cursor: pointer;
+    }
+}
+
+    .extended-main {
+    background-image: url("http://www.k2.com/img/9/bpm-banner.jpg");
+    padding-bottom: 30px;
+}
+.main-message {
+    h1 {
+        span {
+            color: $color-blue;
+        }
+        @media only screen and (max-width: 768px) {
+            font-size: 25px;
+        }
+    }
+    p {
+        line-height: 1.4em;
+    }
+    h2 {
+        @media only screen and (max-width: 768px) {
+            font-size: 25px;
+        }
+    }
+    @media only screen and (max-width: 768px) {
+        float:left;
+    }
+}
+
+ a.cta-blue-home {
+    margin-top: 20px;
+    background-color: $color-blue !important;
+    cursor: pointer;
+    color:white !important;
+    float: left;
+    &:hover {
+        background-color: $color-green !important;
+    }
+}
+
+.testimonial {
+    background-color: $color-blue;
+}
+
+.three-column-content {
+    background-color: #f1f1f2;
+    .title {
+        color: $color-blue;
+    }
+    .subtitle {
+        font-size: 16px;
+        margin: 0px;
+    }
+    .top-image {
+        width: 214px;
+        border-width: 7px;
+        border-color: white;
+        border-style: solid;
+    }
+     br {
+            @media only screen and (max-width: 768px) {
+                display: none;
+            }
+        }
+    .bottom-link {
+        color: $color-blue;
+        &:hover {
+            color: $color-green !important;
+        }
+       
+    }
+}
+
+.resources {
+    h4 {
+        color: $color-blue;
+    }
+    li {
+        color: $color-blue;
+        a {
+            &:hover {
+                color: $color-blue;
+                border-bottom-color: $color-blue;
+            }
+        }
+    }
+}
+
+.three-column-content {
+    .bottom-link {
+        &:hover {
+            color: $color-blue;
+        }
+    }
+}
+
+.version-one {
+    display: block;
+}
+
+.version-two {
+    display: none;
+}
+
+$blue-fade-1:#5ad0dc;
+$blue-fade-2:#46cbd7;
+$blue-fade-3:#32c5d4;
+$blue-fade-4:#1bbcce;
+$blue-fade-outside:#01b5c8;
+$blue-fade-inside:#d0f1f5;
+.main-accordian {
+    border-top: 2px solid white;
+    background-color: $blue-fade-outside;
+    padding-bottom: 40px;
+    .main-accordian-header {
+        text-align: center;
+        font-size: 24px;
+        color: white;
+        font-family: "Avenir Next LT W01 Bold" !important;
+        text-transform: uppercase;
+        font-weight: normal;
+        max-width: 800px;
+        line-height: 1.4em;
+        padding: 30px;
+        margin: 0px;
+    }
+    .item {
+        &:hover .item-heading {
+            color: white;
+        }
+        .row {
+            width: 100%;
+            max-width: 703px;
+            @media only screen and (max-width: 768px) {
+                text-align: center;
+                width: 100%;
+            }
+        }
+        //background-color:$blue-fade-1;
+        &:nth-child(2) {
+            background-color: $blue-fade-1;
+        }
+        &:nth-child(3) {
+            background-color: $blue-fade-2;
+        }
+        &:nth-child(4) {
+            background-color: $blue-fade-3;
+        }
+        &:nth-child(5) {
+            background-color: $blue-fade-4;
+        }
+        .item-heading {
+            transition: color .2s ease;
+            font-size: 18px;
+            padding: 15px 0px;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: $color-purple;
+            cursor: pointer;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            margin: 0px;
+            @media only screen and (max-width: 768px) {
+                text-align: left;
+                text-indent: -24px;
+                padding-left: 10%;
+            }
+            .plus {
+                margin-right: 5px;
+                  @media only screen and (max-width: 768px) {
+              
+            }
+            }
+        }
+        &.active .item-heading {
+            color: white;
+        }
+        .item-content {
+            background-color: $blue-fade-inside;
+            max-height: 0px;
+            transition: all .5s ease;
+            overflow: hidden;
+            * {
+                opacity: 0;
+                transition: opacity .5s ease;
+            }
+        }
+        &.active .item-content {
+            max-height: 900px;
+            display: block;
+            padding-bottom: 30px;
+            transition: all 1s ease;
+            * {
+                opacity: 1;
+                transition: opacity .5s ease;
+                transition-delay: .2s;
+            }
+        }
+        .item-content-mainstage {
+            text-align: center;
+            margin: 50px;
+            img {
+                max-width: 515px;
+                width: 100%;
+                @media only screen and (max-height:37.5em) and (min-width:61.25em) { 
+                    max-width: 415px;
+                }
+            }
+        }
+        .item-content-information {
+            h5 {
+                font-size: 14px;
+                font-weight: normal;
+                text-transform: uppercase;
+                font-family: "Avenir Next LT W01 Bold" !important;
+                margin: 0px;
+                padding: 0px;
+                max-width: 90%;
+                @media only screen and (max-width: 768px) {
+                    margin: 20px auto 0px;
+                }
+            }
+            p {
+                font-size: 14px;
+                min-height: 49px;
+                line-height: 1.3em;
+                max-width: 340px;
+                strong {
+                    font-weight: normal;
+                    font-family: "Avenir Next LT W01 Bold" !important;
+                }
+                @media only screen and (max-width: 768px) {
+                    margin: 0 auto;
+                    min-height: initial;
+                }
+            }
+        }
+    }
+}
+
+.bottom-cta {
+    background-image: url('http://www.k2.com/img/9/bg-bottom-section.jpg');
+    height: 335px;
+    padding: 0px 30px;
+        background-size: cover;
+    .row {
+        padding:0px 1%;
+        @media only screen and (max-width: 768px) {
+            padding:0px 0px;
+        }
+    }
+    h5 {
+        text-transform: uppercase;
+        font-weight: bold;
+        color: $color-green;
+            font-size: 30px;
+        margin-top: 80px;
+        @media only screen and (max-width: 768px) {
+            margin-top: 40px;
+        }
+    }
+    p {
+        color: $color-purple;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .extended-main {
+        min-height: 360px;
+        padding: 20px;
+        background-position: top left;
+    }
+    .main-message {
+        width: 100%;
+        padding: 0px 0px;
+    }
+    .main-message h1 {
+        text-align: left;
+        width: 100%;
+        font-size: 22px;
+        margin-top: 30px;
+    }
+    .main-message p {
+        padding-right: 0px;
+    }
+    .columns {
+        padding: 0 20px;
+    }
+    .events .center-container {
+        width: 100%;
+        padding: 0 20px;
+    }
+    .m-vspacer60 {
+        display: block;
+        margin-top: 60px;
+    }
+    .m-vspacer30 {
+        display: block;
+        margin-top: 30px;
+    }
+    .featured-videos .description {
+        text-align: center;
+    }
+    .video-item {
+        max-width: 350px;
+    }
+}
+}
+

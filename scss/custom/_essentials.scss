@@ -14,6 +14,12 @@ body header {
     max-width: 960px;
     @include row(30px);
 }
+a {
+    color: $k2-green;
+}
+.no-touch a:hover, a:hover {
+    color: $k2-green;
+}
 
 .wrapper-header {
     background-color: rgba(255, 255, 255, 0.96);
@@ -55,7 +61,11 @@ body header {
     font-size: 14px;
     margin-top: 28px;
     float: left;
-    margin-left: 0px !important;
+    margin-left:10px;
+    
+        @include tablet {
+            margin-left: 0px !important;
+        }
     }
     &__cta-see-it-live {
         @extend %button;
@@ -68,12 +78,14 @@ body header {
         margin-left: 20px;
     }
     &__utility {
-        
+        display:none;
         @include tablet {
                 float: right;
+                display:block;
                  margin-top: -23px;
         }
         @include desktop {
+            display:block;
             float: none;
                  margin-top: 0px;
             position: absolute;
@@ -165,7 +177,7 @@ body header {
             @include add-important(font-family, $avenir-bold);
         }
         ul.sub-menu {
-            display: none;
+            //display: none;
             margin-left: 0px;
             > li {
                 border-left: 1px solid white;
@@ -434,11 +446,18 @@ body header {
     } 
     li span.top-title {
         color:white;
+           display: block;
+        padding:10px 0px 3px 5px;
+            text-decoration: underline;
+            font-size:14px;
+        @include desktop {
+        color:white;
         font-size:14px;
         font-family:$avenir-bold !important;
         text-transform: uppercase;
         padding:10px 0px 0px 14px;
-        display:block;
+       
+        }
       
     }
 }
@@ -447,6 +466,7 @@ body header {
     cursor:default !important;
 }
 html body .access-support2 {
+    @include desktop {
     text-align: center;
     background-color:white;
     color:$k2-green !important;
@@ -454,14 +474,19 @@ html body .access-support2 {
     display:block !important;
     width:90% !important;
       font-family:$avenir-bold !important;
+  }
 }
 html body .access-support2.access-support2.access-support2.access-support2.access-support2:hover {
+   @include desktop {
     color:$k2-green !important;
      background-color:white;
      border-bottom:0px;
+ }
 }
 .wtf {
+    @include desktop {
     background-color:$k2-green;
+    }
 }
 #menu-icon {
     display:none;
@@ -629,7 +654,7 @@ ul.sub-menu--resources {
                     transition: all .5s ease;
                 }
                 @include desktop {
-                    padding: 13px 39px;
+                    padding: 13px 36px;
                 }
                 &:hover {
                     color: white;
@@ -718,4 +743,9 @@ footer {
 .no-touch footer a:hover {
     color: $k2-green;
 }
+
+#form_formcontrol_DemoRequest_2_6_2015 .row {
+    max-width:100%;
+}
+
 

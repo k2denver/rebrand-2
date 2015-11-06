@@ -152,8 +152,11 @@ $('.departments-list li').click(function(){
       $(".txt-rotate").typed({
         strings: [ "" ,"RAPIDLY DELIVER <br> <span>BUSINESS PROCESS APPLICATIONS</span> <br>That automate workflow", "RAPIDLY DELIVER <br> <span>BUSINESS PROCESS APPLICATIONS</span> <br>That mobilize your workforce", " RAPIDLY DELIVER <br> <span>BUSINESS PROCESS APPLICATIONS </span> <br>That run in the cloud &amp; on premises", "RAPIDLY DELIVER <br> <span>BUSINESS PROCESS APPLICATIONS</span> <br>That span departments &amp; systems" ],
         typeSpeed: 0,
-         startDelay: 2,
-         backDelay: 1000
+         startDelay: 1,
+         backDelay: 1000,
+        callback: function() {
+                $('.typed-cursor').hide();
+           },
       });
 
   });
