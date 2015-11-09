@@ -28,7 +28,7 @@
   }
 }
 
-.header__cta-contact, .header__cta-see-it-live, .bne .top-utility__button--contact, .product-main-stage__button--primary, .product-main-stage__button--secondary, .easy-vs-hard__primary-cta, .main-stage-learn-more__button--primary, .main-stage-learn-more__button--secondary, .products-slice__primary-cta, .one-miniute-video-slice__primary-cta, .featured-asset__button--primary, .fwd__mobile-button, .one-minute__button--primary, .company-main-stage__button--primary, .how-to-buy-mainstage__button--primary, .still-unsure__button--primary, .main-stage-department-detail__button--primary, .solutions-slice__button--primary, .download-case-study__button--primary {
+.header__cta-contact, .header__cta-see-it-live, .bne .top-utility__button--contact, .product-main-stage__button--primary, .product-main-stage__button--secondary, .easy-vs-hard__primary-cta, .main-stage-learn-more__button--primary, .main-stage-learn-more__button--secondary, .products-slice__primary-cta, .one-miniute-video-slice__primary-cta, .featured-asset__button--primary, .fwd__mobile-button, .one-minute__button--primary, .company-main-stage__button--primary, .how-to-buy-mainstage__button--primary, .still-unsure__button--primary, .main-stage-department-detail__button--primary, .solutions-slice__button--primary, .bottom-spider-cta__button-primary, .download-case-study__button--primary {
   display: inline-block;
   padding: 10px 15px;
   color: white;
@@ -51,10 +51,18 @@
 .main-stage-learn-more__button--primary:hover, .company-main-stage__button--primary:hover, .how-to-buy-mainstage__button--primary:hover, .main-stage-department-detail__button--primary:hover, .solutions-slice__button--primary:hover, .download-case-study__button--primary:hover {
   background-color: #00b5c8;
 }
-.bne .top-utility__button--contact, .product-main-stage__button--primary, .main-stage-learn-more__button--secondary, .featured-asset__button--primary, .fwd__mobile-button, .one-minute__button--primary {
+.main-stage-learn-more__button--secondary {
+  border: 1px solid #81af41;
+  color: #272d43;
+}
+.main-stage-learn-more__button--secondary:hover {
+  background-color: #81af41;
+  color: white !important;
+}
+.bne .top-utility__button--contact, .product-main-stage__button--primary, .featured-asset__button--primary, .fwd__mobile-button, .one-minute__button--primary {
   background-color: #00b5c8;
 }
-.bne .top-utility__button--contact:hover, .product-main-stage__button--primary:hover, .main-stage-learn-more__button--secondary:hover, .featured-asset__button--primary:hover, .fwd__mobile-button:hover, .one-minute__button--primary:hover {
+.bne .top-utility__button--contact:hover, .product-main-stage__button--primary:hover, .featured-asset__button--primary:hover, .fwd__mobile-button:hover, .one-minute__button--primary:hover {
   background-color: #81af41;
 }
 .header__cta-contact, .header__cta-see-it-live, .product-main-stage__button--secondary {
@@ -65,10 +73,10 @@
   background-color: #00b5c8;
   color: white !important;
 }
-.easy-vs-hard__primary-cta, .still-unsure__button--primary {
+.easy-vs-hard__primary-cta, .still-unsure__button--primary, .bottom-spider-cta__button-primary {
   background-color: #272d43;
 }
-.easy-vs-hard__primary-cta:hover, .still-unsure__button--primary:hover {
+.easy-vs-hard__primary-cta:hover, .still-unsure__button--primary:hover, .bottom-spider-cta__button-primary:hover {
   background-color: #00b5c8;
 }
 .products-slice__primary-cta {
@@ -85,7 +93,7 @@
   background-color: white;
   color: #272d43 !important;
 }
-.header__cta-contact:hover, .header__cta-see-it-live:hover, .bne .top-utility__button--contact:hover, .product-main-stage__button--primary:hover, .product-main-stage__button--secondary:hover, .easy-vs-hard__primary-cta:hover, .main-stage-learn-more__button--primary:hover, .main-stage-learn-more__button--secondary:hover, .products-slice__primary-cta:hover, .one-miniute-video-slice__primary-cta:hover, .featured-asset__button--primary:hover, .fwd__mobile-button:hover, .one-minute__button--primary:hover, .company-main-stage__button--primary:hover, .how-to-buy-mainstage__button--primary:hover, .still-unsure__button--primary:hover, .main-stage-department-detail__button--primary:hover, .solutions-slice__button--primary:hover, .download-case-study__button--primary:hover {
+.header__cta-contact:hover, .header__cta-see-it-live:hover, .bne .top-utility__button--contact:hover, .product-main-stage__button--primary:hover, .product-main-stage__button--secondary:hover, .easy-vs-hard__primary-cta:hover, .main-stage-learn-more__button--primary:hover, .main-stage-learn-more__button--secondary:hover, .products-slice__primary-cta:hover, .one-miniute-video-slice__primary-cta:hover, .featured-asset__button--primary:hover, .fwd__mobile-button:hover, .one-minute__button--primary:hover, .company-main-stage__button--primary:hover, .how-to-buy-mainstage__button--primary:hover, .still-unsure__button--primary:hover, .main-stage-department-detail__button--primary:hover, .solutions-slice__button--primary:hover, .bottom-spider-cta__button-primary:hover, .download-case-study__button--primary:hover {
   color: white !important;
 }
 
@@ -188,6 +196,18 @@
   position: fixed;
 }
 
+a {
+  color: #81af41;
+}
+
+.no-touch a:hover, a:hover {
+  color: #81af41;
+}
+
+.row {
+  max-width: 960px;
+}
+
 body header {
   background-color: transparent;
 }
@@ -205,14 +225,6 @@ body header {
   clear: both;
 }
 
-a {
-  color: #81af41;
-}
-
-.no-touch a:hover, a:hover {
-  color: #81af41;
-}
-
 .wrapper-header {
   background-color: rgba(255, 255, 255, 0.96);
   width: 100%;
@@ -222,8 +234,8 @@ a {
   top: 0px;
 }
 
-.row {
-  max-width: 960px;
+.right-fixed-buttons {
+  display: none;
 }
 
 .header {
@@ -1081,14 +1093,14 @@ footer .right li {
   right: 29px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 915px) {
   .event-info__columns {
     text-align: justify;
     -ms-text-justify: distribute-all-lines;
     text-justify: distribute-all-lines;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 915px) {
   .event-info__single-event {
     vertical-align: top;
     display: inline-block;
@@ -1096,7 +1108,7 @@ footer .right li {
     zoom: 1;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 915px) {
   .event-info__columns:after {
     content: '';
     width: 100%;
@@ -1116,6 +1128,15 @@ footer .right li {
 }
 
 .main-stage__title {
+  color: #81af41;
+}
+.main-stage__title span {
+  color: #272d43;
+}
+.main-stage__title span.txt-rotate {
+  color: #81af41;
+}
+.main-stage__title span.typed-cursor {
   color: #81af41;
 }
 
@@ -1301,8 +1322,15 @@ footer .right li {
   padding: 50px 0px;
 }
 .departments__title {
-  font-size: 40px;
+  font-size: 33px;
+  margin-left: 10px;
+  margin-right: 10px;
   font-family: "Bulmer MT W01 Italic" !important;
+}
+@media (min-width: 770px) {
+  .departments__title {
+    font-size: 40px;
+  }
 }
 .departments__description {
   max-width: 657px;
@@ -1505,7 +1533,7 @@ footer .right li {
   padding-right: 15px;
   text-align: center;
 }
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .event-info__content {
     position: relative;
     float: left;
@@ -1515,7 +1543,7 @@ footer .right li {
     padding-right: 15px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .event-info__content {
     margin-left: 8.3333333333%;
   }
@@ -1532,7 +1560,7 @@ footer .right li {
   width: 220px;
   margin: 20px auto;
 }
-@media (min-width: 770px) {
+@media (min-width: 900px) {
   .event-info__single-event {
     margin: auto;
   }
@@ -1540,15 +1568,21 @@ footer .right li {
 .event-info__single-event-description {
   text-align: center;
   padding: 30px 10px;
+  min-height: 212px;
+  position: relative;
 }
 .event-info__single-event-description p {
   font-weight: bold !important;
   color: #5d5d5d !important;
-  font-size: 18px;
+  font-size: 17px;
+  line-height: 1.3em;
 }
 .event-info__single-event-cta {
   font-weight: bold !important;
   color: #00b5c8 !important;
+  position: absolute;
+  width: 100%;
+  bottom: 28px;
 }
 .event-info__button--primary {
   color: #5d5d5d !important;
@@ -1619,10 +1653,6 @@ footer .right li {
 
 .no-touch .iphone-widget a:hover {
   color: white;
-}
-
-.txt-rotate span {
-  color: #272d43;
 }
 
 #walker {
@@ -1907,9 +1937,26 @@ footer .right li {
   }
 }
 .your-business__columns-single {
+  position: relative;
+  display: inline-block;
   width: 220px;
   float: none !important;
   margin: 0 auto;
+}
+.your-business__columns-single svg {
+  width: 60px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -45px;
+  margin-left: -30px;
+  transition: all 0.1s linear;
+}
+.your-business__columns-single svg .st0 {
+  fill: #272D43;
+}
+.your-business__columns-single:hover svg .st0 {
+  fill: #00b5c8;
 }
 .your-business__columns-single-title {
   font-family: "Bulmer MT W01 Italic" !important;
@@ -2038,7 +2085,9 @@ footer .right li {
   font-size: 16px;
 }
 .main-stage-learn-more__button--secondary {
+  color: #272d43;
   font-size: 16px;
+  margin-left: 20px;
 }
 
 .tabs-content {
@@ -2274,6 +2323,7 @@ footer .right li {
 .one-miniute-video-slice {
   background-color: #00b5c8;
   padding: 60px 0px;
+  border: 0px;
 }
 .one-miniute-video-slice__title {
   margin-bottom: 20px;
@@ -2610,27 +2660,32 @@ footer .right li {
   float: left;
   width: 100%;
   min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
   position: relative;
   min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  background-color: rgba(255, 255, 255, 0.8);
+  padding-left: 10px;
+  padding-right: 10px;
   text-align: center;
-  padding-top: 80px;
-  padding-bottom: 40px;
 }
 @media (min-width: 770px) {
   .featured-asset__content {
     float: left;
-    width: 83.33333%;
+    width: 50%;
   }
 }
-@media (min-width: 770px) {
-  .featured-asset__content {
-    left: 8.33333%;
-  }
+.featured-asset__content_column {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 5px;
+  padding-right: 5px;
+  min-height: 400px;
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .featured-asset__title {
   margin-top: 40px;
@@ -2639,6 +2694,7 @@ footer .right li {
   font-weight: bold;
   text-transform: uppercase;
   line-height: 22px;
+  padding: 0px 45px;
 }
 @media (min-width: 770px) {
   .featured-asset__description {
@@ -2667,6 +2723,11 @@ footer .right li {
 
 .fwd__mobile-button {
   margin-top: 2px;
+}
+
+.mobile-access-download-link {
+  display: inline-block;
+  border-bottom: 1px solid #81af41;
 }
 
 .mobile-screen {
@@ -4252,6 +4313,10 @@ span.contact-us-button {
   display: none;
 }
 
+body #financial .cta-case-study a.u-btn-box:hover {
+  color: #00b5c8 !important;
+}
+
 .how-to-buy-mainstage {
   background-image: url("/img/1/howtobuy-mainstage.jpg");
   background-position: top left;
@@ -4825,6 +4890,29 @@ span.contact-us-button {
   }
 }
 
+.bottom-spider-cta {
+  text-align: center;
+  padding-bottom: 50px;
+  background-color: #00b5c8;
+  margin-top: -20px;
+}
+.bottom-spider-cta .spider__description {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+.bottom-spider-cta__button-primary {
+  border: 1px solid #272d43;
+  margin-top: 0px;
+}
+.bottom-spider-cta__button-primary:hover {
+  border: 1px solid white;
+}
+
+.three-lines {
+  padding-top: 14px;
+}
+
 .middle-title {
   display: none;
   text-transform: uppercase;
@@ -4903,6 +4991,15 @@ span.contact-us-button {
 }
 .download-case-study__button--primary {
   margin: 30px 0px 20px;
+}
+
+.main-stage-department-detail.-finance-mod {
+  background-position: top left;
+}
+@media (min-width: 770px) {
+  .main-stage-department-detail.-finance-mod {
+    background-position: 42%;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */

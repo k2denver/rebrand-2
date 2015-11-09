@@ -257,13 +257,21 @@
             
         }
     &__content {
-         @include make-xs-column(12, 30px);
-        @include make-sm-column(10);
-        @include make-sm-column-push(1);
+             @include make-xs-column(12, 10px);
+        @include make-sm-column(6,  20px);
+       
+        //background-color: white(.8);
+        text-align: center;
+
+    }
+     &__content_column {
+         @include make-xs-column(12, 10px);
+
+            min-height: 400px;
         background-color: white(.8);
         text-align: center;
-        padding-top:80px;
-        padding-bottom:40px;
+        padding-top:20px;
+        padding-bottom:20px;
 
     }
     &__title {
@@ -273,6 +281,7 @@
         font-weight:bold;
         text-transform: uppercase;
         line-height: 22px;
+         padding:0px 45px;
     }
     &__description{
         @extend %t-paragraph;
@@ -310,5 +319,9 @@
         @extend %button--blue;
             margin-top: 2px;
 
+}
+.mobile-access-download-link {
+    display:inline-block;
+    border-bottom:1px solid $k2-green;
 }
 .mobile-screen {display:none;}

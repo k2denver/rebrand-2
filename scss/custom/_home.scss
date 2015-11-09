@@ -110,7 +110,7 @@
     right: 29px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 915px) {
     .event-info__columns {
         text-align: justify;
         -ms-text-justify: distribute-all-lines;
@@ -118,7 +118,7 @@
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 915px) {
     .event-info__single-event {
         vertical-align: top;
         display: inline-block;
@@ -127,7 +127,7 @@
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 915px) {
     .event-info__columns:after {
         content: '';
         width: 100%;
@@ -149,6 +149,17 @@
 
 .main-stage__title {
     color: #81af41;
+    span {
+        color: $k2-purple;
+    
+    &.txt-rotate {
+    color: $k2-green;
+  
+    }
+    &.typed-cursor {
+        color:$k2-green;
+    }
+    }
 }
 
 .departments__description {
@@ -307,8 +318,15 @@
         padding: 50px 0px;
     }
     &__title {
-        font-size: 40px;
+        font-size: 33px;
+        margin-left:10px;
+        margin-right:10px;
+
         font-family: "Bulmer MT W01 Italic" !important;
+        @include tablet {
+            
+            font-size: 40px;
+        }
     }
     &__description {
         max-width: 657px;
@@ -512,7 +530,7 @@
         padding-left: 15px;
         padding-right: 15px;
         text-align: center;
-        @media (min-width: 768px) {
+        @media (min-width: 900px) {
             position: relative;
             float: left;
             width: 83.3333333333%;
@@ -520,8 +538,8 @@
             padding-left: 15px;
             padding-right: 15px;
         }
-        @media (min-width: 768px) {
-            margin-left: 8.3333333333%;
+        @media (min-width: 900px) {
+            margin-left: 8.3333333333%; 
         }
     }
     &__title {
@@ -535,22 +553,28 @@
         background-color: white;
         width: 220px;
         margin: 20px auto;
-        @include tablet {
+        @media (min-width: 900px) {
           margin: auto;
         }
     }
     &__single-event-description {
-        text-align: center;
-        padding: 30px 10px;
+            text-align: center;
+            padding: 30px 10px;
+            min-height: 212px;
+            position:relative;
         p {
             font-weight: bold !important;
             color: #5d5d5d !important;
-            font-size: 18px;
+            font-size: 17px;
+            line-height: 1.3em;
         }
     }
     &__single-event-cta {
         font-weight: bold !important;
         color: #00b5c8 !important;
+            position: absolute;
+    width: 100%;
+        bottom: 28px;
     }
     &__button--primary {
         color: #5d5d5d !important;
@@ -618,9 +642,7 @@
     color:white;
 }
 
-.txt-rotate span {
-    color: $k2-purple;
-}
+
 
 #walker {
     background: url('/img/1/90frames.png');

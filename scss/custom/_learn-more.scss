@@ -55,8 +55,10 @@
     }
     &__button--secondary {
         @extend %button;
-        @extend %button--blue;
+        @extend %button--green-outline;
+        color:$k2-purple;
         font-size: 16px;
+        margin-left:20px;
     }
 }
 
@@ -277,6 +279,7 @@
     background-color: $k2-blue;
     padding:60px 0px;
     @extend %simple-slice;
+    border:0px;
     &__content {
        @extend  %simple-slice__content;
     }

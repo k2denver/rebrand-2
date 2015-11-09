@@ -164,13 +164,33 @@
       }
     }
     &__columns-single {
-        
+        position:relative;
+        display:inline-block;
         @extend .three-column-layout__single;
        
         
         width: 220px;
         float: none !important;
         margin:0 auto;
+
+        svg {
+            width: 60px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-top: -45px;
+            margin-left: -30px;
+            transition:all 0.1s linear;
+            .st0{fill:#272D43;}
+        }
+        &:hover {
+            h4 {
+                
+            }
+            svg {
+               .st0{fill:$k2-blue;}
+            }
+        }
     }
     &__columns-single-title {
       @include add-important(font-family,$bulmer-italic);

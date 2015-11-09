@@ -291,11 +291,7 @@
                     }
                 }
 
-                if (curStrPos == 1){
-                self.stopNum = 3;
-                } else {
-                    self.stopNum = 61;
-                }
+             
             //every other time, delete the whole typed string
             
                 

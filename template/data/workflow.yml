@@ -7,12 +7,12 @@ feature-1-img: "Scalable-and-agile.jpg"
 
 feature-2-title: "Reusable"
 feature-2-description-1: "Design the way you want, with workflow tools suited to your work style. Drag-and-drop environments within a browser, Visual Studio and desktop-based tools make it easy to quickly assemble apps with out-of-the-box events and tasks."
-feature-2-description-2: "Save workﬂow management steps and common functions as a template that can be shared and reused across applications and departments."
+feature-2-description-2: "K2's workflow management software helps eliminate bottlenecks by providing real-time process insights and the ability to reroute or escalate tasks from any device, even when offline."
 feature-2-img: "reusable.jpg"
 
 feature-3-title: "LOB integration"
-feature-3-description-1: "Use built-in K2 tools and technologies to easily create secure workflows across your line-of-business (LOB) systems, with little or no coding."
-feature-3-description-2: "Integrate with SAP, Oracle, Salesforce, Box, Dynamics CRM, SharePoint, SQL, Dropbox and more, through easy-to-use data connectors and workflow wizards."
+feature-3-description-1: "Use built-in K2 workflow tools and technologies to easily create secure workﬂow automation across your line-of-business (LOB) systems, with little or no coding."
+feature-3-description-2: "Integrate with SAP, Oracle, Salesforce, Box, Dynamics CRM, Office 365, SharePoint, SQL, Dropbox and more, through easy-to-use data connectors and workflow software wizards."
 feature-3-img: "LOB-integration-workflow.jpg"
 
 feature-4-title: "Flexible and secure"

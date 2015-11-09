@@ -6,6 +6,18 @@
     position: fixed;
 }
 
+
+a {
+    color: $k2-green;
+}
+.no-touch a:hover, a:hover {
+    color: $k2-green;
+}
+.row {
+    max-width: 960px;
+}
+
+
 body header {
     background-color: transparent;
 }
@@ -13,12 +25,6 @@ body header {
 .wrapper {
     max-width: 960px;
     @include row(30px);
-}
-a {
-    color: $k2-green;
-}
-.no-touch a:hover, a:hover {
-    color: $k2-green;
 }
 
 .wrapper-header {
@@ -30,10 +36,9 @@ a {
     top: 0px;
 }
 
-.row {
-    max-width: 960px;
+.right-fixed-buttons {
+    display:none;
 }
-
 .header {
     max-width: 940px;
     height: 75px;

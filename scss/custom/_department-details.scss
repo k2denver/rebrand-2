@@ -351,6 +351,27 @@
     }
 }
 
+.bottom-spider-cta {
+  text-align:center;
+  padding-bottom:50px;
+  background-color:$k2-blue;
+  margin-top:-20px;
+  .spider__description {
+    margin-bottom:0px;
+    margin-top:0px;
+    padding-top:0px;
+  }
+  &__button-primary {
+    @extend %button;
+    @extend %button--purple;
+    border:1px solid $k2-purple;
+    margin-top:0px;
+    &:hover {
+      border:1px solid white;
+    }
+  }
+}
+
 // .actual-spider__item:hover {
 //   @include tablet {
 //     .actual-spider__item--title {
@@ -398,6 +419,9 @@
 //     }
 //   }
 // }
+.three-lines {
+  padding-top:14px
+}
 .middle-title {
   display:none;
   text-transform: uppercase;
@@ -462,3 +486,12 @@
 
 
 }
+
+.main-stage-department-detail.-finance-mod {
+      background-position: top left;
+
+    @include tablet {
+       background-position: 42%;
+    }
+  }
+
