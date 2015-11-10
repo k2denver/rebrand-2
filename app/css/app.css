@@ -229,7 +229,6 @@ body header {
   background-color: rgba(255, 255, 255, 0.96);
   width: 100%;
   z-index: 100;
-  position: fixed;
   height: 73px;
   top: 0px;
 }
@@ -1701,6 +1700,10 @@ footer .right li {
   clear: both;
 }
 
+.wrapper-header {
+  position: fixed;
+}
+
 .product-main-stage {
   background-image: url("/img/1/product-main-stage.jpg");
   background-position: bottom center;
@@ -2013,6 +2016,10 @@ footer .right li {
   .easy-vs-hard br {
     display: auto;
   }
+}
+
+.wrapper-header {
+  position: fixed;
 }
 
 .main-stage-learn-more {
@@ -2343,6 +2350,10 @@ footer .right li {
   .one-miniute-video-slice br {
     display: auto;
   }
+}
+
+.wrapper-header {
+  position: fixed;
 }
 
 .fwd {
@@ -2734,6 +2745,23 @@ footer .right li {
   display: none;
 }
 
+.wrapper-header {
+  position: fixed;
+}
+
+.wrapper, .k2-offices__content {
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.wrapper:before, .k2-offices__content:before, .wrapper:after, .k2-offices__content:after {
+  content: " ";
+  display: table;
+}
+.wrapper:after, .k2-offices__content:after {
+  clear: both;
+}
+
 .one-minute {
   background-image: url("/img/1/one-minute.jpg");
   background-position: top center;
@@ -2877,6 +2905,10 @@ span.contact-us-button {
 
 .old-demo.row {
   max-width: 793px !important;
+}
+
+.wrapper-header {
+  position: fixed;
 }
 
 .push-for-menu-3 {
@@ -4044,6 +4076,10 @@ span.contact-us-button {
   }
 }
 
+.wrapper-header {
+  position: fixed;
+}
+
 .industry-overview-main-stage {
   background-image: url("/img/1/bg-department-overview.jpg");
   background-position: top center;
@@ -4211,7 +4247,7 @@ span.contact-us-button {
   background-image: url("/img/1/industries-manufacturing.jpg");
 }
 .industry-overview__single-image.-gas {
-  background-image: url("/img/1/industries-oil&gas.jpg");
+  background-image: url("/img/1/industries-oil-gas.jpg");
 }
 .industry-overview__single-image.-publicsector {
   background-image: url("/img/1/industries-publicsector.jpg");
@@ -4270,7 +4306,7 @@ span.contact-us-button {
   background-color: #f2f3f2;
   padding: 11px 16px;
   color: #5d5d5d;
-  min-height: 121px;
+  min-height: 140px;
 }
 .industry-overview__single:hover .industry-overview__single-link {
   background: rgba(0, 181, 200, 0.9);
@@ -4315,6 +4351,10 @@ span.contact-us-button {
 
 body #financial .cta-case-study a.u-btn-box:hover {
   color: #00b5c8 !important;
+}
+
+.wrapper-header {
+  position: fixed;
 }
 
 .how-to-buy-mainstage {
@@ -4508,6 +4548,10 @@ body #financial .cta-case-study a.u-btn-box:hover {
 }
 .still-unsure__title {
   color: white;
+}
+
+.wrapper-header {
+  position: fixed;
 }
 
 .main-stage-department-detail {

@@ -1,3 +1,7 @@
+.wrapper-header {
+    position:fixed;
+}
+
 .industry-overview-main-stage {
     background-image: url('/img/1/bg-department-overview.jpg');
     background-position: top center;
@@ -102,7 +106,7 @@
                 background-image: url('/img/1/industries-manufacturing.jpg');
             }
             &.-gas {
-                background-image: url('/img/1/industries-oil&gas.jpg');
+                background-image: url('/img/1/industries-oil-gas.jpg');
             }
             &.-publicsector {
                 background-image: url('/img/1/industries-publicsector.jpg');
@@ -164,7 +168,7 @@
             background-color: #f2f3f2;
             padding: 11px 16px;
             color: #5d5d5d;
-            min-height: 121px;
+            min-height:140px;
             @extend %t-paragraph;
         }
         &:hover {

@@ -99,14 +99,27 @@ module.exports = function(grunt) {
                 dest: './app/'
             }
         },
+        postcss: {
+            options: {
+                map: false,
+                processors: [
+                    require('autoprefixer')({
+                        browsers: ['last 2 versions']
+                    })
+                ]
+            },
+            dist: {
+                src: 'app/css/app.css'
+            }
+        }
 
     });
-
+grunt.loadNpmTasks('grunt-postcss');
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-serve');
     grunt.loadNpmTasks('grunt-assemble');
 
-    grunt.registerTask('build', ['sass']);
+    grunt.registerTask('build', ['sass','postcss:dist']);
     grunt.registerTask('default', ['build', 'assemble', 'serve']);
 }

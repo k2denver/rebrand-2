@@ -1,5 +1,8 @@
 // 1680
 // 1584
+.wrapper-header {
+    position:fixed;
+}
 .main-stage-department-detail {
     @extend %department-details;
     &__content {

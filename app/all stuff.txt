@@ -1,0 +1,87 @@
+http://dev.www.k2.com/products-blackpearl-appit?version=unpublished&lang=en
+/experience-k2
+http://dev.www.k2.com/buy-k2?version=unpublished&lang=en
+/free-trial?home=request-demo
+
+http://dev.www.k2.com/platform/business-process-improvement-apps?version=unpublished&lang=en
+http://dev.www.k2.com/platform/smartforms-electronic-forms?version=unpublished&lang=en
+http://dev.www.k2.com/displayContent.aspx?id=10312&version=unpublished&lang=en
+http://dev.www.k2.com/platform/data-integration-tools?version=unpublished&lang=en
+http://dev.www.k2.com/platform/business-app-benefits?version=unpublished&lang=en
+
+
+
+http://dev.www.k2.com/industry-and-department-solutions/hr-software?version=unpublished&lang=en
+http://dev.www.k2.com/industry-and-department-solutions/operations-management-software?version=unpublished&lang=en
+http://dev.www.k2.com/industry-and-department-solutions/e-procurement-software?version=unpublished&lang=en
+http://dev.www.k2.com/industry-and-department-solutions/sales-management-software?version=unpublished&lang=en
+http://dev.www.k2.com/industry-and-department-solutions/financial-services-software?version=unpublished&lang=en
+http://dev.www.k2.com/industry-and-department-solutions/IT-rapid-application-development?version=unpublished&lang=en
+
+
+http://dev.www.k2.com/company-overview?version=unpublished&lang=en
+http://dev.www.k2.com/company-leadership?version=unpublished&lang=en
+http://dev.www.k2.com/global-contacts?version=unpublished
+
+
+
+
+&version=unpublished&lang=en
+$('body').removeClass('WhiteSite');
+www.k2.com
+
+<section class="tabs">
+    <div class="wrapper">
+        <div class="tabs__content">
+            <ul>
+                <li><a class="ajax" href="/platform/business-process-improvement-apps">Overview</a></li>
+                <li ><a class="ajax" href="/platform/smartforms-electronic-forms">Forms</a></li>
+                <li><a class="ajax" href="/displayContent.aspx?id=10312">Workflow</a></li>
+                <li><a class="ajax" href="/platform/data-integration-tools">Data</a></li>
+                <li class="active"><a class="ajax" href="/platform/business-app-benefits">App Experience</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+<section class="tabs">
+    <div class="wrapper">
+        <div class="tabs__content">
+            <ul>
+                <li><a class="ajax" href="/company-overview">The K2 Story</a></li>
+                <li><a class="ajax" href="/company-leadership">Leadership</a></li>
+                <li class="active"><a class="ajax" href="/global-contacts">Global Contacts</a></li>
+                <li><a class="ajax" href="/careers">Careers</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="tabs">
+    <div class="wrapper">
+        <div class="tabs__content">
+            <ul>
+                <li><a class="ajax" href="/company-overview">The K2 Story</a></li>
+                <li class="active"><a class="ajax" href="/company-leadership">Leadership</a></li>
+                <li><a class="ajax" href="/global-contacts">Global Contacts</a></li>
+                <li><a class="ajax" href="/careers">Careers</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="tabs">
+    <div class="wrapper">
+        <div class="tabs__content">
+            <ul>
+                <li class="active"><a class="ajax" href="/company-overview">The K2 Story</a></li>
+                <li><a class="ajax" href="/company-leadership">Leadership</a></li>
+                <li><a class="ajax" href="/global-contacts">Global Contacts</a></li>
+                <li><a class="ajax" href="/careers">Careers</a></li>
+            </ul>
+        </div>
+    </div>
+</section>

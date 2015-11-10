@@ -3,6 +3,11 @@
     @include row(30px);
 }
 
+.wrapper-header {
+    position:fixed;
+}
+
+
 .product-main-stage {
     background-image: url('/img/1/product-main-stage.jpg');
     background-position: bottom center;
@@ -17,7 +22,7 @@
         @include make-sm-column(10);
         @include make-sm-column-offset(1);
     }
-    &__title {
+    &__title { 
         color: $k2-blue;
         font-size: 35px;
         margin-top: 50px;
