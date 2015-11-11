@@ -41,6 +41,7 @@
         @extend %button;
         @extend %button--green;
         font-size: 16px;
+        margin-bottom: 30px;
     }
 }
 
@@ -362,7 +363,7 @@
     .leader {
     color: $k2-purple;
     font-family: "AvenirNextLTW01-Regular", sans-serif;
-            line-height: 1.3em;
+             line-height: 1.4em;
 
     }
 
@@ -419,7 +420,7 @@
     z-index: 49;
     color: $k2-grey;
     padding: 13px 12px;
-    top: 17%;
+    top: 17% !important;
     visibility: hidden;
     -khtml-opacity: 0;
     -moz-opacity: 0;
@@ -445,7 +446,7 @@
                 z-index: 49;
                 color: $k2-grey;
                 padding: 13px 12px;
-                top: 50%;
+                top: 50% !important;
                 visibility: hidden;
                 -khtml-opacity: 0;
                 -moz-opacity: 0;
@@ -664,6 +665,58 @@
         }
     }
 }
+
+
+.careers {
+    text-align:center;
+    &__title {
+        @extend %t-heading-bulmer;
+        margin-top:30px;
+        color:$k2-green; 
+        margin-bottom:30px;
+    }
+    &__content {
+        @include make-xs-column(12);
+        @include make-xs-column-offset(0);
+        @include make-sm-column(8);
+        @include make-sm-column-offset(2);
+    }
+    &__description {
+        @extend %t-paragraph ;
+
+    }
+
+}
+
+.careers__listing {
+    background-color:#f2f3f2;
+    padding:30px 0px;
+    &-content {
+        @include make-xs-column(12);
+        @include make-xs-column-offset(0);
+        @include make-sm-column(10);
+        @include make-sm-column-offset(1);
+    }
+}
+
+.available-positions {
+    background-color:$k2-green;
+    text-align:center;
+    &__content {
+        @include make-xs-column(12);
+        @include make-xs-column-offset(0);
+        @include make-sm-column(8);
+        @include make-sm-column-offset(2);
+    }
+     &__title {
+        @extend %t-heading-bulmer;
+        margin-top:30px;
+        color:white; 
+        margin-bottom:30px;
+    }
+}
+
+
 
 // .department-detail {
 //    background-size: 1680px 2252px;

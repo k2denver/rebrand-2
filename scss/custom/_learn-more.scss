@@ -9,12 +9,22 @@
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 423px;
+    
     padding-bottom:30px;
     @include tablet {
         min-height: 523px;
 
     }
+            @media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) { 
+ 
 
+        min-height: auto;
+
+
+}
        &__content {
         @include make-xs-column(12);
         @include make-xs-column-offset(0);
@@ -62,6 +72,19 @@
         font-size: 16px;
         margin-left:20px;
     }
+
+    @media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) { 
+    &__content {
+        padding-right:120px;
+    }
+
+
+        min-height: 370px;
+
+}
 }
 
 .tabs-content {

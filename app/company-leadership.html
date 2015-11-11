@@ -219,6 +219,7 @@
                 <div class="menu-icon" id="menu-icon"><img src="http://www.k2.com/img/1/mobile-menu-1.png" width="32" alt=""></div>
             </header>
         </div>
+        
     
         <!-- BODY BEGINS -->
     
@@ -244,7 +245,7 @@
                 </li>
                 <li class="active"><a class="ajax" href="/company-leadership.html">Leadership</a></li>
                 <li><a class="ajax" href="/company-global-contacts.html">Global Contacts</a></li>
-                <li><a class="ajax" href="#">Careers</a></li>
+                <li><a class="ajax" href="/careers">Careers</a></li>
             </ul>
         </div>
     </div>
@@ -596,8 +597,15 @@
     	}</style>
 </div>
 <div class="topajax"></div>
+<div class="hide-for-small"></div>
+<script>var is_small = function () {
+        var isSmall = $('.hide-for-small:visible').length <= 0;
+        if (!isSmall) { if (window.innerWdith <= 768) isSmall = true; }
+        return isSmall;
+    };
+</script>
  
-        <!-- FOOTER BEGINS! -- >
+        <!-- FOOTER BEGINS! -->
     
         <footer class="noindex">
         <div class="legal noindex" style="margin-top:0px !important;background:#eaeaea !important;">
@@ -730,7 +738,8 @@
                 </div>
             </div>
         </div>
-    </footer>    <div class="iphone-widget">
+    </footer>    
+    <div  country="North America" class="iphone-widget">
         <div class="iphone-widget__phone-icon">
             <img src="/img/1/icon-phone.png" alt="">
         </div>

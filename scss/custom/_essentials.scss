@@ -86,22 +86,30 @@ body header {
         display:none;
         @include tablet {
                 float: right;
-                display:block;
-                 margin-top: -23px;
+                display: block;
+                margin-top: 5px;
+                position: absolute;
+                right: 20px;
+                top: 0px;
+                width: 176px;
         }
         @include desktop {
-            display:block;
-            float: none;
-                 margin-top: 0px;
-            position: absolute;
-            right: -22px;
+            display: block;
+            /* float: none; */
+            margin-top: 0px;
+            /* position: absolute; */
+            /* right: -63px; */
             top: 37px;
+            //background: rebeccapurple;
+            width: 154px;
+            position: relative;
+            margin-right: -85px;
         }
     }
 
 
     &__login {
-        font-size:14px;
+        font-size:12px;
         color:$k2-blue;
         float:left;
         font-weight: bold;
@@ -219,7 +227,7 @@ body header {
 
     }
     @include tablet {
-        > ul {
+        > ul { 
             position: relative;
             @if $overwrite-cms {
                 margin-left: 0px;
@@ -227,7 +235,7 @@ body header {
             // First Level
             > li {
                 display: inline-block;
-                padding: 20px;
+                padding: 20px 10px;
                 float: left;
                 position: relative;
                 a {
@@ -510,7 +518,7 @@ html body .access-support2.access-support2.access-support2.access-support2.acces
         padding: 20px 4px;
     }
     @include desktop {
-        padding: 20px;
+        padding: 20px 10px;
     }
 }
 .mobile-login , .top-utility {
@@ -724,6 +732,9 @@ ul.sub-menu--resources {
             width: 10px;
             cursor: pointer;
         }
+     }
+     &.Off {
+        display:none;
      }
 }
 

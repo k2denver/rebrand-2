@@ -24,10 +24,10 @@
     background-position: top left;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 423px;
+    min-height: 390px;
     @include tablet {
         background-position: top center;
-        min-height: 523px;
+        min-height: 485px;
     }
     &__content {
         @include make-xs-column(12);

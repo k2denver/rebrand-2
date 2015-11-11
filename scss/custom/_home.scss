@@ -5,6 +5,9 @@
     line-height: 18px;
 }
 
+.wrapper-header {
+    position:fixed;
+}
 .customers__title {
     font-size: 40px;
     font-family: "Bulmer MT W01 Italic" !important;
@@ -551,7 +554,8 @@
     }
     &__single-event {
         background-color: white;
-        width: 220px;
+            width: 233px;
+
         margin: 20px auto;
         @media (min-width: 900px) {
           margin: auto;
@@ -565,7 +569,7 @@
         p {
             font-weight: bold !important;
             color: #5d5d5d !important;
-            font-size: 17px;
+            font-size: 15px;
             line-height: 1.3em;
         }
     }

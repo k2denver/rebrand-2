@@ -21,7 +21,7 @@
                 </li>
                 <li class="active"><a class="ajax" href="/company-leadership.html">Leadership</a></li>
                 <li><a class="ajax" href="/company-global-contacts.html">Global Contacts</a></li>
-                <li><a class="ajax" href="#">Careers</a></li>
+                <li><a class="ajax" href="/careers">Careers</a></li>
             </ul>
         </div>
     </div>
@@ -373,3 +373,10 @@
     	}</style>
 </div>
 <div class="topajax"></div>
+<div class="hide-for-small"></div>
+<script>var is_small = function () {
+        var isSmall = $('.hide-for-small:visible').length <= 0;
+        if (!isSmall) { if (window.innerWdith <= 768) isSmall = true; }
+        return isSmall;
+    };
+</script>
