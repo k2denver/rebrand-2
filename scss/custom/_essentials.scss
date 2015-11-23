@@ -103,7 +103,7 @@ body header {
             //background: rebeccapurple;
             width: 154px;
             position: relative;
-            margin-right: -85px;
+            margin-right: -90px;
         }
     }
 
@@ -124,10 +124,13 @@ body header {
     }
     //display:none;
 }
-
+@include desktop {
+_:-webkit-full-screen:not(:root:root), .header__utility{ margin-right:-120px !important; } 
+}
 .push-for-menu {
     padding-top: 72px;
 }
+
 
 .mobile-menu-up {
     overflow: hidden;
