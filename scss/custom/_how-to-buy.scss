@@ -1,5 +1,9 @@
 // 1680
 // 1584
+
+.wrapper-header {
+    position:fixed;
+}
 .how-to-buy-mainstage {
     @extend %how-to-buy-mainstage;
     &__content {

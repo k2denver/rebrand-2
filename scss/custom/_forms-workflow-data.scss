@@ -1,12 +1,7 @@
-// Forrester-Logo.jpg
-// learn-more-forrester-bg.jpg
-// learn-more-graph.jpg
-// learn-more-main-stage.jpg
-// mobile-graph5.png
-// mobile-graph4.png
-// mobile-graph3.png
-// mobile-graph2.png
-// mobile-graph1.png
+
+.wrapper-header {
+    position:fixed;
+}
 
 .fwd {
     padding: 60px 0px 80px;
@@ -248,7 +243,7 @@
 
 
 .featured-asset {
-    background-image:url('/img/1/learn-more-forrester-bg.jpg');
+    background-image:url('/img/1/learn-more-forrester@2x.jpg');
     background-repeat:no-repeat;
     background-size:cover;
     min-height:350px;
@@ -257,13 +252,31 @@
             
         }
     &__content {
-         @include make-xs-column(12, 30px);
-        @include make-sm-column(10);
-        @include make-sm-column-push(1);
+             @include make-xs-column(12, 10px);
+        @include make-sm-column(6,  20px);
+       
+        //background-color: white(.8);
+        text-align: center;
+
+    }
+     &__content_column {
+         @include make-xs-column(12, 10px);
+
+            min-height: 400px;
         background-color: white(.8);
         text-align: center;
-        padding-top:80px;
-        padding-bottom:40px;
+        padding-top:20px;
+        padding-bottom:20px;
+            @media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) { 
+ 
+
+        min-height: auto;
+
+
+}
 
     }
     &__title {
@@ -273,9 +286,10 @@
         font-weight:bold;
         text-transform: uppercase;
         line-height: 22px;
+         padding:0px 45px;
     }
     &__description{
-    @extend %t-paragraph;
+        @extend %t-paragraph;
         @include tablet {
             padding:0px 45px;
         }
@@ -287,6 +301,8 @@
         margin-top:30px;
         margin-bottom:30px;
     }
+
+
 }
 
 
@@ -305,4 +321,14 @@
     }
 }
 
+.fwd__mobile-button {
+    @extend %button;
+        @extend %button--blue;
+            margin-top: 2px;
 
+}
+.mobile-access-download-link {
+    display:inline-block;
+    border-bottom:1px solid $k2-green;
+}
+.mobile-screen {display:none;}

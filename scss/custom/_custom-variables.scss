@@ -86,6 +86,14 @@ $p-line-height-normal:18px;
         &:hover {
         	background-color: $k2-blue;
         }
+        &-outline{
+            border:1px solid $k2-green;
+            color:$k2-purple;
+            &:hover {
+                background-color: $k2-green;
+                color:white !important;
+            }
+        }
     }
     &--blue {
         background-color: $k2-blue;

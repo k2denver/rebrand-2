@@ -1,11 +1,12 @@
 --- layout: "default.hbs" title: "forms" ---
 <section class="main-stage-learn-more push-for-menu">
     <div class="wrapper">
-        <div class="main-stage-learn-more__content">
-            <h1 class="main-stage-learn-more__title">K2 helps your people work smarter <br>and get business done faster.</h1>
-            <p class="main-stage-learn-more__description">Create, modify and reuse business apps with little-to-no code — on premises or in the cloud.
-                <br>Leverage current systems and technologies, and interact with your apps from any device.</p>
+        <div class="main-stage-learn-more__content topajax">
+            <h1 class="main-stage-learn-more__title">Business apps to help your people work smarter and get business done faster</h1>
+            <p class="main-stage-learn-more__description">Business apps built with K2 give users the tools they need to work efficiently and to make better, more informed decisions - from anywhere, at any time.
+</p>
             <a href="/schedule-demo.html" class="main-stage-learn-more__button--primary">REQUEST A DEMO</a>
+            <a href="/how-to-buy.html" class="main-stage-learn-more__button--secondary">How To Buy</a>
         </div>
     </div>
 </section>
@@ -36,7 +37,10 @@
                     </ul>
                 </div>
                 <div class="fwd__computer">
-                    <img src="/img/1/laptop-device.png" width="493" alt="">
+                    <img class="computer" src="/img/1/laptop-device.png" width="493" alt="">
+                    <img class="mobile-screen" src="/img/1/mobile-access.jpg" width="300" alt="" style="margin-right: 79px;
+    margin-top: -43px;">
+
                 </div>
                 <div class="fwd__screen">
                     <div class="fwd__slides js-screen -one">
@@ -57,6 +61,14 @@
                    <h2 class="fwd__right-title">{{apps.feature-2-title}}</h2>
                     <p class="fwd__right-description">{{apps.feature-2-description-1}}</p>
                     <p class="fwd__right-description">{{apps.feature-2-description-2}}</p>
+
+                    <p class="fwd__right-description"> Get access to K2's native mobile apps:<br><br>
+                    <a class="mobile-access-download-link" target="_blank" href="http://itunes.apple.com/us/app/k2-mobile/id842524553?ls=1&amp;amp;mt=8">Download IOS app</a><br>
+                    <a class="mobile-access-download-link" target="_blank" href="http://play.google.com/store/apps/details?id=com.k2.mobile">Download Android app</a><br>
+                    <a class="mobile-access-download-link" target="_blank" href="http://www.windowsphone.com/en-us/store/app/k2-mobile/7e35b2d1-cb6d-4fa4-960a-6620bd793f8f">Download Windows Phone app</a><br>
+                    <a class="mobile-access-download-link" target="_blank" href="http://appworld.blackberry.com/webstore/content/49454?lang=en">Download Blackberry App</a>
+                    </p>
+
                 </div>
                 <div class="fwd__right-content--three">
                     <h2 class="fwd__right-title">{{apps.feature-3-title}}</h2>
@@ -72,20 +84,62 @@
         </div>
     </div>
 </section>
-{{> form-work-flow-bottom}}
 <div class="tabs-scripts">
+<section class="products-slice">
+    <div class="wrapper">
+        <div class="products-slice__content">
+            <h4 class="products-slice__title">Products</h4>
+            <p class="products-slice__description">On premises or in the cloud, K2 business apps integrate with your current systems and allow for insightful reporting. K2 apps reach across departments and lines of business, and everything you build is reusable and easy to change with little to no code.  </p>
+            <a href="/products.html" class="products-slice__primary-cta">View K2 Products</a>
+        </div>
+    </div>
+</section>
+<section class="featured-asset">
+    <div class="wrapper">
+        <div class="featured-asset__content">   
+            <div class="featured-asset__content_column">
+                <h4 class="featured-asset__title">It's a Bring-Your-Own-App, Mobile World</h4>
+                <div class="featured-asset__description">As the workforce becomes increasingly mobile, companies are under more pressure than ever to expose and eliminate inefficiences through automation. Read this paper for a guide to modernizing your business processes so your employees can work smarter, no matter where they are.</div>
+                <a href="http://content.k2.com/web_70114000002Jkof" taget="_blank" class="featured-asset__button--primary">Download the guide</a>
+            </div>
+        </div>
+         <div class="featured-asset__content">   
+            <div class="featured-asset__content_column">
+                <h4 class="featured-asset__title">Six Tips to Building Better Apps in SharePoint 2013</h4>
+                <div class="featured-asset__description">Microsoft introduced the SharePoint App Model in 2013 to provide for building customizations, but it can still be very complex to deploy. Read this whitepaper to understand ways to simplify app development, manage multiple versions of SharePoint and give your developers the resources they really need.</div>
+                <a href="http://content.k2.com/web_70114000002Ve2w" taget="_blank" class="featured-asset__button--primary">Download the whitepaper</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="one-miniute-video-slice">
+    <div class="wrapper">
+        <div class="one-miniute-video-slice__content">
+            <h4 class="one-miniute-video-slice__title">{{learn-more.one-minute__title}}</h4>
+            <p class="one-miniute-video-slice__description">Work smarter and build faster with K2. Want to see how K2 works? Click below to see how easy it can be to build and run business process apps with forms, workflow, data and reports. </p>
+            <a href="/one-minute-demo.html" class="one-miniute-video-slice__primary-cta">See it live </a>
+        </div>
+    </div>
+</section>
+
+
     <script>
     $('.fwd__menu .item-one').click(function() {
         removeAllClasses();
         $('.fwd__menu li').removeClass('active');
         $('.js-screen, .fwd__menu, .fwd__right').addClass('-one');
         $(this).addClass('active');
+        $('.computer,.fwd__screen').show();
+        $('.mobile-screen').hide();
     });
     $('.fwd__menu .item-two').click(function() {
         removeAllClasses();
         $('.fwd__menu li').removeClass('active');
         $('.js-screen, .fwd__menu, .fwd__right').addClass('-two');
         $(this).addClass('active');
+        
+          $('.computer, .fwd__screen').hide();
+        $('.mobile-screen').show();
     });
 
     $('.fwd__menu .item-three').click(function() {
@@ -93,6 +147,9 @@
         $('.fwd__menu li').removeClass('active');
         $('.js-screen, .fwd__menu, .fwd__right').addClass('-three');
         $(this).addClass('active');
+        $('.computer,.fwd__screen').show();
+        $('.mobile-screen').hide();
+
     });
 
     $('.fwd__menu .item-four').click(function() {
@@ -100,6 +157,10 @@
         $('.fwd__menu li').removeClass('active');
         $('.js-screen, .fwd__menu, .fwd__right').addClass('-four');
         $(this).addClass('active');
+       $('.computer,.fwd__screen').show();
+        $('.mobile-screen').hide();
+
+
     });
 
 

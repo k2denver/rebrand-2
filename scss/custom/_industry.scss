@@ -1,0 +1,221 @@
+.wrapper-header {
+    position:fixed;
+}
+
+.industry-overview-main-stage {
+    background-image: url('/img/1/bg-department-overview.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 423px;
+    padding-bottom: 30px;
+    @include tablet {
+        min-height: 513px;
+    }
+    &__content {
+        @include make-xs-column(12);
+        @include make-xs-column-offset(0);
+        @include make-sm-column(7);
+        @include make-sm-column-offset(1);
+    }
+    &__title {
+        text-transform: uppercase;
+        margin-top: 40px;
+        color: $k2-blue;
+        font-size: 26px;
+        br {
+            display: none;
+        }
+        @include tablet {
+            font-size: 30px;
+            margin-top: 125px;
+            br {
+                display: block;
+            }
+        }
+    }
+    &__description {
+        @extend %t-paragraph;
+        margin-top: 20px;
+        br {
+            display: none;
+        }
+        @include tablet {
+            br {
+                display: block;
+            }
+        }
+    }
+}
+
+.industry-overview {
+    text-align: center;
+    @include make-xs-column(10);
+    @include make-xs-column-offset(1);
+    @include make-sm-column(10);
+    @include make-sm-column-offset(1);
+    padding-bottom: 90px;
+    //background-color:red;
+    &__columns {
+        margin: 20px 0px;
+    }
+    &__single {
+        @include make-xs-column(12);
+        @include make-sm-column(6);
+        @include make-md-column(4);
+        margin-top: 30px;
+        max-width: 320px;
+        float: none;
+        margin: 30px auto;
+        display: block;
+        &-image {
+            background-size: cover;
+            height: 231px;
+            background-position: top center;
+            width: 100%;
+            position: relative;
+            &.-human-resources {
+                background-image: url('/img/1/customer-resources.jpg');
+               
+            }
+            &.-financing {
+                background-image: url('/img/1/customer-finance.jpg');
+            }
+            &.-operations {
+                background-image: url('/img/1/customer-opeartions.jpg');
+            }
+            &.-purchasing {
+                background-image: url('/img/1/customer-purchasing.jpg');
+            }
+            &.-sales-marketing {
+                background-image: url('/img/1/customer-sales-and-marketing.jpg');
+            }
+            &.-it {
+                background-image: url('/img/1/customer-it.jpg');
+            }
+            &.-finance {
+                background-image: url('/img/1/industries-finance.jpg');
+            }
+            &.-healthcare {
+                background-image: url('/img/1/industries-healthcare.jpg');
+            }
+            &.-legal {
+                background-image: url('/img/1/industries-legal.jpg');
+            }
+            &.-manufacturing {
+                background-image: url('/img/1/industries-manufacturing.jpg');
+            }
+            &.-gas {
+                background-image: url('/img/1/industries-oil-gas.jpg');
+            }
+            &.-publicsector {
+                background-image: url('/img/1/industries-publicsector.jpg');
+            }
+            &:after {
+                content: '';
+                width: 100%;
+                position: absolute;
+                background-color: rgba(255, 255, 255, 0.1);
+                position: absolute;
+                bottom: 0px;
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                transition: background-color .3s ease;
+                z-index: 1;
+            }
+        }
+        &-link {
+            padding: 15px 0px;
+            background: rgba(255, 255, 255, 0.9);
+            bottom: 0px;
+            position: absolute;
+            width: 100%;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: #5d5d5d;
+            transition: background 0.5s ease;
+            &:after {
+                content: '';
+                position: absolute;
+                /* right: 20px; */
+                transition: right 0.4s ease;
+                width: 0;
+                height: 0;
+                border-top: 5px solid transparent;
+                border-bottom: 5px solid transparent;
+                border-left: 9px solid #00b5c8;
+                margin-top: 2px;
+                margin-left: 11px;
+            }
+            &.-download {
+                &:after {
+                    content: '';
+                    position: absolute;
+                    /* right: 20px; */
+                    transition: right 0.4s ease;
+                    width: 0;
+                    height: 0;
+                        border-top: 9px solid #00b5c8;
+                    border-right: 5px solid transparent;
+                    border-left: 5px solid transparent;
+                    margin-top: 2px;
+                    margin-left: 11px;
+                }
+            }
+        }
+        &-description {
+            background-color: #f2f3f2;
+            padding: 11px 16px;
+            color: #5d5d5d;
+            min-height:140px;
+            @extend %t-paragraph;
+        }
+        &:hover {
+            .industry-overview__single-link {
+                background: rgba(0, 181, 200, 0.9);
+                color: white;
+                transition: background 0.5s ease;
+                &:after {
+                    content: '';
+                    position: absolute;
+                    /* right: 20px; */
+                    transition: right 0.4s ease;
+                    width: 0;
+                    height: 0;
+                    border-top: 5px solid transparent;
+                    border-bottom: 5px solid transparent;
+                    border-left: 9px solid white;
+                    margin-top: 2px;
+                    margin-left: 11px;
+                }
+            &.-download {
+                &:after {
+                    content: '';
+                    position: absolute;
+                    /* right: 20px; */
+                    transition: right 0.4s ease;
+                    width: 0;
+                    height: 0;
+                        border-top: 9px solid white;
+                    border-right: 5px solid transparent;
+                    border-left: 5px solid transparent;
+                    margin-top: 2px;
+                    margin-left: 11px;
+                }
+            }
+            }
+        }
+    }
+}
+
+.industry-overview__single:hover .industry-overview__single-image:after {
+    background-color: rgba(255, 255, 255, 0);
+    transition: background 0.5s ease;
+}
+.-departments .industry-overview__single-link:after {
+    display:none;
+}
+body #financial .cta-case-study a.u-btn-box:hover {
+    color: $k2-blue !important;
+}

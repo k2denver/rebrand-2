@@ -8,6 +8,7 @@ title: "home"
         <div class="wrapper">
             <div class="main-stage__content">
                 <h1 class="main-stage__title">
+                RAPIDLY DELIVER <br> <span>BUSINESS PROCESS APPLICATIONS</span> <br>
                     <span class="txt-rotate"></span>
                 </h1>
                 <div class="clear"></div>
@@ -64,11 +65,11 @@ title: "home"
             <h3 class="customers__title">{{homepage.customers__title}}</h3>
             <div class="customers__logos">
                 <ul>
-                    <li><a class="svg-icon" href=""><img src="/img/1/Kimberly_clark.svg" width="213" alt=""></a></li>
-                    <li><a class="svg-icon" href=""><img src="/img/1/ppg_logo.svg" width="59" alt=""></a></li>
-                    <li><a class="svg-icon" href=""><img src="/img/1/microsoft_logo.svg" width="166" alt=""></a></li>
-                    <li><a  class="svg-icon" href=""><img src="/img/1/shell-logo.svg" width="55" alt=""></a></li>
-                    <li><a class="svg-icon" href=""><img src="/img/1/sanofi-logo.svg" width="136" alt=""></a></li>
+                    <li><a class="svg-icon" href="http://www.k2.com/customers/kimberly-clark"><img src="/img/1/Kimberly_clark.svg" width="213" alt=""></a></li>
+                    <li><a class="svg-icon" href="http://www.k2.com/customers/ppg"><img src="/img/1/ppg_logo.svg" width="59" alt=""></a></li>
+                    <li><a class="svg-icon" href="http://www.k2.com/video/solving-real-user-problems-appit"><img src="/img/1/microsoft_logo.svg" width="166" alt=""></a></li>
+                    <li><a  class="svg-icon" href="http://www.k2.com/customers/shell"><img src="/img/1/shell-logo.svg" width="55" alt=""></a></li>
+                    <li><a class="svg-icon" href="http://www.k2.com/customers/sanofi"><img src="/img/1/sanofi-logo.svg" width="136" alt=""></a></li>
 
                 </ul>
             </div>
@@ -84,10 +85,11 @@ title: "home"
                 <div class="event-info__columns">
                     <div class="event-info__single-event">
                         <div class="event-info__single-event-image">
-                            <img src="/img/1/event-info-event-2.jpg">
+                            <img src="/img/1/events-sharepoint-workflow-@2x.jpg?cache=0">
                         </div>
                         <div class="event-info__single-event-description">
-                            <p>Introduction amazing online forms</p>
+                            <p>Have you hit the limit of your current SharePoint workflow solution? Unlock its full potential today
+</p>
                             <a class="event-info__single-event-cta">
                                 Learn More
                             </a>
@@ -95,10 +97,12 @@ title: "home"
                     </div>
                     <div class="event-info__single-event">
                         <div class="event-info__single-event-image">
-                            <img src="/img/1/event-info1.jpg">
+                            <img src="/img/1/events-techspresso@2x.jpg?cache=0">
                         </div>
                         <div class="event-info__single-event-description">
-                            <p>Introduction amazing online forms</p>
+                            <p>In need of a coffee break? Take one with K2’s TechSpresso webinar series and empower your business.
+ 
+</p>
                             <a class="event-info__single-event-cta">
                                 Learn More
                             </a>
@@ -106,10 +110,11 @@ title: "home"
                     </div>
                      <div class="event-info__single-event">
                         <div class="event-info__single-event-image">
-                            <img src="/img/1/event-info-event-2.jpg">
+                            <img src="/img/1/events-costof-process-breakdowns-@2x.jpg?cache=0">
                         </div>
                         <div class="event-info__single-event-description">
-                            <p>Introduction amazing online forms</p>
+                            <p>What is the cost of business process breakdowns? Learn how K2 can help move your business into the future. 
+</p>
                             <a class="event-info__single-event-cta">
                                 Learn More
                             </a>
@@ -117,7 +122,7 @@ title: "home"
                     </div>
                 </div>
 
-                 <a href="" class="event-info__button--primary">see full list of events</a>
+                 <a href="http://www.k2.com/event-calendar" class="event-info__button--primary">see full list of events</a>
             </div>
         </div>
     </section>
@@ -143,17 +148,18 @@ title: "home"
 $('.departments-list li').click(function(){
     var link = $(this).find('a').attr('href');
     window.location.href = link;
-
-
 });
 
   $(function(){
 
       $(".txt-rotate").typed({
-        strings: [ "" ,"RAPIDLY DELIVER <br> <span>BUSINESS PROCESS APPLICATIONS</span> <br>That automate workflow", "RAPIDLY DELIVER <br> <span>BUSINESS PROCESS APPLICATIONS</span> <br>That mobilize your workforce", " RAPIDLY DELIVER <br> <span>BUSINESS PROCESS APPLICATIONS </span> <br>That run in the cloud &amp; on premises", "RAPIDLY DELIVER <br> <span>BUSINESS PROCESS APPLICATIONS</span> <br>That span departments &amp; systems" ],
+        strings: [ "" ,"That automate workflow", "That mobilize your workforce", "That run in the cloud &amp; on premises", "That span departments &amp; systems" ],
         typeSpeed: 0,
-         startDelay: 2,
-         backDelay: 1000
+         startDelay: 1,
+         backDelay: 1000,
+        callback: function() {
+                $('.typed-cursor').hide();
+           },
       });
 
   });

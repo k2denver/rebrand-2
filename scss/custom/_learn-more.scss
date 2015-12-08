@@ -1,4 +1,6 @@
-
+.wrapper-header {
+    position:fixed;
+}
 
 
 .main-stage-learn-more {
@@ -7,12 +9,22 @@
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 423px;
+    
     padding-bottom:30px;
     @include tablet {
         min-height: 523px;
 
     }
+            @media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) { 
+ 
 
+        min-height: auto;
+
+
+}
        &__content {
         @include make-xs-column(12);
         @include make-xs-column-offset(0);
@@ -55,9 +67,24 @@
     }
     &__button--secondary {
         @extend %button;
-        @extend %button--blue;
+        @extend %button--green-outline;
+        color:$k2-purple;
         font-size: 16px;
+        margin-left:20px;
     }
+
+    @media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) { 
+    &__content {
+        padding-right:120px;
+    }
+
+
+        min-height: 370px;
+
+}
 }
 
 .tabs-content {
@@ -119,6 +146,9 @@
             }
             p {
                 @extend %t-paragraph;
+                a {
+                    color:$k2-blue !important;
+                }
             }
         }
         &--left-content {
@@ -160,6 +190,9 @@
             }
             p {
                 @extend %t-paragraph;
+                a {
+                    color:$k2-blue !important;
+                }
             }
         }
         &--mobile-image {
@@ -271,6 +304,7 @@
     background-color: $k2-blue;
     padding:60px 0px;
     @extend %simple-slice;
+    border:0px;
     &__content {
        @extend  %simple-slice__content;
     }

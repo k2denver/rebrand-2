@@ -6,6 +6,18 @@
     position: fixed;
 }
 
+
+a {
+    color: $k2-green;
+}
+.no-touch a:hover, a:hover {
+    color: $k2-green;
+}
+.row {
+    max-width: 960px;
+}
+
+
 body header {
     background-color: transparent;
 }
@@ -19,14 +31,15 @@ body header {
     background-color: rgba(255, 255, 255, 0.96);
     width: 100%;
     z-index: 100;
-    position: fixed;
+   
     height: 73px;
     top: 0px;
 }
 
-.row {
-    max-width: 960px;
+.right-fixed-buttons {
+    display:none;
 }
+<<<<<<< HEAD
 
 .utility-open {
     background-color: rgba(255, 255, 255, 0.96);
@@ -63,6 +76,8 @@ body header {
        }  
 }
 
+=======
+>>>>>>> blas
 .header {
     max-width: 940px;
     height: 75px;
@@ -91,7 +106,11 @@ body header {
     font-size: 14px;
     margin-top: 28px;
     float: left;
-    margin-left: 0px !important;
+    margin-left:10px;
+    
+        @include tablet {
+            margin-left: 0px !important;
+        }
     }
     &__cta-see-it-live {
         @extend %button;
@@ -107,6 +126,7 @@ body header {
         display:none;
         @include tablet {
                 float: right;
+<<<<<<< HEAD
                  margin-top: -23px;
                   display:block;
         }
@@ -116,13 +136,32 @@ body header {
                  margin-top: 0px;
             position: absolute;
             right: -22px;
+=======
+                display: block;
+                margin-top: 5px;
+                position: absolute;
+                right: 20px;
+                top: 0px;
+                width: 176px;
+        }
+        @include desktop {
+            display: block;
+            /* float: none; */
+            margin-top: 0px;
+            /* position: absolute; */
+            /* right: -63px; */
+>>>>>>> blas
             top: 37px;
+            //background: rebeccapurple;
+            width: 154px;
+            position: relative;
+            margin-right: -90px;
         }
     }
 
 
     &__login {
-        font-size:14px;
+        font-size:12px;
         color:$k2-blue;
         float:left;
         font-weight: bold;
@@ -137,10 +176,13 @@ body header {
     }
     //display:none;
 }
-
+@include desktop {
+_:-webkit-full-screen:not(:root:root), .header__utility{ margin-right:-120px !important; } 
+}
 .push-for-menu {
     padding-top: 72px;
 }
+
 
 .mobile-menu-up {
     overflow: hidden;
@@ -203,7 +245,7 @@ body header {
             @include add-important(font-family, $avenir-bold);
         }
         ul.sub-menu {
-            display: none;
+            //display: none;
             margin-left: 0px;
             > li {
                 border-left: 1px solid white;
@@ -240,7 +282,7 @@ body header {
 
     }
     @include tablet {
-        > ul {
+        > ul { 
             position: relative;
             @if $overwrite-cms {
                 margin-left: 0px;
@@ -248,7 +290,7 @@ body header {
             // First Level
             > li {
                 display: inline-block;
-                padding: 20px;
+                padding: 20px 10px;
                 float: left;
                 position: relative;
                 a {
@@ -472,11 +514,18 @@ body header {
     } 
     li span.top-title {
         color:white;
+           display: block;
+        padding:10px 0px 3px 5px;
+            text-decoration: underline;
+            font-size:14px;
+        @include desktop {
+        color:white;
         font-size:14px;
         font-family:$avenir-bold !important;
         text-transform: uppercase;
         padding:10px 0px 0px 14px;
-        display:block;
+       
+        }
       
     }
 }
@@ -485,6 +534,7 @@ body header {
     cursor:default !important;
 }
 html body .access-support2 {
+    @include desktop {
     text-align: center;
     background-color:white;
     color:$k2-green !important;
@@ -492,14 +542,19 @@ html body .access-support2 {
     display:block !important;
     width:90% !important;
       font-family:$avenir-bold !important;
+  }
 }
 html body .access-support2.access-support2.access-support2.access-support2.access-support2:hover {
+   @include desktop {
     color:$k2-green !important;
      background-color:white;
      border-bottom:0px;
+ }
 }
 .wtf {
+    @include desktop {
     background-color:$k2-green;
+    }
 }
 #menu-icon {
     display:none;
@@ -518,7 +573,7 @@ html body .access-support2.access-support2.access-support2.access-support2.acces
         padding: 20px 4px;
     }
     @include desktop {
-        padding: 20px;
+        padding: 20px 10px;
     }
 }
 .mobile-login , .top-utility {
@@ -667,7 +722,7 @@ ul.sub-menu--resources {
                     transition: all .5s ease;
                 }
                 @include desktop {
-                    padding: 13px 39px;
+                    padding: 13px 36px;
                 }
                 &:hover {
                     color: white;
@@ -733,6 +788,9 @@ ul.sub-menu--resources {
             cursor: pointer;
         }
      }
+     &.Off {
+        display:none;
+     }
 }
 
 .iphone-widget.closed {
@@ -756,4 +814,9 @@ footer {
 .no-touch footer a:hover {
     color: $k2-green;
 }
+
+#form_formcontrol_DemoRequest_2_6_2015 .row {
+    max-width:100%;
+}
+
 

@@ -1,11 +1,12 @@
 --- layout: "default.hbs" title: "forms" ---
 <section class="main-stage-learn-more push-for-menu">
     <div class="wrapper">
-        <div class="main-stage-learn-more__content">
-            <h1 class="main-stage-learn-more__title">K2 helps your people work smarter <br>and get business done faster.</h1>
-            <p class="main-stage-learn-more__description">Create, modify and reuse business apps with little-to-no code — on premises or in the cloud.
-                <br>Leverage current systems and technologies, and interact with your apps from any device.</p>
+        <div class="main-stage-learn-more__content topajax">
+            <h1 class="main-stage-learn-more__title">Easy-to-use data integration tools</h1>
+            <p class="main-stage-learn-more__description">Rapidly roll out business apps using data integration tools that connect forms and workflows with your systems - on premises and in the cloud.
+</p>
             <a href="/schedule-demo.html" class="main-stage-learn-more__button--primary">REQUEST A DEMO</a>
+            <a href="/how-to-buy.html" class="main-stage-learn-more__button--secondary">How To Buy</a>
         </div>
     </div>
 </section>
@@ -67,12 +68,47 @@
         </div>
     </div>
 </section>
-
-{{> form-work-flow-bottom}}
-
-
-
 <div class="tabs-scripts">
+<section class="products-slice">
+    <div class="wrapper">
+        <div class="products-slice__content">
+            <h4 class="products-slice__title">Products</h4>
+            <p class="products-slice__description">Automate and streamline any process with K2 business apps that run on premises or in the cloud. K2 apps extend the capabilities of your current systems, pull in data securely without storing it, and provide insightful reporting. </p>
+            <a href="/products.html" class="products-slice__primary-cta">View K2 Products</a>
+        </div>
+    </div>
+</section>
+<section class="featured-asset">
+    <div class="wrapper">
+        <div class="featured-asset__content">   
+            <div class="featured-asset__content_column">
+                <h4 class="featured-asset__title">Building Business Apps On Your SAP Data: Bridging Connections Between People and Data</h4>
+                <div class="featured-asset__description">Most enterprises rely on the power of SAP software but the complexity of implementations and extensive, time-consuming customizations can slow down productivity. Read this paper to learn how a low-code, business application platform with data integration tools can help you provide simpler, more cost-effective ways to empower people by connecting them with data that is dispersed across different systems.</div>
+                <a href="http://content.k2.com/web_70114000002W3G4" taget="_blank" class="featured-asset__button--primary">Download the whitepaper</a>
+            </div>
+        </div>
+         <div class="featured-asset__content">   
+            <div class="featured-asset__content_column">
+                <h4 class="featured-asset__title">What is the business process breakdown costing your business?</h4>
+                <div class="featured-asset__description">Manual, paper-based processes can’t keep up with the digital world, but business applications can. Forms and workflow apps can remove organization-wide bottlenecks in your business, and deliver greater departmental productivity while empowering your mobile workers. Learn how business process analysis tools enable better, data-driven decisions.</div>
+                <a href="http://content.k2.com/online_70114000002Jgwb" taget="_blank" class="featured-asset__button--primary">Download the whitepaper</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="one-miniute-video-slice">
+    <div class="wrapper">
+        <div class="one-miniute-video-slice__content">
+            <h4 class="one-miniute-video-slice__title">{{learn-more.one-minute__title}}</h4>
+            <p class="one-miniute-video-slice__description">K2 apps help you maximize your data. Want to see how it works? Click below to check out how to build and run business process applications with forms, workflow, data and reports.</p>
+            <a href="/one-minute-demo.html" class="one-miniute-video-slice__primary-cta">See it live </a>
+        </div>
+    </div>
+</section>
+
+
+
+
 <script>
 $('.fwd__menu .item-one').click(function() {
     removeAllClasses();

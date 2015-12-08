@@ -1,5 +1,10 @@
-
-
+.wrapper-header {
+    position:fixed;
+}
+.wrapper {
+    max-width: 960px;
+    @include row(30px);
+}
 
 .one-minute {
     background-image: url('/img/1/one-minute.jpg');
