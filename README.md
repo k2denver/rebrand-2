@@ -27,5 +27,6 @@ And you're set!
 ## More Information
 
 Sass folder /scss/ imports Bootstrap mixins (installed through bower), and outputs to /app/css/app.css
+
 The templating  grunt plugin used on the project is Assemble (combined with Handlebars) http://assemble.io/ & http://handlebarsjs.com/. Template folder is /template/ and outputs to app/*.html. Please create pages through templates. Do not manually modify html files inside /app/.
 
