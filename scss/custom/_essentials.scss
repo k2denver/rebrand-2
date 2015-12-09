@@ -8,7 +8,7 @@
 
 
 a {
-    color: $k2-green;
+    color: $k2-green; 
 }
 .no-touch a:hover, a:hover {
     color: $k2-green;
@@ -39,45 +39,8 @@ body header {
 .right-fixed-buttons {
     display:none;
 }
-<<<<<<< HEAD
-
-.utility-open {
-    background-color: rgba(255, 255, 255, 0.96);
-    width: 100%;
-    z-index: 100;
-    position: fixed;
-    height: 87px;
-    top: 0px;
-    padding-top: 14px;
-    .topnav {
-        display:none;
-        @include desktop {
-            display:block;
-                position: fixed;
-    top: 0px;
-    left: 50%;
-    width: 400px;
-    margin-left: 48px;
-        }
-    }
-       .header  {
-            &__utility {
-                right: 30px;
-               
-            }
 
 
-            &__login {
-              display:none
-            }
-            &__search {
-               
-            }
-       }  
-}
-
-=======
->>>>>>> blas
 .header {
     max-width: 940px;
     height: 75px;
@@ -126,17 +89,6 @@ body header {
         display:none;
         @include tablet {
                 float: right;
-<<<<<<< HEAD
-                 margin-top: -23px;
-                  display:block;
-        }
-        @include desktop {
-            display:block;
-            float: none;
-                 margin-top: 0px;
-            position: absolute;
-            right: -22px;
-=======
                 display: block;
                 margin-top: 5px;
                 position: absolute;
@@ -150,7 +102,6 @@ body header {
             margin-top: 0px;
             /* position: absolute; */
             /* right: -63px; */
->>>>>>> blas
             top: 37px;
             //background: rebeccapurple;
             width: 154px;
