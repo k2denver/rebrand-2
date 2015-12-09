@@ -1,4 +1,4 @@
-# Foundation libsass template
+# K2 Re-architecture project 
 
 This is a template to start your own project that uses Grunt and libsass!
 
@@ -13,17 +13,15 @@ You'll need to have the following items installed before continuing.
 ## Quickstart
 
 ```bash
-git clone git@github.com:zurb/foundation-libsass-template.git
+git clone https://k2blas@bitbucket.org/k2blas/finalk2.git
 npm install && bower install
 ```
 
 While you're working on your project, run:
 
-`grunt`
+'grunt watch' to watch the files 
+`grunt` to create the server  
 
 And you're set!
 
-## Directory Structure
 
-  * `scss/_settings.scss`: Foundation configuration settings go in here
-  * `scss/app.scss`: Application styles go here
