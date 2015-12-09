@@ -13,6 +13,7 @@
   "author": "blas",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^6.1.2",
     "autoprefixer-core": "^6.0.1",
     "grunt": "~0.4.5",
     "grunt-assemble": "^0.4.0",
