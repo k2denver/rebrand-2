@@ -37,7 +37,8 @@
   margin-top: 20px;
   text-align: center;
   white-space: nowrap;
-  touch-action: manipulation;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
   cursor: pointer;
   -webkit-user-select: none;
   transition: all 0.2s ease;
@@ -990,7 +991,8 @@ footer .right li {
   }
 }
 .fade-in {
-  animation: fade-in 1s ease;
+  -webkit-animation: fade-in 1s ease;
+          animation: fade-in 1s ease;
 }
 
 .learn-more__description,
@@ -1031,7 +1033,8 @@ footer .right li {
   margin-top: 20px;
   text-align: center;
   white-space: nowrap;
-  touch-action: manipulation;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
   cursor: pointer;
   -webkit-user-select: none;
 }
@@ -1680,7 +1683,8 @@ footer .right li {
   height: 374px;
   overflow: hidden;
   background-size: 45273px 374px;
-  animation: fade-in 4s ease;
+  -webkit-animation: fade-in 4s ease;
+          animation: fade-in 4s ease;
   margin: 0px;
   position: absolute;
   left: 50%;
@@ -1691,7 +1695,8 @@ footer .right li {
 @media (min-width: 480px) {
   #walker {
     margin-left: -68px;
-    animation: fade-in-full 4s ease;
+    -webkit-animation: fade-in-full 4s ease;
+            animation: fade-in-full 4s ease;
     opacity: 1;
   }
 }
@@ -2558,9 +2563,11 @@ footer .right li {
     -webkit-transform: scale(0.87);
     /* Safari And Chrome */
     -webkit-transform-origin: 0 0;
-    transform: scale(0.87);
+    -webkit-transform: scale(0.87);
+            transform: scale(0.87);
     /* Standard Property */
-    transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
     /* Standard Property */
   }
 }
@@ -2577,9 +2584,11 @@ footer .right li {
     -webkit-transform: scale(1);
     /* Safari And Chrome */
     -webkit-transform-origin: 0 0;
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
     /* Standard Property */
-    transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
     /* Standard Property */
     right: 0px;
   }
@@ -2608,9 +2617,11 @@ footer .right li {
     -webkit-transform: scale(0.87);
     /* Safari And Chrome */
     -webkit-transform-origin: 0 0;
-    transform: scale(0.87);
+    -webkit-transform: scale(0.87);
+            transform: scale(0.87);
     /* Standard Property */
-    transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
     /* Standard Property */
   }
 }
@@ -2627,9 +2638,11 @@ footer .right li {
     -webkit-transform: scale(1);
     /* Safari And Chrome */
     -webkit-transform-origin: 0 0;
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
     /* Standard Property */
-    transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
     /* Standard Property */
     right: 70px;
   }
@@ -3465,10 +3478,6 @@ span.contact-us-button {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=" 0 ")";
   filter: alpha(opacity=0);
   opacity: 0;
-  -webkit-transition: opacity 0 linear 0;
-  -moz-transition: opacity 0 linear 0;
-  -ms-transition: opacity 0 linear 0;
-  -o-transition: opacity 0 linear 0;
   transition: opacity 0 linear 0;
   width: 80%;
   margin-left: -40%;
@@ -3491,10 +3500,6 @@ span.contact-us-button {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=" 0 ")";
     filter: alpha(opacity=0);
     opacity: 0;
-    -webkit-transition: opacity 0 linear 0;
-    -moz-transition: opacity 0 linear 0;
-    -ms-transition: opacity 0 linear 0;
-    -o-transition: opacity 0 linear 0;
     transition: opacity 0 linear 0;
     width: 80%;
     margin-left: -40%;
@@ -3538,10 +3543,6 @@ span.contact-us-button {
   filter: alpha(opacity=100);
   opacity: 1;
   visibility: visible;
-  -webkit-transition: opacity 200ms linear 0ms;
-  -moz-transition: opacity 200ms linear 0ms;
-  -ms-transition: opacity 200ms linear 0ms;
-  -o-transition: opacity 200ms linear 0ms;
   transition: opacity 200ms linear 0ms;
 }
 .leadership .bio-box .mobile-link {
@@ -4924,7 +4925,8 @@ body #financial .cta-case-study a.u-btn-box:hover {
     border-radius: 120px;
   }
   .actual-spider__item:nth-child(1) .actual-spider__item--title--palo {
-    transform: rotate(-82deg);
+    -webkit-transform: rotate(-82deg);
+            transform: rotate(-82deg);
     height: 196px;
     left: 117px;
     top: 69px;
@@ -4933,7 +4935,8 @@ body #financial .cta-case-study a.u-btn-box:hover {
     margin-left: -202px;
   }
   .actual-spider__item:nth-child(2) .actual-spider__item--title--palo {
-    transform: rotate(-46deg);
+    -webkit-transform: rotate(-46deg);
+            transform: rotate(-46deg);
     height: 139px;
     right: 21px;
     margin-top: 24px;
@@ -4943,7 +4946,8 @@ body #financial .cta-case-study a.u-btn-box:hover {
     margin-top: -33px;
   }
   .actual-spider__item:nth-child(3) .actual-spider__item--title--palo {
-    transform: rotate(38deg);
+    -webkit-transform: rotate(38deg);
+            transform: rotate(38deg);
     left: 40px;
     margin-top: 4px;
   }
@@ -4952,7 +4956,8 @@ body #financial .cta-case-study a.u-btn-box:hover {
     margin-top: 175px;
   }
   .actual-spider__item:nth-child(4) .actual-spider__item--title--palo {
-    transform: rotate(94deg);
+    -webkit-transform: rotate(94deg);
+            transform: rotate(94deg);
     top: 52px;
     margin-right: 57px;
     height: 163px;
@@ -4962,7 +4967,8 @@ body #financial .cta-case-study a.u-btn-box:hover {
     margin-top: 293px;
   }
   .actual-spider__item:nth-child(5) .actual-spider__item--title--palo {
-    transform: rotate(-222deg);
+    -webkit-transform: rotate(-222deg);
+            transform: rotate(-222deg);
     height: 98px;
     top: 47px;
   }
@@ -4971,7 +4977,8 @@ body #financial .cta-case-study a.u-btn-box:hover {
     margin-top: 287px;
   }
   .actual-spider__item:nth-child(6) .actual-spider__item--title--palo {
-    transform: rotate(-122deg);
+    -webkit-transform: rotate(-122deg);
+            transform: rotate(-122deg);
     top: 36px;
     margin-right: -46px;
   }
@@ -5003,7 +5010,8 @@ body #financial .cta-case-study a.u-btn-box:hover {
     position: absolute;
     top: 80px;
     right: 50%;
-    transform-origin: top;
+    -webkit-transform-origin: top;
+            transform-origin: top;
     transition: all 0.5s ease;
     z-index: 1;
   }
@@ -5215,5 +5223,3 @@ body #financial .cta-case-study a.u-btn-box:hover {
     background-position: 42%;
   }
 }
-
-/*# sourceMappingURL=app.css.map */
