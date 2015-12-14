@@ -1,16 +1,16 @@
 .product-main-stage__section-description ul li, .your-business__description, .easy-vs-hard__description, .main-stage-learn-more__description, .overview__graph--right-content p, .overview__graph--left-content p, .overview__description, .products-slice__description, .one-miniute-video-slice__description, .fwd__right-description, .featured-asset__description, .one-minute__description, .company-main-stage__description, .our-story__description, .timeliner .timeliner__date--description, .leadership .leader p,
 .leadership .bio-box .wrapper p,
-.leadership .bio-box .k2-offices__content p, .corporate-hq__single .address-block, .k2-offices__singles .address-block, .careers__description, .industry-overview-main-stage__description, .industry-overview__single-description, .how-to-buy-mainstage__description, .how-to-buy-faq__answer, .main-stage-department-detail__description, .solutions-slice__description, .solutions-slice__single p, .spider__description, .download-case-study__description {
+.leadership .bio-box .k2-offices__content p, .corporate-hq__single .address-block, .k2-offices__singles .address-block, .careers__description, .industry-overview-main-stage__description, .industry-overview__single-description, .how-to-buy-mainstage__description, .how-to-buy-faq__answer, .main-stage-department-detail__description, .solutions-slice__description, .solutions-slice__single p, .spider__description, .download-case-study__description, .application-accelerator__description, .wrapper .downloads__description, .k2-offices__content .downloads__description {
   font-size: 14px;
   line-height: 18px;
 }
 
-.your-business__title, .overview__graph--right-content h3, .overview__graph--left-content h3, .overview__title, .products-slice__title, .fwd__right-title, .our-story__title, .recent-recognition__title, .recent-recognition__single-year, .leadership__title, .world-map__title, .corporate-hq__title, .careers__title, .available-positions__title, .buy-it-now__title, .how-to-buy-faq__title, .solutions-slice__title, .spider__title {
+.your-business__title, .overview__graph--right-content h3, .overview__graph--left-content h3, .overview__title, .products-slice__title, .fwd__right-title, .our-story__title, .recent-recognition__title, .recent-recognition__single-year, .leadership__title, .world-map__title, .corporate-hq__title, .careers__title, .available-positions__title, .buy-it-now__title, .how-to-buy-faq__title, .solutions-slice__title, .spider__title, .wrapper .downloads__downloadtitle, .k2-offices__content .downloads__downloadtitle {
   font-size: 30px;
   font-family: "Bulmer MT W01 Italic" !important;
 }
 @media (min-width: 770px) {
-  .your-business__title, .overview__graph--right-content h3, .overview__graph--left-content h3, .overview__title, .products-slice__title, .fwd__right-title, .our-story__title, .recent-recognition__title, .recent-recognition__single-year, .leadership__title, .world-map__title, .corporate-hq__title, .careers__title, .available-positions__title, .buy-it-now__title, .how-to-buy-faq__title, .solutions-slice__title, .spider__title {
+  .your-business__title, .overview__graph--right-content h3, .overview__graph--left-content h3, .overview__title, .products-slice__title, .fwd__right-title, .our-story__title, .recent-recognition__title, .recent-recognition__single-year, .leadership__title, .world-map__title, .corporate-hq__title, .careers__title, .available-positions__title, .buy-it-now__title, .how-to-buy-faq__title, .solutions-slice__title, .spider__title, .wrapper .downloads__downloadtitle, .k2-offices__content .downloads__downloadtitle {
     font-size: 40px;
   }
 }
@@ -28,7 +28,7 @@
   }
 }
 
-.header__cta-contact, .header__cta-see-it-live, .bne .top-utility__button--contact, .product-main-stage__button--primary, .product-main-stage__button--secondary, .easy-vs-hard__primary-cta, .main-stage-learn-more__button--primary, .main-stage-learn-more__button--secondary, .products-slice__primary-cta, .one-miniute-video-slice__primary-cta, .featured-asset__button--primary, .fwd__mobile-button, .one-minute__button--primary, .company-main-stage__button--primary, .how-to-buy-mainstage__button--primary, .still-unsure__button--primary, .main-stage-department-detail__button--primary, .solutions-slice__button--primary, .bottom-spider-cta__button-primary, .download-case-study__button--primary {
+.header__cta-contact, .header__cta-see-it-live, .bne .top-utility__button--contact, .product-main-stage__button--primary, .product-main-stage__button--secondary, .easy-vs-hard__primary-cta, .main-stage-learn-more__button--primary, .main-stage-learn-more__button--secondary, .products-slice__primary-cta, .one-miniute-video-slice__primary-cta, .featured-asset__button--primary, .fwd__mobile-button, .one-minute__button--primary, .company-main-stage__button--primary, .how-to-buy-mainstage__button--primary, .still-unsure__button--primary, .main-stage-department-detail__button--primary, .solutions-slice__button--primary, .bottom-spider-cta__button-primary, .download-case-study__button--primary, .application-accelerator__button--primary {
   display: inline-block;
   padding: 10px 15px;
   color: white;
@@ -37,8 +37,7 @@
   margin-top: 20px;
   text-align: center;
   white-space: nowrap;
-  -ms-touch-action: manipulation;
-      touch-action: manipulation;
+  touch-action: manipulation;
   cursor: pointer;
   -webkit-user-select: none;
   transition: all 0.2s ease;
@@ -60,10 +59,10 @@
   background-color: #81af41;
   color: white !important;
 }
-.bne .top-utility__button--contact, .product-main-stage__button--primary, .featured-asset__button--primary, .fwd__mobile-button, .one-minute__button--primary {
+.bne .top-utility__button--contact, .product-main-stage__button--primary, .featured-asset__button--primary, .fwd__mobile-button, .one-minute__button--primary, .application-accelerator__button--primary {
   background-color: #00b5c8;
 }
-.bne .top-utility__button--contact:hover, .product-main-stage__button--primary:hover, .featured-asset__button--primary:hover, .fwd__mobile-button:hover, .one-minute__button--primary:hover {
+.bne .top-utility__button--contact:hover, .product-main-stage__button--primary:hover, .featured-asset__button--primary:hover, .fwd__mobile-button:hover, .one-minute__button--primary:hover, .application-accelerator__button--primary:hover {
   background-color: #81af41;
 }
 .header__cta-contact, .header__cta-see-it-live, .product-main-stage__button--secondary {
@@ -94,7 +93,7 @@
   background-color: white;
   color: #272d43 !important;
 }
-.header__cta-contact:hover, .header__cta-see-it-live:hover, .bne .top-utility__button--contact:hover, .product-main-stage__button--primary:hover, .product-main-stage__button--secondary:hover, .easy-vs-hard__primary-cta:hover, .main-stage-learn-more__button--primary:hover, .main-stage-learn-more__button--secondary:hover, .products-slice__primary-cta:hover, .one-miniute-video-slice__primary-cta:hover, .featured-asset__button--primary:hover, .fwd__mobile-button:hover, .one-minute__button--primary:hover, .company-main-stage__button--primary:hover, .how-to-buy-mainstage__button--primary:hover, .still-unsure__button--primary:hover, .main-stage-department-detail__button--primary:hover, .solutions-slice__button--primary:hover, .bottom-spider-cta__button-primary:hover, .download-case-study__button--primary:hover {
+.header__cta-contact:hover, .header__cta-see-it-live:hover, .bne .top-utility__button--contact:hover, .product-main-stage__button--primary:hover, .product-main-stage__button--secondary:hover, .easy-vs-hard__primary-cta:hover, .main-stage-learn-more__button--primary:hover, .main-stage-learn-more__button--secondary:hover, .products-slice__primary-cta:hover, .one-miniute-video-slice__primary-cta:hover, .featured-asset__button--primary:hover, .fwd__mobile-button:hover, .one-minute__button--primary:hover, .company-main-stage__button--primary:hover, .how-to-buy-mainstage__button--primary:hover, .still-unsure__button--primary:hover, .main-stage-department-detail__button--primary:hover, .solutions-slice__button--primary:hover, .bottom-spider-cta__button-primary:hover, .download-case-study__button--primary:hover, .application-accelerator__button--primary:hover {
   color: white !important;
 }
 
@@ -991,8 +990,7 @@ footer .right li {
   }
 }
 .fade-in {
-  -webkit-animation: fade-in 1s ease;
-          animation: fade-in 1s ease;
+  animation: fade-in 1s ease;
 }
 
 .learn-more__description,
@@ -1033,8 +1031,7 @@ footer .right li {
   margin-top: 20px;
   text-align: center;
   white-space: nowrap;
-  -ms-touch-action: manipulation;
-      touch-action: manipulation;
+  touch-action: manipulation;
   cursor: pointer;
   -webkit-user-select: none;
 }
@@ -1683,8 +1680,7 @@ footer .right li {
   height: 374px;
   overflow: hidden;
   background-size: 45273px 374px;
-  -webkit-animation: fade-in 4s ease;
-          animation: fade-in 4s ease;
+  animation: fade-in 4s ease;
   margin: 0px;
   position: absolute;
   left: 50%;
@@ -1695,8 +1691,7 @@ footer .right li {
 @media (min-width: 480px) {
   #walker {
     margin-left: -68px;
-    -webkit-animation: fade-in-full 4s ease;
-            animation: fade-in-full 4s ease;
+    animation: fade-in-full 4s ease;
     opacity: 1;
   }
 }
@@ -2563,11 +2558,9 @@ footer .right li {
     -webkit-transform: scale(0.87);
     /* Safari And Chrome */
     -webkit-transform-origin: 0 0;
-    -webkit-transform: scale(0.87);
-            transform: scale(0.87);
+    transform: scale(0.87);
     /* Standard Property */
-    -webkit-transform-origin: 0 0;
-            transform-origin: 0 0;
+    transform-origin: 0 0;
     /* Standard Property */
   }
 }
@@ -2584,11 +2577,9 @@ footer .right li {
     -webkit-transform: scale(1);
     /* Safari And Chrome */
     -webkit-transform-origin: 0 0;
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
     /* Standard Property */
-    -webkit-transform-origin: 0 0;
-            transform-origin: 0 0;
+    transform-origin: 0 0;
     /* Standard Property */
     right: 0px;
   }
@@ -2617,11 +2608,9 @@ footer .right li {
     -webkit-transform: scale(0.87);
     /* Safari And Chrome */
     -webkit-transform-origin: 0 0;
-    -webkit-transform: scale(0.87);
-            transform: scale(0.87);
+    transform: scale(0.87);
     /* Standard Property */
-    -webkit-transform-origin: 0 0;
-            transform-origin: 0 0;
+    transform-origin: 0 0;
     /* Standard Property */
   }
 }
@@ -2638,11 +2627,9 @@ footer .right li {
     -webkit-transform: scale(1);
     /* Safari And Chrome */
     -webkit-transform-origin: 0 0;
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
     /* Standard Property */
-    -webkit-transform-origin: 0 0;
-            transform-origin: 0 0;
+    transform-origin: 0 0;
     /* Standard Property */
     right: 70px;
   }
@@ -3478,6 +3465,10 @@ span.contact-us-button {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=" 0 ")";
   filter: alpha(opacity=0);
   opacity: 0;
+  -webkit-transition: opacity 0 linear 0;
+  -moz-transition: opacity 0 linear 0;
+  -ms-transition: opacity 0 linear 0;
+  -o-transition: opacity 0 linear 0;
   transition: opacity 0 linear 0;
   width: 80%;
   margin-left: -40%;
@@ -3500,6 +3491,10 @@ span.contact-us-button {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=" 0 ")";
     filter: alpha(opacity=0);
     opacity: 0;
+    -webkit-transition: opacity 0 linear 0;
+    -moz-transition: opacity 0 linear 0;
+    -ms-transition: opacity 0 linear 0;
+    -o-transition: opacity 0 linear 0;
     transition: opacity 0 linear 0;
     width: 80%;
     margin-left: -40%;
@@ -3543,6 +3538,10 @@ span.contact-us-button {
   filter: alpha(opacity=100);
   opacity: 1;
   visibility: visible;
+  -webkit-transition: opacity 200ms linear 0ms;
+  -moz-transition: opacity 200ms linear 0ms;
+  -ms-transition: opacity 200ms linear 0ms;
+  -o-transition: opacity 200ms linear 0ms;
   transition: opacity 200ms linear 0ms;
 }
 .leadership .bio-box .mobile-link {
@@ -4925,8 +4924,7 @@ body #financial .cta-case-study a.u-btn-box:hover {
     border-radius: 120px;
   }
   .actual-spider__item:nth-child(1) .actual-spider__item--title--palo {
-    -webkit-transform: rotate(-82deg);
-            transform: rotate(-82deg);
+    transform: rotate(-82deg);
     height: 196px;
     left: 117px;
     top: 69px;
@@ -4935,8 +4933,7 @@ body #financial .cta-case-study a.u-btn-box:hover {
     margin-left: -202px;
   }
   .actual-spider__item:nth-child(2) .actual-spider__item--title--palo {
-    -webkit-transform: rotate(-46deg);
-            transform: rotate(-46deg);
+    transform: rotate(-46deg);
     height: 139px;
     right: 21px;
     margin-top: 24px;
@@ -4946,8 +4943,7 @@ body #financial .cta-case-study a.u-btn-box:hover {
     margin-top: -33px;
   }
   .actual-spider__item:nth-child(3) .actual-spider__item--title--palo {
-    -webkit-transform: rotate(38deg);
-            transform: rotate(38deg);
+    transform: rotate(38deg);
     left: 40px;
     margin-top: 4px;
   }
@@ -4956,8 +4952,7 @@ body #financial .cta-case-study a.u-btn-box:hover {
     margin-top: 175px;
   }
   .actual-spider__item:nth-child(4) .actual-spider__item--title--palo {
-    -webkit-transform: rotate(94deg);
-            transform: rotate(94deg);
+    transform: rotate(94deg);
     top: 52px;
     margin-right: 57px;
     height: 163px;
@@ -4967,8 +4962,7 @@ body #financial .cta-case-study a.u-btn-box:hover {
     margin-top: 293px;
   }
   .actual-spider__item:nth-child(5) .actual-spider__item--title--palo {
-    -webkit-transform: rotate(-222deg);
-            transform: rotate(-222deg);
+    transform: rotate(-222deg);
     height: 98px;
     top: 47px;
   }
@@ -4977,8 +4971,7 @@ body #financial .cta-case-study a.u-btn-box:hover {
     margin-top: 287px;
   }
   .actual-spider__item:nth-child(6) .actual-spider__item--title--palo {
-    -webkit-transform: rotate(-122deg);
-            transform: rotate(-122deg);
+    transform: rotate(-122deg);
     top: 36px;
     margin-right: -46px;
   }
@@ -5010,8 +5003,7 @@ body #financial .cta-case-study a.u-btn-box:hover {
     position: absolute;
     top: 80px;
     right: 50%;
-    -webkit-transform-origin: top;
-            transform-origin: top;
+    transform-origin: top;
     transition: all 0.5s ease;
     z-index: 1;
   }
@@ -5223,3 +5215,131 @@ body #financial .cta-case-study a.u-btn-box:hover {
     background-position: 42%;
   }
 }
+
+/* APPLICATION ACCELERATOR PAGE STYLING */
+.application-accelerator {
+  background-image: url("/img/app-accelerator.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 315px;
+  padding-bottom: 50px;
+}
+@media (min-width: 770px) {
+  .application-accelerator {
+    min-height: 423px;
+  }
+}
+.application-accelerator__content {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 0%;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 770px) {
+  .application-accelerator__content {
+    float: left;
+    width: 50%;
+  }
+}
+@media (min-width: 770px) {
+  .application-accelerator__content {
+    margin-left: 8.33333%;
+  }
+}
+.application-accelerator__title {
+  text-transform: uppercase;
+  margin-top: 66px;
+  color: #00b5c8;
+  font-size: 26px;
+}
+.application-accelerator__title br {
+  display: none;
+}
+@media (min-width: 770px) {
+  .application-accelerator__title {
+    font-size: 30px;
+    margin-top: 67px;
+  }
+  .application-accelerator__title br {
+    display: block;
+  }
+}
+.application-accelerator__description {
+  margin-top: 20px;
+}
+.application-accelerator__description br {
+  display: none;
+}
+@media (min-width: 770px) {
+  .application-accelerator__description br {
+    display: block;
+  }
+}
+.application-accelerator__button--primary {
+  font-size: 16px;
+}
+
+.wrapper .downloads, .k2-offices__content .downloads {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  min-height: 275px !important;
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 770px) {
+  .wrapper .downloads, .k2-offices__content .downloads {
+    padding-top: 20px;
+  }
+}
+.wrapper .downloads__downloadtitle, .k2-offices__content .downloads__downloadtitle {
+  color: #00b5c8;
+  font-family: "Bulmer MT W01 Italic" !important;
+}
+.wrapper .downloads__description, .k2-offices__content .downloads__description {
+  width: 100%;
+}
+@media (min-width: 770px) {
+  .wrapper .downloads__description, .k2-offices__content .downloads__description {
+    width: 78%;
+    margin: 0 auto;
+  }
+}
+.wrapper .downloads__timeline, .k2-offices__content .downloads__timeline {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 0%;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 770px) {
+  .wrapper .downloads__timeline, .k2-offices__content .downloads__timeline {
+    float: left;
+    width: 83.33333%;
+  }
+}
+@media (min-width: 770px) {
+  .wrapper .downloads__timeline, .k2-offices__content .downloads__timeline {
+    margin-left: 8.33333%;
+  }
+}
+
+/*# sourceMappingURL=app.css.map */
